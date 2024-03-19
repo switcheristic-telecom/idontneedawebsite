@@ -1,24 +1,50 @@
-console.log('Hello, world!');
-
-// jQuery has been loaded
-
 /***
  * EMAIL GENERATOR
  */
-$.getJSON('/public/email-metadata.json', function (EMAIL_METADATA) {
-  // sort by time in descending order
-  EMAIL_METADATA = EMAIL_METADATA.sort((a, b) => {
+$.getJSON('/public/email-metadata.json', (emailMetadataList) => {
+  processEmailMetadataList(emailMetadataList);
+});
+
+/**
+ * @param {EmailMetadata[]} emailMetadataList
+ */
+function processEmailMetadataList(emailMetadataList) {
+  // filter out emails that are not wanted
+  emailMetadataList = emailMetadataList.filter((email) => {
+    const IGNORE_SENDERS = ['proton.me'];
+    const IGNORE_IDS = [
+      'Tz3yiKX_ahgueIP-aI7S8B6DkFAWLcID3Dobp2_5LcFllv8dLSfkGewulUtXVGM9z2byXqyvob4hzvfWWc9jPw==', // first cloudflare email
+    ];
+    let ignore = false;
+    for (const ignoreSender of IGNORE_SENDERS) {
+      if (email.Payload.Sender.Address.includes(ignoreSender)) {
+        ignore = true;
+        break;
+      }
+    }
+    for (const ignoreID of IGNORE_IDS) {
+      if (email.Payload.ID.includes(ignoreID)) {
+        ignore = true;
+        break;
+      }
+    }
+    return !ignore;
+  });
+
+  // sort by time in ascending order
+  emailMetadataList = emailMetadataList.sort((a, b) => {
     const aTime = a.Payload.Time;
     const bTime = b.Payload.Time;
-    if (aTime < bTime) return 1;
-    if (aTime > bTime) return -1;
+    if (aTime < bTime) return -1;
+    if (aTime > bTime) return 1;
     return 0;
   });
+
   // get id "email-container"
   const emailContainer = $('#email-container');
-  for (const email of EMAIL_METADATA) {
+  for (const email of emailMetadataList) {
     const emailDivClass =
-      'max-w-3xl p-4 bg-gray-100 border-2 border-gray-200 rounded-lg shadow-md m-4';
+      'p-2 bg-gray-100 border-2 border-gray-200 rounded-lg shadow-md mb-4';
     const emailDiv = $('<div class="email ' + emailDivClass + '"></div>');
     emailDiv.append(`<h2>${email.Payload.Subject}</h2>`);
     emailDiv.append(`<p>From: ${email.Payload.Sender.Address}</p>`);
@@ -42,7 +68,7 @@ $.getJSON('/public/email-metadata.json', function (EMAIL_METADATA) {
 
     emailContainer.append(emailDiv);
   }
-});
+}
 
 /************************
  *******DEFINITIONS******
