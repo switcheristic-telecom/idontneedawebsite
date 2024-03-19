@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "aVgBC2Aw0iuwaTWkir5NDA9bwzJqJdHdoMXk7x9vqVLecCTx5ERu-JWy3PpQEFBoS8PIrsU3rRJPlTMu0SMODA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "3",
+      "5"
+    ],
+    "ExternalID": "KH3JJ4D61R2DWZWNCWWVT8JSK0@notify.proton.me",
+    "Subject": "Get started with Proton Mail and increase your storage for free",
+    "Sender": {
+      "Name": "Proton",
+      "Address": "no-reply@notify.proton.me"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Proton",
+        "Address": "no-reply@notify.proton.me"
+      }
+    ],
+    "Flags": 9245,
+    "Time": 1706477135,
+    "Size": 228526,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [
+      {
+        "ID": "onZcIG5dAWn-dsegv9GI3UGh46Zy1fpu1tn0MZnnjCIhbJMT5jYWcJyd38UYgP_zqGdKByPhLGhfZeVbrsPnhw==",
+        "Name": "logos-footer.png",
+        "Size": 5555,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c12bc84f0fe1a13a253fc@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "crFO4UcPxylThRvbO3QPFpkenZuSQh9WyedjPYwdCZeYGio4c3bpw22wUBQ9btAd1241Uz5bowc-w-KxoScEEA==",
+        "Name": "link.png",
+        "Size": 2309,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c5db7cb1df73166934317@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "0ij1LK81ttrisBardAS24Pi6H8YaV-lLVmbDVY4ZpK8TTwDp48pABCEKme3DnYDSIxsP_Ioj-Kw9CqAqzHi_iw==",
+        "Name": "instagram.png",
+        "Size": 2599,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cc4c462d0803341ae3d95@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "w6g8LFdauYhyx1QTEZfN2PLIEKUDAelzhjTlMFssSF7ZajFsKhPj6ClJjdYuags-2pmXdYMqk_zpZTw_ZInHMQ==",
+        "Name": "facebook.png",
+        "Size": 1728,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c4f996d5ed367140bf29c@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "QfPfYfvTW2_NiyED6kfTLQiqhzeev3lpDilimN_DV1fXc0Sioa-mDQI7wmCjsyypreJ6USTGfTZqWLq8EH-r0w==",
+        "Name": "linkedin.png",
+        "Size": 1934,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c52deb0f1e713c47b7a3e@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "Thnj3gjFqljc4Z5diPa-wgAoiVSMvfMBuZN2mjsz2XkRAM5zjhkbp5FenI3LV_T-zMgNVHJdl2963CJAPvginw==",
+        "Name": "reddit.png",
+        "Size": 2451,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c5075cb1a83c85a44634b@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "teXm_asvLVbyJ_GEoBtQAoN40INZzKegieeOQhKZYrvu7DOvvJ4dxNb1658cPxBS0lxdgyFpPgIOZmKezuBgyg==",
+        "Name": "twitter.png",
+        "Size": 2232,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c716e7f848562946ba615@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "igIWWPfGhuwDNWHoksOWs8BY6FUEiVfO7Yp5uC5fIDSK6FHZWirokiK9vO5w2C9iXZEGTvHIIj1-SVRRD5UB9Q==",
+        "Name": "side-onboarding-checklist.png",
+        "Size": 8739,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c60f677eae829bf339276@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "AxE6EpEkhWV-YjwTxVPZ-QPlZwG4x_ptKPCqJwDcWbHofW9_kDBaMzWX4Dr0kQeSmmgTFbRzvB1CrWjWy3Pj5w==",
+        "Name": "banner-onboarding-checklist-intro.png",
+        "Size": 138906,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cfc5ad2f3f7bafe4ea8b6@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      },
+      {
+        "ID": "3h8qMKwSXaOoQ8jv8wmvAMEETt_lHhVtf7BU1iart3oBq0YerfZ7nJKxBF_iG-sBEnZ1YXPDmH4diQtvuKfizw==",
+        "Name": "logo-proton.png",
+        "Size": 3311,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c90571b06a3a5d7fde0cc@notify.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAWovow6veS7qwUBXMPhulxDdfzxAoB3G1cVpkDvqCSnQwLG/mMNh9p9rxsQ2a9lAQD8aaAVUGkouQUtWtTo35i92mMlFSzExDIjqEv9+Hq42C",
+        "Signature": ""
+      }
+    ],
+    "MIMEType": "text/html",
+    "Headers": "To: idontneedawebsite@proton.me\r\nFrom: Proton \u003cno-reply@notify.proton.me\u003e\r\nDate: Sun, 28 Jan 2024 21:25:35 +0000\r\nSubject: Get started with Proton Mail and increase your storage for free\r\nX-Auto-Response-Suppress: OOF\r\nPrecedence: bulk\r\nAuto-Submitted: auto-generated\r\nMessage-Id: \u003cKH3JJ4D61R2DWZWNCWWVT8JSK0@notify.proton.me\u003e\r\nX-Pm-Origin: internal\r\nX-Pm-Content-Encryption: end-to-end\r\nX-Pm-Spamscore: 0\r\nReceived: from mail.protonmail.ch by mail.protonmail.ch; Sun, 28 Jan 2024 21:25:53 +0000\r\nX-Original-To: idontneedawebsite@proton.me\r\nReturn-Path: \u003cno-reply@notify.proton.me\u003e\r\nDelivered-To: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Attached: logos-footer.png\r\nX-Attached: link.png\r\nX-Attached: instagram.png\r\nX-Attached: facebook.png\r\nX-Attached: linkedin.png\r\nX-Attached: reddit.png\r\nX-Attached: twitter.png\r\nX-Attached: side-onboarding-checklist.png\r\nX-Attached: banner-onboarding-checklist-intro.png\r\nX-Attached: logo-proton.png\r\n",
+    "WriterType": 0
+  }
+}

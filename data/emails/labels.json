@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "Payload": [
+    {
+      "Path": "",
+      "ID": "0",
+      "ParentID": "",
+      "Name": "Inbox",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "",
+      "ID": "8",
+      "ParentID": "",
+      "Name": "Drafts",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "All Drafts",
+      "ID": "1",
+      "ParentID": "",
+      "Name": "All Drafts",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "All Scheduled",
+      "ID": "12",
+      "ParentID": "",
+      "Name": "All Scheduled",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "",
+      "ID": "7",
+      "ParentID": "",
+      "Name": "Sent",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "All Sent",
+      "ID": "2",
+      "ParentID": "",
+      "Name": "All Sent",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "Starred",
+      "ID": "10",
+      "ParentID": "",
+      "Name": "Starred",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "Snoozed",
+      "ID": "16",
+      "ParentID": "",
+      "Name": "Snoozed",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "",
+      "ID": "6",
+      "ParentID": "",
+      "Name": "Archive",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "",
+      "ID": "4",
+      "ParentID": "",
+      "Name": "Spam",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "",
+      "ID": "3",
+      "ParentID": "",
+      "Name": "Trash",
+      "Color": "#8080FF",
+      "Type": 3
+    },
+    {
+      "Path": "All Mail",
+      "ID": "5",
+      "ParentID": "",
+      "Name": "All Mail",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "All Mail",
+      "ID": "15",
+      "ParentID": "",
+      "Name": "All Mail",
+      "Color": "#8080FF",
+      "Type": 1
+    },
+    {
+      "Path": "Outbox",
+      "ID": "9",
+      "ParentID": "",
+      "Name": "Outbox",
+      "Color": "#8080FF",
+      "Type": 1
+    }
+  ]
+}

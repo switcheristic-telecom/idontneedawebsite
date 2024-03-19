@@ -1,0 +1,268 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Xn7X5QiT4cC9DA_KI2vB3PpBOb-P4djVF7qfmwD81xYtoPtWll91vZSCKrr9pMPi7hZul0E0C_hDapKugKhsaw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "3",
+      "5"
+    ],
+    "ExternalID": "GJFNHTQA073S20DVDHZDHB3RRW@news.proton.me",
+    "Subject": "Set up automatic forwarding from Gmail in one click",
+    "Sender": {
+      "Name": "Proton",
+      "Address": "no-reply@notify.proton.me"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Proton",
+        "Address": "no-reply@notify.proton.me"
+      }
+    ],
+    "Flags": 9245,
+    "Time": 1706473512,
+    "Size": 900650,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [
+      {
+        "ID": "kwF9ZWbxtsLsogM050VnCNZ6Bbod5EApoMGG8rf1xCuR1b_LPipv_VsbSv9aikPyBQjOUf9dTaEqRHKSWuRQTg==",
+        "Name": "logos-footer.png",
+        "Size": 5555,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c415420a8f3e61be1ca03@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "yvQHF4HMStaDlq5Lpe_JraJ2tBTehoh1YWVI-DfsytAFShKSQm_utVZbM5TpLw4zKcq5dr59i6UDhHX8hbpFYQ==",
+        "Name": "link.png",
+        "Size": 2309,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c9a9627d2c6f8959f9a6f@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "OKj4kWPOcliVzPFboYW7_X0n1M_0f2jStvrShZKGdwwyr3FSvJPySLKS1taxfXFNy2cRgXY2NN0DQCIPZbD_1w==",
+        "Name": "instagram.png",
+        "Size": 2599,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cdd0a11b43aa29b5191a0@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "jdNRp4r5iLWcubMb0JxbTqLAq975wnQlPTjIKpz_-2BsZLppw_p77kclKLGzR7263zN4eJFtUJp7waKJMdPl1Q==",
+        "Name": "facebook.png",
+        "Size": 1728,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cb6134c75187db6935c1b@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "t9G4-3ULq1DpsadNQvoEK0nXLI0ItbiMJkwEY22MTnc8sx21yJqUlK19gMO88z5ipMHfd5tWnJLimDEgpLRWnQ==",
+        "Name": "linkedin.png",
+        "Size": 1934,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c2b7de0326a0cac402b68@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "epbggmt2c7IJnCh-cZTgT26EOh47JVzKyVqGryUqT_acZn-8iZi1UZv0xtvXQpHPApcIrOfmaNJTk0Pp9G1o_g==",
+        "Name": "reddit.png",
+        "Size": 2451,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c9747105b0a7782048979@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "KYrLKGYx69X3O8XXw4EHDvw8vr1YgMnUk_zb27f6oC9wtNp1YEwD9mBXEU9vI71Q44a_rchdMbdKZh_9z46u3g==",
+        "Name": "twitter.png",
+        "Size": 2232,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c0a3bb2109994c7e140af@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "DOTmrdpjhnlkJKDyGJ0NMOdVVPKn_bHkJA1xsEzPpY7v1Kxq5Qx3nrwMhYplmb-3gnpeU3Dv71Ch-wg-3aW7YA==",
+        "Name": "twitter-extract-9-top-tips.png",
+        "Size": 139082,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c57136eec77b3ce6a28ce@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "FcvhDHsNrIYGDHa-0NhzM-aIjkqKnjkM97wIXxYvYdrIIzyffPkdAgz5Q5dyQ9Fd6JqK8hFtUSAjewxth2QF-A==",
+        "Name": "logo-proton-vpn.png",
+        "Size": 13988,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003ccfae3ce5148767b8480f@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "0j1hG8Uy9XwIGMlvWwlCth3gsSTXMe6WSUfECtI-Q_BKwL4Oo2_Qqm0SfI4uXpdkWNL3iZLMeoujqHZ4tIrqvg==",
+        "Name": "logo-proton-drive.png",
+        "Size": 16881,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cc8b1b53d35c876d4edba@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "fVRvFxBYZCcd7YT4PLYJki7V74k1tuvyYZ4eiPdONEw7Nx4huCNpTV1rPmzXSsfoHjE9Y4OMhA7V8YcbLrpvEg==",
+        "Name": "logo-proton-calendar.png",
+        "Size": 12353,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c8c90b4bc835f9556cb38@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "dsym0g7sgT1AyYdHQIZIC0GgF4XLFvWXZ8lY8hEI0VYDd5RYapcEHSxuST9op-gWbfSlMp10LnpCuadXFtn1nw==",
+        "Name": "logo-proton-mail.png",
+        "Size": 15897,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c53fc072eba6afe314687@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "2J0SBpDPBM731B2MCyENSiK2UH6j9-VE7cxqQIwNnacPaglHkiW1DPjYux3LWggqwa6s1oBQAzEsTEa_HBNUBA==",
+        "Name": "onboarding_forward_block_senders.png",
+        "Size": 123855,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003cc58ea59f8e3f4e1a439a@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "PXgm1GnM7As-etkNni7HCLbSQA1izYOlzcmLzSEdAOyogAcQ-5RpDaw_FLtxuGM6BnBKl0ch25R94ssmywE-QA==",
+        "Name": "onboarding_forward_block_trackers.png",
+        "Size": 267852,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003ca053c58f030fc08f15d4@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "kTX5q5yP7MDTYbFS8KUfK0dodBbXoksQPF9Cn71C9zvENlZdTZV53OwIbJ3I_9B2tIMUgQ-TKZ6xXLqEGFCBjQ==",
+        "Name": "news-forward-messages.png",
+        "Size": 202120,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c0f4604c19f34a08c9f0b@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      },
+      {
+        "ID": "mpqmB7MzoPdY2qXuItfPUnDCO-0N6n4Jao3XOFiuxJzpWBScDa-_jYMLCqS62cMEfjq5Rf54LeXj_V7WSZCGtg==",
+        "Name": "logo-proton.png",
+        "Size": 3311,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "content-id": "\u003c2cd7ea25a957e8bbd6c3@news.proton.me\u003e",
+          "content-disposition": "inline",
+          "x-pm-content-encryption": "end-to-end"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdA2ShrEDuXWBPI15gOdFjDW6KTOqsc8aXIdb15aVfjtHowY+2Bjk7uhTEFRX9V0H8DWcX3WklwtmKS/3NA62MrCkM1p4Iu95hClW7p16s//6/D",
+        "Signature": ""
+      }
+    ],
+    "MIMEType": "text/html",
+    "Headers": "To: idontneedawebsite@proton.me\r\nFrom: Proton \u003cno-reply@notify.proton.me\u003e\r\nDate: Sun, 28 Jan 2024 20:25:12 +0000\r\nSubject: Set up automatic forwarding from Gmail in one click\r\nX-Auto-Response-Suppress: OOF\r\nPrecedence: bulk\r\nAuto-Submitted: auto-generated\r\nMessage-Id: \u003cGJFNHTQA073S20DVDHZDHB3RRW@news.proton.me\u003e\r\nX-Pm-Origin: internal\r\nX-Pm-Content-Encryption: end-to-end\r\nX-Pm-Spamscore: 0\r\nReceived: from mail.protonmail.ch by mail.protonmail.ch; Sun, 28 Jan 2024 20:25:14 +0000\r\nX-Original-To: idontneedawebsite@proton.me\r\nReturn-Path: \u003cno-reply@notify.proton.me\u003e\r\nDelivered-To: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Attached: logos-footer.png\r\nX-Attached: link.png\r\nX-Attached: instagram.png\r\nX-Attached: facebook.png\r\nX-Attached: linkedin.png\r\nX-Attached: reddit.png\r\nX-Attached: twitter.png\r\nX-Attached: twitter-extract-9-top-tips.png\r\nX-Attached: logo-proton-vpn.png\r\nX-Attached: logo-proton-drive.png\r\nX-Attached: logo-proton-calendar.png\r\nX-Attached: logo-proton-mail.png\r\nX-Attached: onboarding_forward_block_senders.png\r\nX-Attached: onboarding_forward_block_trackers.png\r\nX-Attached: news-forward-messages.png\r\nX-Attached: logo-proton.png\r\n",
+    "WriterType": 0
+  }
+}
