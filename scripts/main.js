@@ -44,24 +44,52 @@ function processEmailMetadataList(emailMetadataList) {
   const emailContainer = $('#email-container');
   for (const email of emailMetadataList) {
     const emailDivClass =
-      'p-2 bg-gray-100 border-2 border-gray-200 rounded-lg shadow-md mb-4';
+      'px-4 py-3 bg-gray-100 border-2 border-gray-200 rounded-lg shadow-md mb-4 ';
     const emailDiv = $('<div class="email ' + emailDivClass + '"></div>');
-    emailDiv.append(`<h2>${email.Payload.Subject}</h2>`);
-    emailDiv.append(`<p>From: ${email.Payload.Sender.Address}</p>`);
     emailDiv.append(
-      `<p>To: ${email.Payload.ToList.map((to) => to.Address).join(', ')}</p>`
+      `<div class="flex justify-between items-center">
+      <h2 class="text-lg font-bold">${email.Payload.Subject}</h2>
+      <a class="text-blue-500 cursor-pointer" 
+      onclick="window.open('/public/emails/${email.Payload.ID}.html', '_blank', 'height=600,width=960,scrollbars=yes,status=no,toolbar=no,menubar=no,location=no');">
+      Open
+      </a>
+      </div>`
     );
+    emailDiv.append(`<p>From: ${email.Payload.Sender.Address}</p>`);
+    if (email.Payload.ReplyTos.length > 0)
+      emailDiv.append(
+        `<p>Reply To: ${email.Payload.ReplyTos.map(
+          (replyTo) => replyTo.Address
+        ).join(', ')}</p>`
+      );
+    if (email.Payload.ToList.length > 0)
+      emailDiv.append(
+        `<p>To: ${email.Payload.ToList.map((to) => to.Address).join(', ')}</p>`
+      );
+    if (email.Payload.CCList.length > 0)
+      emailDiv.append(
+        `<p>CC: ${email.Payload.CCList.map((cc) => cc.Address).join(', ')}</p>`
+      );
+    if (email.Payload.BCCList.length > 0)
+      emailDiv.append(
+        `<p>BCC: ${email.Payload.BCCList.map((bcc) => bcc.Address).join(
+          ', '
+        )}</p>`
+      );
     emailDiv.append(
       `<p>Time: ${new Date(email.Payload.Time * 1000).toLocaleString()}</p>`
     );
-    emailDiv.append(`<p>${email.Payload.Size} bytes</p>`);
-    emailDiv.append(`<p>${email.Payload.NumAttachments} attachments</p>`);
 
-    const emailIFrameDivClass = 'bg-white';
+    // emailDiv.append(`<p>${email.Payload.Size} bytes</p>`);
+    // emailDiv.append(`<p>${email.Payload.NumAttachments} attachments</p>`);
+
+    const emailIFrameDivClass = 'bg-white border-2 shadow-inner';
     const emailIFrameDiv = $('<div class="' + emailIFrameDivClass + '"></div>');
     const emailUrl = `/public/emails/${email.Payload.ID}.html`;
+    const emailIframeClass = 'w-full';
+    const emailIframeStyle = 'max-height: 500px;';
     const emailIframe = $(
-      `<iframe src="${emailUrl}" width="100%" height="500px" frameborder="0"></iframe>`
+      `<iframe src="${emailUrl}" width="100%" height="360px" frameborder="0" class="${emailIframeClass}" style="${emailIframeStyle}"></iframe>`
     );
     emailIFrameDiv.append(emailIframe);
     emailDiv.append(emailIFrameDiv);
