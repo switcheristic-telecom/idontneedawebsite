@@ -1,0 +1,43 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Tz3yiKX_ahgueIP-aI7S8B6DkFAWLcID3Dobp2_5LcFllv8dLSfkGewulUtXVGM9z2byXqyvob4hzvfWWc9jPw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "3",
+      "5"
+    ],
+    "ExternalID": "43.5A.34609.439B6B56@hd.mta1vrest.cc.prd.sparkpost",
+    "Subject": "[Cloudflare]: Please verify your email address",
+    "Sender": {
+      "Name": "Cloudflare",
+      "Address": "noreply@notify.cloudflare.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Cloudflare",
+        "Address": "noreply@notify.cloudflare.com"
+      }
+    ],
+    "Flags": 8397825,
+    "Time": 1706473780,
+    "Size": 4258,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cmsprvs1=19757KTJeifSD=bounces-265094@spmailtechno.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=notify.cloudflare.com\r\n    header.i=@notify.cloudflare.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=reject dis=none)\r\n header.from=notify.cloudflare.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=spmailtechno.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=192.174.87.157\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key)\r\n header.d=notify.cloudflare.com header.i=@notify.cloudflare.com header.b=\"JZ6kyI1m\"\r\nReceived: from mta-87-157.sparkpostmail.com (mta-87-157.sparkpostmail.com\r\n [192.174.87.157]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))\r\n (No client certificate requested) by mailin025.protonmail.ch (Postfix) with ESMTPS id\r\n 4TNNMT4SGTz9vNPj for \u003cidontneedawebsite@proton.me\u003e; Sun, 28 Jan 2024 20:29:41 +0000 (UTC)\r\nX-Msfbl: 1QZfz26TtM9LVwh7Q4fSlj4cdOMguz0SnMiGhin6TnE=|eyJjdXN0b21lcl9pZCI\r\n 6IjI2NTA5NCIsInIiOiJpZG9udG5lZWRhd2Vic2l0ZUBwcm90b24ubWUiLCJtZXN\r\n zYWdlX2lkIjoiNjViMTM0YjliNjY1MTFjNjM0YTUiLCJzdWJhY2NvdW50X2lkIjo\r\n iMCIsInRlbmFudF9pZCI6InNwYyJ9\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=notify.cloudflare.com;\r\n s=scph0619; t=1706473780; i=@notify.cloudflare.com;\r\n bh=lJBZTGqklavmBmTERnHm1oYP+SMyaQQRJQtYhqoCddM=;\r\n h=To:Message-ID:Date:Content-Type:Subject:From:From:To:Cc:Subject;\r\n b=JZ6kyI1mJkkApCfF8tn0SFimq7FTPAoeIcQ9qL2Ur7widwQ1Ll5rcwwYd01j0ZIBP\r\n  9Vex/Yw0M1IHnol9dRiID2dba53GJ0BUFMSflts4degVZ73o1bG23hZqcR6nE9x1HH\r\n  HRL0k/QpXErf2Zt7j6qPjfwSYmU76QUQ1Clx4CzA=\r\nTo: idontneedawebsite@proton.me\r\nMessage-Id: \u003c43.5A.34609.439B6B56@hd.mta1vrest.cc.prd.sparkpost\u003e\r\nDate: Sun, 28 Jan 2024 20:29:40 +0000\r\nContent-Type: text/html\r\nMime-Version: 1.0\r\nSubject: [Cloudflare]: Please verify your email address\r\nFrom: \"Cloudflare\" \u003cnoreply@notify.cloudflare.com\u003e\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOkJ5udWsyIbINnyiQWaiO2II2NWzjkYNMjxhVTO2MhF\r\n IxZWyGINYUjiyJCLWdlxoiIjjjJNNdjizUWMDNiJkzOTxmMNOUWz5AjMnIs0JzIn7jpIINnjlJ3b\r\n jIto4xMSyCJLZBXviQncnOis1BREfkNUU9EMZNUS0XMF9XTEbjpILATuiwSNmb09Z5aWsmNLbV3k\r\n hxmZmcuU9tY2lHJLaVmjdJCdCLSJNQX1Bl9RTxEP6IyVyWw0IsLjlitIelGz6MHdTMykE3Lj4C4N\r\n N4yxucTN3XwN5zZiyGFcaB3vtR3cWYslNvLmdSJbLJCSLR0XUSf1xMQUi1cTOslty4CMCLuJRpb3\r\n unkZYx2vmRWdGbyF5jZS620bc1zzoB3YDMxYJdOSNCJLS1UFPd0X0TiQstOlxC4MLJCt0xWdXahB\r\n Rccns2FLdVGy0FmbXalZRlLHcHReLB3sulWYlIs0JBIkTUVWXh0B6ISTyWw0EsLj1jYILIj3dJSJ\r\n CLSJBUQ1P0NXV5UUO90XSR6IAuWziCwMMJSdBJCL0Ui4swOlsjALIFmzyojbzMyUwgOCuXBaZQX6\r\n ykTMjL3E44NCwC4MX8CygwCM2Y19RybnVTpeUJydNJCLUSF1RSX1FUNQIpjbw4CMCLwIssOirToM\r\n LID6dJifCLNJNTSVHU5SXh1NBV1XjIbp4wMCiSwXUNkWD9FR1TOV9aVFPVJRIpjbw4CMCLwI0sIl\r\n Fk5IVJVBI9FTUQi0stOlwC4MLICt54CMjNiAwiXSfE9VTFUUfh0QURW5NQUkBF9VTwEiwslOjLdB\r\n JGLCNk9UXh0BE91UiT6IAuWzsF0MIFkSO91QSQ6IAuWzsF0MIZkSf10TkTRVVOX0SkZVT00iwslO\r\n jLsA5vImwmVcblHA09mbWa5ZNsLmk3VbZxmhuUmc2Yt91zLG2HJccEz93kTMTNLdplVETWZaR1Di\r\n uV3b2YzVI2LT5TANNBEzh1GcWa0xNoZWum8bY92ts0lIlIPRROX0P05XTUkiwslOjLdBJELCN0lS\r\n XR1SFNUQjIbp4wMCuCJLbR3puknZ2YvxRmdWyGFbZ5Sj602byKdJ19fX\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: dunno\r\n",
+    "WriterType": 0
+  }
+}

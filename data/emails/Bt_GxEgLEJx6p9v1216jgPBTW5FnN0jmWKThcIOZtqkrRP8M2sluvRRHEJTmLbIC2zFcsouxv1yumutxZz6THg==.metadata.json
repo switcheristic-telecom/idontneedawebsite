@@ -1,0 +1,43 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Bt_GxEgLEJx6p9v1216jgPBTW5FnN0jmWKThcIOZtqkrRP8M2sluvRRHEJTmLbIC2zFcsouxv1yumutxZz6THg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5"
+    ],
+    "ExternalID": "d59b48f3ad148838fb1e5b8d8e41b64b@nawa.liravetayo.co.in",
+    "Subject": "Digital Marketing Proposal ( Six Months Booster Package)",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "Webb Notneeded",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 335544321,
+    "Time": 1709631963,
+    "Size": 3695,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce2@cupidriftel.online\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.rubblesink.online (mail.rubblesink.online [65.181.123.116]) by\r\n mailin045.protonmail.ch (Postfix) with ESMTP id 4TprcM2Hymz39 for\r\n \u003cidontneedawebsite@proton.me\u003e; Tue,\r\n  5 Mar 2024 09:58:43 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=cupidriftel.online\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=65.181.123.116\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: \"Webb Notneeded\" \u003cidontneedawebsite@proton.me\u003e\r\nSubject: Digital Marketing Proposal ( Six Months Booster Package)\r\nMessage-Id: \u003cd59b48f3ad148838fb1e5b8d8e41b64b@nawa.liravetayo.co.in\u003e\r\nDate: Tue, 05 Mar 2024 09:46:03 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 939\r\nList-Unsubscribe: \u003chttps://nawa.liravetayo.co.in/unsubscribe.php?M=9496660\u0026C=9e4bfcacc82a62b41116ed0866fd30b3\u0026L=939\u0026N=1132\u003e\r\nX-Mailer-Recptid: 9496660\r\nX-Mailer-Sid: 1132\r\nX-Mailer-Sent-By: 40\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: nawa\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnilMUOEj05cjLCLQJ\r\n 9EUkyjoIMwyiPJFUFRQ9VEUkUUNSS9UOxojICLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIBnfhB3c\r\n Sb6I45MC4jINNITyykTOTM0Mk0MDwCJLXN3wf1WYmYzFI6ZS5C4MNIj4yITNTOykM0MT0DkMLJCw\r\n 3N3XXajR90aFz19bcFGtwojIjLwAQ4MT3DQOMEz00kTOzNygwiMizF9cdl20fh2YGdf95iaWi3gb\r\n OAju5AzMDM1EE0MjzDQNMAj2iwCOWah1VfZ2tmFbZIS6zhmIGdjF9ma1lW5aXR31kVmb3XlNlfbW\r\n z2JbZJX2fRWZjMyAA5MziTMMLJCyf5WdmbtFI6ZSsmFIb1Cm0FWZXdlJIscyhm1IaxWf0F2YWZvd\r\n lfcnkW9bZwWitJiOWYslF0Y2lmJLcQ3uiQHcCLtJlsYWh2NXdVGn5J3b2Xh5UibWQiJOU9kNJR1T\r\n 0TT5wiIipWFbb9FjlRXY2Zy99weVim9cIojw2gjLTM0EwiOSpWFbb8FzfJHcWbk9wiZWtiJOYlWs\r\n nFGdmLsFhhcGrmNLcQHitJCLWYslNwXzwl9cc9miwojIjL9B0sfXhmNIdVGn5J3bjIioJPUFUU9T\r\n S9UOsIyUnIyNQiaW2iIONUW2kNWZDN5gFjN21GMZYZzi5Y2YTMikwifSinMcOsnivN2cmciUE0Oj\r\n sjgLIJnly9GcCd6IJJeyBlZTTVFFOVUTFVV9kiUk2lsOLAjspxmImc2FRhZXuW8eY82u64WaXdsJ\r\n 0sIlJlZITx0BEVEV0XJRVDUkTF9VUYEizslOjLdVJQLCTElSSlEO6IyRzWuIwiMCp29ZZk2ut92Y\r\n TLs5JhaX0mVdYlXvvNmLmLul0sIlClJIT9FTE5URVRTJ9SQ06SIRWIzuiwCMjNuUgxMTyjELM4yx\r\n 6YTMnZvJJdbSICJLQNVfU5USVRTJlSUETV9RScUixslOjLdBJNLCFU1SXh0UfxUT0TM5I6WSuzAW\r\n M0lsNRkIVQDJBPX1DElTW9VTUZ0TkRJFI6TCuzAWMwSip92Z2ZukV0bmgDoIT8mgsFmdWagQBGU1\r\n OCBLbBy2pxWYCZEBlNS0vG5LbUmiiwSXESTFxJX0f1RUV5UTiIUVlOts4wMCiSwXQFkZfNVRESNF\r\n pbIjuTALMwCiuIDNDNlI0sIlTkFITIi6uAzWCMiwNuYX2jMONUD0pBCLGcl5o2dDxS4NOEDuzITM\r\n jLcBI0LzjCBLbV3u5JHdkOCd0sIlFk5IVJVBT9FTEUNFpbIjwC4MLICwxkjLyNdJJSLCU1BQXN0P\r\n U5UV0XO9I6RSuzAWMwCidJSMCLBJNfUkikETOslwdBjLCLNJNTSVHU5SXh1NBV1XjIbp4wMCiSwX\r\n TlUNU9VRkUDFI6RSuzAWMwCi+pDMlIs0JfIlJEtRT9VO6ISQzWuA0sMFBkhIU91SMBVRVWPRpbIj\r\n wC4MLJCwt9mc3bpR5Ab2p29ZZk2u0VmblIs0JFIlZExUV9EfERUQlUF99GUVNk9UIpjbw4CMSXiw\r\n JPRlOV9TRFVfW5URlRPJI6TSuzAWMwCivJHcWb099uaWvGdQadWpl5mLCdixVub3y2UYQNG1klGc\r\n mcmlVsdGum9LblGudJSZCLSJZEQ1P0NXV5UUFp1XkUi8swOlsjALIAjiiwSXlUT9ZfUEG09UVZEB\r\n iwUSlOwsAsLjhn5IbwGiiwSXEVf95fREMUxQIpjbw4CMSXiw9fVEUUFTQh0fW5URkUQN9BVFiEwT\r\n OslwdBjLCLGJ9NUkB0hXU91E6IiTzWuA19MFfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

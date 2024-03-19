@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "RVUjkY7THzQTTnWCAkqaVkWALrJvD8GVR63QkbzubA1RKqDx9JaIJoD15SKll2yav8FNq-CP0dViRX9ozxmiRw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "2",
+      "5",
+      "7",
+      "15"
+    ],
+    "ExternalID": "4bpKhqJxMYpVq9W4vbCmmcZgXdY-VZxU3jsShQ-ak-cu060p67L9fWlFbaPqC_B3xHllue2K1tJT_CqOG76nKoT4SvcM7l18CBj_15lTMUw=@proton.me",
+    "Subject": "RE: App as per your interest",
+    "Sender": {
+      "Name": "Webb Notneeded",
+      "Address": "idontneedawebsite@proton.me"
+    },
+    "ToList": [
+      {
+        "Name": "Karan",
+        "Address": "dnjddjjfbholu@gmail.com"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Webb Notneeded",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "Flags": 8198,
+    "Time": 1708155521,
+    "Size": 7453,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "In-Reply-To: \u003c1bd501da60d2$8a8f0b80$9fad2280$@gmail.com\u003e\r\nReferences: \u003c1bd501da60d2$8a8f0b80$9fad2280$@gmail.com\u003e\r\nX-Pm-Origin: internal\r\nX-Pm-Content-Encryption: on-compose\r\nSubject: RE: App as per your interest\r\nTo: Karan \u003cdnjddjjfbholu@gmail.com\u003e\r\nFrom: Webb Notneeded \u003cidontneedawebsite@proton.me\u003e\r\nDate: Sat, 17 Feb 2024 07:38:41 +0000\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nMessage-Id: \u003c4bpKhqJxMYpVq9W4vbCmmcZgXdY-VZxU3jsShQ-ak-cu060p67L9fWlFbaPqC_B3xHllue2K1tJT_CqOG76nKoT4SvcM7l18CBj_15lTMUw=@proton.me\u003e\r\nX-Pm-Scheduled-Sent-Original-Time: Sat, 17 Feb 2024 07:38:21 +0000\r\nX-Pm-Recipient-Authentication: dnjddjjfbholu%40gmail.com=none\r\nX-Pm-Recipient-Encryption: dnjddjjfbholu%40gmail.com=none\r\n",
+    "WriterType": 0
+  }
+}
