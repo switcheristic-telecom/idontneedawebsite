@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "W_8mUnwpvbO8LiTTcFoZluMxEphVNlCYUeZ0izBtUdXrrphb_9MrNFuMqgG180TYyX1IhiB0FxU0vH-LvRzfgQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "25"
+    ],
+    "ExternalID": "017301dc7d84$2763a8b0$762afa10$@att.net",
+    "Subject": "New Examples and Applications - Jefferson",
+    "Sender": {
+      "Name": "",
+      "Address": "Jefferson68g4@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "Jefferson68g4@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "Jefferson68g4@att.net"
+      }
+    ],
+    "Flags": 1,
+    "Time": 1767535952,
+    "Size": 1290,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cJefferson68g4@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.186.208\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"mqm3XZa5\"\r\nReceived: from sonic310-27.consmr.mail.ne1.yahoo.com\r\n (sonic310-27.consmr.mail.ne1.yahoo.com [66.163.186.208]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin036.protonmail.ch (Postfix) with ESMTPS id\r\n 4dkfX06RNvz9vNQM for \u003cidontneedawebsite@proton.me\u003e; Sun,\r\n  4 Jan 2026 14:12:32 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic310.consmr.mail.ne1.yahoo.com with\r\n HTTP; Sun, 4 Jan 2026 14:12:31 +0000\r\nReceived: by hermes--production-sg3-859ccbd486-mdflp (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 5c621807902907082d23e2947d49ebbd;\r\n          Sun, 04 Jan 2026 14:12:26 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1767535951;\r\n bh=XmgoMS8dmJIXd+BbXilVQb/sD/P3KV9iQFDh8bq2J9U=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=mqm3XZa5hzi8pbsxpZXoyPXdXSj9Sn3HocQN+zHm592C9KwKsfBlfLBLVE1e0SVNvdlOc9CMOdDBECwy43r0L9zuAggLHKQjIPJclhA1Dh6sxA5uyjQGQpaiMCGtRfIpAq9nGselVkCDNIoEYf/L3wSvscfKLY9ig0fwVarKrXY=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1767535951; bh=LltXnd/yKpzjxwNBzUr1D4vldLS75p8IxTzcKIQc1Wr=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=be0W1W/QF5yzbInwDYvXpbvBd2rwsbNNLYmvxPJIl/MeMK0ZW6G1xAhG4Mbc9MVgdERe4MxUjEtsc4zaoIdpOCfrzy2t9neVApxXjwF09vFE1Unx+apESQJhPt2VV2aNp+9wzhba0Ecphc8iOqWiY2SXnBajD+1ZMrCA+o3duiZ07FpKOR7l17UkJcdge0Yep/DKVD0IabIpisL8Z9XSpfy3vDEns7ZuwnwM+wb4IfZ/P9TVhO0k+2r5njVtwigiNoMvcJoajXzVG2epnrd/Kssykz3FI4gKvwtv7nIeQTh4THf1C2LVnN3GUPcNDrdRaeY4omi8zCHUJrT1MH19dw==\r\nX-Ymail-Osg: w.SmHzkVM1kw.BqlF.CxZxjByYVE7h1aNuXUOd7wVccEuIvHXT8dJHidwPpaSTi\r\n 52tIrS8yy7A892VA1dG.BwPu4smp99J4.FfH89q6pQC9PHv0UpueSX4yfaQGy6KtNXph46DmUSSH\r\n pToCd2zabosYI_7doD8VUTcThYparZ_Pg8lXIGFZOeL4hyyDlKWlGbgAp25Ictp39QQ0dLEhfxkx\r\n LSWQLi6chnPo5.AzfMQdMswD52EEwh3OdsVoAP_eY6yNfNKA5E9pM_ZTpAJW3KjHYCN81iD19COW\r\n iSsiV00XHsuMYXoucc6a9Gt0s9_8_z0XlZNjNci1pTpIt5rmuNg7pqGQIxv9wzIxgUWKB_VXVOQu\r\n wY3vNDgiz.JwBqpg2g3LBzzSp41lJBRGCinjGoEexZNSRa.YZJrMnSVQRaeficdHPu..2UWeibhq\r\n FOhDR3fnUqnqjJwy30H6uQZAexV_4uNO2scaYZ.68mpJbrdL16WQptoixEOTZUCxuyYk1jf7KZxc\r\n EDq97HrCUEHdTit3HvNUWfH16CsORw9QEgrGFotmW2jlXpkSB6pnuqnC2NRWj7RJyAaEIYfFidT8\r\n rnMyDbwZeZTj5gQK55To.QLvRww9pvNzgI1qJxBtNKeDzOCb8PGHpL2nSN9TpycFPel3s9evQe_M\r\n Goq1d0H1y.FJNtq4zODYjHAow1mLiPZ9OtpygQ6AwtJqgRLSGGU.J_WKoPEAUXY1kY7TWBy0DyoU\r\n RvzoHjvFd3h4d3y_b3ouJpq0jRXppZyIPlZexy4sYGM2qwAzGmVkKO4_RquuwW3XLPR5BHXXtSUT\r\n mkN58c9yOubZ74rW2VW029SzBsbFCJLWHKUHcmvi2KFSEotY1otK9rXjttXJfSR6pwyub5wGAXvr\r\n grjv4jtvAZywsiEFP5Xf0ph2qQV1ssy8ywiXGCTzoJQuH87OZPbL2ReJh7LqunQ9imzCPTDcWku5\r\n GMoWs0pVznHw00EsHYWQDHM1JK946mtoZgduV.NT5m4pA5NBu6RK37cffFjF7yYkDNzes2ocPwyk\r\n tRzHUHVUVkUlGrhdQHcuiio3fux00I5U4wgC1J3FsTSNz0_soooGjiVhyFvO7lpVAFRcZ.tl8FDy\r\n ZEsd8tbKLP26LTKYsDoIzz10s6Vtw2vne3Vj0AIMN.7xjWi2AFTjoaQQJqGLdNUrsq8xPEOv5NQn\r\n n53AuwNn4wrkdXdhNmmgq5sqXgzq4czIxZ5IKnnY0F14GQZwfuQ6CV6Nzx4zr0kJkolUoiJzf6I0\r\n s3LRgsml4MwZBBmRWKwgc2VcpTJ_e7okKJGS_sMt_TbNUswlHN.WHPxDYt2TRozAoCTq2CjXlFCc\r\n 4eXbvrD7V5ZXgU5DtYcxbKdfZJtvOWSw8GCJDpH58wB8XoFuBRPvnMRXtapKf3gRvjNcFqE7Fr1j\r\n SD7lnK6hwHIn0ONDB2Lny15QdGcCwTFawvsNTjGiYMafewMmuiKpS_ezccT9S2WVez8OKalIYoVl\r\n C9W.a9pAPVBcAgiYrO58wrW51cVO94bmdq_LJqv.W4_PdMwLwkRY87eeZOnMo.VUICreLfT977u.\r\n Qvd7VTIPCAQ6hdhuMrTVO7uv5uvhRkTlB_ASTtkLFa8zYsBOe0O0wFAWFDZtDWgtT3pjuYH14kfD\r\n B.s9pJP63aKrFn_hV6Z4A0MZ9nYpyN2q.gBVh1aUxGJ2RbDL5Fs.S4dRMQ3lJ7Ry94uwvqcEH3kt\r\n kEWQuvSeq2Dkr7xXFsEUAG2Rlq3TKZ23kui3FeRsG5DuN9LKpYg6bscAoOnvd4rwLIlDcaVQmSZj\r\n ojmsAFf_Izzl9NbDzpF9GG1yxbiB4W6hFA0PRqTmsJR0dmFPAoLspESbmhpM93dIz3TXvRUZ3nGL\r\n KBOW9Ohu91G5NF.8MKWz3NirwMAfFnk3xRLyUDLLoN9RUAcypnb.pBQP.s3z8G2mGeCcOtFixQOB\r\n KoHR8NVfYr7kKTXCAk4sH23gKFvdthSnji5dHGDtV7wvGvYLXx.iWvaVltPZdOscqQh4Vjd2Dmrz\r\n mDkMblqPyZumw7Z0aZrIUphqq_1.PVGGL89J6GXp2iVJ_GniL51yb.E5EZmISiQ_yqYk4LwTPQIm\r\n SBr5utvra06_bPJX84J71VS8MP_OO0VAqjNTUf24r230Ce5FojO0Oo8NzE04XIeGwwHEUdPceU3A\r\n S1qRmEu8_m97vM59sAhGJzuTp0T.ESrIS20Oj303CA.N_p9ypIZUXkqkQq.sQt9nJ.X7qnwSt5MA Q5Gim\r\nX-Sonic-Mf: \u003cJefferson68g4@att.net\u003e\r\nX-Sonic-Id: 0e702085-d7db-4335-90f8-ed839c9bbfb7\r\nFrom: \u003cJefferson68g4@att.net\u003e\r\nTo: \u003cJefferson68g4@att.net\u003e\r\nReferences: \u003c017301dc7d84$2763a8b0$762afa10$.ref@att.net\u003e\r\nSubject: New Examples and Applications - Jefferson\r\nDate: Sun, 04 Jan 2026 19:42:15 +0530\r\nMessage-Id: \u003c017301dc7d84$2763a8b0$762afa10$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: Adx9g2meiTFiPCBsQ6qQ51OkCh67zAAAApvQAAAFshAAAAc2cAAABh+gAAAFhGAAAAWf8AAABmpAAAAFyOAAAAAK4A==\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjVURRQF0UO9USUQiwJtL\r\n CzF9bY92y6ISZyeQJ9EUktjoIMQTsSBlI0TfRJFUFDElRVlEP6IiTCMiwMiUlyi0OLgj1fJCLGZiVd\r\n fdWmW5abIy6QJyekUE9p7IjtmlIYdWlh52XWbiUJoOih3RcYt2fulmZVZ095ldWwF9Zd8Vy1IDMTMz\r\n AIsMChm1IaxWfyB3M2Xv1VsZGijoIbFWpwNDbict0AyMj5TANMITuiQHcCLtJlsYWwzNXc9lwi9mcj\r\n IwoAwLj2DANMkj53kTOTMxIk1MDiywNbFWpj9FbXYlR9yZ2tV9ebR2l6ICbmIh1xjaWtXQYLITwwUj\r\n MTOyEB0LniiwIbFWpj9FbXYlR9yZ2uV9eY1WliojIURVRFUQ0OU9SQwUitJCLWYslNhX2nGVdbJ35y\r\n B3X2biIAuOjxTANOYTz5EDMzMxcMyMDiywNc9FztFGcjIwoIyLjxDUOMcz51EjMzN3EE2MzwCJLXN3\r\n wf1WYmYzFI6ZSyC4MMgj13MTMTOxIcxNTxzMNNwiiz9Fc2d0lhfY2fG9dchGpph2cmbicAuOj2DAMM\r\n Yj15IzNjN1YU2Nz2jIMLJCyf5WdmbtFI6ZShndIdNGozlGbCdz15kZWtXIZcVHfpd3cGdoN19IniSw\r\n fcJ3p6ICZjI5YE3NWzTUNMUTykhjMjZykE5ZD0TcYYJS9fQ==\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

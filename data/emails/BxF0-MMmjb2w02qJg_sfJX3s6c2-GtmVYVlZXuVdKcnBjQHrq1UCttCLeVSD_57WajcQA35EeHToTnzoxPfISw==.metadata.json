@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "BxF0-MMmjb2w02qJg_sfJX3s6c2-GtmVYVlZXuVdKcnBjQHrq1UCttCLeVSD_57WajcQA35EeHToTnzoxPfISw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "3ef801da7c02$aec44c90$0c4ce5b0$@gmail.com",
+    "Subject": "RE: Website/Affordable Pricing",
+    "Sender": {
+      "Name": "Navya",
+      "Address": "webappsseoweb482@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Navya",
+        "Address": "webappsseoweb482@gmail.com"
+      }
+    ],
+    "Flags": 8397825,
+    "Time": 1711075353,
+    "Size": 2014,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cwebappsseoweb482@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.214.175\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"N7I1DT9q\"\r\nReceived: from mail-pl1-f175.google.com (mail-pl1-f175.google.com [209.85.214.175])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin047.protonmail.ch (Postfix) with ESMTPS id\r\n 4V16pX3Gyyz3K for \u003cidontneedawebsite@proton.me\u003e; Fri, 22 Mar 2024 03:13:08 +0000 (UTC)\r\nReceived: by mail-pl1-f175.google.com with SMTP id d9443c01a7336-1de0f92e649so11198915ad.0\r\n        for \u003cidontneedawebsite@proton.me\u003e; Thu, 21 Mar 2024 20:13:08 -0700 (PDT)\r\nReceived: from PradeepPC ([103.217.132.132])\r\n        by smtp.gmail.com with ESMTPSA id\r\n fy18-20020a17090b021200b0029ddac03effsm4389174pjb.11.2024.03.21.19.43.11\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Thu, 21 Mar 2024 19:43:12 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1711077186; x=1711681986; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=uG4TuWNn/FSpmIiC3od5fNn1C1mwp1cNJLTGANKLRoc=;\r\n        b=N7I1DT9qARKfepWSTMSnFYuAu5CskWR9tDaRo6ypDD4j3tDQR0eFKzbJyw8iC6Sm/G\r\n         I3M/MN/HY5pD1wOMcjb0Jj5WJ+4MskA/zYhd80KwiG/V+L/PHZWjpwQC5m2Hrw9dkI6h\r\n         hOwOFQiREF0ZZc9L2sPWMSfccUXwlQ7JGpMziHFyPS6UrKAmzItd3ZuDemrk3E7wdpNe\r\n         RGVoZKcZCzEDpdMqm6c9xr4fp0h0hagQgtxOEOvdJo2DyNtSD/dp9b5EGDNOAGeBJKRJ\r\n         sfxucZTptF8VPxXTzjpdu4P7NyI+HzFWco+ELQiFINsjbECiaH/IJtevEOV658jmM9M8\r\n         V4OA==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1711077186; x=1711681986;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=uG4TuWNn/FSpmIiC3od5fNn1C1mwp1cNJLTGANKLRoc=;\r\n        b=GMn5S4sIvQuJKeXiakgTcJRwu7A2g/mL18ZXfcBTTs9nRDgDEHJpiBiTJIn7K4cE9T\r\n         avnY4bT6711b7FeBKFtTrLDUchFlLVDkS503KrSdJ5jEe4xUpx84gC6ZjoRAMuCwe2AZ\r\n         OXM5vzgCmNCfUf9mD/wBideT/tg8H05amLyMvVJTnvFt4KN2vGTeuDn9YuXxrJAxWuXz\r\n         6Jun/yKDy2h+srt/5Bz4TAWSntfit6q0odqWHbcSsxfr3NpCy6gUzqf2g/nM7GoNtCCF\r\n         bEJbH2/OCtg6HlSevryPqHgqtl1o3wEv9TSvCjbwx758DXL7iIhRicShSxIqWhFJesQH\r\n         x/Hw==\r\nX-Gm-Message-State: AOJu0Yx5yMvBGwIj6WPuUR9YEaIF3mUDMo9S0GtAejh0qAu82DY5w84H\r\n C5c6HJ9lL2crycgy1lKtDeGqknzDLhfkPoP/ylHvyUym7dtoh2cgO3AdhvxZ\r\nX-Google-Smtp-Source: AGHT+IGi6URYDKXytybvwVlvkABGsRMteWd8sJJsG+BK8ARTrb+G5t/0jEnqkZrlSBPhqEPq31tgUA==\r\nX-Received: by 2002:a05:6a21:6d83:b0:1a3:6817:1b02 with SMTP id\r\n wl3-20020a056a216d8300b001a368171b02mr1622240pzb.55.1711075393097;\r\n        Thu, 21 Mar 2024 19:43:13 -0700 (PDT)\r\nFrom: \"Navya\" \u003cwebappsseoweb482@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: RE: Website/Affordable Pricing\r\nDate: Fri, 22 Mar 2024 08:12:33 +0530\r\nMessage-Id: \u003c3ef801da7c02$aec44c90$0c4ce5b0$@gmail.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: Adp8AZAzPCGRjIAnS8arrtNPCbXJ4Q==\r\nContent-Language: en-in\r\nX-Spam: Yes\r\nX-Pm-Spam: 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\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 8\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

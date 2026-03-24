@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "RjzXj1qO_8Q4UIfuYaSssB8eSdMOfHOllPSAfa2xPXRDK-3t8Otal8s5v3o5kK9jtvWotMOFfxUergi-78VhQA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "01000193ac524fcf-88e03256-5bc6-498b-8693-63cf739fc034-000000@email.amazonses.com",
+    "Subject": "Free Custom Website + $1,000 Tech Dollars for Your Business",
+    "Sender": {
+      "Name": "Rohit Gupta",
+      "Address": "rohit@itniche.world"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "rohit@itniche.world"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1733762895,
+    "Size": 1430,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003c01000193ac524fcf-88e03256-5bc6-498b-8693-63cf739fc034-000000@notify.itniche.world\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=itniche.world header.a=rsa-sha256;\r\n    dkim=pass (Good 1024 bit rsa-sha256 signature) header.d=amazonses.com\r\n    header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=itniche.world\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=notify.itniche.world\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=54.240.48.115\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=itniche.world header.i=@itniche.world header.b=\"DuBMquq9\"; dkim=pass (1024-bit\r\n key) header.d=amazonses.com header.i=@amazonses.com header.b=\"sqoVK7dh\"\r\nReceived: from a48-115.smtp-out.amazonses.com (a48-115.smtp-out.amazonses.com\r\n [54.240.48.115]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin033.protonmail.ch (Postfix) with ESMTPS id\r\n 4Y6SV90Fp5z9vNPg for \u003cidontneedawebsite@proton.me\u003e; Mon,\r\n  9 Dec 2024 16:48:16 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;\r\n s=5bimcr4vkaxap5gr6snla2bq342w3wcz; d=itniche.world; t=1733762896;\r\n h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe-Post:List-Unsubscribe;\r\n bh=8tBudKAUGIw+E9RL4UuIKXxuMgRlJ8xbHLEELuS9ByM=;\r\n b=DuBMquq9/6Iq/JOxXxfps4l5Hsv+L5+71pb49IwOuLT1Qv+Nlh7hJmLEeP2njtIX\r\n OeoOfinmlyl3MJ/v67BE6sci+hNVQzSnB8NKsCVYnB/Y/CIhD9qWRUBl5+qan7w5Xr4\r\n VfEvbcJYDe0QdpDxqS9RwTgTT86lWcJBDqE5V293V9Boa/+p1Fai3zoX1ao1PZPig8b\r\n m4p7MvjMsMgmnbVvY/RJNuneKexj4eaZeiAtGjTMeYGOda5QHDD0/DUEng6yqS8RADb\r\n v9oLsvDm6NeIId9dTljMdExzFS4FwCeAM/SSFyf1HxgfOLyiPztNqujGOl7OtPsXbcD rKbdFZ+hkQ==\r\nDkim-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;\r\n s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1733762896;\r\n h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe-Post:List-Unsubscribe:Feedback-ID;\r\n bh=8tBudKAUGIw+E9RL4UuIKXxuMgRlJ8xbHLEELuS9ByM=;\r\n b=sqoVK7dh3qHHhrRJ5XuDSZR2LryfBakAWLILYOZB012oiuj7Y0vW9QuAM62dr9QC\r\n 3CqxQK5Mnj3SS66emgxbgkeHCo7VtX5u/lUHAB5MvTQ+FTGJp+OXD1YJBUUUzYMWvfn\r\n HnhhE22EDIu214l4apu5ekffxdFfsm7Ucy4zeL5Q=\r\nMessage-Id: \u003c01000193ac524fcf-88e03256-5bc6-498b-8693-63cf739fc034-000000@email.amazonses.com\u003e\r\nDate: Mon, 09 Dec 2024 16:48:15 +0000\r\nSubject: Free Custom Website + $1,000 Tech Dollars for Your Business\r\nFrom: Rohit Gupta \u003crohit@itniche.world\u003e\r\nReply-To: rohit@itniche.world\r\nTo: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Acelle-Subscriber-Id: 74200\r\nX-Acelle-Sending-Server-Id: 67569be6ee22d\r\nX-Acelle-Message-Id: 1733762895926393.67571f4f8af2e@proton.me\r\nX-Acelle-Customer-Id: 6721bd005beb3\r\nX-Acelle-Campaign-Id: 67569be6ee22d\r\nPrecedence: bulk\r\nList-Unsubscribe-Post: List-Unsubscribe=One-Click\r\nList-Unsubscribe: \u003chttps://emailer.mindrops.com/c/74200/unsubscribe/MTczMzc2Mjg5NTkyNjM5My42NzU3MWY0ZjhhZjJlQHByb3Rvbi5tZQ\u003e\r\nFeedback-Id: ::1.us-east-1.HcDExfPdhqEx4TGJQuMj/mIf64ngXQ/Lg2qlhPNV41Q=:AmazonSES\r\nX-Ses-Outgoing: 2024.12.09-54.240.48.115\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjPFJUT9UUO9USyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0yi0ONwCiPJFUFRz8IiUFsjAOIBlSfR0TFUFJlDREPElVTIi6iwCMlUiMQ\r\n uOjsTkMI9lk1JWZ1Zp9Zvbm7jpIIBlSiQ0TnOis1haWf2VZbFmt6ISZmIzhFjdGm19aa5Wl1R3Xmbk\r\n VB1X3wzIXMQjwzETNiIiwNfaXwW1abJ3005WYjIwoJtLCsWlYXNzwt9lc2blRI6bChm1IaxW0ucWY2\r\n Yt9luYmfWRZZlmu1RXZmbkVIwLjwjQMMIjxrNmLHciQJtLCsWlYXNzww9lcmci9owIjtCJLYlWshN2\r\n XGdnVJ5b3v21XZVGsiojIWbpFNhbGjC5db12il5WaFZm95laWuHVdZQWuyAjMDNyAEuMjw2tYdICsh\r\n 1mIWafxF0Y2vWdZclnftFmbSZ6IBSIlP01TVlEPiMlTCLtJlsYWh2NXdVGn5J3b3XyBIib2ujAONQT\r\n x0QTNTOzcUwODwjUMMwiiz9FcGctFowIjzjALNET02MDMTO4AQ1Nz2zYNLJCyf5WdmbtFI6ZSlm5Id\r\n 1yzk5WZXZiI19fXzCJLclmkiojIjN1cFmNzkTNNNFWliVGZTM4cRkMj4zgYI1n9\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

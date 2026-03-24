@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "1YWt-AJtqa2yVVYIxQwAVp6mGmEJ0Sy3Ul2MbmDqPGneG6fCYG5sZky0Z-tejHguKe2hPKh8w-O4hJUH6saK-w==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "2ffd01dc7f26$a32b21f0$e98165d0$@lexxsolution.com",
+    "Subject": "Re: Harry Jones",
+    "Sender": {
+      "Name": "Harry Jones",
+      "Address": "harry@lexxsolution.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Harry Jones",
+        "Address": "harry@lexxsolution.com"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1767715687,
+    "Size": 1479,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003charry@lexxsolution.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=lexxsolution.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=lexxsolution.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=lexxsolution.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.210.193\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=lexxsolution.com header.i=@lexxsolution.com header.b=\"hTXW9xwD\"\r\nReceived: from mail-pf1-f193.google.com (mail-pf1-f193.google.com [209.85.210.193])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin047.protonmail.ch (Postfix) with ESMTPS id\r\n 4dlx0R2fJ3z3C for \u003cidontneedawebsite@proton.me\u003e; Tue,\r\n  6 Jan 2026 16:08:07 +0000 (UTC)\r\nReceived: by mail-pf1-f193.google.com with SMTP id d2e1a72fcca58-7f89d0b37f0so1374761b3a.0\r\n        for \u003cidontneedawebsite@proton.me\u003e; Tue, 06 Jan 2026 08:08:07 -0800 (PST)\r\nReceived: from admibcnPC ([2405:201:4019:19a:f9dc:981f:8587:6d75])\r\n        by smtp.gmail.com with ESMTPSA id\r\n 41be03b00d2f7-c4cbfc2f475sm2723234a12.8.2026.01.06.08.08.04\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Tue, 06 Jan 2026 08:08:04 -0800 (PST)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=lexxsolution.com; s=google; t=1767715685; x=1768320485; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=O+iNUqwNuKygRlP5/BYUpf26eRRixZ/AdHdpVVBJ20w=;\r\n        b=hTXW9xwDJ5FJU9CwasfWRbHVyWGSwt9k/dnWIAmGOqpaSygP1iOAHyk3571drgCMRS\r\n         qW57WlvhRcCWIvKoQMSmdqoB+SzHtFrMTzyhZ4aexeQVZ2SHKnwiyAJ7FDdZXudxurwW\r\n         bLdOrGGSnp4nas0ahcyGNKdD0/gc7kv6SpLCm+80YeIbPcMDFBLtBKenBDNBWKPdphj5\r\n         fbIJ0QK287deMn9pQt27cZPAlawWxBiN7HQOVUSQvDcdkf+kEEzYW/sFT9loZbv+/6nK\r\n         YC1R5IIAL3QA1iFqiLTmKdxHafKqReJ40RxXiPZVjABsGD14yRgJKVHItz23qYnsFl5n\r\n         5UHQ==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1767715685; x=1768320485;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-gg:x-gm-message-state:from:to:cc:subject:date\r\n         :message-id:reply-to;\r\n        bh=O+iNUqwNuKygRlP5/BYUpf26eRRixZ/AdHdpVVBJ20w=;\r\n        b=OI2ZJQpJDgtwRb0bwvV11ohpLbG53ooXqvUPMnETm1BXrG5GbUVdOSmNjx7NooVW0P\r\n         WcKFr0D7ujS+6MqhyScwo4xercjykfAlEfsMYS9bH4ZTzI9CI8a7GzTpKtdNjOksUK/K\r\n         IV4eOgC2bJND1sVEuUTNIySoFJx55gT+mF1V5hK7InqLVPYi5IsUIy1MF9bwP9Yd3KJj\r\n         mEniLEVVHAr1OvKFpR//7Q/J1lZFhV79xIk4UQawK5n+39Q0GO50m0VdE6ciicCrl3up\r\n         EWuDtXhQCRRe/jgiRmwnVnpx5+EKSs6A4B0za1xx2J6sHc/KBKKRGQy9azq+tYaBDSnw\r\n         94AQ==\r\nX-Gm-Message-State: AOJu0Ywnn+gmXm5xbxpu1SUpICIYmRFFsTkFz1r/iyStles7IXQzxEto\r\n 4LxW3JO9tPcWj5TnU4GZhZzYriUXuzntpR8vqv6ywpaPDEgGlv0b/2eshTT9S6zWNHx4mETQNDb E8h82EzM=\r\nX-Gm-Gg: AY/fxX6HIg1/7CV1bI9/BVB59gfVF9ZDtrDH5WXQJ51nBjkwqFwLKSp+3t/l4NbyERN\r\n 3E6lWAzytCUfJ8LWDUcx8sJStGXmAKwubP/OBXHTBe9eUsbHGJ38HI2h49RTZLaD7aS86vuFJnZ\r\n ZxRBcOw8cSVS/CH9qi6qGEOQlOOW6UIpiBLS/wroY/EeLEid1Irm4zGytJ5YCOb1zWJkIfuKYQP\r\n i588zIQNOTqbFf+x7Y079rGfvxBJzG9BE5yIZ2yFtdufjFKQhrNvKQbceZ6JUaUMrO1Y5geZIEJ\r\n 6epFeGTNQcWsGdPoshpaJgmKZ2R4CiyReIGeiK26/9mGwb/R+unWR/raiUdaCSzfMXYmmApiti7\r\n 2Z8WEUgoarKsfE8mWtEy6un6yG+28bPZOlDsfU6HDsQI8QWvk66pxb+Efy7/RrrT4RmpYys8S39\r\n AVJjxGdDAu6Fx5zV1DeEFJxJDhsvoCBxXn1g==\r\nX-Google-Smtp-Source: AGHT+IHfFzS4anTgN+KdkfH0mc+P1klqmxHmXwL0PnM5w7v9DXDUBasSAcxtOo4AQVE58YowDUIT9Q==\r\nX-Received: by 2002:a05:6300:505:20b0:368:9449:8364 with SMTP id\r\n adf61e73a8af0-38982a7bdecmr2251217637.9.1767715685447;\r\n        Tue, 06 Jan 2026 08:08:05 -0800 (PST)\r\nFrom: \"Harry Jones\" \u003charry@lexxsolution.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: Re: Harry Jones\r\nDate: Tue, 06 Jan 2026 21:24:36 +0530\r\nMessage-Id: \u003c2ffd01dc7f26$a32b21f0$e98165d0$@lexxsolution.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: Adx/Gp/BbsY2fxyYR4CY+f2P72PM5Q==\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJQOiTVJRT50BsICTmIs1NjX\r\n 3l3JbIpj7SBlI0TiQIxOjQCJLU9kESB1XURJRRJQ1i04TOEjsTJlIjIzoQ5LjfCJLZVGifdWdWam5I\r\n 6byQyJeU9kE7pjImItldlYWh25XbUWioJiO3chRtfY2umlZZ9V0l5WdFZw98ydV1DIMMATzsICMmIh\r\n 1xfaWy3BMX12vsVGZjIioFpbWwDNbc0ityAjMTN5AIuMTiHQcLJCtslWYzXwN9wclim9cIojwwAjLD\r\n N2Ak5Nz3TcONQj14cjMCLtJlsYWh2NXdVGn5J3b2Xv1VsZGijoIbFWphNGbCdt0AyMj5TANMITuiQH\r\n cCLtJlsYWh2NXdVGn5J3b2Xh5UibWQiJORJVTB50TCTsI1hImfWxaYF20vdWZncflJvcH6iIYM4C1w\r\n gTMjN5AIyODzjcMMUj0wJCL3XwN0iYWujAOOYTw3EDOzM3MM2MDyTMMOwCiz9FcGctFJhX2i2UcOAj\r\n uwYTODO3EM3Mz2DMMMMTyiwCOFcz9l0d2f2hYd9GfphGc2cphcibmujAOMQD40MTOTOykAyNDxzkNO\r\n gTs1JnIlbu91lYWijoIYxWslZWLXY1RVzcm1XBLXN33jRXaCa9J0sfXynNIaQWi2IiOTOkVM2MzizV\r\n NNNGilNzMmN4YM0NWiTkOfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

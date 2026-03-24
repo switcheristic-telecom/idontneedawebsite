@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Z0sflcTybDzbXHznb8or-Y6MjBNhKqWHBztoeL4in-C-29q-Lm0ahtLU46v_OshVwbLlvLYorbMU2hQeQ2mWGA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "f660e3259d23e68e5a9720fa5cb51b0b@nawa.switlates.co.in",
+    "Subject": "Complete Business Solution",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 335544321,
+    "Time": 1729842843,
+    "Size": 2792,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce2@disproded.in\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.grpatmatic.online (mail.grpatmatic.online [198.91.88.5]) by\r\n mailin051.protonmail.ch (Postfix) with ESMTP id 4XZbGZ4rvjz3C for\r\n \u003cidontneedawebsite@proton.me\u003e; Fri, 25 Oct 2024 08:16:38 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=none smtp.mailfrom=disproded.in\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=198.91.88.5\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: Complete Business Solution\r\nMessage-Id: \u003cf660e3259d23e68e5a9720fa5cb51b0b@nawa.switlates.co.in\u003e\r\nDate: Fri, 25 Oct 2024 07:54:03 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 1026\r\nList-Unsubscribe: \u003chttps://nawa.switlates.co.in/unsubscribe.php?M=10069127\u0026C=481c6cee9fc8db20696da938b1415b36\u0026L=1026\u0026N=1218\u003e\r\nX-Mailer-Recptid: 10069127\r\nX-Mailer-Sid: 1218\r\nX-Mailer-Sent-By: 40\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: nawa\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJQOiNk9UTR1JT50TiIiwxfb\r\n Wv2NccUmiisnOFUPJI6RCsjQMIBlSfR0T1MSBowIjwjALMED25kTNTO5kk4Nz3TIONUD2QJCLkUE9B\r\n SX1JURRQR1Ji40TjOsEJTIlxjoIM4CyiwSO2XlRVnYnu2lXZ8miisnOFUPJI6RCpyJebFWnu9VZWYl\r\n 1oiIj0HNaYNWrpZ2XmbfVVudHfWRZcVHfyAjMDN1AMiMTpCJLc91pvBXbnchRQibnsjAOI1mhfxWa3\r\n MyB1vX2sGVZIojipFWbHbhR5jZyi21ba5Wlm9FZWal5VudHuWQZMAjyyADNjMuEtwY2sCIdI1mhfxW\r\n a3MyBByX3i2IbOAjuwADMTM1Yk5OT3TkOOgT50cjMTNsY1hImfWxaYF20vdWZncfl9kbWiWwZOJits\r\n lWY2Y0FNvLmpWJbbVmkpZ2Xmb0V5ldWyC4ZMID0yIDMSMj5B0a3iiwIbFWpj9FbXYlR9yZ2uV9eY1W\r\n liojIFUPJ9UTUOU9SUIysh1mIWafxF0Y2vWdZclnfvJHciY6I43MCxTUOMIDwyADMzM1YEyMTwCJLX\r\n N3wi0WYjOuAkyOTzDgMMkTxxcDOjNzQwiMSzF9ccFGthJ2X2ciUAuOjyTkOMgDzxkTMDOxcQzNjiSw\r\n Mc9Fz0l2d2Yfh9fdGiW5abg3iuAjOzM5YMxOD0jMMMEj2wkjNDMsYBfInp3dcdNGovR3X3XoBNoaXn\r\n W5aIojwzQjLTNxIg0NDyzMNNIj3scDOnIfBdpc3oGNdXR3vwN3XWYi0AuOj0jEMOET24EzMjN1UE0M\r\n DsDQMIJn1u9lbWYl1oiIjsWxYLZWl1RXYmczVB1LX33NXaRXj9JCaXfs0NyIniWQaOIi2iFzNTNlNR\r\n hN2lWRMOQG3xQWY2NwUYiYmfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

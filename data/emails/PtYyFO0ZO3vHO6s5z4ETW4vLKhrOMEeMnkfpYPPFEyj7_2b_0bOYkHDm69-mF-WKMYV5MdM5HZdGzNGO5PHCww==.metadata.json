@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "PtYyFO0ZO3vHO6s5z4ETW4vLKhrOMEeMnkfpYPPFEyj7_2b_0bOYkHDm69-mF-WKMYV5MdM5HZdGzNGO5PHCww==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "25"
+    ],
+    "ExternalID": "00d201dc735a$0f1f9090$2d5eb1b0$@att.net",
+    "Subject": "New APP TOOLS - 2025",
+    "Sender": {
+      "Name": "",
+      "Address": "BookerCastillo675@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "BookerCastillo675@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "BookerCastillo675@att.net"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1766418360,
+    "Size": 1170,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cBookerCastillo675@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=98.137.69.33\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"D4VglCwC\"\r\nReceived: from sonic316-9.consmr.mail.gq1.yahoo.com (sonic316-9.consmr.mail.gq1.yahoo.com\r\n [98.137.69.33]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinosl105.protonmail.ch (Postfix) with ESMTPS id\r\n 4dZjCr65hmz7Z for \u003cidontneedawebsite@proton.me\u003e; Mon, 22 Dec 2025 15:46:00 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic316.consmr.mail.gq1.yahoo.com with\r\n HTTP; Mon, 22 Dec 2025 15:45:59 +0000\r\nReceived: by hermes--production-sg3-859ccbd486-qppdt (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID dab6554307b4cc456bc756e7f3f8653d;\r\n          Mon, 22 Dec 2025 15:45:55 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1766418359;\r\n bh=RHad4DeVOctPzhTRCS3OwhzlqhpvVv+HJ99lmYMYjzE=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=D4VglCwCHe6W1OgAfugruucKrByhkhLX/WaskiSy/78aViWqAGuAhiowzb7rwhHpa35km9ZlMDsIB5FWrZx1lJ4uVujV6YN7ba5GVBff86Jf16u1wrIykcJ3GXAZJYLTVYjUPqk8eN9eejdUxY9cNmVwvQVSqSAUUdsZnRNtVxQ=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1766418359; bh=5jSLtmvTvLn4nKNmeF2nPlJk55Ad/5wJO/0jG4UXuvm=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=dTbG5L9Ryn+C7eLy7KGTWr+g40Uf5IhFPVUdhJj3Jat6+M3n8mbxiZFI1hN3fbU9acUWsYek6NvRqZmebe4nOmD61oMEV8lEBwjw8o5n1t0IhKbx9+rTLBjLm5/pajKY5Oy0uSv3obdkeSSy2Igu5yCZxlllp4rpELp3nmlc/DFue8q2fEk+Uw+Mb5AOH+pyhGQJVcDvBFm1zkSSZlcpmr6UTWhzprlrUOFiTliMaiSlfDzOy4yix7zi7io5nQQ2fImi9ZEwt4Sg3pCtx3g23oM+ji1ba2xVEqOKVJtpDqtP8JcLIEwpAN9Ofh7EFHC6firpPo+qzY0Biv8N7+zKNA==\r\nX-Ymail-Osg: QrT5PAwVM1n_I46lX.Z8DEWgM_lb42Idct.w36Cm1sh_71D2kOk9dbEaxO8N5Ua\r\n 1_AT9LquIO3SLLU9SMPy52voewScP0EO7lZrM3hDCjTkMURFYM6xAhOwGv2nFWFp9tkAfbOFUT22\r\n qiAnyVXcVU_gk3iWaV1O1AVtLivUs.8TMvdqqfbaqlftgrRhswxUFZGCKhHh5YgQcdsKmEN80jyo\r\n xwn90W21NyXdfkTV0tF4UwJjUtcd8rj195y.z6As8cMGE8iGwuIqS99a2zkOEjsFpe5SLZP1ojYA\r\n pCQBPG9lFX6_xvKnLeJ585e2kCvREapPq8qtdg3AWj8fmqFZDhZgcrSkS5vHI_x9xU6KrFdtcQ2z\r\n mxuhXc.hUy3Z6gWevANBV_XPE0O_MK7aqmz7VQ9CuvAxoxFEArwlT5elc7KoK3OpiU0ZJBX8yYOF\r\n zAAaBu3SiO5MYEZVVzNuFDp4_IInl.tNYWSXGfUaadTuZgTH.6mC5KRsp_E8NxA0PcOZCW2Htcxz\r\n 4rKDAtPNrgXtk_L_z.RcikKoO2Sq8ySvf6DHKsB0dLJYne6cbvbeuyCQ72dHGoA8lnJH9QTJ8Q9P\r\n B1iduTOJEPvxp_tg8di4knVzxlDB_3ywPQMGYurutnf9SPi0sGk9ICa90klTYVy4I9xIK4Dx75ul\r\n bHBlNGO.QvG9MQYsWdytS6OniksvuRhznYsTyGA8I8Rcnt1WE.2oEQke4N5kxir4G60IUma5ssBA\r\n LdPbST5MP.oIbVUhcLuQow2wpZg8qI461peyMt_mQMah8mSYPqsxUctv_aTdCvb8sYVB1l1ulw5Z\r\n Lhw4aP4kGKOmTwDNVHWirm7YSdAFfVY.k22mYBXWDSweIRgHTml134J6HmmDUySyoisBPaIE94Oi\r\n cKSgmdSkf8WwLqtFpCYcdAtEdo7tr92g3RmeGiNBoh6wqXl_5tSAbSeM6UrPovMM79DXLxEg5pfD\r\n 82VCB2LcpgJqqSEWg5zqvABYc73thgBzoDgy4BM_joMJTLzCOorQL52l_e00zLzt1usrTtybMVGF\r\n V_enkp7sEzGMgBF4Rk0UJY9_Kz2P5i2Da4DwbxkXrJrXicA4g1bnTGt6Sd4pHaCVKWuSIptiGYJ_\r\n 8oeA4ovDA448yeFmN4vICBzobz0Zo_3hhBX64y9AcGGGUI97a500v1cskWbMvqk4sURkf_VeZTzh\r\n _nJef3Mm5O2Yuc_2mYmS27qrTxtWoUT4pKVitQmqc1Rq7KTzf_leyOHHauSeEkDkkyiMhheO8rou\r\n LLsOH9Yn6RjpVRSuhxRyvcXn8KAhO0ql_cOH._.QSTjUSyM2O4habsFf4fVcU1Pjy9Szdn9YVqLQ\r\n VTzEPlVGzrPjIqg7u.C7KIg3r_2R49vR3h1ltIUV6saDZ_RZAxsAWvirzLaCDu5tSaaARMpYyl1_\r\n z.Nl7Rr.g3is_2W9yszJqVlEcNQIdTtVuCnzVPZuBH_3T0MbP462YJfvndcr198ihqJK.R0GlPwa\r\n G8uTRcAFS06cX17fJ0yFAe4qxJAaES6vkqUwcNcbG3DkE8YZfxbeBlv4kLiPNFb9XkwvWY5Gvs4X\r\n E2td5nzV5L3a21eQqIvOQOL3awpka6UoxoahVaysCXMucywJcXjyvK1Cbed513ndOu4vFl8x2srC\r\n xcYLYlYbmZhJ7kTXRdWqxp5n73yg_e9knjNC7xcKxCgV82_XNvjQZS0Zc6Etpq9JJAnedayYf\r\nX-Sonic-Mf: \u003cBookerCastillo675@att.net\u003e\r\nX-Sonic-Id: e7024ee2-1610-4c5c-a675-080ac4fd1b3a\r\nFrom: \u003cBookerCastillo675@att.net\u003e\r\nTo: \u003cBookerCastillo675@att.net\u003e\r\nReferences: \u003c00d201dc735a$0f1f9090$2d5eb1b0$.ref@att.net\u003e\r\nSubject: New APP TOOLS - 2025\r\nDate: Mon, 22 Dec 2025 21:15:29 +0530\r\nMessage-Id: \u003c00d201dc735a$0f1f9090$2d5eb1b0$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: AdxzWeKuaDPYw5mZQxW0pl4KmP2ZzAAABYKg\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJEOiBUZRVxUUiwiIWbfxNvc\r\n 2imUcOsniPJFUCR6IQsMjSlBITR0fFJFUERDllPVE6iITMwSiiMlUiOw0kyLjfCJLZVGifdWdWam5I\r\n 6byQyJeU9kE7pjImItldlYWh25XbUWioJiO3chRtfY2umlZZ9V0l5WdFZw98ydV1DIMMATzsICMmIh\r\n 1xfaWy3BMX12vsVGZjIioFpbWwDNbc0ityAjMTN5AIuMTiHQcLJCtslWYzXwN9wclim9cIojwwAjLD\r\n NwEk5NDyTgONMT15MDOSMiwFpbWjF9bYRXly92ZVet9Rlb26CIbI1mhjxWaXYtQIwLTwjUMOETy0Bn\r\n LiIiwFpbWjF9bYRXly92ZVeu91lYWijoIRVEGMVVQCVsI1hImfWxaYF20vdWZncflJvcH6iIYM4Czy\r\n gzMTM5YAyOT0zIMNcj2iwSNFcz9FtcGwjoILkj5wMTMjM1IgxMT5TcNNkTsfBnI3chB9ibVlXNYIoj\r\n w5kjLTMwMI1MjxTgMNcT5skTNnIfBdpc3oGNdXR3voB3XXaoN5naWwjoILAjwyQDODOzAAyOT0TIOM\r\n YDwiwCOncuV5hX2iWUbOJi3jRXYGapxQtc3u2VcZVGy1BXL3X3NRjaX9CJaf0XsyNnIWaiQI2Oi5TQ\r\n ONdjiiZWOTNyIdmZjlWJMZEj5iADNfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

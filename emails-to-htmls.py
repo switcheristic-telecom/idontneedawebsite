@@ -41,7 +41,7 @@ def main():
 
     # filter so that only emails with both html and metadata are included
     EMAIL_METADATA_DICT = {
-        k: v for k, v in EMAIL_METADATA_DICT.items() if "html" in v and "metadata" in v
+        k: v for k, v in EMAIL_METADATA_DICT.items() if v.get("html") and "metadata" in v
     }
 
     # create the output directory if it does not exist

@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "hTQ9qdVQJ5GdrYn9I1BZtlZKZv0ESqZmgdzDugafGklehrepnEMWAsO_Nl6i-S-ar5xrfLUaf0ge5B7vYlatMQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "CAMZviCKFkOf4OLjwHZWqpGWdp1S0GrYJsXxm79xfHtBQNCxVvQ@mail.gmail.com",
+    "Subject": "Quick Update on Our Services from Quantumcare.net",
+    "Sender": {
+      "Name": "Kimberly P Hall",
+      "Address": "kimberlyphall0@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Kimberly P Hall",
+        "Address": "kimberlyphall0@gmail.com"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1764151085,
+    "Size": 934,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003ckimberlyphall0@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.160.193\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"WjBS4qP6\"\r\nReceived: from mail-qt1-f193.google.com (mail-qt1-f193.google.com [209.85.160.193])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin051.protonmail.ch (Postfix) with ESMTPS id\r\n 4dGZkP1dVDz3Y for \u003cidontneedawebsite@proton.me\u003e; Wed, 26 Nov 2025 09:58:05 +0000 (UTC)\r\nReceived: by mail-qt1-f193.google.com with SMTP id d75a77b69052e-4ee158187aaso63721111cf.0\r\n        for \u003cidontneedawebsite@proton.me\u003e; Wed, 26 Nov 2025 01:58:05 -0800 (PST)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1764151084; x=1764755884; darn=proton.me;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=kc+LMmv60PaYfBbbyDlXd71N7CI6ubrc6iNej3H1qiI=;\r\n        b=WjBS4qP6ELXFES0FEO+yd1VibN76shkyzYmupC/5G430s+GYJJLqBIkuyHF4Puxcxp\r\n         GFldhsNfbe4W5RvQH5N8t8GudvD4tUXS1hFx3V+ksrjbA99B7WjuQgDLPnfu21LeQWu7\r\n         m1ANjDOI3qGjsb9cRdp+GVbFxzzDkUjQpvc3aP5SyJhYByn+Id3QY2Q0XpS73/pkBwKa\r\n         /9R3aOZiTy1deVb/Wn/2MMXTAvPb/8C/TW5kOLXewQaocE6FzurhYww4BANcdc+MfDKR\r\n         nL3S8+4q7St0s5fwL0Lj29QyTSZ5fy1NwS/kWMmVfcGPYCPdVNroq18GjwdXS9nggLr4\r\n         fG6g==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1764151084; x=1764755884;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-gg\r\n         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=kc+LMmv60PaYfBbbyDlXd71N7CI6ubrc6iNej3H1qiI=;\r\n        b=uuiP1ocoygnGmHMopSRi0PC2Kb416a49WEqJqWYNi9ZbkheTpRC7IPAh3ilXSOUobs\r\n         UIL/psDIDg1+20VHVlPnyklWPl8T/KDcQNoCk5VltFGw/at0woQ3N8Lz4Wet3M7ZU5oz\r\n         QmdhlQ+6aFQCVV63eSK41o9YzhLf3HLkoYfJIrMFAUbxeItrdb/2SKGLPFCvXirkRoIa\r\n         RHyskk6inolMoYIWg5YI0H1VY4qpf16028GqtKeU5JPU+/yhn0tTtgN5fB9Iji0lBITv\r\n         FbPWwJWYSfqbEE+m86yRaP2Vj86Zph2acFmNwQdoV2hAUaMMHjioSdAwR8QB1bOlLUx5\r\n         bjPA==\r\nX-Gm-Message-State: AOJu0Ywc1PRwDISRDLYdrHqAu3yGGnuuiqa70FcwyCDBZLulvRjZgcXk\r\n +4Fv/tzmA/ekwy7ukdGTX/96L0YSkvpSh9elWjbGivS2rbNyJ/auDwb3DQl2NXJR9ak2teVb9lS\r\n CwJnUHWcMJnrKoAyrARGGLF1VmgOifd87juZcZCg=\r\nX-Gm-Gg: ASbGncs9pbxzill4KBv//u9op/OrpTzhl2s9zf9dM0J7zzEjWLX0UqQ7ByLq0chowCE\r\n tS+9dGpQkNHVEHpIvFop/xlsQIaAXNF9/lcHrzvGsO1q4kuAwroXGaRYpBiJIdmBFjgwUB35Hh+\r\n NCwWtqHhHfOPPqPaMTmAVRdphjgOi3TV3KYg411xmRWhkL1CyLE6irU8c5yKw/GPTkaagCWtNLN\r\n 1uhC0s5ccu4vuTfb01yog5G0zxBv+T7dT0SGW0FYs6Dq0opUKMsxK27s8LpyJMbT2AhtIkVoLGs\r\n BZy2SdTvsRcrrnUpNIhr6R5/kf1pAF4HLlUufHDhYtfw93ygllyDO0Dt/TJo1nCEQw==\r\nX-Google-Smtp-Source: AGHT+IHZ+p+21u/SnoUYL1D1tmBFw36lNZNfGMOOVv3xtAEltU0ZJf49ye1VNTNlMu9d3H84dmK9IRG52ZIfKeTGsEo=\r\nX-Received: by 2002:a05:622a:490:b0:4ec:f2e1:483 with SMTP id\r\n d75a77b69052e-4ee5885307bmr242768121cf.26.1764151084102; Wed, 26 Nov 2025 01:58:04 -0800\r\n (PST)\r\nMime-Version: 1.0\r\nFrom: Kimberly P Hall \u003ckimberlyphall0@gmail.com\u003e\r\nDate: Wed, 26 Nov 2025 14:57:50 +0500\r\nX-Gm-Features: AWmQ_bmfmADD79RR-hcClBrF7EHgP6U0eKX92T7YeKSB0yWDHzEcuyLjuoNlO98\r\nMessage-Id: \u003cCAMZviCKFkOf4OLjwHZWqpGWdp1S0GrYJsXxm79xfHtBQNCxVvQ@mail.gmail.com\u003e\r\nSubject: Quick Update on Our Services from Quantumcare.net\r\nTo: idontneedawebsite@proton.me\r\nContent-Type: text/html\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJCOiJVNVTVkTsIyUmIs1NjX\r\n 3l3JbIpj7SBlI0TiQI0OjQCJLU9kESB1XURJRRJQ1i04TOEjsTJlIjItowiNCl2RXYVnnul2XmZi8s\r\n iOnPFJURIC6pJyeWbnF9uZVlW1YIoji0NHaWYrNZpX2fmVbdVHufRWZHcfVAyMjwTENMAzitJCLWYs\r\n lNwXztl9cbR2l6ICbmIh1wzaWtHIcLITwwUjMTOyEB0LniiwIbFWpz8FbHcfJJvcH6iIYM4Cw4MDMj\r\n NwUAwMDzTMONUT3sUzNmIh1xfaW02FYZdWvflncWbk9wiZWtiJOYlWs0F2YSLy0I1MDxDkMM5iwsIC\r\n dmIh1xfaW02FYZdWvflncmbtFI6ZSVkJIUl0OTNVRiIiwFpbWjF9bYRXly92ZVew99icmwjoILcjx1\r\n IDNDNyAY0MT5DUNMMjsfBnI3chBI6bS5C4MOUT20YTMzMwYQ2MD3zgMLJCwwN3XWYf1FzYm6SIZM4C\r\n 52UTOTM0YYwMz2DQMMgz3wJCL3X3NRjaX0F9ab91wzlGaGaulI6ZyzC4MMAj2wIDODN3gc2OT0DcML\r\n JCyf5WdmbtFI6ZShndIdNGozlGbCdz15kZWtXIZcVHfpd3cGdoN19IniSwfcJ3p6ICZjI5YZjMjljJ\r\n ZZFThhVTYzNkdJiMG1jcZYJi9fQ==\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

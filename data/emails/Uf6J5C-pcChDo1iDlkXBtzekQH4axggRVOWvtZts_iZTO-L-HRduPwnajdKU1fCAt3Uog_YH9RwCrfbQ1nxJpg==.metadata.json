@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Uf6J5C-pcChDo1iDlkXBtzekQH4axggRVOWvtZts_iZTO-L-HRduPwnajdKU1fCAt3Uog_YH9RwCrfbQ1nxJpg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "E1sPCkt-0000000BnSk-1YlU@mocha.prioritywebs.com",
+    "Subject": "idontneedawebsite.com",
+    "Sender": {
+      "Name": "",
+      "Address": "domains@dnupgrade.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "domains@dnupgrade.com"
+      }
+    ],
+    "Flags": 1,
+    "Time": 1720062211,
+    "Size": 391,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/plain",
+    "Headers": "Return-Path: \u003ccromestu@mocha.prioritywebs.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mocha.prioritywebs.com (mocha.prioritywebs.com [208.116.56.2]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin044.protonmail.ch (Postfix) with ESMTPS id\r\n 4WF1gS59Fmz3Q for \u003cidontneedawebsite@proton.me\u003e; Thu,\r\n  4 Jul 2024 03:03:32 +0000 (UTC)\r\nReceived: from cromestu by mocha.prioritywebs.com with local (Exim 4.97.1) (envelope-from\r\n \u003ccromestu@mocha.prioritywebs.com\u003e) id 1sPCkt-0000000BnSk-1YlU for\r\n idontneedawebsite@proton.me; Wed, 03 Jul 2024 23:03:31 -0400\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=dnupgrade.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=mocha.prioritywebs.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=208.116.56.2\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: idontneedawebsite.com\r\nX-Php-Script: 208.116.56.2/~cromestu/notifytwo.php for 172.56.101.254\r\n X-PHP-Originating-Script: 1024:notifytwo.php\r\nFrom: domains@dnupgrade.com\r\nX-Mailer: php\r\nMessage-Id: \u003cE1sPCkt-0000000BnSk-1YlU@mocha.prioritywebs.com\u003e\r\nDate: Wed, 03 Jul 2024 23:03:31 -0400\r\nX-Antiabuse: This header was added to track abuse, please include it with any abuse report\r\nX-Antiabuse: Primary Hostname - mocha.prioritywebs.com\r\nX-Antiabuse: Original Domain - proton.me\r\nX-Antiabuse: Originator/Caller UID/GID - [1024 980] / [47 12]\r\nX-Antiabuse: Sender Address Domain - mocha.prioritywebs.com\r\nX-Get-Message-Sender-Via: mocha.prioritywebs.com: authenticated_id: cromestu/only user\r\n confirmed/virtual account not confirmed\r\nX-Authenticated-Sender: mocha.prioritywebs.com: cromestu\r\nX-Source-Dir: cromestudio.com:/public_html\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjPFJUT9UUO9USyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0yi0ONwSiPJFUFRQ9VEUkUUNSS9UOwojICLSJI6Uy2C4NOwCilR2XnYnVl\r\n uX2im8ZOsniPJFUCR6IJpeynWFbZ9Vul1WYjIioN0aHrWNYXZ2pfVmbHduVRfZWfHVcMAjy1ADNTMi\r\n MJpLCp19cbBXvhRncnbiQAsOjhm1IaxWfyB3M2Xv1VsZGijoIbFWphRHbyZj51ib2lW5aZ9Fml5WaH\r\n duVQuZWyjAMNADyuEjM2YwtIsdChm1IaxWfyB3M3XyBIib2ujAOMEDy5kjNTO5kQ2OD4TENMQDsh1m\r\n IWafxF0Y2vWdZclnfk9WbWZiwJtOisWlYYF20vNmLWbpJVkbmp2ZXbVm0l5WdCZy4I0MDyDIMM5Sj0\r\n B3aiIiwFpbWjF9bYRXly92ZVeu91lYWijoIUJFPU9UTUSO9IsUyhm1IaxWf0F2YWZvdlfcnvHJcYIi\r\n 614CMjNyAc5Nz0TgONcD0ygTMCLwJNwX3iW0YOAju5ADMzMyUY0Mz3TcNMUzzwJCL3XwN1fYWzmFYZ\r\n IS6w4CMDMzkIzNT1jQNNczzsMTNnIfBdpc3oGNdXR3vul2XmY49owIj3jILMgT3wMDOjM5AMyNz2DU\r\n MLJCw3N3XXajR90aFw19balGzulGayZ6I40MCyzUMOMDy2MDNTNxYg0NTiSwNc9Fz0l2d2Yfh9fdGh\r\n 3BcbIS6y4CMDM1MQ5NTzjgMMID35QjNCLyJ5fdWtmFbZIS6sFmICbm1F0ZWlXJdc1ywz9Vd2d0lgiY\r\n 29X1fLJCzklmcjIioY4NjxjENMVDjxMDZTN3EY0MDkTVZNAzy91nI\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\nMime-Version: 1.0\r\nContent-Type: text/plain\r\n",
+    "WriterType": 0
+  }
+}

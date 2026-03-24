@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "ndMeVwby5bUtUMWMtsC-_NTiB5vb6_46wyrUXt2V9AG8zmm9tAj8UNLYrMauIoYyNAJj495-V2GTBUVBN2wDpA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "68b0fc63541aa_443c788831df@registrar-jobs-65589484b9-tjqwq.mail",
+    "Subject": "For Your Information: Upcoming Changes to Domain Name Contact Data",
+    "Sender": {
+      "Name": "Cloudflare Registrar",
+      "Address": "no-reply@notify.cloudflare.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Cloudflare Registrar",
+        "Address": "no-reply@notify.cloudflare.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1756429417,
+    "Size": 4125,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cmsprvs1=20336-sUlkmpA=bounces-265094-4@notify.cloudflare.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=notify.cloudflare.com\r\n    header.i=@notify.cloudflare.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=reject dis=none)\r\n header.from=notify.cloudflare.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=notify.cloudflare.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=192.174.87.158\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key)\r\n header.d=notify.cloudflare.com header.i=@notify.cloudflare.com header.b=\"k3VJSbQS\"\r\nReceived: from mta-87-158.sparkpostmail.com (mta-87-158.sparkpostmail.com\r\n [192.174.87.158]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))\r\n (No client certificate requested) by mailinzur103.protonmail.ch (Postfix) with ESMTPS id\r\n 4cCg4n42nwzKq for \u003cidontneedawebsite@proton.me\u003e; Fri, 29 Aug 2025 01:03:37 +0000 (UTC)\r\nReceived: from [104.23.6.165] ([104.23.6.165:29819] helo=cloudflare.com) by\r\n i-0bfd17c87a5e6b61e.mta1vsmtp.sd.prd.sparkpost (envelope-from\r\n \u003cno-reply@notify.cloudflare.com\u003e) (ecelerity 5.1.0.74589 r(msys-ecelerity:tags/5.1.0.6))\r\n with ESMTPSA (cipher=AES-256-GCM)\r\n  id 8A/30-52465-36CF0B86; Fri, 29 Aug 2025 01:03:31 +0000\r\nX-Msfbl: CY3xJe2yYPsZLL/uMLwYfA4ozCj/4iVNoJP3KkP28gg=|eyJ0ZW5hbnRfaWQiOiJ\r\n zcGMiLCJjdXN0b21lcl9pZCI6IjI2NTA5NCIsInN1YmFjY291bnRfaWQiOiI0Iiw\r\n iciI6Imlkb250bmVlZGF3ZWJzaXRlQHByb3Rvbi5tZSIsIm1lc3NhZ2VfaWQiOiI\r\n 2OGFmNjNmY2IwNjg0ZGUyMDNhOCJ9\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=notify.cloudflare.com;\r\n s=scph0619; t=1756429411; i=@notify.cloudflare.com;\r\n bh=mteoIzqrn+eRgjRU8+NUpOEFbNLFo3lnT/Ox/nXRSWU=;\r\n h=Date:From:To:Message-ID:Subject:Content-Type:List-Unsubscribe:\r\n  List-Unsubscribe-Post:From:To:Cc:Subject;\r\n b=k3VJSbQSFIeESSN9xSKE2m89Wi1uhpd2jZR04ziRBc5uhhYBv3R/2PTJolO005i29\r\n  WvIF1yaS/CXTPdsjBW9MR1XJqbf0sdcicEUF0lM7lFxDmYmOl1p2NHNwZg2ecwuTNy\r\n  SsolssSZUCPunNMP9FlX6gKWZPrvIrU2FkO9cyd4=\r\nDate: Fri, 29 Aug 2025 01:03:31 +0000\r\nFrom: Cloudflare Registrar \u003cno-reply@notify.cloudflare.com\u003e\r\nTo: idontneedawebsite@proton.me\r\nMessage-Id: \u003c68b0fc63541aa_443c788831df@registrar-jobs-65589484b9-tjqwq.mail\u003e\r\nSubject: For Your Information: Upcoming Changes to Domain Name Contact Data\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 7bit\r\nList-Unsubscribe: \u003cmailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:QyQAOK5-L-NfvjYFBUD7bzJGdZthw2FLU4QVB-26GPk~|eyAicmNwdF90byI6ICJpZG9udG5lZWRhd2Vic2l0ZUBwcm90b24ubWUiLCAidGVuYW50X2lkIjogInNwYyIsICJjdXN0b21lcl9pZCI6ICIyNjUwOTQiLCAibWVzc2FnZV9pZCI6ICI2OGFmNjNmY2IwNjg0ZGUyMDNhOCIsICJzdWJhY2NvdW50X2lkIjogIjQiIH0~\u003e,\u003chttps://unsubscribe.spmta.com/u/c_-etaZQFatvZRQBHIXzuQ~~/AAQLhhA~/Rg0gt4qjp6ofjxr6FZUcTRUDAvE2pr-IVtUJcvvHnZu5fz72yrMaVtY6K8SVYjVUUErC-7CbwA-D7dz6qV3MUg~~\u003e\r\nList-Unsubscribe-Post: List-Unsubscribe=One-Click\r\nList-Id: \u003cspc.265094.4.sparkpostmail.com\u003e\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjS1BMIwiifxWb2cvNUic\r\n minsOUJFP6ICRTL0IJQLCEk9UXB1SJRUR1QJR4iT0sjAOIJlTwojIjL5QJfLCiGVZddWfm5Wayb6IJ\r\n QeyEk9UIpj7tlmIWYld5hX2iWUbOJiohR3c2YftluZm0V9Zd5Wlw9FZVdy8I1MDzDYMMICsh1mIWaf\r\n xByM3v21XZVGsiojIWbpFNwbDti0cMAjy3ATNTMucQicHtCJLYlWswNzXlcw99icmwjoILkj5xEjNT\r\n NyAg1OD4DEONgDsh1mIWafxF0Y2vWdZclnfk9WbWZiwJtOisWlYYF20y0SLDM1IcxMDwy5NdICsh1m\r\n IWafxF0Y2vWdZclnftFmbSZ6INQIjsiIUI1mhfxWa2Y0FdvZWfnlccJHv6IiYCM54YxOTwTUMMgj4x\r\n gTNDO4QJwLCw3NXY0WiuAjODMxMY3NzwTUNOUD11cDODM1EJwLCw3NXY1WfzFmYSZ6I4wMC3zEMNcj\r\n 14ATNTN4UUwNzsTUMIBnfpd3cGdoNRvX3u2lXY9m4wojIjL0IEwOTyjcMNUj3xcDOjM2QJwLC33NXa\r\n RXj09Fa1bw9lzaGuGlaZIy6w4CMDM1EU0MzyDkMNYD1zEzNjNsIBfInp3dcdNGovR3X3XwN0iYWujA\r\n OMQD13MzMDOyUkwMD3TkNMUTs1JnIlbu91lYWijoIYxWslZWLXY1RVzcm1XBLXN33jRXaCa9J0sfXy\r\n nNIaQWi2IiOGOwIM2ZmjTRYMdDmkJTMzN1AgxZjiWUMfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\nX-Pm-List-Identifier: spc.265094.4.sparkpostmail.com@no-reply@notify.cloudflare.com\r\n",
+    "WriterType": 0
+  }
+}

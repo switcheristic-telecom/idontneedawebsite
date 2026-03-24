@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "htBXEdaPTeVbUoMpehjbhyrV4ARSBR4KSyLiXWVLr8U2BcmQeFwQTE8OMwomL7gShb8xxBUFUaHIHwwpEtToEw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "25"
+    ],
+    "ExternalID": "b09c08c70023a07240e00e903b5fe3ab@cola.accorthing.co.in",
+    "Subject": "Grow Your Business",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1766840446,
+    "Size": 2229,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce2@pedemance.co.in\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.yaxplindre.online (mail.yaxplindre.online [80.255.3.197]) by\r\n mailinosl110.protonmail.ch (Postfix) with ESMTP id 4ddjJv0rGHzK5 for\r\n \u003cidontneedawebsite@proton.me\u003e; Sat, 27 Dec 2025 13:00:46 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=pedemance.co.in\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=80.255.3.197\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: Grow Your Business\r\nMessage-Id: \u003cb09c08c70023a07240e00e903b5fe3ab@cola.accorthing.co.in\u003e\r\nDate: Sat, 27 Dec 2025 12:26:04 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 2361\r\nList-Unsubscribe: \u003chttps://cola.accorthing.co.in/unsubscribe.php?M=22374415\u0026C=7bd940ab89c22bad0938f3a2c856772b\u0026L=2361\u0026N=3354\u003e\r\nX-Mailer-Recptid: 22374415\r\nX-Mailer-Sid: 3354\r\nX-Mailer-Sent-By: 129\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: cola\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJOOiTVdRTVEUSVEVyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0yjIOLJCQE9kU1XSBRJRUJ1RQT40isEjOlITJoxIjxC4MOwSilR2XnYnVl\r\n uX2im8ZOsniPJFUCR6IJpeynWFbZ9Vul1WYjIioN0aHrWNYXZ2pfVmbHduVRfZWfHVcMAjywETNzMi\r\n AJtLCsWlYXNzwt9lc2blRI6bChm1IawWztIHcTLwIUwMjyTEOLBn0iwiIWbpF8zbFfHJccJHv6IiYC\r\n Mw4QyMD5zUNOkT5yMjNDO1MksMzhm1IaxWf0F2YWZvdlfcnkW9bZwWitJiOWYslF0Y2yS0LMID1xkD\r\n MiMw5IsdChm1IaxWf0F2YWZvdlfcntmFbZIS6F5kI1VMNRURVTVJRIwiipFWbFbj9RlYXy29Ze9Vwi\r\n 9mcjIwoc5Lj5TQOOkT41UDOTNwkIsODfnBIcB3h6ISbCM54Q2OTxzEMNEzy1YjMDM1EJwLCw3NXY1W\r\n fzFmYSZ6I45MC2TQOMEzxyEzNjM1YE1MDwCJLXN33jRXaFa099wb1zGlaalGu6IyZCMw4IyMT5zENN\r\n UDz3QjNzNyMMsNz1nJIb9lul1WYjIioxsYWlWZLYRX1zVmcXL1BN3X3jXRaaJC9s0XfnIyNQiaW2iI\r\n OORTm3gDZjZ5AU0Mm4DkZOZGlyIjZjZiUfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\nX-Pm-List-Identifier: @promotion@goigi.net\r\n",
+    "WriterType": 0
+  }
+}

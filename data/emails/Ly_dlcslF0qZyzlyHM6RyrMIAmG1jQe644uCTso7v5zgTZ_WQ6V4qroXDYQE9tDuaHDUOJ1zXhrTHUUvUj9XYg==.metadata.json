@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "Ly_dlcslF0qZyzlyHM6RyrMIAmG1jQe644uCTso7v5zgTZ_WQ6V4qroXDYQE9tDuaHDUOJ1zXhrTHUUvUj9XYg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "016d01dc553b$65ed8a90$31c89fb0$@att.net",
+    "Subject": "# APPLICATIONS Development- 2025 -26?",
+    "Sender": {
+      "Name": "",
+      "Address": "Julie423r@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "Julie423r@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "Julie423r@att.net"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1763106657,
+    "Size": 2155,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cJulie423r@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.189.85\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"I2PCezfX\"\r\nReceived: from sonic306-23.consmr.mail.ne1.yahoo.com\r\n (sonic306-23.consmr.mail.ne1.yahoo.com [66.163.189.85]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin042.protonmail.ch (Postfix) with ESMTPS id\r\n 4d78TF57Vqz3B for \u003cidontneedawebsite@proton.me\u003e; Fri, 14 Nov 2025 07:50:57 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic306.consmr.mail.ne1.yahoo.com with\r\n HTTP; Fri, 14 Nov 2025 07:50:56 +0000\r\nReceived: by hermes--production-sg3-6d95458c98-5kb7n (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID c4aa3a16e89d5178cfad7c9af72fa0b7;\r\n          Fri, 14 Nov 2025 07:50:51 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1763106656;\r\n bh=iWZgg74Ox8JN3AkvSqyPBZra1CWOJODkH5gXetNNxoI=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=I2PCezfXd5VrTwDcgGpkx7DoNrWcxkNN++BBacEZGoPMtZCLBHEijczT0jw0WpCiVDgJ6joxlCn70xp+QrkNacSw0QwqRgMBui1yujM5LqBh57rzSVUr9aqRNXgilWU5+lkAXH/hS43VCLqBhyjwCrSWjpT0dEDj8SkQDX84vSo=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1763106656; bh=FvBdd64RWHDpOmWfvv1I9QYpf0yeXbYMOb79qshmMgu=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=nozpX+JwR+HjPoQP/xnql4pdta2xIKngO+gTeiN1ut60+bFQ0krQzPW8GmlfpG9csiXEfNwbmND/Mkwg6GbQpxXuMw7Lldq/QFXrbDqua92A/T0FefW00N/TK7zMM4RGaySR+Cz73Q5jHf1/8rBR/rAkdkHWwIZsLoIvjBGaQbFZ//21SubYBFkcsyirzaBV1yOnaGGEpwgnrczyMwcxlFKuw+B3Tp+s9IXsAbQojnl7bPLCubalA+2fxP+YWg5edRA58rENW8HGqe0i/wUW5AgMthMkQVTUbqM8QC3aGCnUvbGDIAqM4VtzAJTCSadfj7/MHqcdDfvFN+/8uufSNQ==\r\nX-Ymail-Osg: GKZGt4YVM1k65bo0P0w9UEG7HaR084SUgg6gYzzfxhy9YhhFfl_EJBLqvDmg2Rd\r\n qo9O0a7t25e6KeljVbwRgAGiPGcHAhIu4C7yeXd.gELugBzV3yH_sTqXBaG5Fb6Hy3ot6k0g8oco\r\n E5TeuTDIayvIoSIHmuERdkNh64rj274DG7.ifPb1rPfl1tKg.WZdYXj6sqZZGQ2uAWamfSbyZZG0\r\n z0_UeyjvWshRU4VB2NbtRwu2hwem0hrFHFPJeaIjPnKxX2xUkNJCuAHUzJ.Fyii4XXRdCbybvMOb\r\n QVIe2VrE8ceBgrFgKhpulwLQ7xpPCKOdfiqvSDKBYypWYAsjvKtmgFVOu.w8t72tVPBcZPkzEKzh\r\n nvqaTAG1VhpGvmBeg6vNvJae_uA2I0psqErQg8olDsRONKKKHXpfVYYCxkd2igPlUZ6ivL7UqO8M\r\n .IVFaD5ilGXEAtR1845HdwkYWjAa_JqFn3Xf.j3njGzSpT5n72CKRWDuF0e2WF3ZLzi5BGkxqWF_\r\n gMQbWJPjV_HON3tT8HAdJmVg5wq4E47jmZQzW3wX1DH9Duo8BFL1v6Fdb9MOascMhP47Z38Mm4NT\r\n xYSxYwNuaxmBmUQBh3rNlMUpMPJ.rLB06BVcnIAFzBIR0RRbAhrpL6ENd4Ik.gZzZpjfIAuJTPO7\r\n be4E53Wqb3X9hZ_9aWIenRlB.7uZFnCUgJp_WkgRRxZGp.vZKl5v8z2qLU7aHNCnLrmFXzyRa9qU\r\n BZozLxzF4KXOrdFxlMaVNkPTp.zjGbyep1BZrojWPTlEWJqYkKykwLJZ5d73Aew5tfQSCjU370it\r\n tJ0stu1N8ZOtwNGAItt4WGgEzB2aZUed7bMlIeEzBMg41hmJgWyq8FK3KcocDfWIv3JOCXghbnFf\r\n fp75uM8TeSOEzKCqNGJh58PbdwKVIzrzjyjpJyFfHb2htJYub.Yzjf5l5pRxxAZvxDhiu.hSUmzK\r\n paqQWuW7A8E7dHOeOqvokW0o3FuLbJhQrxaTyQXRXZ9mMLi3SVyxp6rLHHRfIR18mf9.KlIOPNb_\r\n VkMPpqClEvZm_jSH6J.pxC_3poeuuT9aPUQY8VQuwwBYCwc70pwVA5dtRHz6mBcghbDqcimeSWgf\r\n bZLqPnsrE6ZXthY9fihe_EMEtueLnmS1TLNNkF8IWA8uhup5m6wUANdN8kDps0XpQBYx0Ol58aQZ\r\n KXlSNNfM_R_Wjtdqtvd7.zK5X.jxrnjPdgc.QuxGxl5Qt1ysnXaC2_f0xkzBjOn3hqWT0nKcH2cC\r\n SFDI8m_2N5j5B6kqCJCI9NJ4fPDQUk9UdTLJOqz8wKej2FWOOo7VWxsV.2.r.yNfv5FMPXkPTiFK\r\n xXkuNVHPSGkTILPc_P0.eCq3e8dI4tKsCuuGl4eZOclIcSisEROHoY7wUwFA0zTiREhoGooRkRJw\r\n ztkgSamBeD6mkCzqZx3I7_moxUJPKi.2buWu7tpPTbjJtgjWaJNJnrlX5zq_Xr_fYhCDu8Nrz5oZ\r\n jgkaOP8httVd8QcZKXEOhxgRDPMDusQio.r2IdvcCg.httExnlHTAIB8c1hX8L_Idnt6wy5lDGFL\r\n kHkwoNTNz_qwvLHP7Pa7xg6yl5FvcTHBB_m07diuWvV73anaCfxKnNiZ7hLDakap3n.giuSb0Sdc\r\n sBXkTGZx3KZwNPCHcA8jxkHWj60G17RnoAIMVK13_HR.zRKuE8sWVxYEzSucLOAIH6iYukGc1l0v\r\n w3yNVOP0YNEZqh5NDUxT64Ys9bvNZf9tkJ2JjMEhhdxM83W94CCeMTfzcdqVrVEtNaJfcoepAd79\r\n fuQ32oSdPy1CPR1kn3ITvs3JbF.dDOpSeZoksGeMpYS_yPHXIhq9u4bNPuelmzDUJbPvY9vsmdDZ\r\n KpEZLF8WuQ5EvWSSsgU12dNwEmpouJYS.MmnxBXVEl4WHxc6r7FL1Nb007KdKuxUQ4mwsLO0JcXG\r\n um4dFZVshbFWZbQrk6_zqbdj081mf_KFdciZg07wIvmeJ.VA9arLQGkbyXpqqe1u5zBx_nY5thCy\r\n Dwe88VaFEdU5wO1vzbZvNkHGwi.ussy1dpC312FOQ0L91aAjpNLiHT94Ew4ORl8VoxIiGeu88f5J\r\n zNYndjQRnokOGA4gMpf4SNwzhJLzCmz2GbXglOIr3SEynmn7V7WdOeOpuWWucp54rlnebmZmA8oL\r\n HzjhNWDv93jHzDUMqzZbSiYkhC192JFPMci_z0_HKi_JV.QpwjUuPfNKkaLHxCKA071jLUTc-\r\nX-Sonic-Mf: \u003cJulie423r@att.net\u003e\r\nX-Sonic-Id: 27638b71-647d-4f55-8d48-8c01c0941860\r\nFrom: \u003cJulie423r@att.net\u003e\r\nTo: \u003cJulie423r@att.net\u003e\r\nReferences: \u003c016d01dc553b$65ed8a90$31c89fb0$.ref@att.net\u003e\r\nSubject: # APPLICATIONS Development- 2025 -26?\r\nDate: Fri, 14 Nov 2025 13:20:22 +0530\r\nMessage-Id: \u003c016d01dc553b$65ed8a90$31c89fb0$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: AdxVN/WsL1Q51+OdTYCtqVJLSdQmeAAAABewAAAIYMAAAAnq0AAACPIwAAAI3tAAAAlcQAAACcoQAAAI7ZAAAAnzMAAACbzwAAARKVAAAAltgAAAColwAAAJWYAAAA9BkAAACirQAAALEtAAAAkBsAAACR1wAAAPynAAAA2rkA==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJEOiBUZRVxUUiwiIWbfxNvc\r\n 2imUcOsniPJFUCR6IMsMTSlBITR0fFJFUERDllPVE6iITMwSiiMlUiOy0Q0LjfCJLZVGifdWdWam5I\r\n 6byQyJeU9kE7pjImItldlYWh25XbUWioJiO3chRtfY2umlZZ9V0l5WdFZw98ydV1DIMMYDzsICMmIh\r\n 1xfaWy3BMX12vsVGZjIioFpbWwDNbc0ityAjMTN5AIuMTiHQcLJCtslWYzXwN9wclim9cIojwwAjLD\r\n NwIAwNzzDEMNMj3yQTNyNiwFpbWjF9bYRXly92ZVet9Rlb26CIbI1mhjxWaXYtQIwLTwjUMOETy0Bn\r\n LiIiwFpbWjF9bYRXly92ZVeu91lYWijoIRVEGMVVQCVsI1hImfWxaYF20vdWZncflJvcH6iIYM4Cz5\r\n AzNzM5QMwOT2jgMNAD3iwSNFcz9FtcGwjoILcj32czNzNzUAyOT1DMNMwyiz9FcGctFJhX2i2UcOAj\r\n u3czNzN3YM5NT0DIMMUzzwJCL3X3NRjaX0F9ab91wzlGaGaulI6ZywC4MMYz00MzMjNwIM1NTzzcMN\r\n wyiuVnc2Xh5UibW3iJOYRXjpxGa3ctQVuc2yGVZLBX13N3XXajRJ9aCsX0fINnyiQWaiO2IE2OT2GY\r\n ZMVmilFmMzYykU0NW0WQNYUmifX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

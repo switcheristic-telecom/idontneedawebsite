@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "dcN_nIT8rA2nabVaXH3-TSdDwnN_oDCqvUcd0X1Cg0G6mFqcpVJMa_VAnJz8ajRyR5KC2d2TDCQgshs8rWa5Ow==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "QVFGT18YVAJ70JY04D0YV9Y5ZM@recovery.proton.me",
+    "Subject": "Complete your security setup: Add recovery options now",
+    "Sender": {
+      "Name": "Proton",
+      "Address": "no-reply@recovery.proton.me"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Proton",
+        "Address": "no-reply@recovery.proton.me"
+      }
+    ],
+    "Flags": 29,
+    "Time": 1741178562,
+    "Size": 230062,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [
+      {
+        "ID": "4ll8T2OcuNHDD6mAwC1GHWIDExI2o4T8S6YbYiU0pP-almahWZWW4XEcrPgT_VnWgppnnls2PzmF7QrTbz2Gpg==",
+        "Name": "logos-footer.png",
+        "Size": 5283,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c5c51842fcf73f5e41462@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "ooFsFltWRK5l8uuGokSNtfL1j50l2g5QMs9bS0vK43vVzRYWdYgtyE7vRb9W5oi0CCDwuHSV0Ki1IRi_XDQREA==",
+        "Name": "link.png",
+        "Size": 2302,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c2f6914278dfdfcfc4aea@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "RD9W__MSNgYmO1Bxo0q3_BRp7u85Y3RB8SNzPLFLUAiZY-mPDnpH0A4ON0uOhneRBRLkwBsKg0c7eg-9NlZZQw==",
+        "Name": "mastodon.png",
+        "Size": 3722,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c97d1b7a0c9ccda025ec0@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "dxMqGq99MNrdLSnZ2sNYgbUOXn23ojPkzpMDCWfAmeqqnLKCHrmYV5lqDWcibNjxFOwHQxAO-Ftav_8fjXwdGg==",
+        "Name": "instagram.png",
+        "Size": 2592,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003cda099474173efdaff4c8@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "XWemOpOE-pC3PfrX9NuY2QYGS-wwQEVrubifBgQDgJ_qfsLMzIubxX7U7xrAHnk6P3yS-IoEcb0dMv4yslHZ7Q==",
+        "Name": "facebook.png",
+        "Size": 1721,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c5ae6aa18e395b94e4daf@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "0EKsiA6oUxjmrvfatGi5PNs0uzMfvyiptXx65IxNK-ugXtWmgcMv-RBu1kH3nossnYXTu56UqrSI8DknBJcclw==",
+        "Name": "linkedin.png",
+        "Size": 1927,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c25feff727c2d742833a1@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "aZP5sHU_sH8uS7Tm8XrgT1bjThX8vrxEFHvUS9RYMu7V8ILMQbSQcQgMGYjLPLLxckIQC62xMRs-YsMcyv9u3A==",
+        "Name": "reddit.png",
+        "Size": 2444,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c88b0eade30859ed4cc32@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "HoieWOTxJi5D0cTOHuO7GE7L884x0-l6BS7CmL8CmwiLv9B5boUs85vAAteSlS-Qsw7pXntwm2EbOrE-oO2NAQ==",
+        "Name": "twitter.png",
+        "Size": 2225,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c9972f7aeb3715e295e13@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "aCA1I8mJLgkgMWKVfv6YlQlF7EFFes-kjIgSaOIZwY4qlJRpBWDNBK4ZohFqTU9t_Y9DBgdRFdL-Sq9WKvwsvA==",
+        "Name": "banner-account-recovery-warning.png",
+        "Size": 142368,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003cf1c9c91863695798746b@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      },
+      {
+        "ID": "s-MMGqghXHt-DY9exWc_8Mt5ll2Y-rLEUmtq_OCXdvw3agdNgMYHT1MHoShZU71aUaE9TUkkQ4Z_ZPAECB9Waw==",
+        "Name": "logo-proton.png",
+        "Size": 3304,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c0a5b580b3e48d9f1f9d7@recovery.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdArp1kJGNpXn73ykhnXfUXJR5LDngocW6nwtcrycDUiG4wzTbTd8uqsi54jVExIz4QLuJTtXN7VKV7GRxEBHEldfdcbXVPFPI9KA34jttr/MTk",
+        "Signature": ""
+      }
+    ],
+    "MIMEType": "text/html",
+    "Headers": "To: idontneedawebsite@proton.me\r\nDate: Wed, 05 Mar 2025 12:42:42 +0000\r\nFrom: Proton \u003cno-reply@recovery.proton.me\u003e\r\nSubject: Complete your security setup: Add recovery options now\r\nX-Auto-Response-Suppress: OOF\r\nPrecedence: bulk\r\nAuto-Submitted: auto-generated\r\nMessage-Id: \u003cQVFGT18YVAJ70JY04D0YV9Y5ZM@recovery.proton.me\u003e\r\nX-Pm-Origin: internal\r\nX-Pm-Content-Encryption: end-to-end\r\nX-Pm-Spamscore: 0\r\nReceived: from mail.protonmail.ch by mail.protonmail.ch; Wed, 05 Mar 2025 12:42:47 +0000\r\nX-Original-To: idontneedawebsite@proton.me\r\nReturn-Path: \u003cno-reply@recovery.proton.me\u003e\r\nDelivered-To: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Attached: logos-footer.png\r\nX-Attached: link.png\r\nX-Attached: mastodon.png\r\nX-Attached: instagram.png\r\nX-Attached: facebook.png\r\nX-Attached: linkedin.png\r\nX-Attached: reddit.png\r\nX-Attached: twitter.png\r\nX-Attached: banner-account-recovery-warning.png\r\nX-Attached: logo-proton.png\r\n",
+    "WriterType": 0
+  }
+}

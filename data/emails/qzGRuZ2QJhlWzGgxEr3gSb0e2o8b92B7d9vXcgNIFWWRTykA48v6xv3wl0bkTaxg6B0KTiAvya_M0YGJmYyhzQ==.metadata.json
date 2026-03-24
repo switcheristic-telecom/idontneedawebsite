@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "qzGRuZ2QJhlWzGgxEr3gSb0e2o8b92B7d9vXcgNIFWWRTykA48v6xv3wl0bkTaxg6B0KTiAvya_M0YGJmYyhzQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "20250314085718.608889F35D85659B@pharma-trade.vip",
+    "Subject": "Re: Business Proposal!! ",
+    "Sender": {
+      "Name": "Saumya Contact",
+      "Address": "contacts@pharma-trade.vip"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Saumya Contact",
+        "Address": "contact0@saumya-mail.com"
+      }
+    ],
+    "Flags": 1082130433,
+    "Time": 1741967838,
+    "Size": 576,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003ccontacts@pharma-trade.vip\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=pharma-trade.vip\r\n    header.i=contacts@pharma-trade.vip header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=reject dis=none)\r\n header.from=pharma-trade.vip\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=pharma-trade.vip\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=185.209.162.234\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key)\r\n header.d=pharma-trade.vip header.i=contacts@pharma-trade.vip header.b=\"prD5L78h\"\r\nReceived: from pharma-trade.0.pharma-trade.vip (pharma-trade0.pharma-trade.vip\r\n [185.209.162.234]) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256\r\n bits)) (No client certificate requested) by mailinosl110.protonmail.ch (Postfix) with\r\n ESMTPS id 4ZDpsc6ryPz5H for \u003cidontneedawebsite@proton.me\u003e; Fri, 14 Mar 2025 15:57:24\r\n +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=pharma-trade.vip;\r\n h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:\r\n Content-Transfer-Encoding; i=contacts@pharma-trade.vip;\r\n bh=tcas6t7pQg+9jAYYhNf8GQiPouELn601wp9JHWGourE=;\r\n b=prD5L78huE0FW2NN2OCQ2u5O6xKagKJKZ3X5M69kqppgn3Zoqh/IqmBFhIUg+wkxfjiXsZc2BpDw\r\n   lUMGKu8xpOdxHAjqvWJDFxC8o/1GlldJussJFDO1gYFA2zGCVgSYSkVWLZlhWq/LW/uXRvRKYYSl\r\n   hyHhiUZa2iB3V1PwbUo=\r\nReply-To: Saumya Contact \u003ccontact0@saumya-mail.com\u003e\r\nFrom: Saumya Contact \u003ccontacts@pharma-trade.vip\u003e\r\nTo: idontneedawebsite@proton.me\r\nSubject: Re: Business Proposal!!\r\nDate: 14 Mar 2025 08:57:18 -0700\r\nMessage-Id: \u003c20250314085718.608889F35D85659B@pharma-trade.vip\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: quoted-printable\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2Oi02QNMVmmwITZWMwQZlY\r\n zkDJZZkD0iYTYCLzJlkcmijoINdjkxUDNTZ5YI5ZDiTJNMJGlyIWZmYhZ19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

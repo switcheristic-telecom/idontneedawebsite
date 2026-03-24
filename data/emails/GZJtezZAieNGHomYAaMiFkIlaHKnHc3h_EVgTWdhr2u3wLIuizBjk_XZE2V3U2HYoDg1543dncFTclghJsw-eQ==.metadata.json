@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "GZJtezZAieNGHomYAaMiFkIlaHKnHc3h_EVgTWdhr2u3wLIuizBjk_XZE2V3U2HYoDg1543dncFTclghJsw-eQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "010901dc7d80$a15b8dd0$e412a970$@att.net",
+    "Subject": "Mobile Application Samples - Samir",
+    "Sender": {
+      "Name": "",
+      "Address": "Samir7yh6@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "Samir7yh6@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "Samir7yh6@att.net"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1767534440,
+    "Size": 1620,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cSamir7yh6@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=98.137.68.208\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"Vkqf2Zwh\"\r\nReceived: from sonic304-27.consmr.mail.gq1.yahoo.com\r\n (sonic304-27.consmr.mail.gq1.yahoo.com [98.137.68.208]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinosl104.protonmail.ch (Postfix) with ESMTPS id\r\n 4dkdyw6ZnQz3V for \u003cidontneedawebsite@proton.me\u003e; Sun,\r\n  4 Jan 2026 13:47:20 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic304.consmr.mail.gq1.yahoo.com with\r\n HTTP; Sun, 4 Jan 2026 13:47:19 +0000\r\nReceived: by hermes--production-sg3-859ccbd486-2p5w6 (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID c6ddc9f7525ffd7fa809817ef322ff52;\r\n          Sun, 04 Jan 2026 13:47:12 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1767534439;\r\n bh=95lDDKR7XfSLEQGVrY34JHBMMl0TyW1Ci9Ykdcglam0=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=Vkqf2ZwhLWhSAggoNRMYoNm1ZmoIGZxDFp3eVuWLIDG95HITxTjcN+IcC7nhL38OVILauW5l8Mw62oZOSrGcYsM1MTymkDS050gN7dHDiUdMzL5cZV/BvHDD+WKf3INLHQX8smUzovNvyK2VAgqVmwk4lt+fkZgYR4M9UToRj9E=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1767534439; bh=m7MzU3Ylt86MpNx1w3/uOYwd4b8w7cg/1ORKtu/ITUe=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=HjyrbRWgqdSom//VJmLX/pT38XyjTxrxcPLgUVLc5l07MnUx6XiLzPDrHSMq6JJnEjk4XHXmV2MKd06g9o1fw3uU0KiuqmrrT3UXvKu8GQLVogKoK5zIuoEYpcDsrY9O3jos/OnwlT/ByvZ4VUaAdVbWhY7aeqh3CJs0bTp3R9zmZPhN5WK1VJzuk/2vIVLTFZDn4MO6Ph3zY1rLeNfb1/5lSi30WXC/mzz+XylgI57BANNEeiGKW/tEmmjrxc/BIjQcIt9ahiJZ81WCDWTv5iXEZ09abx5Vm2cAbwdCoCDTraLLTVSVpRtbh5yGJuz5OKqKBT3FRqIxkg+cS2Myug==\r\nX-Ymail-Osg: Va8.SqYVM1lOFJ6lgyX5S4BIqpLmNalDJQ8k3RhYFZaZFfUMVggAYw6HAHjjGUI\r\n 1eJRDQafJm30EC4.m_kGOWg5lg0.zmplABigZV4xggujskIV.kt8fpCasxUJez57t2FR0wRDifwM\r\n aiNzq23.9FuhAvQPv8P5mDKWE6_nLde9GOF6NzJ_MKX71FXWR2E1PbfDqPos079_4MGePfapU4MS\r\n mrP64rXQr8ULvYcH_kuI3Uf1xG8SbZifBq6ocJtw_0GuCvxPSRZpwCiD_iYZ994iCBtzjZv1YsQf\r\n vs9sNK5ooVqMqZUv6L.3c9xpzf0m6t20z886PMsHsgGn8afej2VIJ9v.R.whehE2eLv6iv5CBlsA\r\n fc5EYwdcqI1WGhZs7w4Ny6AI7ur94ELruCkykHDoDu1EngStBakdlo2v0EG.18ZcqxYMfoABarFh\r\n gslE3aU_Qf9dF7DFBetioTJyfV1DK1kMvCSIoGNGG2Q3Te59kmBjaHj4c4wcSffmlf99TAdos0S_\r\n t3gjU7V6X3ig5Xp.dav50u4TqcGQk1aVSlW4Iy0Dy5AtCTF7daL5vY6f4uzo3QXoLHLaBWSoWRY3\r\n D6e9NtXG7uSRwrkXNIQiXGVfnfvWWLzIM.Tkf1NDDbXud.v1PEF2uwd6URhYNU.qjL2SdpWceiYG\r\n YNSnGfTQyPZSX1BMF8Av.N_EDgw85w.dliB.TWtjuuyN6ZOyP_8nmvkn1Vd0ThKeX.4vveeePwdD\r\n zMig825GxcxS_VD.uMC_U3G4NOZeY4bAMK24OBfnhnrM711In.TuwOLr1W_H_NpiCeWOGZSCwNIH\r\n 8oo6wLUNZN3FAoddp3WnnI9ADLu4hqkISyJaYopWxUrv2SXWGnivu6Uz0LTRk.1s00ewWSGWkU5S\r\n R.BDiyhphZL4Ia2My5991lWcJQRvAj3baYMfseqsN7GPvbm7r3G8QwIECc1r3fiBWDdqMQ7wMOA6\r\n VkRlu61jY46hpDJKPKsL8OdZ1zR0c9V7yRivkRtluagWW_.tGE9gy_4G4dbBZq0_5yqGADyJT2RG\r\n qsJynVaapxF6mgta1lwra98VHOI1KmLhQLUiA3S4Lv45YJGl9HSGrb5sJMmJx_lLlmrqHC0V6_lY\r\n L6j59vbuKJfx9CvWSDqqjUPKMhzbO_Go1gjjOXR5L_q968YtWRZafgrrvRTsm2pVWA8eO0x.ikHd\r\n Dqv5HiJf6aGFzsJNxA.2toxhacZ.Bkvd1sjMTgnKR25xn0dnOs1aDUPNIqZ5yjM3uNTO0I4vWagH\r\n 9.8K2AXQ38gfF5Uvd7BahMnuVi9_I1d0MV5nhKjTUWnUEggm5NmINprmU5rx2WbxxJxoP.laJQjV\r\n QG..qupy78qM0kwVN9viFhOBkH9Pr8fY6rPENJnWNQzzC9EHhUsOKuzBoVCOecIF_c66pKBsSLTx\r\n 6viLvnwyplY0LqDyhtDEGY9WCDvZh2a7UyIN.Qnm0cOSdBtu_TdI4MBr4LNGEXTIgBNj1iDKpcOd\r\n xYkbqcCAVz4N6YP3SkNo3GRX.ORNdPoaKNYUpqqN3EG3.TrOFrhJhpXzvFVA0Ig1phmaZkhW3jp7\r\n cgYfhhOS0XV.z0uwwdBJiPr9._VxNF_ytveRKZpU1p8gd7sT_8gahHd75_F5OAGpJ_cmOAxHe6nF\r\n i0bi797xSBdrgATIbOGjKVYlSJqmY7knANpjnrKpaZjiQm9WAVBazkC_OFT2NTQLIUdBYg6KNGn2\r\n AbOuFKo0XXbmlnh_cX3aTfpvYOCKQM1zE5.XxVb8OwnCGA7_A5rvqUHHJalBPeuQa7LpXppBluhP\r\n J0qKFnf8R7XcmPEGgyg2IsVc6gGJpDTDuzxigiDD6vpzCX8Jfgf5EBpG0uBeZmRwNJwdhXwm_DwH\r\n xxvTzTp0E9ETDNCQWul3IOMUieAW6tzA_XnQQ5ZRzw80SUToo9KrwQX299CX4384Pf4sXxs8SS.D\r\n _VmdPU0DlKGYZkDjYxqIffGmZxlYPmIUtdnaeXM.1Lqj5bow1NPxABHAx8qrxeLZz1IbeIMHs0wF\r\n p8mOMHDe8TjaRAaOtpcDObl_bA87FvV3MoPVimck6z6z_1YWyA.W6uSNJjyOtC3sTYgk9id4aN0z\r\n 4zngcp1sn3u3NvyheSJDGjVc0V8_BQdqGPEIklcpfrDDpd.HeMlSU8L1kNhfHbTmB_tqaH8M9hpj\r\n KmAn4coMpV2rfvcGlVLed2kNGW3jmURCutJy7sq8BDeIdxwIMueyojV6iMOC5uAjQjEP.YOboPeT K\r\nX-Sonic-Mf: \u003cSamir7yh6@att.net\u003e\r\nX-Sonic-Id: c1272d31-7cb7-4341-ac0c-ee133984aafb\r\nFrom: \u003cSamir7yh6@att.net\u003e\r\nTo: \u003cSamir7yh6@att.net\u003e\r\nReferences: \u003c010901dc7d80$a15b8dd0$e412a970$.ref@att.net\u003e\r\nSubject: Mobile Application Samples - Samir\r\nDate: Sun, 04 Jan 2026 19:17:03 +0530\r\nMessage-Id: \u003c010901dc7d80$a15b8dd0$e412a970$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: Adx9gCZbmhewMGeXTuOOfETATxwr9gAAAqegAAAFriAAAAW/gAAABnKA\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJEOiBUZRVxUUiwiIWbfxNvc\r\n 2imUcOsniPJFUCR6IQsMjSlBITR0fFJFUERDllPVE6iITMwSiiMlUiOw0ksLjkl9IZJW1p91ZmbvZp\r\n 7IjSlBITQ0iisnOWah1VfZ2tmFbZIS6zhmIGdjF9ma1lW5aXR31kVmb3X1BIwXzxjUMMMDwiwiIWbp\r\n F8zbFfHJcb9WkiwWZiOtJlsYWy3BML0Sy1IDMDMxk5wMisCIdI1mhfxWa3MyBByX3i2IbOAju0ADMT\r\n M0gk5OT4TYOOUD2zcTNCLtJlsYWh2NXdVGn5J3b2Xv1VsZGijoIbFWphNGbCdt0AyMj5TANMITuiQH\r\n cCLtJlsYWh2NXdVGn5J3b2Xh5UibWEiJORZUBUxUViIiwFpbWjF9bYRXly92ZVew99icmwjoILMjww\r\n kTOjNwAg1NT3TMONwSiz9FcGctFowIj5jkLNAz3yIzNjNzYc5ODiCwNc9FztFGc2XhJUic2ujAOOkT\r\n 33cDMjM2IM4Nj0zkNLJCw3N3XXajR90aFw19balGzulGayZ6I4wMC3DcMMEz4wMTNTN5IM3NzsDcNI\r\n Jn1u9lbWYl1oiIj02FdYh2s0NXaXLlNRlbmwi1cd9Vz0l2d2Yig19fXzCJLclmkiojIjN1kZmYTwmE\r\n NNFThkVjMDMwIlhZDm2FYI1n9\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

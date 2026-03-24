@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "08T5LbAVO9xQD8xGCqcj4wc458z_RyrJi3ukd4o_h58oJGAndynwZDF2nyWy-CLtRWOpznfv758j8eOyuQncCw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "1722738285819334.66aee66d0535f@emailseramarketing.com",
+    "Subject": "Introducing Biz Mailer Cloud Based Email Marketing Software - Unlock the Power of Inbuilt SMTP Server",
+    "Sender": {
+      "Name": "Henry Joseph",
+      "Address": "shalini@emailseramarketing.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "shalini@emailseramarketing.com"
+      }
+    ],
+    "Flags": 335544321,
+    "Time": 1722738285,
+    "Size": 3246,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce@emailseramarketing.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=fail (Bad 2048 bit\r\n    rsa-sha256 signature.) header.d=myemailsmtp.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=quarantine dis=none)\r\n header.from=emailseramarketing.com\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=emailseramarketing.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=144.217.88.231\r\nAuthentication-Results: mail.protonmail.ch; dkim=fail reason=\"signature verification\r\n failed\" (2048-bit key) header.d=myemailsmtp.com header.i=@myemailsmtp.com\r\n header.b=\"w9uhvmbk\"\r\nReceived: from smtp1.myemailsmtp.com (unknown [144.217.88.231]) (using TLSv1.3 with\r\n cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin035.protonmail.ch (Postfix) with ESMTPS id\r\n 4Wc3LR3R6Jz9vNQ1 for \u003cidontneedawebsite@proton.me\u003e; Sun,\r\n  4 Aug 2024 02:24:47 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=myemailsmtp.com;\r\n  h=list-unsubscribe:precedence:content-type:mime-version:to\r\n :reply-to:from:subject:date:message-id; s=dkim; t=1722738286; x= 1725330287;\r\n bh=ye6yoDrMKOCbOaNliXMf8aGuH8atiwgD7w6adF623/I=; b=w\r\n 9uhvmbkN2xmAwbFQtRRncGIW7SGtgqn/4qViGz8tv/8srj/CQ7mDKXLVrDRznQlJ\r\n lvqS36mSw6GzB0Nuy+M4WeeCJz1QV9eauYdN0Kle5RUwWlY1ZrWHgw6LJnhFmmHi\r\n d0XTce9SW9mFiI8voJAcjAjL4Ti1jG3qYRmXUsEToU=\r\nMessage-Id: \u003c1722738285819334.66aee66d0535f@emailseramarketing.com\u003e\r\nDate: Sun, 04 Aug 2024 02:24:45 +0000\r\nSubject: Introducing Biz Mailer Cloud Based Email Marketing Software - Unlock the Power\r\n of Inbuilt SMTP Server\r\nFrom: Henry Joseph \u003cshalini@emailseramarketing.com\u003e\r\nReply-To: shalini@emailseramarketing.com\r\nTo: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Acelle-Subscriber-Id: 2cee545df2be5\r\nX-Acelle-Sending-Server-Id: 66ad3f5f153d6\r\nX-Acelle-Message-Id: 1722738285819334.66aee66d0535f@emailseramarketing.com\r\nX-Acelle-Customer-Id: 65cf6fc855b77\r\nX-Acelle-Campaign-Id: 66ad3f5f153d6\r\nPrecedence: bulk\r\nList-Unsubscribe-Post: List-Unsubscribe=One-Click\r\nList-Unsubscribe: \u003chttps://emailseramarketing.com/c/2cee545df2be5/unsubscribe/MTcyMjczODI4NTgxOTMzNC42NmFlZTY2ZDA1MzVmQGVtYWlsc2VyYW1hcmtldGluZy5jb20\u003e\r\nX-Rspamd-Pre-Result: action=add header; module=dmarc; Action set by DMARC\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIcVns6ISZjI2YY1MTjWFOMAjxjBDZmNkVA0M\r\n j1WQMNISsyNnIWaiQI2OilmFNZYT3mBTMGN1YI1YT4TYOYI2xiMmMfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

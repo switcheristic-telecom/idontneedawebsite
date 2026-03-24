@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "xjuw50XGFLIxuCowkXTo2nHy4Tcsz3Hsm5k1edehGODYWm6ULHLxl_OLAZGooqJYW0dHJubZZUheqczkMsGFXw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "1e3701daacb4$dac27a00$90476e00$@gmail.com",
+    "Subject": "RE: Need a Basic Site",
+    "Sender": {
+      "Name": "Zayla",
+      "Address": "it.ritikaxport@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Zayla",
+        "Address": "it.ritikaxport@gmail.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1716429510,
+    "Size": 1545,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cit.ritikaxport@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.210.178\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"EhTjp/eA\"\r\nReceived: from mail-pf1-f178.google.com (mail-pf1-f178.google.com [209.85.210.178])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin051.protonmail.ch (Postfix) with ESMTPS id\r\n 4VlBF85jDmz3N for \u003cidontneedawebsite@proton.me\u003e; Thu, 23 May 2024 01:59:40 +0000 (UTC)\r\nReceived: by mail-pf1-f178.google.com with SMTP id d2e1a72fcca58-6f44dc475f4so2642893b3a.2\r\n        for \u003cidontneedawebsite@proton.me\u003e; Wed, 22 May 2024 18:59:40 -0700 (PDT)\r\nReceived: from PradeepPC ([103.217.132.86])\r\n        by smtp.gmail.com with ESMTPSA id\r\n d9443c01a7336-1ef0c136959sm246612365ad.236.2024.05.22.18.59.38\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Wed, 22 May 2024 18:59:38 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1716429579; x=1717034379; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=jdW3SVolYuPWLd284iPHoIATX7GKBSdf86HhOBzHNcE=;\r\n        b=EhTjp/eAAJ2tV2IdC7P+j+HxwWC7AF6hFPphKvlK/+hX+9la5387hodui4VN+B02In\r\n         BXlpAIcWaITM+IhQ6QfvK4hpfIrmZErsMzpRdaqK7Y9qIjTxFoEi72dhnQQBeo5gVGL4\r\n         1UlNv8rswQh3xpEhhyb5+Tu0VUnRwIaY6/gNXFeYimV7fGJKmgrxafp5xxVAArZ0MIgA\r\n         6h/cTbVZO7EnRXhUoQvWaIUdqIHRIE4bLoKIGQNttAWEVihIb1iLsDAz/CS/Fvt+89np\r\n         TOLfeAVEtxGk/OImSnrxFneHIbj4fQ9lGTtoXsKwhI1Mhe9XgPwh+EXebhIfJThvLmYI\r\n         bLPQ==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1716429579; x=1717034379;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=jdW3SVolYuPWLd284iPHoIATX7GKBSdf86HhOBzHNcE=;\r\n        b=AY0pt9BhIPK9cgc3Yvin+gsrPRC3kRb+Wrk8rXyzCwM+hh7hhz7lqmWHi5T+H7oudx\r\n         T+QzYY29wNeakP5CAJ4J9j2wpfzzvENHQy8QS/hDHKYS10akBVuTE2mZNU9dHiVk7Yq9\r\n         0XsxQST5168tPx5lDQPp6eHpRH3W5vbMib2ilj5q3hocqFWAfMwIbu6mql3XJicHoGAH\r\n         eYcxBLJr64UDrN6v7FL+seBAGftXHSiI0VGq2YLM0S9KRKROInl15Q1GYfpCA72zlvx6\r\n         1dTmNGTFnCnB922nyI+wD6oOK77A4psqs/5iApbbsnSF2hmBmG6vvwmO5k1Et4fyROnO\r\n         PJ7g==\r\nX-Gm-Message-State: AOJu0Yy9tw78apktI0EA+OSDkH77dliXWF+qgVtlW8myHRC1KCpx37sb\r\n ecSiq5igZf0aZKu4A8ztaV9fbcGLVHDdGXVtxVSXbiqGY8hxjXgK8XhRqw==\r\nX-Google-Smtp-Source: AGHT+IEHxYqWbPGrSen5jHezPGTlzMEre5IlWknu4LRvN0v2RjRlK0tvJES99deuj7kRwmhWUj730w==\r\nX-Received: by 2002:a05:6a20:6f07:b0:1a9:3cda:dc3c with SMTP id\r\n adf61e73a8af0-1b1f8ae0bcemr3725752637.61.1716429579195;\r\n        Wed, 22 May 2024 18:59:39 -0700 (PDT)\r\nFrom: \"Zayla\" \u003cit.ritikaxport@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: RE: Need a Basic Site\r\nDate: Thu, 23 May 2024 07:28:30 +0530\r\nMessage-Id: \u003c1e3701daacb4$dac27a00$90476e00$@gmail.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: AdqstLJoNairbcYOQ2GUuwqXfOeIWA==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yeyJI6cyyyJeZBXviQncnOisJDQVB05XIpjbs0FMkITFI6TiszAWIFmzxojbTN2EwgO\r\n SuXBaZQX65AjMjL1gEyLjwC4OLEz3jBCL3buVJ5dHTlVOI0lsBJkIUWTVhBX06SITW0ywyICLiM24U\r\n iOSiSwXRtEJU9VTkUDFI6RSszAWIdmtslWYmLvNorbTsl0IIRkNDJVQ1XPBlDTEBV9WTxEP6IyVyWw\r\n 0UsLjtmdIYlWsvNmLSbux5lb2sl0IIZkBfV0SkUQVkiTFxlsOXwSiPJlRVTF99FUVGlZTU9kNbpjIF\r\n Ms0ZSIkf01TSFETOR0XjIbp0sMFJk1IR9FSfNFSUTUFhfQ0PlJRTIS6dBzWCLNJ1FSUP0dXTQ0itsl\r\n OCMx4JtLC0WxdaBXhvQncWY0xJuZXpXRYdUms4VGdCdw9FpbGdiJbLJCNF1US1XSRNFQUbjpIMwCir\r\n oDMDL6EwyKyin4OXwSiVVkTkUMFhBX06SITW0ywtICLCM54kiOTiSwXUJFFPlkVVVMN9EWVJUxRVVk\r\n SiQURlOwsJpLCuG9Zd5GlhRWZ2diVl0c2wUBZc9m0u42bWbiUwiXSQkNUV9FDOV1TFVP9UiTkwlsOL\r\n ICxs0lIlIDJRfVkV09QTRlfPdFVjIbpwiMCdiJMLJCSEZ1Q1XMR9MU1UVNQIpjbs0FMlIDJRfVkBkl\r\n VXN1NfBFVVQUVI6SCdzBWLJCSFNURVSFZ9TRFNEFUSFEVQ91UkQiwswOlxCILMMDu3EjMjLzE44Miy\r\n jpNZNWllZXaCZdJJSLCL0RXS1UfMxUQ1TicstOlyC4MLJCnpFWbCbj506b2yz0cMIDzwYDMSMdJJSL\r\n CQ1NXR9lBPxETyV6I0wWysjILItip6QDcjM5Ag1LjyjELO4Cw3EzLmOiMwiXSHEFVRV0ESZ0X0Ti0s\r\n wOliSwXV9Eff5ERkTO9I6RSdzBWLJCUN91TVQDR9FSFSlZTQB1UMF0XCT6IBdWziSwfcN2viUmciOw\r\n 0wifSi3IcOsni0NWYWau9oiIjiW5abg3ijJCLXYlR9yZ26SIeIRkFVFkRFTiQJtLCzF9bY92y6ISZy\r\n eQJ9EUktjoIMUjsSBlI0TfRJFUFDElRVlEP6IiTCMiwMiUlwi0OLJCfiVGZWdfd5maW6yIbeJyQE9k\r\n UjI7pltImlWdYX52hiUWbiOoJRhc3f2tYZlmu09VZWdl59wZFyV8dMID0yMDMCOsIlzImt2lXc9Gyu\r\n FGdCd6IwiMCpWFbb8FzfJHcWbk9wiZWtiJOYlWsnFGdmLvNJpbWkmVbXZ2p0VmbWdl54yZC0DIMMID\r\n yj5SM3a0BwiIipWFbb8FzfJHcHcvJI6YiiCwMbFWpj9FbXYlR9yZ2tV9ebR2l6ICbmIh1xjaWuXQYY\r\n 92tulmYWZfRluZm1XRZbVmkwIjLjMwQIxMjrmNLcQHitJCLWYslNhX2nGVdbJ35h52XWbiUJEOiBUZ\r\n RVxUUiwiIWbpF9jbFlXRYZ92yw9Vemci9oxIjwCJLXN3wi0WYjOuAE4MD4zANMUzx5kTOTNxIU1Mjw\r\n CJLXN3wf1WYmYzFI6ZSwC4MMgT3zgDMTN5Ek1OTyjEMNUTsfBnI3cpdNodGv3RXXl2u49mYjIwoI2L\r\n jyzQMNIz1zUzNzN0ggsMTfnBIcd3poNGd3XvRNwX3iW0YOAju3QjNDN1gczNj3DINNgTxiwCOncuV5\r\n hX2iWUbOJihtwGbmZhVVydHtXMZcVHfpd3cGdoN19IniSwfcJ3p6ICZjI2YVhNGkzBMMJWh1YzYTO5\r\n EI2OT3mYMYJy9fQ==\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

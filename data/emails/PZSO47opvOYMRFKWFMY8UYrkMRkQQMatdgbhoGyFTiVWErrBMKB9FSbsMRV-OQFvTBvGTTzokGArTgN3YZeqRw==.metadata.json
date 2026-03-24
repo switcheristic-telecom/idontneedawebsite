@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "PZSO47opvOYMRFKWFMY8UYrkMRkQQMatdgbhoGyFTiVWErrBMKB9FSbsMRV-OQFvTBvGTTzokGArTgN3YZeqRw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "227401dba496$3a42fd40$aec8f7c0$@gmail.com",
+    "Subject": "RE: On-time, Accurate and Fast",
+    "Sender": {
+      "Name": "Khushi Diwakar",
+      "Address": "khushidiwakar8962@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Khushi Diwakar",
+        "Address": "khushidiwakar8962@gmail.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1743684294,
+    "Size": 1672,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003ckhushidiwakar8962@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.216.50\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"kPFiiNhd\"\r\nReceived: from mail-pj1-f50.google.com (mail-pj1-f50.google.com [209.85.216.50]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin029.protonmail.ch (Postfix) with ESMTPS id\r\n 4ZT1fb55d0z9vP5y for \u003cidontneedawebsite@proton.me\u003e; Thu,\r\n  3 Apr 2025 12:45:11 +0000 (UTC)\r\nReceived: by mail-pj1-f50.google.com with SMTP id 98e67ed59e1d1-30384072398so655557a91.0\r\n        for \u003cidontneedawebsite@proton.me\u003e; Thu, 03 Apr 2025 05:45:11 -0700 (PDT)\r\nReceived: from admibcnPC ([2405:204:3282:b566:4195:2edc:dc84:a997])\r\n        by smtp.gmail.com with ESMTPSA id\r\n d9443c01a7336-229787728c4sm13178935ad.222.2025.04.03.05.45.08\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Thu, 03 Apr 2025 05:45:09 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1743684310; x=1744289110; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=7tnjDSHuM8lzH3zQw9OjX5nGYejtYhnH4arCccLnCiQ=;\r\n        b=kPFiiNhdcMvWZfLCDY9f+rub+ER+fkNfR9xVUbLZpIl2Pq6EKtfDMxkeXmoZ0rlq66\r\n         gY0l+DkJtkw0/nhr/yapYl+AbADbRx/UBL1ZVk0dblUPLXElvI1P1P6rGVHiRsYZ3c/d\r\n         Vn5y79eieLIP9u70tC24TTnA2UGeMvfe+sRxf2wW4V+oxc/hN/qUe+oNKAjNuxpkPvC0\r\n         tz7Y6EE0xVcdSCQTprKv/Hj8WiaCoPxkmksEzbGxk/nkym1zH0Cj7uCQzNXcwtuDr4NG\r\n         NvyvbCWJNjZi13c4a2KGoX7Ep9ojxsy4sScSMClZg3iK5DtJqvYmS7LdMy+jHbqgHE8H\r\n         eiBw==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1743684310; x=1744289110;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=7tnjDSHuM8lzH3zQw9OjX5nGYejtYhnH4arCccLnCiQ=;\r\n        b=FEsjq80iXCjbbz8FQ6aX0h5Aj2/cILgMx3mCrH2QVZm5h5IyNTnVe2ZKVvatGTnCmY\r\n         SvPGeAUttYLuRa7FDyNJ9pVmoTkS5FEkaEdSoasirJFeIOcqvza/kKdExxMbQrwg9nfs\r\n         Ax9NWEfU5yuoEq/g+d/c9F5R74kIw/anofdb/BxmH4g9UNKqVxReBfMqfsyAyPOkmaBp\r\n         6XvNt95BnaOlVJrh+I7hM23MOcUa8CQS3gHZGQws/yDK6uBM4f0/ZSgKhZVZFjz8bn8r\r\n         g0rrL0ySsdJH5iQMnvsZCyp1vSd61FKoh40AGvVDek9P5Ercs2+1GwuvyzjCVtrGJ3X6\r\n         5f6A==\r\nX-Gm-Message-State: AOJu0YwCGB31zvB13WgXq3HDhA7l18vMXP61WApiu816tDDQ3mDhmvl/\r\n j83dPRjDVcciJx4qxSkLoFda2V/AOSmqrHE7GsN4550fL35ekOvWe9RTOkbJ\r\nX-Gm-Gg: ASbGncvOIIFikUiAF+691NWAiz/t3qSlAjBJVdMZbaIijTwWUJMCxQhfwM/wj70sCmL\r\n nEIsqGHKtwPkUFZj66mWBrhT+8uNXArXOsa1uTTnP8T9gjnz5BzT/HvZ9nZqBod8TuQzXaGFGIz\r\n lMw8DKN84NOvPFCPKWqORPuPx53xNPWCZT5yGtBl1jA2eKE1ubpg64F7S7f30SNW9z/w8nPKRn9\r\n HdpSKsc6OggOuHLuFez7nOjEngbKDmGkYOQSZ0R7JgLRjLmM4YkWb7CrGjOZCO/JkH+bZhaX+sr\r\n Y1pu9teVBIzceMHZaNcZkE2fTG4dEgfxr6BtzwUV3W2dW+/5QeNUwTSF0NYtCRDdeNM9WjHVscB D\r\nX-Google-Smtp-Source: AGHT+IFrvsVXpVzjd6tz7qINk1q5RmYqSTTOOtck7Q4/fATgSw+t68j2plw3EBJmAp7H7P9KlmMOZg==\r\nX-Received: by 2002:a17:90b:5347:b0:2ff:570d:88c5 with SMTP id\r\n 98e67ed59e1d1-3056ee3151bmr8781349a91.9.1743684309702;\r\n        Thu, 03 Apr 2025 05:45:09 -0700 (PDT)\r\nFrom: \"Khushi Diwakar\" \u003ckhushidiwakar8962@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: RE: On-time, Accurate and Fast\r\nDate: Thu, 03 Apr 2025 18:14:54 +0530\r\nMessage-Id: \u003c227401dba496$3a42fd40$aec8f7c0$@gmail.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: Aduklggpt1YpUHlpQL6bTIR8uqZ1PQ==\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjGEVRQVVMsICVmIs1NjX\r\n 3l3JbIpj7SBlI0TiQ0zOiQCJLU9kESB1XURJRRJQ1i04TOAjsTJlIjIyoJfLCiGVZddWfm5Wayb6IJ\r\n QeyEk9UIpj7tlmIWYld5hX2iWUbOJiohR3c2YftluZm0V9Zd5Wlw9FZVdy8I1MDxDMMOISszlmI2Xt\r\n l9ycGuGFddIC6iwCMWbpF8zbFfHJcb9WkiwWZiOtJlsYWnGFdLNmvpJWbmbkVZpX20mVbd5Wly4CZD\r\n M0IIyMD2S5MM5ij0B3aiIiwFpbWzF8bcJHfvJHciY6IwiMCpWFbb9FjlRXY2Zy99teVl2RbbIC6h1m\r\n IWajxQuYXt29YYlmufRWZmZulR1ZXkmVbLIjwwQjMjMxINrLmiHQcLJCtslWY2XhNVndG53JbX52hi\r\n UWbiOEJZBRUUUxVIwiipFWbFbj9RlYXy29Ze9Vwi9mcjIxoJwLCw3NXY0WiuAjODNyQU3OD2DUMOUD\r\n 21UTMCNiw9zcFtGFcXJ2hiU2cjOuAQyND3DUOMUD22UDOTM1UwiNCzF9cdl20fh2YGdf95iaWi3gbO\r\n Aju3ADMDNzgAwMzyzUNOMT30kzNCLwJN3X3jXRaa9F0w91bGazlluaG6yIZM4Cx5kDOjMwIQ5MDxzg\r\n MMUj2wJCL3X3NRjaX0F9ab91ztFGcjIwoE5LjwTUOMID2zcjMzN3IE3NDyCJLd5WftFmbSZ6IdhIno\r\n GNdblGzz1CdWZk5ItZXfHVccd3poNGdnI91wifSp3JcZIC63YjIWZ4UQ4Mm3zYNNR2lzMTZDZ2kE2M T9iJZfQ==\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "nXAiYC1x3syrjAB4_U6VeE1xASH0Y7CkSDUI3mRJtccDmLAeyX2xC3KPsQ3Ts5OqDmx5FCfMfADBUE5HNOUIyw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "419101dade3c$956b4450$c041ccf0$@gmail.com",
+    "Subject": "RE: LOGO /Graphic Design",
+    "Sender": {
+      "Name": "Greta",
+      "Address": "rohitdxwebds@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Greta",
+        "Address": "rohitdxwebds@gmail.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1721875426,
+    "Size": 1469,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003crohitdxwebds@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.215.181\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"DCn4U+rJ\"\r\nReceived: from mail-pg1-f181.google.com (mail-pg1-f181.google.com [209.85.215.181])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin044.protonmail.ch (Postfix) with ESMTPS id\r\n 4WTwFz1S54z3B for \u003cidontneedawebsite@proton.me\u003e; Thu, 25 Jul 2024 02:44:39 +0000 (UTC)\r\nReceived: by mail-pg1-f181.google.com with SMTP id 41be03b00d2f7-7515437ff16so344619a12.2\r\n        for \u003cidontneedawebsite@proton.me\u003e; Wed, 24 Jul 2024 19:44:39 -0700 (PDT)\r\nReceived: from PradeepPC ([103.217.132.46])\r\n        by smtp.gmail.com with ESMTPSA id\r\n 98e67ed59e1d1-2cdb73f00cesm2381652a91.34.2024.07.24.19.44.36\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Wed, 24 Jul 2024 19:44:37 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1721875478; x=1722480278; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=k6LEvSDk8Zs0qx74d02DUKbscdFvGScj0OO4t/9dtHE=;\r\n        b=DCn4U+rJKMeybtXjgbEc2l9QK4VSr/aVoVT5dK/CtcNnCfp8M7tWkjOsCJpKh+fe1t\r\n         7ElSD8aFidcGbRfoPJO6zEORgE69QRxoQSid8MLdyltqaFAICnQKVNaUpxArAz2d+/Ym\r\n         Ldk5YipizbWOKJXHfrnnLO8tmm76RB0LsZyazbJqNFVG2x/BaiLP5o43kYAmCldUP35S\r\n         tuWCFgZgLqhNTj6CcLQpCMZ9kmJHwzOYxfSz1hGF179Q9IdL7Lt7VSk+24/x/gSQ+BNe\r\n         EEP6TCl3JpDVfRkmMjuyBr+yuCofTluSk5CEJErm18QPctxlaQjs4O0GK6MHJgLIDQmy\r\n         njpA==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1721875478; x=1722480278;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=k6LEvSDk8Zs0qx74d02DUKbscdFvGScj0OO4t/9dtHE=;\r\n        b=Lu3tt+SJnH9CXN/CGb5cSr2P85obh4J8o+0K6RIKtpbU22IkYVT1W8Q4b8ChZtrLh9\r\n         eNj9q775wFeXC+rssIofho+XGoF9slYs21iqo6G0ZgqYexGijCHEiOq6Zjsp56KsWk61\r\n         LIEyYqL5eTYeAZimuHhA4XvQd91BiqCYHP3en2YR/5vbqa0YA4VUScCKfgHbBdinKpk7\r\n         3X8L0JrtRvWpdmnXaMaRMnUjgrnAYy6Cw3Get1pxMeG6BdtRNfAt5D7WHL+kz0KhUQxj\r\n         Np6hiZZ8NjBzneJRGQPMZVYmxOgeiphP148i2yd99Y1+y5QHfsRGYNthf/yM5I2GTubB\r\n         UfyQ==\r\nX-Gm-Message-State: AOJu0YzM4WeQw9MtTZEFYlV11PO6ko5r40pcVmnETXaEYTK0oJ1AmjCt\r\n poYzHd2skdxJ3beWSr4GVDlN53L0RrvwhWjvp+InvoWoR164rWUiAsG7Ww==\r\nX-Google-Smtp-Source: AGHT+IEOpDny6ZfuezZXo6tKSt5FRqZ2dOce+XzGLalhGFGVm41YjOl+vDy+AnugWZ8G3WdUKGeZLQ==\r\nX-Received: by 2002:a17:90a:c385:b0:2cc:ff56:5be3 with SMTP id\r\n 98e67ed59e1d1-2cf2ea299f0mr489559a91.19.1721875477645;\r\n        Wed, 24 Jul 2024 19:44:37 -0700 (PDT)\r\nFrom: \"Greta\" \u003crohitdxwebds@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: RE: LOGO /Graphic Design\r\nDate: Thu, 25 Jul 2024 08:13:46 +0530\r\nMessage-Id: \u003c419101dade3c$956b4450$c041ccf0$@gmail.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: AdreO4d9W62FTjUHT+ylhRUw/IJroA==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjGEVRQVVMsICVmIs1NjX\r\n 3l3JbIpj7SBlI0TiQ0yOiiSwNUJFPz8FRFUiIAsOjSlBITR0fFJFUERDllPVE6iITMwCiiMlUjOsA9\r\n kIl1WJZZ91pvZmbjI7pBSIli0QTOsnih1Wa2ZfVFtbm6SIZIhmzjFGd1am95laW13RXbVmk1B3XzXw\r\n IQwMjzTENIwiifNXaWaw1J0b30W5YIojwtJCLWYslNwXztl9cbR2l6ICbmIh1x0aWuWcYY92tulmYW\r\n ZfRluZm1XRZbVmkwIjLjMwQIxMjrmNLcQHitJCLWYslNwXzwl9cc9miwojICLtJlsYWh2NXdVGn5J3\r\n b2Xv1VsZGijoIbFWphNGbCdj51ib2lW5aZ9Fml5WaHduVQuZWyjAMNADyuEjM2YwtIsdChm1IaxWf0\r\n F2YWZvdlfcntmFbZIS6FRkIkRVFQiTFtCJLYlWshN2XGdnVJ5b3y3BXbI2isEjOnIfBBhc36SIbM4C\r\n w0UDMTN1YkxND0TUMNgz51ITOCLwJNwX3fW1YYFmz6ISZCMw4U0MD1TYNNkDx0UTMzN5gI1OTwCJLX\r\n N33jRXaFa099pb1vmJbeIC6y4CMDN2gExMj2DAONMT1wIzNCOiw9zcF02ldYh2ff9GdGcphhpc2imc\r\n bOAju1MDNjMzgQzMj2jUNMUT4sUDNnIfBdpc3oGNdXR3vwN3XWYi0AuOj1zgMMAj2ygjMTM4MI0ODs\r\n DYNIJn1u9lbWYl1oiIjsWxYLZWl1RXYmczVB1LX33NXaRXj9JCaXfs0NyIniWQaOIi2xEmNmYxMBhN\r\n zhjRMYMz21kzNmNmJUiNWfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}
