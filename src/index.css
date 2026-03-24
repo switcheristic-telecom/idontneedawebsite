@@ -1,241 +1,643 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Outlook 2007 Blue Theme — Aero Glass */
 
-@layer base {
-  * {
-    box-sizing: border-box;
-  }
-
-  html,
-  body,
-  #app {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: Tahoma, Verdana, Arial, sans-serif;
-    font-size: 11px;
-    user-select: none;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@layer components {
-  /* Win95 raised border (buttons, window frames) */
-  .win95-outset {
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
-  }
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #000;
+  background: #000;
+}
 
-  /* Win95 sunken border (input fields, reading panes) */
-  .win95-inset {
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    box-shadow: inset 1px 1px 0 #404040, inset -1px -1px 0 #dfdfdf;
-  }
+a { color: #0066cc; }
+a:visited { color: #800080; }
+a:hover { color: #ff0000; text-decoration: underline; }
 
-  /* Win95 button */
-  .win95-btn {
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
-    padding: 1px 6px;
-    min-height: 21px;
-    font-family: Tahoma, Verdana, Arial, sans-serif;
-    font-size: 11px;
-    cursor: pointer;
-    outline: none;
-  }
+/* Vista desktop wallpaper */
+.vista-desktop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/vista-aurora.jpg') center/cover no-repeat #000;
+  overflow: hidden;
+}
 
-  .win95-btn:active {
-    border-color: #404040 #ffffff #ffffff #404040;
-    box-shadow: inset 1px 1px 0 #808080;
-    padding: 2px 5px 0 7px;
-  }
+/* Aero glass window frame */
+.aero-window {
+  width: 95%;
+  max-width: 1100px;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px 8px 4px 4px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.15),
+    0 0 1px 1px rgba(0,0,0,0.5),
+    0 4px 16px rgba(0,0,0,0.5),
+    0 8px 32px rgba(0,0,0,0.3),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
+  position: relative;
+}
 
-  .win95-btn:focus-visible {
-    outline: 1px dotted #000;
-    outline-offset: -4px;
-  }
+/* Glass rim around the window */
+.aero-window::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 8px 4px 4px;
+  border: 1px solid rgba(120,180,230,0.4);
+  pointer-events: none;
+  z-index: 100;
+}
 
-  /* Window titlebar */
-  .win95-titlebar {
-    background: linear-gradient(90deg, #000080, #1084d0);
-    color: white;
-    font-weight: bold;
-    font-size: 11px;
-    padding: 2px 3px;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
+/* Title bar — true Aero glass with backdrop blur */
+.titlebar {
+  background:
+    linear-gradient(180deg,
+      rgba(160,200,240,0.65) 0%,
+      rgba(100,160,220,0.55) 15%,
+      rgba(60,120,190,0.50) 40%,
+      rgba(40,90,160,0.55) 60%,
+      rgba(50,110,180,0.50) 80%,
+      rgba(70,130,200,0.55) 100%
+    );
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 10px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.5);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  border-bottom: 1px solid rgba(60,110,170,0.5);
+}
 
-  .win95-titlebar-inactive {
-    background: linear-gradient(90deg, #808080, #b5b5b5);
-  }
+/* Glass shine on title bar top half */
+.titlebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  background: linear-gradient(180deg,
+    rgba(255,255,255,0.30) 0%,
+    rgba(255,255,255,0.12) 40%,
+    rgba(255,255,255,0.02) 80%,
+    transparent 100%
+  );
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  pointer-events: none;
+}
 
-  /* Titlebar button (minimize/maximize/close) */
-  .win95-titlebar-btn {
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
-    width: 16px;
-    height: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    cursor: pointer;
-    font-size: 8px;
-    line-height: 1;
-  }
+/* Menu bar — Office 2007 multi-stop with highlight edge */
+.menubar {
+  background:
+    linear-gradient(180deg,
+      #e8eff8 0%,
+      #dfe8f3 1px,
+      #d4dfee 3px,
+      #c6d5e7 50%,
+      #bfd0e4 51%,
+      #c8d8ea 100%
+    );
+  border-top: 1px solid rgba(255,255,255,0.8);
+  border-bottom: 1px solid #9ab6d3;
+  padding: 2px 0;
+  font-size: 11px;
+}
 
-  .win95-titlebar-btn:active {
-    border-color: #404040 #ffffff #ffffff #404040;
-    box-shadow: inset 1px 1px 0 #808080;
-  }
+.menubar span {
+  padding: 2px 8px;
+  cursor: default;
+  color: #1e3a5f;
+}
 
-  /* Menu bar */
-  .win95-menubar {
-    background: #c0c0c0;
-    border-bottom: 1px solid #808080;
-    padding: 1px 0;
-    display: flex;
-    font-size: 11px;
-  }
+/* Toolbar — similar glass gradient, slightly different tone */
+.toolbar {
+  background:
+    linear-gradient(180deg,
+      #eaf1f9 0%,
+      #dfe9f4 1px,
+      #d6e2ef 4px,
+      #c2d4e8 45%,
+      #bad0e5 46%,
+      #c8daea 85%,
+      #d2e0ee 100%
+    );
+  border-top: 1px solid rgba(255,255,255,0.6);
+  border-bottom: 1px solid #9ab6d3;
+  padding: 3px 6px;
+  font-size: 11px;
+}
 
-  .win95-menu-item {
-    padding: 2px 8px;
-    cursor: pointer;
-  }
+.toolbar-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 3px 8px;
+  cursor: default;
+  font-size: 11px;
+  vertical-align: middle;
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  color: #8a9bb0;
+}
 
-  .win95-menu-item:hover {
-    background: #000080;
-    color: white;
-  }
+.toolbar-sep {
+  display: inline-block;
+  width: 0;
+  height: 22px;
+  border-left: 1px solid #b0c4da;
+  border-right: 1px solid rgba(255,255,255,0.6);
+  margin: 0 5px;
+  vertical-align: middle;
+}
 
-  /* Toolbar */
-  .win95-toolbar {
-    background: #c0c0c0;
-    border-bottom: 1px solid #808080;
-    padding: 2px;
-    display: flex;
-    gap: 2px;
-    align-items: center;
-  }
+/* Search bar — continuation of toolbar area */
+.search-bar {
+  background:
+    linear-gradient(180deg,
+      #dfe9f4 0%,
+      #c6d5e8 50%,
+      #c0d0e4 51%,
+      #ccdaea 100%
+    );
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid #9ab6d3;
+  padding: 2px 8px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
 
-  .win95-toolbar-btn {
-    background: transparent;
-    border: 1px solid transparent;
-    padding: 2px 4px;
-    cursor: pointer;
-    font-size: 11px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
-    min-width: 40px;
-  }
+.search-bar input {
+  border: 1px solid #7d9fc0;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 11px;
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  width: 180px;
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+}
 
-  .win95-toolbar-btn:hover {
-    border-color: #ffffff #404040 #404040 #ffffff;
-  }
+/* Status bar — glass rim at bottom */
+.statusbar {
+  background:
+    linear-gradient(180deg,
+      rgba(200,215,235,0.85) 0%,
+      rgba(180,200,225,0.80) 50%,
+      rgba(160,190,220,0.75) 51%,
+      rgba(180,200,225,0.80) 100%
+    );
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  backdrop-filter: blur(12px) saturate(150%);
+  border-top: 1px solid #9ab6d3;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  color: #333;
+}
 
-  .win95-toolbar-btn:active {
-    border-color: #404040 #ffffff #ffffff #404040;
-  }
+.statusbar-panel {
+  display: inline-block;
+  padding: 0 8px;
+}
 
-  .win95-toolbar-sep {
-    width: 2px;
-    height: 22px;
-    border-left: 1px solid #808080;
-    border-right: 1px solid #ffffff;
-    margin: 0 2px;
-  }
+/* Navigation pane */
+.nav-pane {
+  background: linear-gradient(180deg, #f4f7fb 0%, #e8edf4 100%);
+  border-right: 1px solid #9ab6d3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-  /* Scrollbar styling */
-  .win95-scroll::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-  }
+.nav-section-header {
+  background:
+    linear-gradient(180deg,
+      #e6eef7 0%,
+      #d0dded 40%,
+      #c6d5e8 41%,
+      #d0dded 100%
+    );
+  color: #1e3a5f;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-top: 1px solid rgba(255,255,255,0.7);
+  border-bottom: 1px solid #9ab6d3;
+  cursor: pointer;
+  user-select: none;
+}
 
-  .win95-scroll::-webkit-scrollbar-track {
-    background: repeating-conic-gradient(#c0c0c0 0% 25%, #ffffff 0% 50%) 50% /
-      2px 2px;
-  }
+.nav-section-header:hover {
+  background:
+    linear-gradient(180deg,
+      #eef3fa 0%,
+      #dae6f2 40%,
+      #d0dded 41%,
+      #dae6f2 100%
+    );
+}
 
-  .win95-scroll::-webkit-scrollbar-thumb {
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    box-shadow: inset -1px -1px 0 #808080;
-  }
+.nav-section-header .chevron {
+  font-size: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  transition: transform 0.15s;
+}
 
-  .win95-scroll::-webkit-scrollbar-button {
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    display: block;
-    width: 16px;
-    height: 16px;
-  }
+.nav-section-header .chevron.collapsed {
+  transform: rotate(-90deg);
+}
 
-  /* Taskbar */
-  .win95-taskbar {
-    background: #c0c0c0;
-    border-top: 2px solid;
-    border-color: #ffffff;
-    box-shadow: inset 0 1px 0 #dfdfdf;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    gap: 2px;
-  }
+.nav-folder-tree {
+  padding: 2px 0;
+  background: #fff;
+}
 
-  .win95-task-btn {
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #404040 #404040 #ffffff;
-    box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
-    padding: 1px 6px;
-    height: 22px;
-    font-size: 11px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    max-width: 160px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+.folder-item {
+  padding: 2px 6px 2px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
-  .win95-task-btn.active {
-    border-color: #404040 #ffffff #ffffff #404040;
-    box-shadow: inset 1px 1px 0 #808080;
-    background: repeating-conic-gradient(#c0c0c0 0% 25%, #ffffff 0% 50%) 50% /
-      2px 2px;
-  }
+.folder-item:hover {
+  background: #d8e8f8;
+}
 
-  /* Status bar */
-  .win95-statusbar {
-    background: #c0c0c0;
-    border-top: 1px solid #808080;
-    padding: 2px 4px;
-    font-size: 11px;
-    display: flex;
-    gap: 2px;
-  }
+.folder-item.active {
+  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
 
-  .win95-statusbar-panel {
-    border: 1px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    padding: 0 4px;
-    flex: 1;
-  }
+.folder-item.bold {
+  font-weight: bold;
+}
+
+.folder-item .folder-icon {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.folder-item .folder-count {
+  color: #666;
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.folder-item.active .folder-count {
+  color: #cce0ff;
+}
+
+/* Navigation buttons at bottom of sidebar */
+.nav-buttons {
+  border-top: 1px solid #9ab6d3;
+  margin-top: auto;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  border-bottom: 1px solid #c8d4e2;
+  user-select: none;
+  background:
+    linear-gradient(180deg,
+      #f2f6fb 0%,
+      #e2e9f2 40%,
+      #dce4ee 41%,
+      #e6ecf4 100%
+    );
+}
+
+.nav-btn:hover {
+  background:
+    linear-gradient(180deg,
+      #fafcfe 0%,
+      #eaf0f8 40%,
+      #e4ecf6 41%,
+      #eef4fa 100%
+    );
+}
+
+.nav-btn.active {
+  background:
+    linear-gradient(180deg,
+      #ffeab8 0%,
+      #ffd470 30%,
+      #f0b830 50%,
+      #f5c844 70%,
+      #ffd870 100%
+    );
+  color: #3a2800;
+  border-bottom-color: #c09020;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.nav-btn .nav-icon {
+  font-size: 14px;
+}
+
+.nav-btn-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  border-right: 1px solid #c8d4e2;
+  background:
+    linear-gradient(180deg, #f2f6fb, #e2e9f2);
+}
+
+.nav-btn-mini:hover {
+  background: linear-gradient(180deg, #fafcfe, #eaf0f8);
+}
+
+.nav-btn-mini.active {
+  background: linear-gradient(180deg, #ffeab8, #f0b830);
+}
+
+/* Column headers — Office 2007 style with highlight */
+.col-header {
+  background:
+    linear-gradient(180deg,
+      #f8fafe 0%,
+      #e8eff7 40%,
+      #dfe8f2 41%,
+      #eaf0f8 100%
+    );
+  border: 1px solid #b0c4da;
+  border-left: none;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #1e3a5f;
+}
+
+.col-header:first-child {
+  border-left: 1px solid #b0c4da;
+}
+
+.col-header:hover {
+  background:
+    linear-gradient(180deg,
+      #fffefe 0%,
+      #f0f5fb 40%,
+      #e8eff7 41%,
+      #f2f7fc 100%
+    );
+}
+
+/* Date group header */
+.date-group-header td {
+  background:
+    linear-gradient(180deg,
+      #e8eff7 0%,
+      #d8e2ee 50%,
+      #d2dde9 51%,
+      #dce6f0 100%
+    );
+  padding: 3px 8px;
+  font-weight: bold;
+  font-size: 11px;
+  color: #1e3a5f;
+  border-bottom: 1px solid #b0c4da;
+  border-top: 1px solid #b0c4da;
+}
+
+/* Email row */
+.email-row {
+  cursor: pointer;
+}
+
+.email-row:hover {
+  background: #d8e8f8;
+}
+
+.email-row.selected {
+  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+.email-row td {
+  padding: 2px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #e8eef4;
+}
+
+/* Pinned about row */
+.about-row {
+  cursor: pointer;
+  background: #fffff0;
+  font-weight: bold;
+}
+
+.about-row:hover {
+  background: #fffacd;
+}
+
+.about-row.selected {
+  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+.about-row td {
+  padding: 3px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 2px solid #d4b830;
+}
+
+/* Reading pane header */
+.reading-header {
+  background: #fff;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d0dce8;
+  font-size: 11px;
+}
+
+.reading-header .subject-line {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e3a5f;
+  margin-bottom: 4px;
+}
+
+.reading-header .field-label {
+  color: #666;
+  font-weight: normal;
+  padding-right: 6px;
+  font-size: 11px;
+}
+
+.reading-header .field-value {
+  color: #333;
+}
+
+/* Calendar day */
+.cal-day {
+  width: 14.28%;
+  text-align: center;
+  padding: 2px;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.cal-day.has-activity {
+  cursor: pointer;
+}
+
+.cal-day-num {
+  font-weight: bold;
+}
+
+.cal-activity {
+  font-size: 8px;
+  color: #666;
+}
+
+/* WHOIS terminal */
+.whois-terminal {
+  background: #0c0c0c;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  padding: 8px;
+  overflow: auto;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.whois-prompt {
+  background: #1a1a1a;
+  color: #33ff33;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+.whois-highlight {
+  color: #ffff33;
+}
+
+/* Content panels */
+.panel {
+  border: 1px solid #9ab6d3;
+  background: #fff;
+}
+
+.panel-inset {
+  border: 1px solid #b0c4da;
+  background: #fff;
+}
+
+/* Buttons */
+button, .btn {
+  background:
+    linear-gradient(180deg,
+      #f8fafe 0%,
+      #e8eff7 40%,
+      #dfe8f2 41%,
+      #eaf0f8 100%
+    );
+  border: 1px solid #9ab6d3;
+  border-radius: 2px;
+  padding: 2px 10px;
+  min-height: 22px;
+  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+
+button:hover, .btn:hover {
+  background:
+    linear-gradient(180deg,
+      #fffefe 0%,
+      #f0f5fb 40%,
+      #e8eff7 41%,
+      #f2f7fc 100%
+    );
+  border-color: #7d9fc0;
+}
+
+button:active, .btn:active {
+  background: linear-gradient(180deg, #c0d2e8, #a8bcd6);
+}
+
+/* Scrollbar styling - Office 2007 */
+::-webkit-scrollbar { width: 17px; height: 17px; }
+::-webkit-scrollbar-track {
+  background:
+    linear-gradient(90deg, #e8eef4 0%, #f0f4fa 30%, #f0f4fa 70%, #e8eef4 100%);
+  border: 1px solid #b0c4da;
+}
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(90deg,
+      #d0dcea 0%,
+      #c0d0e4 20%,
+      #b8c8de 50%,
+      #c0d0e4 80%,
+      #d0dcea 100%
+    );
+  border: 1px solid #8aa4be;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(90deg, #dce8f4, #ccdaea, #c4d4e8, #ccdaea, #dce8f4);
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Mobile warning */
+.mobile-warning {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-warning { display: block; }
+  .vista-desktop { display: none; }
 }

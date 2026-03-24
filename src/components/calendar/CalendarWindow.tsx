@@ -1,11 +1,10 @@
 import { useMemo } from "preact/hooks";
 import { emails, calls } from "../../data/store";
 
-export function CalendarWindow(_props: { windowId: string; props?: Record<string, unknown> }) {
+export function CalendarWindow() {
   const emailList = emails.value;
   const callList = calls.value;
 
-  // Aggregate activity by date
   const activityByDate = useMemo(() => {
     const map: Record<string, { emails: number; calls: number }> = {};
     for (const email of emailList) {
@@ -27,61 +26,44 @@ export function CalendarWindow(_props: { windowId: string; props?: Record<string
   );
 
   return (
-    <div class="flex flex-col h-full bg-win-bg text-[11px] font-win overflow-auto win95-scroll p-2">
-      <div class="text-center font-bold mb-2 text-sm">
-        📅 Spam Activity Calendar
-      </div>
-      <div class="text-center text-gray-600 mb-3">
-        Domain registered: January 28, 2024
-      </div>
-
-      <div class="flex gap-4 justify-center flex-wrap">
-        <MonthGrid
-          year={2024}
-          month={0}
-          activityByDate={activityByDate}
-          maxActivity={maxActivity}
-        />
-        <MonthGrid
-          year={2024}
-          month={1}
-          activityByDate={activityByDate}
-          maxActivity={maxActivity}
-        />
-        <MonthGrid
-          year={2024}
-          month={2}
-          activityByDate={activityByDate}
-          maxActivity={maxActivity}
-        />
+    <div style={{ padding: "12px", overflow: "auto", height: "100%" }}>
+      <div style={{ textAlign: "center", marginBottom: "12px" }}>
+        <span style={{ fontSize: "14px", fontWeight: "bold", color: "#1e3a5f" }}>
+          &#128197; Spam Activity Calendar
+        </span>
+        <br />
+        <span style={{ color: "#888", fontSize: "11px" }}>
+          Domain registered: January 28, 2024
+        </span>
       </div>
 
-      {/* Legend */}
-      <div class="flex items-center gap-4 justify-center mt-4 text-[10px]">
-        <div class="flex items-center gap-1">
-          <div class="w-3 h-3 bg-blue-200 border border-gray-400" />
-          <span>Low</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <div class="w-3 h-3 bg-blue-400 border border-gray-400" />
-          <span>Medium</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <div class="w-3 h-3 bg-red-500 border border-gray-400" />
-          <span>High</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <span>📧 = emails</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <span>📞 = calls</span>
-        </div>
+      <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
+        <MonthGrid year={2024} month={0} activityByDate={activityByDate} maxActivity={maxActivity} />
+        <MonthGrid year={2024} month={1} activityByDate={activityByDate} maxActivity={maxActivity} />
+        <MonthGrid year={2024} month={2} activityByDate={activityByDate} maxActivity={maxActivity} />
       </div>
 
-      {/* Summary stats */}
-      <div class="win95-inset bg-white p-2 mt-3 text-center">
-        <b>Total:</b> {emailList.length} spam emails + {callList.length} calls
-        received within weeks of registration
+      <div style={{ textAlign: "center", fontSize: "10px", marginBottom: "8px" }}>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
+          <span style={{ width: "12px", height: "12px", background: "#cce0ff", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+          Low
+        </span>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
+          <span style={{ width: "12px", height: "12px", background: "#6699ff", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+          Medium
+        </span>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
+          <span style={{ width: "12px", height: "12px", background: "#ff4444", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+          High
+        </span>
+        <span style={{ marginRight: "8px" }}>&#9993; = emails</span>
+        <span>&#9742; = calls</span>
+      </div>
+
+      <div style={{ textAlign: "center" }}>
+        <div class="panel-inset" style={{ display: "inline-block", padding: "8px 16px", borderRadius: "2px" }}>
+          <b>Total:</b> {emailList.length} spam emails + {callList.length} calls received within weeks of registration
+        </div>
       </div>
     </div>
   );
@@ -107,57 +89,105 @@ function MonthGrid({
   const firstDay = new Date(year, month, 1).getDay();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  const cells: (number | null)[] = [];
-  for (let i = 0; i < firstDay; i++) cells.push(null);
-  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
+  const rows: (number | null)[][] = [];
+  let row: (number | null)[] = [];
+  for (let i = 0; i < firstDay; i++) row.push(null);
+  for (let d = 1; d <= daysInMonth; d++) {
+    row.push(d);
+    if (row.length === 7) {
+      rows.push(row);
+      row = [];
+    }
+  }
+  if (row.length > 0) {
+    while (row.length < 7) row.push(null);
+    rows.push(row);
+  }
 
   return (
-    <div class="win95-inset bg-white p-2">
-      <div class="text-center font-bold mb-1">
-        {monthNames[month]} {year}
-      </div>
-      <div class="grid grid-cols-7 gap-[1px] text-center text-[10px]">
+    <table
+      class="panel-inset"
+      cellPadding="0"
+      cellSpacing="1"
+      style={{ borderRadius: "2px" }}
+    >
+      <tr>
+        <td
+          colSpan={7}
+          align="center"
+          style={{
+            fontWeight: "bold",
+            padding: "4px",
+            background: "linear-gradient(180deg, #4a86b8, #2f6aab)",
+            color: "#fff",
+            fontSize: "11px",
+          }}
+        >
+          {monthNames[month]} {year}
+        </td>
+      </tr>
+      <tr>
         {dayNames.map((d) => (
-          <div key={d} class="font-bold text-gray-600 px-1 py-[1px]">
+          <td
+            key={d}
+            align="center"
+            style={{
+              fontWeight: "bold",
+              color: "#666",
+              padding: "2px 4px",
+              fontSize: "10px",
+            }}
+          >
             {d}
-          </div>
+          </td>
         ))}
-        {cells.map((day, i) => {
-          if (day === null) return <div key={`empty-${i}`} />;
+      </tr>
+      {rows.map((week, wi) => (
+        <tr key={wi}>
+          {week.map((day, di) => {
+            if (day === null)
+              return <td key={`e${di}`} class="cal-day" />;
 
-          const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-          const activity = activityByDate[dateStr];
-          const total = activity ? activity.emails + activity.calls : 0;
-          const intensity = total / maxActivity;
+            const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+            const activity = activityByDate[dateStr];
+            const total = activity ? activity.emails + activity.calls : 0;
+            const intensity = total / maxActivity;
 
-          let bg = "";
-          if (total > 0) {
-            if (intensity > 0.6) bg = "bg-red-400 text-white";
-            else if (intensity > 0.3) bg = "bg-blue-400 text-white";
-            else bg = "bg-blue-200";
-          }
+            let bg = "#fff";
+            if (total > 0) {
+              if (intensity > 0.6) bg = "#ff4444";
+              else if (intensity > 0.3) bg = "#6699ff";
+              else bg = "#cce0ff";
+            }
 
-          const title = activity
-            ? `${dateStr}: ${activity.emails} email(s), ${activity.calls} call(s)`
-            : dateStr;
+            const fontColor = intensity > 0.3 ? "#fff" : "#000";
 
-          return (
-            <div
-              key={dateStr}
-              class={`px-1 py-[2px] cursor-default ${bg} border border-transparent hover:border-gray-400`}
-              title={title}
-            >
-              {day}
-              {activity && (
-                <div class="text-[8px] leading-none">
-                  {activity.emails > 0 && `${activity.emails}📧`}
-                  {activity.calls > 0 && `${activity.calls}📞`}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
+            return (
+              <td
+                key={dateStr}
+                class="cal-day"
+                style={{ background: bg, color: fontColor, width: "48px", height: "36px" }}
+                title={
+                  activity
+                    ? `${dateStr}: ${activity.emails} email(s), ${activity.calls} call(s)`
+                    : dateStr
+                }
+              >
+                <span class="cal-day-num">{day}</span>
+                {activity && (
+                  <>
+                    <br />
+                    <span class="cal-activity" style={{ color: fontColor }}>
+                      {activity.emails > 0 && `${activity.emails}\u2709`}
+                      {activity.calls > 0 && `${activity.calls}\u260E`}
+                    </span>
+                  </>
+                )}
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </table>
   );
 }

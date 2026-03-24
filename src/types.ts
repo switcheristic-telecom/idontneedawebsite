@@ -28,18 +28,3 @@ export interface CallMetadata {
   time: string;
   hasAudio: boolean;
 }
-
-export interface WindowState {
-  id: string;
-  title: string;
-  icon: string;
-  component: "email-client" | "calendar" | "about" | "email-popup";
-  props?: Record<string, unknown>;
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-  zIndex: number;
-  minimized: boolean;
-  maximized: boolean;
-}
