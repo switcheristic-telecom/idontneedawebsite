@@ -18,10 +18,12 @@ import pexpect
 
 ROOT = Path(__file__).parent
 DATA_EMAILS_DIR = ROOT / "data" / "emails"
+DATA_CALLS_DIR = ROOT / "data" / "calls"
 EXPORT_DIR = ROOT / ".export-tmp"
 BIN_DIR = ROOT / ".bin"
 HTML_OUTPUT_DIR = ROOT / "public" / "emails"
 METADATA_JSON_PATH = ROOT / "public" / "email-metadata.json"
+CALL_METADATA_PATH = ROOT / "public" / "call-metadata.json"
 
 
 def load_env():
@@ -265,6 +267,47 @@ def build_html():
     print(f"==> Built {len(metadata_list)} email(s).")
 
 
+def build_call_metadata():
+    """Parse call log filenames from data/calls/ and generate call-metadata.json."""
+    import re
+
+    print("==> Building call metadata...")
+
+    if not DATA_CALLS_DIR.exists():
+        print("WARNING: data/calls/ directory not found. Skipping.")
+        return
+
+    pattern = re.compile(
+        r"^\+(\d+) - (Missed|Voicemail) - (\d{4}-\d{2}-\d{2}T\d{2}_\d{2}_\d{2}Z)\.(html|mp3)$"
+    )
+
+    calls = {}
+    for filename in os.listdir(DATA_CALLS_DIR):
+        m = pattern.match(filename)
+        if not m:
+            continue
+        phone, call_type, raw_time, ext = m.groups()
+        time_iso = raw_time.replace("_", ":")
+        key = f"{phone}-{raw_time}"
+
+        if key not in calls:
+            calls[key] = {
+                "phone": f"+{phone}",
+                "type": call_type,
+                "time": time_iso,
+                "hasAudio": False,
+            }
+        if ext == "mp3":
+            calls[key]["hasAudio"] = True
+
+    call_list = sorted(calls.values(), key=lambda c: c["time"])
+
+    with open(CALL_METADATA_PATH, "w") as f:
+        json.dump(call_list, f)
+
+    print(f"==> Built metadata for {len(call_list)} call(s).")
+
+
 def cleanup():
     """Remove the temporary export directory."""
     if EXPORT_DIR.exists():
@@ -313,6 +356,7 @@ def main():
 
         if action == 1:
             build_html()
+            build_call_metadata()
             cleanup()
             print(f"==> Done! {new_count} new email(s) synced, site rebuilt, temp cleaned.")
         else:
@@ -320,6 +364,7 @@ def main():
 
     elif action == 3:
         build_html()
+        build_call_metadata()
         print("==> Done! Site rebuilt from data/emails.")
 
     elif action == 4:

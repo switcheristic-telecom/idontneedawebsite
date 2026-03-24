@@ -56,3 +56,6 @@ eggs/
 
 # Auto-downloaded binaries
 .bin/
+
+# Node
+node_modules/
