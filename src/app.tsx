@@ -45,6 +45,8 @@ export function App() {
 
       {/* Desktop background */}
       <div class="vista-desktop">
+        {/* Glass rim frame */}
+        <div class="aero-frame">
         {/* Window frame */}
         <div class="aero-window main-app">
         {/* Title bar */}
@@ -133,6 +135,7 @@ export function App() {
           <span class="statusbar-panel">
             {tab === "inbox" ? `${emails.value.length} Items` : "Spam Calendar"}
           </span>
+        </div>
         </div>
         </div>
       </div>
