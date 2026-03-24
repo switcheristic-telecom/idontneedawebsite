@@ -1,0 +1,11 @@
+[project]
+name = "idontneedawebsite"
+version = "0.1.0"
+description = "Case study documenting spam from .US domain WHOIS exposure"
+requires-python = ">=3.12"
+dependencies = [
+    "pexpect>=4.9.0",
+]
+
+[project.scripts]
+sync = "sync:main"
