@@ -1,0 +1,54 @@
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+References: <Uf6J5C-pcChDo1iDlkXBtzekQH4axggRVOWvtZts_iZTO-L-HRduPwnajdKU1fCAt3Uog_YH9RwCrfbQ1nxJpg==@protonmail.internalid>
+X-Pm-Date: Thu, 04 Jul 2024 03:03:31 +0000
+X-Pm-External-Id: <E1sPCkt-0000000BnSk-1YlU@mocha.prioritywebs.com>
+X-Pm-Internal-Id: Uf6J5C-pcChDo1iDlkXBtzekQH4axggRVOWvtZts_iZTO-L-HRduPwnajdKU1fCAt3Uog_YH9RwCrfbQ1nxJpg==
+To: <idontneedawebsite@proton.me>
+Reply-To: <domains@dnupgrade.com>
+From: <domains@dnupgrade.com>
+Subject: idontneedawebsite.com
+Mime-Version: 1.0
+X-Pm-Spam-Action: inbox
+X-Pm-Spamscore: 0
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Origin: external
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjPFJUT9UUO9USyUsI1sI mj3NXbJ3l7pjIlISBQiT0yi0ONwSiPJFUFRQ9VEUkUUNSS9UOwojICLSJI6Uy2C4NOwCilR2XnYnVl uX2im8ZOsniPJFUCR6IJpeynWFbZ9Vul1WYjIioN0aHrWNYXZ2pfVmbHduVRfZWfHVcMAjy1ADNTMi MJpLCp19cbBXvhRncnbiQAsOjhm1IaxWfyB3M2Xv1VsZGijoIbFWphRHbyZj51ib2lW5aZ9Fml5WaH duVQuZWyjAMNADyuEjM2YwtIsdChm1IaxWfyB3M3XyBIib2ujAOMEDy5kjNTO5kQ2OD4TENMQDsh1m IWafxF0Y2vWdZclnfk9WbWZiwJtOisWlYYF20vNmLWbpJVkbmp2ZXbVm0l5WdCZy4I0MDyDIMM5Sj0 B3aiIiwFpbWjF9bYRXly92ZVeu91lYWijoIUJFPU9UTUSO9IsUyhm1IaxWf0F2YWZvdlfcnvHJcYIi 614CMjNyAc5Nz0TgONcD0ygTMCLwJNwX3iW0YOAju5ADMzMyUY0Mz3TcNMUzzwJCL3XwN1fYWzmFYZ IS6w4CMDMzkIzNT1jQNNczzsMTNnIfBdpc3oGNdXR3vul2XmY49owIj3jILMgT3wMDOjM5AMyNz2DU MLJCw3N3XXajR90aFw19balGzulGayZ6I40MCyzUMOMDy2MDNTNxYg0NTiSwNc9Fz0l2d2Yfh9fdGh 3BcbIS6y4CMDM1MQ5NTzjgMMID35QjNCLyJ5fdWtmFbZIS6sFmICbm1F0ZWlXJdc1ywz9Vd2d0lgiY 29X1fLJCzklmcjIioY4NjxjENMVDjxMDZTN3EY0MDkTVZNAzy91nI
+X-Source-Dir: cromestudio.com:/public_html
+X-Authenticated-Sender: mocha.prioritywebs.com: cromestu
+X-Get-Message-Sender-Via: mocha.prioritywebs.com: authenticated_id: cromestu/only user confirmed/virtual account not confirmed
+X-Antiabuse: Sender Address Domain - mocha.prioritywebs.com
+X-Antiabuse: Originator/Caller UID/GID - [1024 980] / [47 12]
+X-Antiabuse: Original Domain - proton.me
+X-Antiabuse: Primary Hostname - mocha.prioritywebs.com
+X-Antiabuse: This header was added to track abuse, please include it with any abuse report
+Date: Wed, 03 Jul 2024 23:03:31 -0400
+Message-Id: <E1sPCkt-0000000BnSk-1YlU@mocha.prioritywebs.com>
+X-Mailer: php
+X-Php-Script: 208.116.56.2/~cromestu/notifytwo.php for 172.56.101.254 X-PHP-Originating-Script: 1024:notifytwo.php
+Authentication-Results: mail.protonmail.ch; dkim=none
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=208.116.56.2
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=mocha.prioritywebs.com
+Authentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none) header.from=dnupgrade.com
+Received: from cromestu by mocha.prioritywebs.com with local (Exim 4.97.1) (envelope-from <cromestu@mocha.prioritywebs.com>) id 1sPCkt-0000000BnSk-1YlU for idontneedawebsite@proton.me; Wed, 03 Jul 2024 23:03:31 -0400
+Received: from mocha.prioritywebs.com (mocha.prioritywebs.com [208.116.56.2]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No client certificate requested) by mailin044.protonmail.ch (Postfix) with ESMTPS id 4WF1gS59Fmz3Q for <idontneedawebsite@proton.me>; Thu,  4 Jul 2024 03:03:32 +0000 (UTC)
+Delivered-To: idontneedawebsite@proton.me
+X-Original-To: idontneedawebsite@proton.me
+Return-Path: <cromestu@mocha.prioritywebs.com>
+
+We are selling the domain idontneedawebsite.com. Since you already own idon=
+tneedawebsite.us if you would like the more popular version we are making i=
+t available to you.
+
+The one time cost is just $199.99. That includes a year of registration and=
+ transfer of full ownership to you. Our domain transfer process is quick an=
+d easy.
+
+To purchase or to learn more go to:
+
+https://www.dnupgrade.com/order.php?domain=3Didontneedawebsite.com
+
+We respect your privacy. Unless you respond we will not contact you again.
+
+Thank you for your time and consideration.

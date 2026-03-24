@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "_Vf5jncZb3lZ7zREgyxbDN-rnutCEZY4JOnO8zSZ9L14rMVVzVL5dLkAKJqYQfa-KX2a9tQStMJm5jeKHGj3SA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "25"
+    ],
+    "ExternalID": "8af91dbf8812e395e62d36725.1f46de924f.20251029160923.73d1340744.8653253a@mail131.suw101.mcdlv.net",
+    "Subject": "Stop Waiting to Be Discovered Publish Your Book Today for $200",
+    "Sender": {
+      "Name": "The Pulp House Publishing",
+      "Address": "info@ebookpublishinghouse.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "The Pulp House Publishing",
+        "Address": "info@ebookpublishinghouse.com"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1761754393,
+    "Size": 8487,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce-mc.us20_246037394.18255645-1f46de924f@mail131.suw101.mcdlv.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=ebookpublishinghouse.com\r\n    header.i=info@ebookpublishinghouse.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=ebookpublishinghouse.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass\r\n smtp.mailfrom=mail131.suw101.mcdlv.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=198.2.184.131\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=ebookpublishinghouse.com header.i=info@ebookpublishinghouse.com\r\n header.b=\"gtMEJ5/P\"\r\nReceived: from mail131.suw101.mcdlv.net (mail131.suw101.mcdlv.net [198.2.184.131]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur103.protonmail.ch (Postfix) with ESMTPS id\r\n 4cxXN96wGnz5P for \u003cidontneedawebsite@proton.me\u003e; Wed, 29 Oct 2025 16:13:13 +0000 (UTC)\r\nReceived: from localhost (localhost [127.0.0.1]) by mail131.suw101.mcdlv.net (Mailchimp)\r\n with ESMTP id 4cxXJF7404z3tyKnX for \u003cidontneedawebsite@proton.me\u003e; Wed, 29 Oct 2025\r\n 16:09:49 +0000 (GMT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ebookpublishinghouse.com; s=k3;\r\n t=1761754190; x=1762024190; i=info@ebookpublishinghouse.com;\r\n bh=+MCagwyHbLUTTcMf34m3BXnV3anM2339Uyu7nV7/Xgk=;\r\n h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:\r\n  List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:\r\n  MIME-Version:CC:Date:Subject:From;\r\n b=gtMEJ5/P43e+loKfuM8/fT0betCvZ3lh/OQshn6G/pE29rUgH33SKoh9N1/lXdgYU\r\n  mmV6lBShRuB4KMuO9tbqUoYSqJ6upsQJK+ZZnky5bCjSz2oNFHECvuLc+XYnlkimxd\r\n  x0I60DHbNrm0YmwBnnRIGUj7vIyZcupONLG+85gjj/EWxcToERpsGnfWE010ygK6e/\r\n  ZXOawDqbmXKx2wruILvthe2rHmYJuBfcVMlTQTvXAc+fHp77z3/LeQrOsPsYS72UMq\r\n  +kLXPh76CR/pfXc5Dr4L4LLy8UmVtm9g798uK4s3ebh1ZMnhRJWNx+6Y7V79UpYLu3\r\n  UCDyhXPQIJq5Q==\r\nSubject: Stop Waiting to Be Discovered Publish Your Book Today for $200\r\nFrom: The Pulp House Publishing \u003cinfo@ebookpublishinghouse.com\u003e\r\nReply-To: The Pulp House Publishing \u003cinfo@ebookpublishinghouse.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nDate: Wed, 29 Oct 2025 16:09:34 +0000\r\nMessage-Id: \u003c8af91dbf8812e395e62d36725.1f46de924f.20251029160923.73d1340744.8653253a@mail131.suw101.mcdlv.net\u003e\r\nX-Mailer: Mailchimp Mailer - **CID73d13407441f46de924f**\r\nX-Campaign: mailchimp8af91dbf8812e395e62d36725.73d1340744\r\nX-Campaignid: mailchimp8af91dbf8812e395e62d36725.73d1340744\r\nX-Report-Abuse: Please report abuse for this campaign here:\r\n https://mailchimp.com/contact/abuse/?u=8af91dbf8812e395e62d36725\u0026id=73d1340744\u0026e=1f46de924f\r\nX-Mc-User: 8af91dbf8812e395e62d36725\r\nFeedback-Id: 246037394:246037394.18255645:us20:mc\r\nList-Id: 8af91dbf8812e395e62d36725mc list\r\n \u003c8af91dbf8812e395e62d36725.624239.list-id.mcsv.net\u003e\r\nX-Accounttype: pr\r\nList-Unsubscribe: \u003chttps://gmail.us20.list-manage.com/unsubscribe?u=8af91dbf8812e395e62d36725\u0026id=2fa0ff941c\u0026t=h\u0026e=1f46de924f\u0026c=73d1340744\u003e,\r\n \u003cmailto:unsubscribe-mc.us20_8af91dbf8812e395e62d36725.73d1340744-1f46de924f@unsubscribe.mailchimpapp.net?subject=unsubscribe\u003e\r\nList-Unsubscribe-Post: List-Unsubscribe=One-Click\r\nContent-Type: text/html\r\nMime-Version: 1.0\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJOOiTVdRTVEUSVEVyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0sjEOIBlSfR0TFUFJlDREPElVTIi6iwSMlUiMIuOjsDQNI9lk1JWZ1Zp9Z\r\n vbm7jpIIBlSiQ0TnOis1haWf2VZbFmt6ISZmIzhFjdGm19aa5Wl1R3XmbkVB1X3wzIXMUjwwMjNiIi\r\n wFpbWzF8bcJHfk9WbWZiwJtOisWlYMB3yy0SLDM1IkxMDwi5MdICsh1mIWafxByM3y3BXbI2iuAjOD\r\n M0Ak1Mz5TkOOQT1wAzNTM5YJtLCsWlYXN2hnVGd3b5J1vX2sGVZIojipFWbGbhN0tdCyjAMNAT5uIT\r\n MHciQJtLCsWlYXN2hnVGd3b5J5hX2iWUbOJiOTdVRETUVVSVEsyIUI1mhfxWa2Y0FdvZWfnlccJHv6\r\n IiYCM34U0Nz5DQNOQD0wYzMzMyUJwLCw3NXY0WiuAjOTN0IAzMDzDYOMMz01UjNCOiw9zcFtGFcXJ2\r\n hiU2cjOuAI0NTzDAMOYDz0MzMjN1UwiOCzF9cdl20fh2YGdf9hpcGp2hcbcmiuAjODM4EQ5MT2DkMN\r\n ET40UzNTOsYJ1Inul9bY1WliojI2d0FhsY20XNaLNXllRmbicw19zdV02ldYg2i91XfCLzJlkcmijo\r\n INkjwkNjMWM5Mc5ND0WMMZhDljBDNDZ3A19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\nX-Pm-List-Identifier: 8af91dbf8812e395e62d36725.624239.list-id.mcsv.net@info@ebookpublishinghouse.com\r\n",
+    "WriterType": 0
+  }
+}

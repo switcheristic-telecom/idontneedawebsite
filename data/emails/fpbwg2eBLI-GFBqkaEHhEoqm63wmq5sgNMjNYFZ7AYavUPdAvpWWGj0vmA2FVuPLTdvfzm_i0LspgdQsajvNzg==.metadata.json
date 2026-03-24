@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "fpbwg2eBLI-GFBqkaEHhEoqm63wmq5sgNMjNYFZ7AYavUPdAvpWWGj0vmA2FVuPLTdvfzm_i0LspgdQsajvNzg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "7ba35e1a53f0a8d9216d097059ac7961@nawa.liravetayo.co.in",
+    "Subject": "Launch Your Professional Website for Only $99 – Limited Time Offer!",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 335544321,
+    "Time": 1715232724,
+    "Size": 1751,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce1@surgehiocepart.online\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.vantagetech.online (mail.vantagetech.online [146.247.49.39]) by\r\n mailin036.protonmail.ch (Postfix) with ESMTP id 4VZhdp3P7Tz9vNPn for\r\n \u003cidontneedawebsite@proton.me\u003e; Thu,\r\n  9 May 2024 06:18:06 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=surgehiocepart.online\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=146.247.49.39\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: =?utf-8?Q?Launch_Your_Professional_Website_for_Only_$99_=E2=80=93_Limited_Time_Offer!?=\r\nMessage-Id: \u003c7ba35e1a53f0a8d9216d097059ac7961@nawa.liravetayo.co.in\u003e\r\nDate: Thu, 09 May 2024 05:32:04 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 969\r\nList-Unsubscribe: \u003chttps://nawa.liravetayo.co.in/unsubscribe.php?M=9710974\u0026C=2e2d58c8726b99373174dfcd4afdc117\u0026L=969\u0026N=1161\u003e\r\nX-Mailer-Recptid: 9710974\r\nX-Mailer-Sid: 1161\r\nX-Mailer-Sent-By: 40\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: nawa\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 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\r\n hYzkWZOMR2jxMjY2NzEJmYW4WQOI1n9\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

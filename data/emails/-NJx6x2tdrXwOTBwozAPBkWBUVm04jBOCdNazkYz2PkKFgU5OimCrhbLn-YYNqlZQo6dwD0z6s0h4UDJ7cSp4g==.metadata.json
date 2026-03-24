@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "-NJx6x2tdrXwOTBwozAPBkWBUVm04jBOCdNazkYz2PkKFgU5OimCrhbLn-YYNqlZQo6dwD0z6s0h4UDJ7cSp4g==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "25"
+    ],
+    "ExternalID": "8af91dbf8812e395e62d36725.1f46de924f.20251101140708.819231c608.e13113d5@mail136.atl101.mcdlv.net",
+    "Subject": "Let’s Turn Your Book into Your Legacy",
+    "Sender": {
+      "Name": "The Pulp House Publishing",
+      "Address": "info@mybookmarketing.com"
+    },
+    "ToList": [
+      {
+        "Name": "Webb Notneeded",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "The Pulp House Publishing",
+        "Address": "info@mybookmarketing.com"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1762006091,
+    "Size": 7905,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce-mc.us20_246037394.18255703-1f46de924f@mail136.atl101.mcdlv.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=mybookmarketing.com\r\n    header.i=info@mybookmarketing.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=mybookmarketing.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass\r\n smtp.mailfrom=mail136.atl101.mcdlv.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=198.2.130.136\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=mybookmarketing.com header.i=info@mybookmarketing.com header.b=\"kV/3N2PW\"\r\nReceived: from mail136.atl101.mcdlv.net (mail136.atl101.mcdlv.net [198.2.130.136]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur1017.protonmail.ch (Postfix) with ESMTPS id\r\n 4czKSW4Pz7z9vNQ9 for \u003cidontneedawebsite@proton.me\u003e; Sat,\r\n  1 Nov 2025 14:08:11 +0000 (UTC)\r\nReceived: from localhost (localhost [127.0.0.1]) by mail136.atl101.mcdlv.net (Mailchimp)\r\n with ESMTP id 4czKRc38q0zKswd0k for \u003cidontneedawebsite@proton.me\u003e; Sat,\r\n  1 Nov 2025 14:07:24 +0000 (GMT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mybookmarketing.com; s=k3;\r\n t=1762006044; x=1762276044; i=info@mybookmarketing.com;\r\n bh=AXyZke+D7blUlYlj8c9AkWvGuYhWPW/RsQLvMs+349Y=;\r\n h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:\r\n  List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:\r\n  MIME-Version:CC:Date:Subject:From;\r\n b=kV/3N2PWKCQbQmOPBBgviv+x60DA0Gxg/ewOwWSvTMLdnSskTShtL/V+wm5huWhNW\r\n  eX9JXZpBiHIwzC6GhJ/RQxNXbNwD4851/gYuOmup3gQQpiHOnT5q6T2O50Kg5KUBmO\r\n  EV46cXTWRiMlz8z72uA5L3kH4lqWcOTKVJtIjcfIPBZTNhKI8oA2pTAf5gmwGP63zb\r\n  cPoO6yMT2QsiGaATKYIdqEey8idVpirXMpVmLHaWE5OaWuT+B4gONwq0DWCyriRP92\r\n  LtL23LheAv8iZCDHanyN295QBvqbjEZtwrsOLllpyaDSBt5cTh15eYfZfziyOsqIKy\r\n  dNsrFBmhLIIdQ==\r\nSubject: =?utf-8?Q?Let=E2=80=99s_Turn_Your_Book_into_Your_Legacy?=\r\nFrom: The Pulp House Publishing \u003cinfo@mybookmarketing.com\u003e\r\nReply-To: The Pulp House Publishing \u003cinfo@mybookmarketing.com\u003e\r\nTo: Webb Notneeded \u003cidontneedawebsite@proton.me\u003e\r\nDate: Sat, 01 Nov 2025 14:07:18 +0000\r\nMessage-Id: \u003c8af91dbf8812e395e62d36725.1f46de924f.20251101140708.819231c608.e13113d5@mail136.atl101.mcdlv.net\u003e\r\nX-Mailer: Mailchimp Mailer - **CID819231c6081f46de924f**\r\nX-Campaign: mailchimp8af91dbf8812e395e62d36725.819231c608\r\nX-Campaignid: mailchimp8af91dbf8812e395e62d36725.819231c608\r\nX-Report-Abuse: Please report abuse for this campaign here:\r\n https://mailchimp.com/contact/abuse/?u=8af91dbf8812e395e62d36725\u0026id=819231c608\u0026e=1f46de924f\r\nX-Mc-User: 8af91dbf8812e395e62d36725\r\nFeedback-Id: 246037394:246037394.18255703:us20:mc\r\nList-Id: 8af91dbf8812e395e62d36725mc list\r\n \u003c8af91dbf8812e395e62d36725.624239.list-id.mcsv.net\u003e\r\nX-Accounttype: pr\r\nList-Unsubscribe: \u003chttps://gmail.us20.list-manage.com/unsubscribe?u=8af91dbf8812e395e62d36725\u0026id=2fa0ff941c\u0026t=h\u0026e=1f46de924f\u0026c=819231c608\u003e,\r\n \u003cmailto:unsubscribe-mc.us20_8af91dbf8812e395e62d36725.819231c608-1f46de924f@unsubscribe.mailchimpapp.net?subject=unsubscribe\u003e\r\nList-Unsubscribe-Post: List-Unsubscribe=One-Click\r\nContent-Type: text/html\r\nMime-Version: 1.0\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJOOiTVdRTVEUSVEVyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0sjcOIBlSfR0TFUFJlDREPElVTIi6iwSMlUiME0Oj5jcLLJCfiVGZWdfd5\r\n maW6yIbeJyQE9kUjI7pltImlWdYX52hiUWbiOoJRhc3f2tYZlmu09VZWdl59wZFyV8dMID1zYDMCMs\r\n I1hImfWxaMB3yv12XGZsVoiIjpWFbbNDwt0icjMyAA5NTuTIMcQHitJCLWYslNwXzwl9cc9miwojIj\r\n LwAUyND5TkMOkT3wgzMzM1cwiOSpWFbb9FjlRXY2Zy99teVl2RbbIC6h1mIWajxQtYXwTILMUjwyET\r\n OnL0BwiIipWFbb9FjlRXY2Zy99ueVlW1YIojiXVkT0UFxRFVFilMULJCtslWY2XhNVndG53JbXB3yi\r\n I2bjOuAgwOD2DkNOcT45UzNzN1YwiNizF9ccFGtwojIjL1YA0Mj3DcMOUT5wYDMjNscBfInh3Bcb9V\r\n ilNXYjIwoY1Lj0jAMMcD35UTODMwYcsNjfnBIcd3poNGd3XvRBoX3oXNaa5WnwojIjLwAY3NTyzAMM\r\n UT03czMTMyAUsOD1nJIb9lul1WYjIioF0d2s2hYaNX0lNXLmblR1wcizV9ddl20ig2YXf91JzLCkml\r\n cIojiwkjNjN0ENiNGm2FMNkT50E2NGOkFBlMT9n1I\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\nX-Pm-List-Identifier: 8af91dbf8812e395e62d36725.624239.list-id.mcsv.net@info@mybookmarketing.com\r\n",
+    "WriterType": 0
+  }
+}

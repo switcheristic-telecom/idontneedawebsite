@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "9P3fJP1RvNNt1_MNkqVth_OMFFhj5qARmbfY9ShYUSvUfsvTGi68bA6lkboKdyjy5KpDtyfJ_Ziy1ap5pac4jA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "4KCJNJ228YEAW5FWKNH9AJHWE8@notify.proton.me",
+    "Subject": "2024 Proton Terms of Service update",
+    "Sender": {
+      "Name": "Proton",
+      "Address": "no-reply@notify.proton.me"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Proton",
+        "Address": "no-reply@notify.proton.me"
+      }
+    ],
+    "Flags": 13,
+    "Time": 1728159814,
+    "Size": 74979,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [
+      {
+        "ID": "W9a7ueUyYA37IiTrrW-2h7g-uzuJVml65v_VfIMK2Ai2zQmnLxFC2CTWMUxzYScUJ_bRKFaO8-i9pR9eoycTQw==",
+        "Name": "logos-footer.png",
+        "Size": 5283,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003cf88f84e56ea26a6459cf@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "RIuWcPbvDh_sR0JlzlWTb3wjLNkYhc5H9kdZDdwpcyKMBLCckx9GLfa9q2GHtZTSDZwO5sqLQfLJz7k1wJvw5A==",
+        "Name": "link.png",
+        "Size": 2302,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c43aa99b6ae4f3436edf0@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "k-x5JWdN5Pt0mcuvtUw41GefHiUFRinrHEHwDgbTB0eeO6JvlsEz3tX0Y1nCDktSDC_mh9egyNe6MLevdzWUQQ==",
+        "Name": "mastodon.png",
+        "Size": 3722,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003cbdc3cf6119d3013d22c6@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "XzprNXkW0pkbjqJmvDeCe9EMFzODYmTANv0qVwDt4uuSV_wIdxdjem0nlMIqz8VCy-dVxKDCMGVNcHRQjQtpoQ==",
+        "Name": "instagram.png",
+        "Size": 2592,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c2d6d23c273d1cded577f@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "lmjpv8O39P6tFxgq-ks2OqzfGU4Dgx5idcDLj4PMcdLHHGiOExZeFdt7PuFL_64Dxd4rHDEfFVJTHSt34pdATw==",
+        "Name": "facebook.png",
+        "Size": 1721,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003cde3faf9ecf2cdaf12af9@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "G9GdhLFLRdvDKt9Ec7GYY1ehTX-rTuV05lg8w7Gv6NO3ZDXQ6BTkmbg12rk52dUyAVfOrEJGEIlyyYUJrYjDnQ==",
+        "Name": "linkedin.png",
+        "Size": 1927,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c544a3cde5c15f913f477@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "fs9xecvXtsoyGzEIYlJyZwwF8RZ5fkOAIStPrGawkoduYy_LlfdTnzfRSACssyNmHof0FWFJQeUb9ZGFrqH-xA==",
+        "Name": "reddit.png",
+        "Size": 2444,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003ca8763e0cfbf01d85b23c@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "G4DrieWDVCXI3xFYZJo5lyOOfSBsEP5PL2FFxeQZz5ZC-gPklbkwwIatR8b3CQuSeTx_83Bvs8espFUgR-9y0w==",
+        "Name": "twitter.png",
+        "Size": 2225,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c70aeb8cd14541de1e1d2@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      },
+      {
+        "ID": "B-SV5edop5k-zP3vmIQhfUV1SpDBoPJcBlPzMJ4kuNTF1K2_5R8K1mv-W8VolSbYj5gDqbAa7x3BnRNkUp979Q==",
+        "Name": "logo-proton.png",
+        "Size": 3304,
+        "MIMEType": "image/png",
+        "Disposition": "inline",
+        "Headers": {
+          "x-pm-content-encryption": "end-to-end",
+          "content-disposition": "inline",
+          "content-id": "\u003c789cb1458a353fe6fb1e@notify.proton.me\u003e"
+        },
+        "KeyPackets": "wV4DO+yd4C34ZvwSAQdAEhHPv56Fg/BYUItlTvSFxiLwdWdIY94xoZwfuim7YHUwJ08Qi3Adv7JqYPP8Zy7W4AI16Z1v9d0vkG52eDPDRBnoNq3Da/hBov+6TxmThWPR",
+        "Signature": ""
+      }
+    ],
+    "MIMEType": "text/html",
+    "Headers": "Date: Sat, 05 Oct 2024 20:23:34 +0000\r\nFrom: Proton \u003cno-reply@notify.proton.me\u003e\r\nSubject: 2024 Proton Terms of Service update\r\nX-Auto-Response-Suppress: OOF\r\nPrecedence: bulk\r\nMessage-Id: \u003c4KCJNJ228YEAW5FWKNH9AJHWE8@notify.proton.me\u003e\r\nX-Pm-Origin: internal\r\nX-Pm-Content-Encryption: end-to-end\r\nX-Pm-Spamscore: 0\r\nReceived: from mail.protonmail.ch by mail.protonmail.ch; Sat, 05 Oct 2024 20:44:45 +0000\r\nTo: idontneedawebsite@proton.me\r\nX-Original-To: idontneedawebsite@proton.me\r\nReturn-Path: \u003cno-reply@notify.proton.me\u003e\r\nDelivered-To: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Attached: logos-footer.png\r\nX-Attached: link.png\r\nX-Attached: mastodon.png\r\nX-Attached: instagram.png\r\nX-Attached: facebook.png\r\nX-Attached: linkedin.png\r\nX-Attached: reddit.png\r\nX-Attached: twitter.png\r\nX-Attached: logo-proton.png\r\n",
+    "WriterType": 0
+  }
+}

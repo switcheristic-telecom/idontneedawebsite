@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "gXOwYbYf5oHt_nlAYur27Cf8Tu-v-qeL0tFLgyKL4_zoz3xRs2capD4nQbvYS3rI_lO08XKIWqM4-jxRMUd8qw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "",
+    "Subject": "Vehicle-To-Grid (V2G)",
+    "Sender": {
+      "Name": "Bartholomew",
+      "Address": "ava@giixinresearch.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "VICXIN132@163.com"
+      }
+    ],
+    "CCList": [
+      {
+        "Name": "",
+        "Address": "VICXIN132@163.com"
+      }
+    ],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Bartholomew",
+        "Address": "ava@giixinresearch.com"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1767729813,
+    "Size": 564,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/plain",
+    "Headers": "Return-Path: \u003cava@giixinresearch.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from out0-15.static.mail.aliyun.com (out0-15.static.mail.aliyun.com\r\n [59.82.0.15]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur108.protonmail.ch (Postfix) with ESMTPS id\r\n 4dm2D61bkpzbY for \u003cidontneedawebsite@proton.me\u003e; Tue,\r\n  6 Jan 2026 20:03:33 +0000 (UTC)\r\nReceived: from DESKTOP-0CJ6VLS(mailfrom:ava@giixinresearch.com\r\n fp:SMTPD_---.g.g7ADy_1767729784 cluster:ay29)\r\n          by smtp.aliyun-inc.com;\r\n          Wed, 07 Jan 2026 04:03:14 +0800\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=giixinresearch.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=giixinresearch.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=59.82.0.15\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nContent-Type: text/plain\r\nMime-Version: 1.0\r\nFrom: Bartholomew \u003cava@giixinresearch.com\u003e\r\nTo: VICXIN132@163.com\r\nCc: VICXIN132@163.com\r\nSubject: Vehicle-To-Grid (V2G)\r\nDate: Tue, 06 Jan 2026 20:03:02 +0000\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJFOiDFVRQRVJB50TCTsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0zjIOLJCQE9kU1XSBRJRUJ1RQT40isEjOlITJoxIj4i4NLJCfiVGZWdfd5\r\n maW6yIbeJyQE9kUjI7pltImlWdYX52hiUWbiOoJRhc3f2tYZlmu09VZWdl59wZFyV8dMID1zATMCMs\r\n I1hImfWxaMB3yv12XGZsVoiIjpWFbbNDwt0icjMyAA5NTuTIMcQHitJCLWYslNwXzwl9cc9miwojIj\r\n LwAQ1ND5TkNOkTzwkjNDO4QUsMzhm1IaxWf0F2YWZvdlfcnkW9bZwWitJiOWYslF0Y2yS0LMID1xkD\r\n MiMw5IsdChm1IaxWf0F2YWZvdlfcntmFbZIS6EVkIUVBNlPVEMkFTIwiipFWbFbj9RlYXy29Ze9Vwi\r\n 9mcjIwoYwLj2TINNkT35kDNDO3QEsNDfnBIcB3h6ISbCM54I3Nz0zINNkzwzcTNTMsIBfInh3Bcb9V\r\n ilNXYjIwok3Lj3jcMMQj31ATOzNxMwiMizF9cdl20fh2YGdf9hpcGp2hcbcmiuAjODMyII0OT4jINM\r\n AT45MzNDOzUJyLCfW5dbFmt6ISZnIhdNodGzGlbd1Czk5WZXZtIVfcHp3dcdNGo91nISfiwJpc36CI\r\n ZIYj52QWNWY2EQ5Nzk2VYNY225ATYGMxMJ9YyfQ==\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

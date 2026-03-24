@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "r8CvET5TKyW0D-rbEB-uGitHQpAy1ORTflpKqiQao2xUoptow7c0XB2pUotvE0WpnJ7fre1c8XI5pdGH9rRwyA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "25ad1e99969d59355fdd20279e5fd19a@nawa.liravetayo.co.in",
+    "Subject": "Complete Business Solution",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 469771265,
+    "Time": 1713443284,
+    "Size": 2793,
+    "Unread": 0,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce1@cingerroyal.online\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.calertonya.online (mail.calertonya.online [178.175.148.154]) by\r\n mailin049.protonmail.ch (Postfix) with ESMTP id 4VKztb4vtRzBP for\r\n \u003cidontneedawebsite@proton.me\u003e; Thu, 18 Apr 2024 14:00:07 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=cingerroyal.online\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=178.175.148.154\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: Complete Business Solution\r\nMessage-Id: \u003c25ad1e99969d59355fdd20279e5fd19a@nawa.liravetayo.co.in\u003e\r\nDate: Thu, 18 Apr 2024 12:28:04 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 954\r\nList-Unsubscribe: \u003chttps://nawa.liravetayo.co.in/unsubscribe.php?M=9576888\u0026C=333a60bd0a4d05fb7070109008811040\u0026L=954\u0026N=1146\u003e\r\nX-Mailer-Recptid: 9576888\r\nX-Mailer-Sid: 1146\r\nX-Mailer-Sent-By: 40\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: nawa\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Pm-Spam: 0yeyJI6cyyyJeZBXviQncnOisJDQVB05XIpjbs0FMkITFI6TiszAWIFmz0ojbzM4IwgO\r\n SuXBaZQX64cTMjL3E4xNSuDgNM8CygwyM2Y19RybnNTpeRJCdCJCLVQFl9IU1iU0QOslt44SMyNiwQ\r\n uOTljcMI0lsNRkIVQDJBPX1DElTW9VTUZ0TkRJFI6TCuzAWMwSip92Z2ZukV0bmgDoIT8mgsFmdWag\r\n QBGU1OCBLbBy2pxWYCZEBlNS0vG5LbUmiiwSXlRPJ9ITVfVNQR4EiwslOSXiwJPRlOV9TRFVfW5URl\r\n RPJI6TSszAWIBnyv12bGdvlBnbkn2lba5SusQXZmY19NlbmjUBMa5WnyJXZ3bhl5vbCpmxbbUmiiwS\r\n XESTFlOX0SEVVUB1JfVkU0UHlpbIjsV0MIhkBM91UVSUNVOX1C1VUIpjbuATLDMdFJILCfVNQUVkQU\r\n lFTyT6IAsWzynBIb12vvlGdkbnBlnb2uS5aZQXiiwSXUTNl9IRVME1VX90OikFTlOwsJdLjNCJLS1U\r\n FSR1XUQFNpbIjiCwMMpD+s0lIkIJ1NJU1fkdTW1EfiEUVlOwswiXSVkVTUFkMQN1XUQi0swOlwCILL\r\n kj3dJSMCLQJlTSEOElSRIy6sIzWmIvddpaWvmNLb1ScwATd2MsVJhaX0mVdYlXvvNmLmLul0sIlDlJ\r\n IURFfV90QlTfR5FT0bjpIMwCidJSMCLSJZEQ1P0NXV5UUFp1XkUi8swOlwCILI0lsFJlIEUZx9fVEE\r\n URQU9lFG9VUkUN9pbIjsF0MIJlfJtERVTO9I6QSdzBWLJCSQN1XlRT9ZUT0JkFRTIC6sAzWnIh5w6b\r\n GdyJYLJCUE91TlTO95FT0bjpIM0FsPRlI0XB1NIVEO0VXVJlDfRFUUQMxpbIjsF0MIZlJBx0TEVEVR\r\n JX0DkVUV9FTiYEUlOzsVdLjiSwfcN2viUmcjOuQJ9OTzCJLcIi6hJye3YpR4ib2ziJOcFGtiwiI2Y0\r\n FdvZWinkcOJiQN9kU1TJR5TT0iiwIbxWfvN2cmciUsiOnPFJURIC6sEjMlISBRfT0FFJURlEDPlEVi\r\n T6IwiMSilMUOQjusITOlIk9J1ZWp19ZbZmv7pjIlISBQiT0insOa1WhfV2ZmbtFI6ZSzmhIdFGjm91\r\n aWal5R1X3kmVbXB31wIzXjMwQI4MziiwIaNXfw1Wa3b0J50YWwjoILJCtslWYzXwN9tcll2RbbIC6h\r\n 1mIWa0xcuYWt29YYlmufRWZmZulR1ZXkmVbLIjwwQjMjMxINrLmiHQcLJCtslWYzXwN9wclim9cIoj\r\n wwAjLDM2Ek5NT5TkONkz43ITODN2UJtLCsWlYXN2hnVGd3b5J1vX2sGVZIojipFWbGbhN5jdCi21ba\r\n 5Wlm9FZWal5VudHuWQZMAjyyADNjMuEtwY2sCIdI1mhfxWa2Y0FdvZWfnlcbFmt6ISZlISB1PT0PEl\r\n VTMlitJCLWYslNhX2nGVdbJ35yB3X2biIAuOj1DAOMcD2zADMDM0cQ2NjwCJLXN3wi0WYjOuAM3OT3\r\n TcMNcD53YjMTMwIwiNCzF9ccFGthJ2X2ciUAuOj3TMOMcT35cDNjM3YIwMTiCwNc9Fz0l2d2Yfh9fd\r\n GiW5abg3iuAjOzM0MMwNz4DUMOAT4yYDNSNiw9zcF02ldYh2ff9Gd3chBI6bSyC4MNkz5wETODM4AA\r\n 3OT4zEMLJCyf5WdmbtFI6ZSsmFIb1Cm0FWZXdlJ1wcyzV9ddl20ig2YXf91JzLCkmlcIojiyYjNTM3\r\n IhhNjwzENNMDxmZGZGMyYNjNT9n1I\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

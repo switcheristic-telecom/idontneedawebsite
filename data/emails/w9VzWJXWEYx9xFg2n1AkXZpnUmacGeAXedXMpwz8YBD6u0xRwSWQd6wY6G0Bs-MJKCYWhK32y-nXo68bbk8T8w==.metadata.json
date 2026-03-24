@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "w9VzWJXWEYx9xFg2n1AkXZpnUmacGeAXedXMpwz8YBD6u0xRwSWQd6wY6G0Bs-MJKCYWhK32y-nXo68bbk8T8w==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "0000000000000e7fe1064c6d6060@google.com",
+    "Subject": "Immediate Action Required: Security Update",
+    "Sender": {
+      "Name": "Ledger",
+      "Address": "noreply@center1-ledger.firebaseapp.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Ledger",
+        "Address": "noreply@center1-ledger.firebaseapp.com"
+      }
+    ],
+    "Flags": 1073741825,
+    "Time": 1772882513,
+    "Size": 2391,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cnoreply@center1-ledger.firebaseapp.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=firebaseapp.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=center1-ledger.firebaseapp.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass\r\n smtp.mailfrom=center1-ledger.firebaseapp.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.222.70\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=firebaseapp.com header.i=@firebaseapp.com header.b=\"WE+tcHdT\"\r\nReceived: from mail-ua1-f70.google.com (mail-ua1-f70.google.com [209.85.222.70]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin050.protonmail.ch (Postfix) with ESMTPS id\r\n 4fSgpT55GGz3J for \u003cidontneedawebsite@proton.me\u003e; Sat,\r\n  7 Mar 2026 11:21:53 +0000 (UTC)\r\nReceived: by mail-ua1-f70.google.com with SMTP id a1e0cc1a2514c-94e483d3737so29604197241.2\r\n        for \u003cidontneedawebsite@proton.me\u003e; Sat, 07 Mar 2026 03:21:53 -0800 (PST)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=firebaseapp.com; s=20230601; t=1772882507; x=1773487307; darn=proton.me;\r\n        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=/0y75tdkBW3o8Gf4qqgH2ot1xJUL3YX2HzZR5ioi4Nw=;\r\n        b=WE+tcHdT5c/zASFe8f0pZmKBLroN7vqU8ysR1HHZ6NZUsbXYLbrEM9RSRmNst6WneU\r\n         2XMpKUihszfMXjIWVa5yAnNsNwjliGszHybZnNq3L8hCU+GyYxUlGKckOFigujG/cian\r\n         QPkeHJuzBeAvKbahXYG+F8337YhkAt1LT2dpD7IN4pUc95m1LidT7ykaTkPo8nGyuhuy\r\n         0jyx0d8Re7aW2L8JGv0zHW9wJFOpQRTDlhNv1wRj6u5xn5uwduDXApLL/SgMHh5Bpdhw\r\n         glqSHMK9ZYVzYxaR5Tqsj1fbzYVGVwxYScLRuz+i8LAZV/Ey06WNh6SOLIgeOHTr9vCz\r\n         tGCQ==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1772882507; x=1773487307;\r\n        h=to:from:subject:date:message-id:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=/0y75tdkBW3o8Gf4qqgH2ot1xJUL3YX2HzZR5ioi4Nw=;\r\n        b=nKjAjVduuvm9y1KoVAxa5+5hLJd7dyTEPDb/CrmgNki/lYrmrx0rQs8UbEvx1GVDDJ\r\n         PapBoTzJApP8hvIPXANd8bC8yIN5ERoreLoYDD+OTEaFftKuagDabv7LmikSuDPtOhDd\r\n         /1qY8bYw4rTn3eXdghKKkyGJfDw03o80UhPSWI8lIYbWpWZj3un+YmVFVa3PZ43R3dhq\r\n         KlK1KJ3/sKMReDsXkxPwbcx0PPB04x2gMrPTUyRNz6HOaYz1Hiiw2I68U1q8PLNmtKRz\r\n         q0cXJ2fCKLsr+xqhIvPNwHhrYic8vsFIm8EWjwczcb4iBu1PGy1Yn0YeftjP+70g8SzM\r\n         czLw==\r\nX-Gm-Message-State: AOJu0Yz9JeHZxbAAU+ktB+1hIX7SgLz/9m3qxB9ryCp2L5HQVGHRixZd\r\n iEA70e5iWLX94xEyW1lihHrWdZMsatV45fK/ncTmtplmX7NSLFPWx3f0A1AoF4pQpuTzAw65mJj Y1h9QmMW+dw==\r\nMime-Version: 1.0\r\nX-Received: by 2002:a05:6102:548d:b0:5db:1fbc:4462 with SMTP id\r\n ada2fe7eead31-5ffe61de9d5mr2117694137.31.1772882506972; Sat, 07 Mar 2026 03:21:46 -0800\r\n (PST)\r\nMessage-Id: \u003c0000000000000e7fe1064c6d6060@google.com\u003e\r\nDate: Sat, 07 Mar 2026 11:21:46 +0000\r\nSubject: Immediate Action Required: Security Update\r\nFrom: Ledger \u003cnoreply@center1-ledger.firebaseapp.com\u003e\r\nTo: idontneedawebsite@proton.me\r\nContent-Type: text/html\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2Oi1GUNNEz0jFzNTY2IJlN\r\n m3WYZMVjliYzNCLzJlkcmijoINljhhBzYTNxINmY21WQZMkz21EGZTMmh19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

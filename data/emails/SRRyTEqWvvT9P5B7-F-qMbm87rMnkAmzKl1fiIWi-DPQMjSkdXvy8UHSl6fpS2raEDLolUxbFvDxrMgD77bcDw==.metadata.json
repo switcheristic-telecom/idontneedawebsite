@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "SRRyTEqWvvT9P5B7-F-qMbm87rMnkAmzKl1fiIWi-DPQMjSkdXvy8UHSl6fpS2raEDLolUxbFvDxrMgD77bcDw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "x9qh36m76jzeo3wxfcf0@koga.cadim.com.ng",
+    "Subject": "Quick Account Check-In",
+    "Sender": {
+      "Name": "Customer Support Team",
+      "Address": "dmenvylnck1ktyjei8d1@koga.cadim.com.ng"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Customer Support Team",
+        "Address": "m0hiu3zpyd2coysondql@koga.cadim.com.ng"
+      }
+    ],
+    "Flags": 1073741841,
+    "Time": 1743537427,
+    "Size": 220,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cpgc2skh8y2wqakjcq3vv@koga.cadim.com.ng\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail4.cadim.com.ng (mail4.cadim.com.ng [23.254.226.55]) (using TLSv1.3\r\n with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinosl105.protonmail.ch (Postfix) with ESMTPS id\r\n 4ZRzSB2Ntyz3s for \u003cidontneedawebsite@proton.me\u003e; Tue,\r\n  1 Apr 2025 20:02:33 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=koga.cadim.com.ng\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=koga.cadim.com.ng\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=23.254.226.55\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nDate: Tue, 01 Apr 2025 19:57:07 +0000\r\nTo: idontneedawebsite@proton.me\r\nFrom: Customer Support Team \u003cdmenvylnck1ktyjei8d1@koga.cadim.com.ng\u003e\r\nReply-To: Customer Support Team \u003cm0hiu3zpyd2coysondql@koga.cadim.com.ng\u003e\r\nSubject: Quick Account Check-In\r\nMessage-Id: \u003cx9qh36m76jzeo3wxfcf0@koga.cadim.com.ng\u003e\r\nX-Priority: 3\r\nX-Mailer: PHPMailer 6.4.1 (https://github.com/PHPMailer/PHPMailer)\r\nAuto-Submitted: auto-generated\r\nX-Auto-Response-Suppress: OOF, AutoReply\r\nX-Abuse: Please report abuse here \u003cmailto:abuse@koga.cadim.com.ng?c=5932607103\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2Oih2VNMMT0wITYWMwQZlY\r\n zyDIZZET0iEGMCLzJlkcmijoINdjl2QzYWNyII3YTxWMZYcT0kRGN2N3E19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

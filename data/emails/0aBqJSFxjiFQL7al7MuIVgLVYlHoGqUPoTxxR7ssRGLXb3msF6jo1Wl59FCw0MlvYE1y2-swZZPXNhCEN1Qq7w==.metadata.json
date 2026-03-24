@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "0aBqJSFxjiFQL7al7MuIVgLVYlHoGqUPoTxxR7ssRGLXb3msF6jo1Wl59FCw0MlvYE1y2-swZZPXNhCEN1Qq7w==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "1717085130740040.6658a3caab5c1@wappsender.app",
+    "Subject": "Unlock Now: Exclusive Business Email Database",
+    "Sender": {
+      "Name": "Wapp Sender",
+      "Address": "info@wappsender.app"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "wappcloudsender@gmail.com"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1717085130,
+    "Size": 3009,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce@emailseramarketing.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=fail (Bad 2048 bit\r\n    rsa-sha256 signature.) header.d=myemailsmtp.com header.a=rsa-sha256;\r\n    dkim=fail (body hash mismatch (got\r\n    b'lUuM1TdOdFJrj6F/aGrIQ4XiTCf9jmAT0C/GOCN31L0=', expected\r\n    b'PCgtMHIP+K2iQFI+4cFEa+lyEYlII5UNWz3ILFRTsgY='))\r\n    header.d=wappsender.app header.i=@wappsender.app header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=wappsender.app\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=emailseramarketing.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=144.217.88.231\r\nAuthentication-Results: mail.protonmail.ch; dkim=fail reason=\"signature verification\r\n failed\" (2048-bit key) header.d=myemailsmtp.com header.i=@myemailsmtp.com\r\n header.b=\"t3Ac8rsl\"; dkim=fail reason=\"signature verification failed\" (1024-bit key)\r\n header.d=wappsender.app header.i=@wappsender.app header.b=\"Vcf+y3OM\"\r\nReceived: from smtp1.myemailsmtp.com (vps-79f02288.vps.ovh.ca [144.217.88.231]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin052.protonmail.ch (Postfix) with ESMTPS id\r\n 4Vqrh90qLhz9vNQC for \u003cidontneedawebsite@proton.me\u003e; Thu, 30 May 2024 16:05:44 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=myemailsmtp.com;\r\n  h=list-unsubscribe:precedence:content-type:mime-version:to\r\n :reply-to:from:subject:date:message-id; s=dkim; t=1717085131; x= 1719677132;\r\n bh=lUuM1TdOdFJrj6F/aGrIQ4XiTCf9jmAT0C/GOCN31L0=; b=t\r\n 3Ac8rslSatvg1df63JhI54xBPb9Q11iinQ86Ujrwmgct5PKRO79mSgCUxezfShIp\r\n zvcxort05Z7cf6UJCaGOlfpuhuyaZF1R34ZzMurHbOklp6bg+OpmDrs0w8qSqlIt\r\n CvNodZZ3SCvP5zGqR6dNpeLgIW3RWrKzqjX2PvV+wg=\r\nDkim-Signature: v=1; a=rsa-sha256; bh=PCgtMHIP+K2iQFI+4cFEa+lyEYlII5UNWz3ILFRTsgY=;\r\n d=wappsender.app; h=Message-ID: Date: Subject: From: Reply-To: To: MIME-Version:\r\n Content-Type: X-Acelle-Subscriber-Id: X-Acelle-Sending-Server-Id: X-Acelle-Message-Id:\r\n X-Acelle-Customer-Id: X-Acelle-Campaign-Id: Precedence: List-Unsubscribe;\r\n i=@wappsender.app; s=mailer; t=1717085131;\r\n b=Vcf+y3OM9A9EY8KskmY5a42RLQiAyRikLShnKXNC2gzxPkcHnswPe+UroyRFvaPLl9gYrMJ4U\r\n 2pVX3vn+LJjQdWiEYf2VGFYsdYJyfrazYMk4nRdBjF8UCaukPIvB4xjrZGy7kU8le4srlDtPf\r\n TD38snkconr+prkZS6x8jrBfA=\r\nMessage-Id: \u003c1717085130740040.6658a3caab5c1@wappsender.app\u003e\r\nDate: Thu, 30 May 2024 16:05:30 +0000\r\nSubject: Unlock Now: Exclusive Business Email Database\r\nFrom: Wapp Sender \u003cinfo@wappsender.app\u003e\r\nReply-To: wappcloudsender@gmail.com\r\nTo: idontneedawebsite@proton.me\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Acelle-Subscriber-Id: 2cee545df2be5\r\nX-Acelle-Sending-Server-Id: 66586c90e9cb1\r\nX-Acelle-Message-Id: 1717085130740040.6658a3caab5c1@wappsender.app\r\nX-Acelle-Customer-Id: 65cf6fc855b77\r\nX-Acelle-Campaign-Id: 66586c90e9cb1\r\nPrecedence: bulk\r\nList-Unsubscribe: \u003chttps://emailseramarketing.com/c/2cee545df2be5/unsubscribe/MTcxNzA4NTEzMDc0MDA0MC42NjU4YTNjYWFiNWMxQHdhcHBzZW5kZXIuYXBw\u003e\r\nX-Spam: Yes\r\nX-Pm-Spam: 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\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 20\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

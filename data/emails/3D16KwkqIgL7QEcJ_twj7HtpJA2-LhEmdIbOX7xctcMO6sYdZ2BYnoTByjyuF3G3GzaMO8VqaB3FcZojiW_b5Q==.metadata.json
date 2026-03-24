@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "3D16KwkqIgL7QEcJ_twj7HtpJA2-LhEmdIbOX7xctcMO6sYdZ2BYnoTByjyuF3G3GzaMO8VqaB3FcZojiW_b5Q==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "4c8cc0da47f123d24bbe6742ebd6f93d@nawa.desibleken.co.in",
+    "Subject": "Your Business Catalyst | GOIGI",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 335544321,
+    "Time": 1719483004,
+    "Size": 2073,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce1@surgehiocepart.online\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.kyoposco.online (mail.kyoposco.online [178.175.148.156]) by\r\n mailin051.protonmail.ch (Postfix) with ESMTP id 4W8w4X39pKzJP for\r\n \u003cidontneedawebsite@proton.me\u003e; Thu, 27 Jun 2024 10:37:32 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=fail (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=fail smtp.mailfrom=surgehiocepart.online\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=178.175.148.156\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: Your Business Catalyst | GOIGI\r\nMessage-Id: \u003c4c8cc0da47f123d24bbe6742ebd6f93d@nawa.desibleken.co.in\u003e\r\nDate: Thu, 27 Jun 2024 10:10:04 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 991\r\nList-Unsubscribe: \u003chttps://nawa.desibleken.co.in/unsubscribe.php?M=9856802\u0026C=48c04a2ce22a905e405b2c33015523ca\u0026L=991\u0026N=1184\u003e\r\nX-Mailer-Recptid: 9856802\r\nX-Mailer-Sid: 1184\r\nX-Mailer-Sent-By: 40\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: nawa\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjPFJUT9UUO9USyUsI1sI\r\n mj3NXbJ3l7pjIlISBQiT0xi0OOwSiPJFUFRQ9VEUkUUNSS9UOwojICLSJI6Uy3i4NOwSilR2XnYnVl\r\n uX2im8ZOsniPJFUCR6IJpeynWFbZ9Vul1WYjIioN0aHrWNYXZ2pfVmbHduVRfZWfHVcMAjy1ADNTMi\r\n MJpLCp19cbBXvhRncnbiQAsOjhm1IaxWfyB3M2Xv1VsZGijoIbFWphRHbyZj51ib2lW5aZ9Fml5WaH\r\n duVQuZWyjAMNADyuEjM2YwtIsdChm1IaxWfyB3M3XyBIib2ujAOMADwwMzNTO5kc4OT5jUMMAj1iwC\r\n OWbpF9jbFlXRYZ92yt9Ve2blRI6bChm1IaxWjuQXY2Yt9luYmfWRZZlmu1RXZmbkVIwLjwjQMMIjxr\r\n NmLHciQJtLCsWlYXN2hnVGd3b5J5hX2iWUbOJiQN9kU1TJR5TT0iiwIbFWpj9FbXYlR9yZ2wV9ec9m\r\n iwojIjLwUQ1OD3DkOMkT3zIzNzMskBfInh3BcbIS6x4CMjM1MA4MT0TINNYTw4ITOyMiw9zcFtGFcX\r\n J2hiU2cjOuAIzMTwTENOUDy2UDNDMykMsODfnBIcd3poNGd3XvRluX24m9YIojwzMjLTN0YQzOT1Dc\r\n MMgTw0UDMCLwJN3X3jXRaa9F0w91bGazlluaG6yIZM4C0yUzMTM4QczNDyjYMNgz3wJCL3X3NRjaX0\r\n F9ab91ztFGcjIwoIzLjyzYMNMDwwMTOTM3MM0NjyCJLd5WftFmbSZ6IFsImmC1bZFW0lJXdycw19zd\r\n V02ldYg2i91XfCLzJlkcmijoINYj3wQDZWZ4QJiYmzDkONFTlwQWOmZ2M19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 101\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

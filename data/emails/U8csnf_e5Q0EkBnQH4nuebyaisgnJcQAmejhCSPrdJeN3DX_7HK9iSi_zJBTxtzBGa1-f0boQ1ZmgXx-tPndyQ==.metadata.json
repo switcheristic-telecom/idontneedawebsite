@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "U8csnf_e5Q0EkBnQH4nuebyaisgnJcQAmejhCSPrdJeN3DX_7HK9iSi_zJBTxtzBGa1-f0boQ1ZmgXx-tPndyQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "25"
+    ],
+    "ExternalID": "015e01dc772e$679c74e0$36d55ea0$@att.net",
+    "Subject": "New Applications : Walton Wang",
+    "Sender": {
+      "Name": "",
+      "Address": "WaltonWang57@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "WaltonWang57@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "WaltonWang57@att.net"
+      }
+    ],
+    "Flags": 1073741825,
+    "Time": 1766839414,
+    "Size": 962,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cWaltonWang57@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.187.149\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"XnT+eRA/\"\r\nReceived: from sonic316-23.consmr.mail.ne1.yahoo.com\r\n (sonic316-23.consmr.mail.ne1.yahoo.com [66.163.187.149]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin042.protonmail.ch (Postfix) with ESMTPS id\r\n 4ddhx22JBlz3K for \u003cidontneedawebsite@proton.me\u003e; Sat, 27 Dec 2025 12:43:34 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic316.consmr.mail.ne1.yahoo.com with\r\n HTTP; Sat, 27 Dec 2025 12:43:33 +0000\r\nReceived: by hermes--production-sg3-859ccbd486-qppdt (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 23b08cf1355fae45a3e60df4d8a8d243;\r\n          Sat, 27 Dec 2025 12:43:30 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1766839413;\r\n bh=enxpGqiDegV97sSLqDxfa8By7cQwUGf7EHeuTzmFC4E=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=XnT+eRA/aKmfpmnIUCpyWSFkzz12c0GDsOPab26ubIrG6p49FLSssqLg2ZYU2Pbu01THglBIbQzzFb3F7AToC3YTFl1rFuf4ZjALzDK0yA2I2PVwcW+iHEURWQdddDDJt5VhcaoFRrqXP+P1FuTitYKM2X+RO/aqwybIOxj7/rw=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1766839413; bh=8+AVEQe3wefOxQ6n2mXOciZo/SUh+WGzYvU3u6Fn51m=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=pCm4wMF1HV+GLUbTKD0sFVaJJrptgE/ykeNk1BZmQJAcRwlerzyBnGhf1Tx4AJMEuAPhupKSHDV/di/SomRKplEFqokS/pz6rcf97SAxlSn9d+OcYvNmvlc6DaABHjs+wGpjCJ8LpF1fn8Ay5ZLMWTY156/mFYsorVOsKjlXtKOfpFFwu6wAxSarvdhd7lJKnv0KndRX8l7EWkAmuzsyOpfctNdQ6CcwvYBROhnCDDel+Fp8H1qThK8CRhMAGcU53w6hAQAIAmLuIb3TWH8tiXdBFfDLpRtT/VjuIW2XxP3mBOaNDvLUrP4/9Y+5JyNnzf09ugab+nGdsoMzMuSt3A==\r\nX-Ymail-Osg: Xt23rywVM1mcLU8aqs.a9kmjQEaIFnGszLfMTkiY7QIz_zkNy5gdQVLt3c9YsMH\r\n Q_8iq94RNAZm7.Zq30PdO4Rt7NPVF9vlzuiXpjLq83D0sUhDRo1EgLtg9QV4VZ8RtQfx_O.q_w_N\r\n 2mPfPLfxIRyYp4p5A8HD0rxlF.xWz0brXSDuJeST2kX.hDEJFFnPlKJ.YeMkZd40Oen23rT3k6MH\r\n w8ICNHbahde90PRQbPJoCXez.fq7Zb55zVtxmSqI_jes6wi4bwS6USYSJmoVtfU0ZoS1JdhMyQqT\r\n i0hHLUdtMtRwXjsH1DYiWzmwdK4MX6nM8WGXSPeZcadSYiaZsu8qfqMlWhHf1YyU_cB7j.aNYJ5c\r\n 4uESV8awVWb8rUk.Rezras9YimowaqQaaicagFn.jQvgGLdlDZULIKo4pB78KZxjT2yvVr4HGPmH\r\n 3_fc5jdD6HVDC1ylumoiuT3aLm6VcyFE3WG2xRNHWw6kS1lpkLM.cqmZ7tFhPtyo5KRqjKNkjBzy\r\n 2HYDbIzJIpFUD.AZCNUp6bxD5nycsHiL1i82yGH1lvHmIyb0nDo_7fKEtyi_6Hw2UVD7db6aHOFE\r\n IXGnewRuW6WvpyDb6CXHY8KHazZw9K7cy4pFPicC0eomuqxi5uJ7OxkuczSSOkv6JhpzXAA560GS\r\n ghWubPFgE8t5vN8GEMdOEUGk3GoS7hYtgeCC4px9IKHBm3hYzzH5DkwMUPmw.7ZwYZhhk1Pbovmu\r\n wqrq4aGBfgBGcgsgWhRY4c1PKwAr.iCfjIfUC35kWv6M8wUB1sR06Pt_c9gSACRFZJpGJJs2E24k\r\n bNlku6b6QbWKk00gGfRJPMrBh.L8lSpYxjRPaxe.xrREX9MnjAhs1kzBGVc7wsDK5JTT1WHPXZm_\r\n aD5ju2WCj5ox7CU4aDy_FCIk7N42p2bUBwxBgAYFDN7maTL3oGcpR5G5eDYehePtI6moH6vqBNAe\r\n uXBefYDB.PQTARmEcqpz8v9wQ6SPBQqTo7JwHOqSZzeK_EDEHo7F.IaypKPhw4GVJf38KVCevZKP\r\n Dx9Fn71YM5UJcrWV6FTDJ4ZWms8C5P6DslmoDqNMzELyJ4ptG38DAlTAXhH17E_rBmbzcbGK1GAF\r\n rVw0tfAP0oXuO8kjBtPK5S8FenZORS3KzIfXI9VUl_84DCNyAguSzi54Cv64ii9Hzmqq_pMGEvGO\r\n aM5SZLVVRrPGXnrcyZl0EFnIor9Lwb8aDfc4GzeLODu9tiTmBw7ikzfWDNxLjPzm7EvMRDE4.QCT\r\n hCV4OcRmqnTngSWO6rr.THEN7eMzFiooiTl9XDWzz_P5_jXHj.2Yk9Ve5Rs7nbJHfW84wCMNQEP6\r\n WmH6co1WZAc9N.YqPXoFei7_VSxTx6fr4uceduraBloQyJjSsUUUfQsUmkt_XW_jgUtsM4xkCqgZ\r\n .niefcOy30wTvr4Re8wiXFYRPBrKkZblkjuzE3nJ6rHhGy4hOy1zieLs21IsLork42BHkCZPDK.3\r\n g9R3n_nD04e5oRK2mDZiulOykA6RCohNUwrWZnXP9JwKlxe0lTbSLWldUvc8TIzf2m4U_1wGuOUs\r\n QpqJ.3WYSBKkfvr0AbdyFF_hkWMuWFadwvpoCPDodfAxoOMLGm2gA5sBiIu4XwESIMxySYgfROdj\r\n j9Zo3U2lkma4XYGgZoQ1Mta0Dc99LoYoCad_iQrhRy7ybcoB0oFZBIDSiQXjfKK72frGbimcnpOh\r\n 6QkOnZqjLz7LTBWr5HKH5jibGcnD1t.he2hB9LU.m5Jy_ce16Mf7pAEMxNYHupl08gDguIQYr7f.\r\n jYwifgnW2tdKWTciDSnVTbcaUzpK7qjW_5bLU8cLRYFrUWwTC75ftWH_F2npfMA3frAKTVOpqpgI\r\n 2M_xojziO8K.XoEBpLZEUQ.eH3zJvyVC5s3bfoCAr0nJV.i0wdyZMZxk55qclRBlrHAQgcSvc27D\r\n I5q1DlDZt2Rjnj2L74oh.fO2DKUJR5HBVSYbt5s0hjNjDzFUS1rO3cK.6YJnRJoDOVGgmByH6SZ3\r\n 9H2uPfHk1O8dzssAuelCQzaJw9SxHmxHBSJ6KHhePPCZbcKUCBwLEEqX8uMYJ.SrOSEdwMM8kwHO\r\n oU3.kFBVyMd0eKiUQb1IAYDqSYKLcgRYY.239SBXWOSPylynLghuBcfJ1RVGqzuBfgi5dBOttt_Z\r\n J4oNqhssXy7gw9DQJkwbPWatP3VunFEzAo2vuLM935zE7WeK5ZzK1UJg62xOTuDAVVd232nzxMVq mG_bTvLw-\r\nX-Sonic-Mf: \u003cWaltonWang57@att.net\u003e\r\nX-Sonic-Id: 591eb384-7a5d-4e4c-93ab-147550b74d9c\r\nFrom: \u003cWaltonWang57@att.net\u003e\r\nTo: \u003cWaltonWang57@att.net\u003e\r\nReferences: \u003c015e01dc772e$679c74e0$36d55ea0$.ref@att.net\u003e\r\nSubject: New Applications : Walton Wang\r\nDate: Sat, 27 Dec 2025 18:13:19 +0530\r\nMessage-Id: \u003c015e01dc772e$679c74e0$36d55ea0$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: Adx3LkOtl6KWvs6VQWeMe/F3tBMg/w==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2OimGFONIDxxUGO2NiFA0O\r\n DwzcMYYj3iEGNCLzJlkcmijoINkj00QmZzNlZUxNDiTdMOYD4jdDMGN0M19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

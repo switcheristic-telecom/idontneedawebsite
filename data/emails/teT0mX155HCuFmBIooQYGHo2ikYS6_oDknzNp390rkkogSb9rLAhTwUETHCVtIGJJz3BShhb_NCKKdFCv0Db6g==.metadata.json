@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "teT0mX155HCuFmBIooQYGHo2ikYS6_oDknzNp390rkkogSb9rLAhTwUETHCVtIGJJz3BShhb_NCKKdFCv0Db6g==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "029401dbd8e7$37e06760$a7a13620$@gmail.com",
+    "Subject": "RE: Affordable Site",
+    "Sender": {
+      "Name": "Amit",
+      "Address": "34sonamsonkar@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Amit",
+        "Address": "34sonamsonkar@gmail.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1749436611,
+    "Size": 1771,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003c34sonamsonkar@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=gmail.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.215.193\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"QOLZ6pVp\"\r\nReceived: from mail-pg1-f193.google.com (mail-pg1-f193.google.com [209.85.215.193])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailin053.protonmail.ch (Postfix) with ESMTPS id\r\n 4bFwzm0h5cz3N for \u003cidontneedawebsite@proton.me\u003e; Mon,\r\n  9 Jun 2025 02:36:51 +0000 (UTC)\r\nReceived: by mail-pg1-f193.google.com with SMTP id 41be03b00d2f7-b2f11866376so2427926a12.3\r\n        for \u003cidontneedawebsite@proton.me\u003e; Sun, 08 Jun 2025 19:36:51 -0700 (PDT)\r\nReceived: from PradeepPC ([103.217.132.199])\r\n        by smtp.gmail.com with ESMTPSA id\r\n 98e67ed59e1d1-31349fc3dcasm4660781a91.26.2025.06.08.19.36.48\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Sun, 08 Jun 2025 19:36:49 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1749436610; x=1750041410; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=LjIHU/vh7FDUFxnchcDBkv5HRWzJxtmY/7wQGyykQ7w=;\r\n        b=QOLZ6pVpe1zUYALG5u42iJ/XF9MlXdzZwcBQ7SwxAi5IkjHuRi5owfsGbbdDhWHDcK\r\n         YaglfHh3KYtm2obg6Znf8/A/hzqX9fOK19Jak8/EcnJPWhv7IAW5xkXskdCmIYaP8iia\r\n         f6XvMBIJjDop7lPmg9GgMn2AeAstgYd4JyqJAuwHu9xcIeV/rYs0S9+PiisrihFInQY9\r\n         pltV0uOpZsbXW7E7XaqNc4NYPU6DTRVsju4DuUNdZmX+jO6fW42cKkKSWiVEm9rDGmMF\r\n         miT+mSlhKjcmxh4Jlpy7pez/GQAv7fpWuCh7Hsza7zUfubcRmXccY6N1L21wqB65SAQe\r\n         5vmA==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1749436610; x=1750041410;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=LjIHU/vh7FDUFxnchcDBkv5HRWzJxtmY/7wQGyykQ7w=;\r\n        b=kd2ANxKd9ZfI9wK2/KpIUFh7w7mE3Z/JXZ1KlX7UDxxKa8W0rrAMTLzXwdxjbSwRUY\r\n         YBMYldjAnsyzqHsX5XNzjBReO30qcDJ0kusvLf7finKjvubQbU8g6AcJJzKhyc0WX/32\r\n         mzsq4KVjCr+TuD/WjOpJCKGy9NsxfTi4MlUEH//+h3n3Lt6riq5W+JsUo2/iY0rfwkI3\r\n         DXtrMx4Cefy0gnXPNbBBvNDt8bvqWxVmgv5eV9Otic+ntFbeH1W4kQhJZSnhmJE4FdVp\r\n         oABL0+JTbCKQ8ayrfx+M7QuVOoQw0HT7RVy8Qj6X/84FLGgmxwgAXFGl2k40ITvCu04C\r\n         g9uQ==\r\nX-Gm-Message-State: AOJu0YwuDgmob/MkUXq8lxPSX3JxsLpVMEHxX8Qhi1kg4zj1PD1xUvgB\r\n eoZUyZdAy+QW/C5xlBLr2UaLTZu8iI0MT6L1drIloj53vA/YAc+bZc+dG+Gv83IR\r\nX-Gm-Gg: ASbGncumDbA5gPvKVyY/E2lS2w1xrk9PqpYk9H3CE+8z5P06Yfngl+AdPZm1bokdC11\r\n tKTDTbQVeV7JHLxRosj3u9mp7t2c6/sK7UoXRwFIKiKNtF+ZFSXBDRqIm0EZSHx64T4HaGrJDtC\r\n YX3aBOYMlrlVbT4REmX7lq2xRsqCToOq9dfJ+IhRlM3VXSVFGoftTMaYUSg53S9BMv6DOvAQPfH\r\n MCMZKMicnFJPHcCIKm/ca3MjUM1hh/QQO6UvmrzLBPXQiVXys50PSI5aRZPSvqSv/aBVTFsO5ze\r\n H82l8c0ZKX/xQ47cGY/JxQCPtW//8jvgCChWZzMdyMU5rK8Yi1Es/LG4SfI=\r\nX-Google-Smtp-Source: AGHT+IHqd+7X/qFH32vR2Zi5A7ZR108HvN4UFegScHr9cVJ/tXNNPEiInjxoiE6KrOvELuw7d9pFbw==\r\nX-Received: by 2002:a17:90b:2ec7:b0:312:ec:4128 with SMTP id\r\n 98e67ed59e1d1-3134706f814mr14900628a91.34.1749436610028;\r\n        Sun, 08 Jun 2025 19:36:50 -0700 (PDT)\r\nFrom: \"Amit\" \u003c34sonamsonkar@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: RE: Affordable Site\r\nDate: Mon, 09 Jun 2025 08:05:47 +0530\r\nMessage-Id: \u003c029401dbd8e7$37e06760$a7a13620$@gmail.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: AdvY5cpmCxniPs9xSUuON+wEnPUYrg==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeINmhnVGd3b5JoiIjGEVRQVVMsICVmIs1NjX\r\n 3l3JbIpj7SBlI0TiQ0xOiiSwOUJFPQ9FRkUEVNUSUOU9SIojwSJCLyU6I4wMSiSwMXR2lnVnY2Xul8\r\n iZminsOUJFP6ICRyepJFnbWuV9ZY1WliojIHa0NNrYWp2ZXbVmfuVHdWZfRVfcHyjAMNAT0iETMCLp\r\n J9pc1vXBbcRnhiQnbjOsA1hImfWxaMB3yv12XGZsVoiIjpWFbbRHhj5yZ2bi15laWmF9Za5WluVHdW\r\n ZuQAyMjyDANMEjuuIjd2YwtIsdChm1IaxWfyB3M3XyBIib2sjAOI1mhfxWa2Y0FdvZWfnlcb9WkiwW\r\n ZiOtJlsYW02FYLNmvpJWbmbkVZpX20mVbd5Wly4CZDM0IIyMDjS5MaB30iwiIWbpF9jbFlXRYZ92yu\r\n 9VeWYl1oiIjGEVRQVVMsICVmIh1xfaW02FYZdWvflncHcvJI6YiiSwMc9FztFGcjIwoEzLjzDcONID\r\n 22EjNTMxkY0ODwCJLXN3wf1WYmYzFI6ZSxC4MMgz3yQzMjNxYE5Nj2TgMNwCiz9Fc2d0lhfY2fG9da\r\n 5Wiig3bjOuAU5MDzjENOcT23IjNTN4gcsMjfnBIcd3poNGd3XvRBoX3oXNaa5WnwojIjL2AkwMj5Dk\r\n MNYz5wMDOzN0AJwLC33NXaRXj09Fa1bz9FtcGwjoILIjxzQTOTOzUMzNj4zAMNEDs1JnIlbu91lYWi\r\n joIYxWslZWLXY1RVzcm1XBLXN33jRXaCa9J0sfXynNIaQWi2IiODO2QhjNDwDkNYVmlmZTZ2MyYAxZ DiDYNfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

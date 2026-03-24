@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "ycKZTjkjP8C3P1YpO9yzba-aUXLgPY3kNR_mqd0vULzswNSbYHVAMwfprFzeZagfPrelnQZYSAQKkud5GBLq-g==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "1d6001dc3a12$29cebff0$7d6c3fd0$@lexxsolution.com",
+    "Subject": "Re: Barbara Thomas",
+    "Sender": {
+      "Name": "Barbara Thomas",
+      "Address": "barbara@lexxsolution.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Barbara Thomas",
+        "Address": "barbara@lexxsolution.com"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1760120263,
+    "Size": 936,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbarbara@lexxsolution.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit\r\n    rsa-sha256 signature) header.d=lexxsolution.com header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=lexxsolution.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=lexxsolution.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.210.174\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key)\r\n header.d=lexxsolution.com header.i=@lexxsolution.com header.b=\"WXkTIR2n\"\r\nReceived: from mail-pf1-f174.google.com (mail-pf1-f174.google.com [209.85.210.174])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur1013.protonmail.ch (Postfix) with ESMTPS id\r\n 4cjw2b3Gw1z9vNQ2 for \u003cidontneedawebsite@proton.me\u003e; Fri, 10 Oct 2025 18:17:43 +0000 (UTC)\r\nReceived: by mail-pf1-f174.google.com with SMTP id d2e1a72fcca58-782bfd0a977so2125884b3a.3\r\n        for \u003cidontneedawebsite@proton.me\u003e; Fri, 10 Oct 2025 11:17:43 -0700 (PDT)\r\nReceived: from admibcnPC ([2409:4050:e9b:1d5:991c:7052:c096:1a60])\r\n        by smtp.gmail.com with ESMTPSA id\r\n d9443c01a7336-29034f078aesm62436465ad.64.2025.10.10.11.17.39\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);\r\n        Fri, 10 Oct 2025 11:17:40 -0700 (PDT)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=lexxsolution.com; s=google; t=1760120261; x=1760725061; darn=proton.me;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=zm07xcNBeslD2EF28RrdkWiCmDm0rrpDQHPA9i2mx4I=;\r\n        b=WXkTIR2nSycAhUNQAeAHp2+g5ZeR+plMclxlgSFErHqRnWlMAnwHkLA0K104jc53xp\r\n         tskZb7tJsS9QJMukkb8fMWVhS+8CoeM5lBF2UxM4m/qa4DbOZ17j6GUNTU2AEvVMAops\r\n         87ghCJ7ro5pSvfyX0ZFaSTsClkTK/yanu8Z84rtFdImls+l1rW56vR6JFKLsmnLJxD31\r\n         2Su9zMyDNVSPUAdnaBqcdwCNTNjffIiVjw2i1XpxeepuO8JqCVucw/gRkB7PjmWVNPen\r\n         5YPJmdOZvuL721edDPN3OYVd1G1icENkm2ux1rcpKyNvRyjGbAVP9G+FKmaxZ9i4V/Yp\r\n         VKNg==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1760120261; x=1760725061;\r\n        h=content-language:thread-index:mime-version:message-id:date:subject\r\n         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id\r\n         :reply-to;\r\n        bh=zm07xcNBeslD2EF28RrdkWiCmDm0rrpDQHPA9i2mx4I=;\r\n        b=kq7PbDZnMYj/lqms83DYnFEFttmDdPIxD4za7ZvyxuCD0vh4h8Bdd2nSnQ5zAW66DK\r\n         QMXfHuqHpBhArvqe/Zw68LVLfNCRTbKS+SMrhMtPSecmRrddIPNBgdenE921QVrVNAxf\r\n         QBeEiiMzj5g0ora4YiCRuQ0O2PmGThrdFlsC1vEKcNlCC0t28yWynaKeUcQHDY/F3VHL\r\n         VspcV6tc4hzHyYgz3btxtBcvSUpVOr465DVlopFyVZmcMinyJLdorxnGuDM+Vofi5ql2\r\n         X4Ewvn1uSSOdGe0sdWPVvLe73etmkEPNJ781URWB95owN1t+dWWdxrIbCbH1NbUuJ6Cs\r\n         pupw==\r\nX-Gm-Message-State: AOJu0YwtwBeOgK4a2OvLbPAPgSqauIjaRcyKgAtAbLwoi4ZGzFk757JA\r\n w76nlwBQwbkBE+Oc840gKqCagb7VPmgz6IvaF7gtnxZyNyV7EgJXU7oBHwU5smefAFO5s2FpvnP 2Lz4+GsQPSQ==\r\nX-Gm-Gg: ASbGncv3FB9xKLX3AVXWo+vViY3CsjdfHx3SUOI8DMY74Erc9ajGlRp7YBzCbyBpK0X\r\n HGicF6ZUn2yTl+JHfKC5Mk8RgUupH6Mm74b0ZxEktK8RuWunpx0umElcyqYN/I8tlJptEL8ntyP\r\n JQRryT/29sYQxKwriiW7au5tcAzbs0TXxInAnYQLnrKBbCkq4yeynV200ZGTgbeo7etZPq4aOgf\r\n US+aHMJTA1dzKkhn/mhq90/+23T24RLFBgeEVkry4p92E91nZc8QxOVwFisQ/jhd1vR0970mqFX\r\n 12cCUYCnVqjfmqVI+B/3Gkb2lfrpPQxe+YpGmuaM2BXskKgjAKiKjxX1SBfOiOd2YBtWfGYI9cD\r\n raUNBLfS7EeaRV6iMIkKXU5MO87oycwkgSxrnGscqP72DlozetLoPMer7RjmUccG2DAOSJ7FYNa HIV6qlBkM=\r\nX-Google-Smtp-Source: AGHT+IEer2fMDIdo01aJWh2jDk4XHI2NuUMFoCUmCXP+b0QHbQMGOcdDFNlbxayvf+OOETzIMI8wNQ==\r\nX-Received: by 2002:a17:903:2b10:b0:268:cc5:5e4e with SMTP id\r\n d9443c01a7336-2902720eb44mr157265635ad.1.1760120261267;\r\n        Fri, 10 Oct 2025 11:17:41 -0700 (PDT)\r\nFrom: \"Barbara Thomas\" \u003cbarbara@lexxsolution.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: Re: Barbara Thomas\r\nDate: Fri, 10 Oct 2025 23:39:09 +0530\r\nMessage-Id: \u003c1d6001dc3a12$29cebff0$7d6c3fd0$@lexxsolution.com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 14.0\r\nThread-Index: Adw6CYZto4+PzDWLR0aF3ejE+2cCyg==\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIYF20vdWZncikJQOiTVJRT50BsICTmIs1NjX\r\n 3l3JbIpj7SBlI0TiQIxOjQCJLU9kESB1XURJRRJQ1i04TOEjsTJlIjIxoAxLjfCJLZVGifdWdWam5I\r\n 6byQyJeU9kE7pjImItldlYWh25XbUWioJiO3chRtfY2umlZZ9V0l5WdFZw98ydV1DIMMYDzsICMmIh\r\n 1xfaWy3BMX12vsVGZjIioFpbWwDNbc0ityAjMTN5AIuMTiHQcLJCtslWYzXwN9wclim9cIojwwAjLD\r\n N0Ek5NzxTkOOkT12kDMiMiwFpbWjF9bYRXly92ZVet9Rlb26CIbI1mhjxWaXYtQIwLTwjUMOETy0Bn\r\n LiIiwFpbWjF9bYRXly92ZVeu91lYWijoIUVESO90UUQiwJtLCsWlYXN2hnVGd3b5JByX3i2IbOAju0\r\n UjNTMyQIyMDyTMMOcDziwSNFcz9FtcGwjoILkjyzkjMDNxEkzNDxzAMMkzsfBnI3chB9ibVlXNYIoj\r\n wykjLjMzkExNDzDkNMAzxskzMnIfBdpc3oGNdXR3voB3XXaoN5naWwjoILQj24YDOTN1kgwND4TEOO\r\n gD0yJCLWdf5Ftbm6SIZIFmsm1CbWZ0FJldXwy1cd9Vz0l2d2Yig19fXzCJLclmkiojIjNlhRkOTzzc\r\n YNZDh3MzYzY2EM1ZWmzNNI1n9\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

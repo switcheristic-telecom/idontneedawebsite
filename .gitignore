@@ -44,3 +44,12 @@ eggs/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Credentials
+.env
+
+# Temp export
+.export-tmp/
+
+# Auto-downloaded binaries
+.bin/

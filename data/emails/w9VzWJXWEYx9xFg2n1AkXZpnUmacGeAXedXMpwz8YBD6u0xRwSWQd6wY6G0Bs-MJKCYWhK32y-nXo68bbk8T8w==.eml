@@ -1,0 +1,165 @@
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+References: <w9VzWJXWEYx9xFg2n1AkXZpnUmacGeAXedXMpwz8YBD6u0xRwSWQd6wY6G0Bs-MJKCYWhK32y-nXo68bbk8T8w==@protonmail.internalid>
+X-Pm-Date: Sat, 07 Mar 2026 11:21:53 +0000
+X-Pm-External-Id: <0000000000000e7fe1064c6d6060@google.com>
+X-Pm-Internal-Id: w9VzWJXWEYx9xFg2n1AkXZpnUmacGeAXedXMpwz8YBD6u0xRwSWQd6wY6G0Bs-MJKCYWhK32y-nXo68bbk8T8w==
+To: <idontneedawebsite@proton.me>
+Reply-To: "Ledger" <noreply@center1-ledger.firebaseapp.com>
+From: "Ledger" <noreply@center1-ledger.firebaseapp.com>
+Subject: Immediate Action Required: Security Update
+X-Pm-Spam-Action: phishing
+X-Pm-Spamscore: 0
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Origin: external
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2Oi1GUNNEz0jFzNTY2IJlN m3WYZMVjliYzNCLzJlkcmijoINljhhBzYTNxINmY21WQZMkz21EGZTMmh19In
+Date: Sat, 07 Mar 2026 11:21:46 +0000
+Message-Id: <0000000000000e7fe1064c6d6060@google.com>
+X-Received: by 2002:a05:6102:548d:b0:5db:1fbc:4462 with SMTP id ada2fe7eead31-5ffe61de9d5mr2117694137.31.1772882506972; Sat, 07 Mar 2026 03:21:46 -0800 (PST)
+Mime-Version: 1.0
+X-Gm-Message-State: AOJu0Yz9JeHZxbAAU+ktB+1hIX7SgLz/9m3qxB9ryCp2L5HQVGHRixZd iEA70e5iWLX94xEyW1lihHrWdZMsatV45fK/ncTmtplmX7NSLFPWx3f0A1AoF4pQpuTzAw65mJj Y1h9QmMW+dw==
+X-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20230601; t=1772882507; x=1773487307;        h=to:from:subject:date:message-id:mime-version:x-gm-message-state         :from:to:cc:subject:date:message-id:reply-to;        bh=/0y75tdkBW3o8Gf4qqgH2ot1xJUL3YX2HzZR5ioi4Nw=;        b=nKjAjVduuvm9y1KoVAxa5+5hLJd7dyTEPDb/CrmgNki/lYrmrx0rQs8UbEvx1GVDDJ         PapBoTzJApP8hvIPXANd8bC8yIN5ERoreLoYDD+OTEaFftKuagDabv7LmikSuDPtOhDd         /1qY8bYw4rTn3eXdghKKkyGJfDw03o80UhPSWI8lIYbWpWZj3un+YmVFVa3PZ43R3dhq         KlK1KJ3/sKMReDsXkxPwbcx0PPB04x2gMrPTUyRNz6HOaYz1Hiiw2I68U1q8PLNmtKRz         q0cXJ2fCKLsr+xqhIvPNwHhrYic8vsFIm8EWjwczcb4iBu1PGy1Yn0YeftjP+70g8SzM         czLw==
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=firebaseapp.com; s=20230601; t=1772882507; x=1773487307; darn=proton.me;        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject         :date:message-id:reply-to;        bh=/0y75tdkBW3o8Gf4qqgH2ot1xJUL3YX2HzZR5ioi4Nw=;        b=WE+tcHdT5c/zASFe8f0pZmKBLroN7vqU8ysR1HHZ6NZUsbXYLbrEM9RSRmNst6WneU         2XMpKUihszfMXjIWVa5yAnNsNwjliGszHybZnNq3L8hCU+GyYxUlGKckOFigujG/cian         QPkeHJuzBeAvKbahXYG+F8337YhkAt1LT2dpD7IN4pUc95m1LidT7ykaTkPo8nGyuhuy         0jyx0d8Re7aW2L8JGv0zHW9wJFOpQRTDlhNv1wRj6u5xn5uwduDXApLL/SgMHh5Bpdhw         glqSHMK9ZYVzYxaR5Tqsj1fbzYVGVwxYScLRuz+i8LAZV/Ey06WNh6SOLIgeOHTr9vCz         tGCQ==
+Received: by mail-ua1-f70.google.com with SMTP id a1e0cc1a2514c-94e483d3737so29604197241.2        for <idontneedawebsite@proton.me>; Sat, 07 Mar 2026 03:21:53 -0800 (PST)
+Received: from mail-ua1-f70.google.com (mail-ua1-f70.google.com [209.85.222.70]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No client certificate requested) by mailin050.protonmail.ch (Postfix) with ESMTPS id 4fSgpT55GGz3J for <idontneedawebsite@proton.me>; Sat,  7 Mar 2026 11:21:53 +0000 (UTC)
+Authentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=firebaseapp.com header.i=@firebaseapp.com header.b="WE+tcHdT"
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.222.70
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=center1-ledger.firebaseapp.com
+Authentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none) header.from=center1-ledger.firebaseapp.com
+Authentication-Results: mail.protonmail.ch; dkim=pass (Good 2048 bit    rsa-sha256 signature) header.d=firebaseapp.com header.a=rsa-sha256
+Delivered-To: idontneedawebsite@proton.me
+X-Original-To: idontneedawebsite@proton.me
+Return-Path: <noreply@center1-ledger.firebaseapp.com>
+
+
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+
+<table style=3D"OVERFLOW: hidden; MAX-WIDTH: 700px; FONT-FAMILY: Arial, Hel=
+vetica, sans-serif; WIDTH: 100%; BORDER-COLLAPSE: collapse; COLOR: #333e48;=
+ MARGIN: 0px auto; BACKGROUND-COLOR: #ffffff">
+<tbody>
+<tr>
+<td style=3D"PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 20px; P=
+ADDING-LEFT: 0px; PADDING-RIGHT: 0px"><img style=3D"HEIGHT: 125px; WIDTH: a=
+uto; MARGIN: 0px auto; DISPLAY: block" alt=3D"Logo" src=3D"https://cdn.getg=
+ist.com/attachment_images/51cc1f354e35764b77ed84a089e66f43ca2d5ad6ddc5ce67b=
+b47db94e6a3b1baprolog.png"> </td></tr>
+<tr>
+<td style=3D"PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 40px; P=
+ADDING-RIGHT: 40px"></p><p style=3D"text-align: center; margin: 0px 0px 10p=
+x;"><span style=3D"color: rgb(32, 32, 34); font-family: &quot;Arial Black&q=
+uot;, Arial, sans-serif; font-size: 18px;"><br></span></p><p style=3D"text-=
+align: left; margin: 0px 0px 10px;"><span style=3D"FONT-SIZE: large; FONT-F=
+AMILY: &quot;Arial Black&quot;; COLOR: rgb(0,0,0)">Dear&nbsp;</span><font f=
+ace=3D"Arial Black"><span style=3D"FONT-SIZE: large; COLOR: rgb(102,102,102=
+)">idontneedawebsite@proton.me</span><span style=3D"FONT-SIZE: large; COLOR=
+: rgb(0,0,0)">,</span></font></p></td></tr>
+<tr>
+<td style=3D"PADDING-BOTTOM: 20px; PADDING-TOP: 10px; PADDING-LEFT: 40px; L=
+INE-HEIGHT: 1.6; PADDING-RIGHT: 40px">
+<div style=3D"FONT-SIZE: 18px; COLOR: #333e48; TEXT-ALIGN: center; MARGIN: =
+0px 0px 20px">We identified that your Ledger device is currently running an=
+ outdated firmware version. To ensure the highest level of security for you=
+r digital assets, we strongly recommend completing this mandatory firmware =
+update by the deadline below.</div>
+<table style=3D"BORDER-TOP: #fecaca 1px solid; BORDER-RIGHT: #fecaca 1px so=
+lid; WIDTH: 100%; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #fecaca 1px sol=
+id; COLOR: #000000; PADDING-BOTTOM: 24px; PADDING-TOP: 24px; PADDING-LEFT: =
+24px; BORDER-LEFT: #fecaca 1px solid; MARGIN: 32px 0px; PADDING-RIGHT: 24px=
+; BACKGROUND-COLOR: #fef2f2; border-radius: 8px">
+<tbody>
+<tr>
+<td style=3D"WIDTH: 48px; VERTICAL-ALIGN: top; PADDING-RIGHT: 16px">
+<div style=3D"HEIGHT: 40px; WIDTH: 40px; TEXT-ALIGN: center; LINE-HEIGHT: 4=
+0px; BACKGROUND-COLOR: #dc2626; border-radius: 50%"><span style=3D"FONT-SIZ=
+E: 20px; FONT-WEIGHT: 700; COLOR: white">!</span></div></td>
+<td>
+<h3 style=3D"FONT-SIZE: 18px; FONT-WEIGHT: 700; COLOR: #7f1d1d; MARGIN: 0px=
+ 0px 8px">Deadline: March 8, 2026</h3>
+<p style=3D"FONT-SIZE: 16px; COLOR: #991b1b; MARGIN: 0px; LINE-HEIGHT: 1.5"=
+>Failure to update your device by this date may result in restricted access=
+ to your portfolio and increased vulnerability to security risks.</p></td><=
+/tr></tbody></table>
+<div style=3D"FONT-SIZE: 17px; COLOR: #333e48; TEXT-ALIGN: center; MARGIN: =
+0px 0px 25px">This firmware update includes critical security enhancements =
+designed to protect your assets from potential threats. Without it, your de=
+vice may be exposed to risks that could compromise your access to your fund=
+s.</div>
+<div style=3D"TEXT-ALIGN: center; MARGIN: 30px 0px"><a style=3D"FONT-SIZE: =
+16px; TEXT-DECORATION: none; FONT-WEIGHT: 700; COLOR: white; PADDING-BOTTOM=
+: 14px; PADDING-TOP: 14px; PADDING-LEFT: 35px; DISPLAY: inline-block; PADDI=
+NG-RIGHT: 35px; BACKGROUND-COLOR: #1b1b1b; border-radius: 5px; transition: =
+all 0.3s ease" href=3D"https://gimagestionale.eu/img/NTYuMjAxOTc3MDIuNDE">U=
+pdate Now</a></div>
+<div style=3D"text-align: left;"><br></div><div style=3D"text-align: left;"=
+>Your security is our top priority, and we are committed to helping you kee=
+p your assets safe. If you have any questions or need assistance, please co=
+ntact our support team.</div></div></td></tr>
+<tr>
+<td style=3D"PADDING-BOTTOM: 15px; PADDING-TOP: 25px; PADDING-LEFT: 40px; P=
+ADDING-RIGHT: 40px">
+<table style=3D"BORDER-COLLAPSE: collapse">
+<tbody>
+<tr>
+<td style=3D"FONT-SIZE: 16px; VERTICAL-ALIGN: top; PADDING-RIGHT: 10px">=E2=
+=97=AF</td>
+<td style=3D"FONT-SIZE: 16px; COLOR: #333e48">Sincerely,<br><span style=3D"=
+FONT-SIZE: 14px; COLOR: #666666"></span></td></tr></tbody></table></td></tr=
+>
+
+<tr>
+<td style=3D"BORDER-TOP: #e2e8f0 1px solid; PADDING-BOTTOM: 30px; TEXT-ALIG=
+N: center; PADDING-TOP: 20px; PADDING-LEFT: 40px; PADDING-RIGHT: 40px; BACK=
+GROUND-COLOR: #ffffff">
+<p style=3D"margin: 0px 0px 5px; line-height: 1.4;"><span style=3D"color: r=
+gb(102, 102, 102); font-size: x-small;">This notification was sent to idont=
+needawebsite@proton.me as part of our commitment to keeping Ledger device o=
+wners informed about important security updates.</span></p><p style=3D"marg=
+in: 0px 0px 5px; line-height: 1.4;"><span style=3D"color: rgb(102, 102, 102=
+); font-size: x-small;"><br></span></p>
+<p style=3D"FONT-SIZE: 10px; COLOR: #666666; MARGIN: 0px"> <tr>
+                        <td class=3D"main-content dark-mode-bg" style=3D"pa=
+dding: 28px 32px; background-color: #ffffff; font-family: -apple-system, Bl=
+inkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                            <table role=3D"presentation" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width: 100%;">
+                                <tr>
+                                    <td align=3D"left" style=3D"padding: 0;=
+">
+                                        <a href=3D"https://www.ledger.com" =
+target=3D"_blank" rel=3D"noopener" style=3D"text-decoration: none; display:=
+ inline-block; margin-bottom: 16px;">
+                                            <div class=3D"logo-footer-respo=
+nsive logo-svg-dark dark-mode-text" style=3D"max-width: 150px; color: #0b0b=
+0b;">
+                                                <img src=3D"https://upload.=
+wikimedia.org/wikipedia/commons/thumb/f/f0/Ledger-logo-long.svg/1280px-Ledg=
+er-logo-long.svg.png"
+                                                     alt=3D"Ledger"
+                                                     style=3D"max-width: 15=
+0px; width: 100%; height: auto; display: block;"
+                                                     width=3D"150" />
+                                            </div>
+                                        </a>
+
+                                        <div style=3D"color: #8a8a8a; font-=
+size: 13px; line-height: 1.7; font-family: -apple-system, BlinkMacSystemFon=
+t, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin-top: 16px;">
+                                            Ledger SAS<br />
+                                            1 rue du Mail, 75002 Paris, Fra=
+nce<br /><br />
+                                            =C2=A9 2026 Ledger. All rights =
+reserved.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr></p>
+<p style=3D"FONT-SIZE: 10px; COLOR: #666666; MARGIN: 0px">&nbsp;</p>
+<p style=3D"FONT-SIZE: 10px; COLOR: #666666; MARGIN: 0px">&nbsp;</p></td></=
+tr></tbody></table>
