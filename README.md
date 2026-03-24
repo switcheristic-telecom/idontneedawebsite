@@ -41,17 +41,10 @@ This will:
 3. Copy new `.eml` + `.metadata.json` files into `data/emails/`
 4. Rebuild `public/emails/*.html` and `public/email-metadata.json`
 
-### Rebuild site without syncing
-
-```bash
-uv run python emails-to-htmls.py
-```
-
 ## Project Structure
 
 ```text
-├── sync.py                 # Email sync script (pexpect + proton-mail-export-cli)
-├── emails-to-htmls.py      # EML parser → HTML + metadata JSON
+├── sync.py                 # Email sync + build (pexpect + proton-mail-export-cli)
 ├── lib/eml_parser.py       # MIME email parser
 ├── index.html              # Static site entry point
 ├── scripts/main.js         # Frontend: renders email feed from metadata JSON
