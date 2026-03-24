@@ -1,5 +1,16 @@
 /* Outlook 2007 Blue Theme — Aero Glass */
 
+:root {
+  --border-panel: #9ab6d3;
+  --border-panel-inner: #b0c4da;
+  --border-btn-hover: #7d9fc0;
+  --gradient-selected: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  --gradient-light-bar: linear-gradient(180deg, #f8fafe 0%, #e8eff7 40%, #dfe8f2 41%, #eaf0f8 100%);
+  --gradient-light-bar-hover: linear-gradient(180deg, #fffefe 0%, #f0f5fb 40%, #e8eff7 41%, #f2f7fc 100%);
+  --bg-pane: linear-gradient(180deg, #f4f7fb 0%, #e8edf4 100%);
+  --color-heading: #1e3a5f;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -118,7 +129,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
       #c8d8ea 100%
     );
   border-top: 1px solid rgba(255,255,255,0.8);
-  border-bottom: 1px solid #9ab6d3;
+  border-bottom: 1px solid var(--border-panel);
   padding: 2px 0;
   font-size: 11px;
 }
@@ -126,7 +137,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .menubar span {
   padding: 2px 8px;
   cursor: default;
-  color: #1e3a5f;
+  color: var(--color-heading);
 }
 
 /* Toolbar — similar glass gradient, slightly different tone */
@@ -142,7 +153,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
       #d2e0ee 100%
     );
   border-top: 1px solid rgba(255,255,255,0.6);
-  border-bottom: 1px solid #9ab6d3;
+  border-bottom: 1px solid var(--border-panel);
   padding: 3px 6px;
   font-size: 11px;
 }
@@ -163,7 +174,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
   display: inline-block;
   width: 0;
   height: 22px;
-  border-left: 1px solid #b0c4da;
+  border-left: 1px solid var(--border-panel-inner);
   border-right: 1px solid rgba(255,255,255,0.6);
   margin: 0 5px;
   vertical-align: middle;
@@ -179,7 +190,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
       #ccdaea 100%
     );
   border-top: 1px solid rgba(255,255,255,0.4);
-  border-bottom: 1px solid #9ab6d3;
+  border-bottom: 1px solid var(--border-panel);
   padding: 2px 8px;
   font-size: 11px;
   display: flex;
@@ -189,7 +200,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 .search-bar input {
-  border: 1px solid #7d9fc0;
+  border: 1px solid var(--border-btn-hover);
   border-radius: 2px;
   padding: 2px 4px;
   font-size: 11px;
@@ -210,7 +221,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
     );
   -webkit-backdrop-filter: blur(12px) saturate(150%);
   backdrop-filter: blur(12px) saturate(150%);
-  border-top: 1px solid #9ab6d3;
+  border-top: 1px solid var(--border-panel);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   padding: 3px 8px;
@@ -225,8 +236,10 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Navigation pane */
 .nav-pane {
-  background: linear-gradient(180deg, #f4f7fb 0%, #e8edf4 100%);
-  border-right: 1px solid #9ab6d3;
+  background: var(--bg-pane);
+  border-right: 1px solid var(--border-panel);
+  width: 190px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -240,12 +253,12 @@ a:hover { color: #ff0000; text-decoration: underline; }
       #c6d5e8 41%,
       #d0dded 100%
     );
-  color: #1e3a5f;
+  color: var(--color-heading);
   font-weight: bold;
   font-size: 11px;
   padding: 4px 8px;
   border-top: 1px solid rgba(255,255,255,0.7);
-  border-bottom: 1px solid #9ab6d3;
+  border-bottom: 1px solid var(--border-panel);
   cursor: pointer;
   user-select: none;
 }
@@ -290,7 +303,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 .folder-item.active {
-  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  background: var(--gradient-selected);
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
@@ -316,7 +329,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Navigation buttons at bottom of sidebar */
 .nav-buttons {
-  border-top: 1px solid #9ab6d3;
+  border-top: 1px solid var(--border-panel);
   margin-top: auto;
 }
 
@@ -390,14 +403,8 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Column headers — Office 2007 style with highlight */
 .col-header {
-  background:
-    linear-gradient(180deg,
-      #f8fafe 0%,
-      #e8eff7 40%,
-      #dfe8f2 41%,
-      #eaf0f8 100%
-    );
-  border: 1px solid #b0c4da;
+  background: var(--gradient-light-bar);
+  border: 1px solid var(--border-panel-inner);
   border-left: none;
   padding: 3px 8px;
   cursor: pointer;
@@ -405,21 +412,15 @@ a:hover { color: #ff0000; text-decoration: underline; }
   text-align: left;
   white-space: nowrap;
   font-size: 11px;
-  color: #1e3a5f;
+  color: var(--color-heading);
 }
 
 .col-header:first-child {
-  border-left: 1px solid #b0c4da;
+  border-left: 1px solid var(--border-panel-inner);
 }
 
 .col-header:hover {
-  background:
-    linear-gradient(180deg,
-      #fffefe 0%,
-      #f0f5fb 40%,
-      #e8eff7 41%,
-      #f2f7fc 100%
-    );
+  background: var(--gradient-light-bar-hover);
 }
 
 /* Date group header */
@@ -434,9 +435,9 @@ a:hover { color: #ff0000; text-decoration: underline; }
   padding: 3px 8px;
   font-weight: bold;
   font-size: 11px;
-  color: #1e3a5f;
-  border-bottom: 1px solid #b0c4da;
-  border-top: 1px solid #b0c4da;
+  color: var(--color-heading);
+  border-bottom: 1px solid var(--border-panel-inner);
+  border-top: 1px solid var(--border-panel-inner);
 }
 
 /* Email row */
@@ -449,7 +450,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 .email-row.selected {
-  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  background: var(--gradient-selected);
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
@@ -474,7 +475,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 .about-row.selected {
-  background: linear-gradient(180deg, #3ea1f7, #1a78d6);
+  background: var(--gradient-selected);
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
@@ -498,7 +499,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .reading-header .subject-line {
   font-size: 14px;
   font-weight: bold;
-  color: #1e3a5f;
+  color: var(--color-heading);
   margin-bottom: 4px;
 }
 
@@ -511,15 +512,6 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 .reading-header .field-value {
   color: #333;
-}
-
-/* Calendar day */
-.cal-day {
-  width: 14.28%;
-  text-align: center;
-  padding: 2px;
-  font-size: 10px;
-  vertical-align: top;
 }
 
 .cal-day.has-activity {
@@ -561,25 +553,19 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Content panels */
 .panel {
-  border: 1px solid #9ab6d3;
+  border: 1px solid var(--border-panel);
   background: #fff;
 }
 
 .panel-inset {
-  border: 1px solid #b0c4da;
+  border: 1px solid var(--border-panel-inner);
   background: #fff;
 }
 
 /* Buttons */
 button, .btn {
-  background:
-    linear-gradient(180deg,
-      #f8fafe 0%,
-      #e8eff7 40%,
-      #dfe8f2 41%,
-      #eaf0f8 100%
-    );
-  border: 1px solid #9ab6d3;
+  background: var(--gradient-light-bar);
+  border: 1px solid var(--border-panel);
   border-radius: 2px;
   padding: 2px 10px;
   min-height: 22px;
@@ -591,14 +577,8 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-  background:
-    linear-gradient(180deg,
-      #fffefe 0%,
-      #f0f5fb 40%,
-      #e8eff7 41%,
-      #f2f7fc 100%
-    );
-  border-color: #7d9fc0;
+  background: var(--gradient-light-bar-hover);
+  border-color: var(--border-btn-hover);
 }
 
 button:active, .btn:active {
@@ -610,7 +590,7 @@ button:active, .btn:active {
 ::-webkit-scrollbar-track {
   background:
     linear-gradient(90deg, #e8eef4 0%, #f0f4fa 30%, #f0f4fa 70%, #e8eef4 100%);
-  border: 1px solid #b0c4da;
+  border: 1px solid var(--border-panel-inner);
 }
 ::-webkit-scrollbar-thumb {
   background:
@@ -632,9 +612,317 @@ button:active, .btn:active {
   display: none;
 }
 
+/* Layout containers */
+.content-area {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.content-main {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Search bar helpers */
+.search-bar-hint {
+  margin-right: auto;
+  color: #666;
+}
+
+.search-bar-icon {
+  cursor: pointer;
+}
+
+/* Nav placeholder */
+.nav-placeholder {
+  padding: 8px;
+  color: #666;
+  text-align: center;
+}
+
+.nav-btn-mini-row {
+  display: flex;
+}
+
 /* Mobile warning */
 .mobile-warning {
   display: none;
+  background: #0d2818;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.mobile-warning-dialog {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #8db2e3;
+  overflow: hidden;
+}
+
+.mobile-warning-titlebar {
+  background: linear-gradient(180deg, #6ba0cd, #2f6aab);
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.mobile-warning-body {
+  padding: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.mobile-warning-body p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.mobile-warning-body hr {
+  border: none;
+  border-top: 1px solid #d0dce8;
+  margin: 10px 0;
+}
+
+.mobile-warning-footer {
+  text-align: center;
+  color: #888;
+  margin-top: 12px;
+  font-size: 10px;
+}
+
+/* EmailClient layout */
+.email-client-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.message-list-pane {
+  flex: 0 0 45%;
+  overflow: auto;
+  margin: 2px;
+}
+
+.reading-pane-container {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 2px 2px;
+}
+
+.reading-pane-scroll {
+  overflow: auto;
+  height: 100%;
+}
+
+.empty-pane-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #888;
+}
+
+/* Navigation pane items */
+.nav-tree-scroll {
+  flex: 1;
+  overflow: auto;
+}
+
+.folder-root {
+  padding: 2px 6px 2px 10px;
+  font-weight: bold;
+  font-size: 11px;
+  color: #333;
+}
+
+.folder-item--nested {
+  padding-left: 28px;
+}
+
+.folder-item--disabled {
+  padding-left: 28px;
+  color: #888;
+  cursor: default;
+}
+
+/* Table column widths */
+.col-icon { width: 4%; }
+.col-from { width: 24%; }
+.col-received { width: 20%; }
+.col-size { width: 8%; }
+.col-phone { width: 40%; }
+.col-type { width: 25%; }
+
+.cell-from { max-width: 200px; }
+.cell-subject { max-width: 300px; }
+
+.email-table {
+  border-collapse: collapse;
+}
+
+/* Reading pane header fields */
+.header-field-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.header-field-row:last-child {
+  margin-bottom: 0;
+}
+
+.reading-body {
+  flex: 1;
+}
+
+.reading-iframe {
+  display: block;
+  border: none;
+}
+
+/* Calendar */
+.calendar-container {
+  padding: 12px;
+  overflow: auto;
+  height: 100%;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.calendar-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-heading);
+}
+
+.calendar-subtitle {
+  color: #888;
+  font-size: 11px;
+}
+
+.calendar-grid-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 12px;
+}
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #8db2e3;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.calendar-totals {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+
+.month-header {
+  font-weight: bold;
+  padding: 4px;
+  background: linear-gradient(180deg, #4a86b8, #2f6aab);
+  color: #fff;
+  font-size: 11px;
+}
+
+.cal-day-name {
+  font-weight: bold;
+  color: #666;
+  padding: 2px 4px;
+  font-size: 10px;
+}
+
+.cal-day {
+  width: 48px;
+  height: 36px;
+  text-align: center;
+  padding: 2px;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+/* About pane */
+.about-body {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-body p {
+  margin-bottom: 8px;
+}
+
+.about-callout {
+  background: #fffff0;
+  border: 1px solid #d4b830;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-divider {
+  border: none;
+  border-top: 1px solid #d0dce8;
+  margin: 12px 0;
+}
+
+.about-bio {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.about-avatar {
+  object-fit: cover;
+  border: 1px solid #b8c8dc;
+  border-radius: 2px;
+}
+
+.about-bio-text {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-bio-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-heading);
+}
+
+.whois-box {
+  border: 1px solid #8db2e3;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.about-footer {
+  text-align: center;
+  color: #888;
+  margin-top: 12px;
+  border-top: 1px solid #d0dce8;
+  padding-top: 8px;
 }
 
 @media (max-width: 767px) {
