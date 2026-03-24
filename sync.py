@@ -265,21 +265,65 @@ def build_html():
     print(f"==> Built {len(metadata_list)} email(s).")
 
 
-def main():
-    creds = load_env()
-    cli_path = find_cli()
-    run_export(cli_path, creds)
-    new_count = sync_emails()
-
-    if new_count > 0:
-        build_html()
-        print(f"==> Done! {new_count} new email(s) added and site rebuilt.")
-    else:
-        print("==> No new emails. Site is up to date.")
-
-    # Cleanup
+def cleanup():
+    """Remove the temporary export directory."""
     if EXPORT_DIR.exists():
         shutil.rmtree(EXPORT_DIR)
+        print("==> Cleaned up export temp directory.")
+    else:
+        print("==> Nothing to clean up.")
+
+
+def prompt_action():
+    """Ask the user what to do."""
+    print()
+    print("What would you like to do?")
+    print()
+    print("  1. Backup + Parse + Delete  (full sync)")
+    print("     Export emails from ProtonMail, copy new .eml/.json to data/emails/,")
+    print("     rebuild public/ HTML + metadata, then remove temp export.")
+    print()
+    print("  2. Backup only")
+    print("     Export emails from ProtonMail and copy new ones to data/emails/.")
+    print("     Keeps temp export in .export-tmp/ for inspection.")
+    print()
+    print("  3. Parse only")
+    print("     Rebuild public/emails/*.html and email-metadata.json from")
+    print("     existing data/emails/ without re-downloading from ProtonMail.")
+    print()
+    print("  4. Delete only")
+    print("     Remove the .export-tmp/ directory left over from a previous backup.")
+    print()
+
+    choice = input("Choose [1-4]: ").strip()
+    if choice not in ("1", "2", "3", "4"):
+        print("Invalid choice.")
+        sys.exit(1)
+    return int(choice)
+
+
+def main():
+    action = prompt_action()
+
+    if action in (1, 2):
+        creds = load_env()
+        cli_path = find_cli()
+        run_export(cli_path, creds)
+        new_count = sync_emails()
+
+        if action == 1:
+            build_html()
+            cleanup()
+            print(f"==> Done! {new_count} new email(s) synced, site rebuilt, temp cleaned.")
+        else:
+            print(f"==> Done! {new_count} new email(s) synced. Temp data kept in {EXPORT_DIR}")
+
+    elif action == 3:
+        build_html()
+        print("==> Done! Site rebuilt from data/emails.")
+
+    elif action == 4:
+        cleanup()
 
 
 if __name__ == "__main__":
