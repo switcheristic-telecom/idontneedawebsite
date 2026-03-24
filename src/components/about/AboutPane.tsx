@@ -4,32 +4,24 @@ export function AboutPane() {
       {/* Email-style header - Outlook 2007 */}
       <div class="reading-header">
         <div class="subject-line">Welcome to idontneedawebsite.us &mdash; Read Me First</div>
-        <div style={{ display: "flex", gap: "4px", marginBottom: "2px" }}>
+        <div class="header-field-row">
           <span class="field-label">From:</span>
           <span class="field-value">Webb Notneeded [idontneedawebsite@proton.me]</span>
         </div>
-        <div style={{ display: "flex", gap: "4px", marginBottom: "2px" }}>
+        <div class="header-field-row">
           <span class="field-label">Sent:</span>
           <span class="field-value">None</span>
         </div>
-        <div style={{ display: "flex", gap: "4px" }}>
+        <div class="header-field-row">
           <span class="field-label">To:</span>
           <span class="field-value">You [visitor@internet]</span>
         </div>
       </div>
 
       {/* Body */}
-      <div style={{ padding: "12px", fontSize: "12px", lineHeight: "1.7" }}>
+      <div class="about-body">
         {/* The real story */}
-        <div style={{
-          background: "#fffff0",
-          border: "1px solid #d4b830",
-          padding: "10px",
-          marginBottom: "12px",
-          borderRadius: "2px",
-          fontSize: "12px",
-          lineHeight: "1.7",
-        }}>
+        <div class="about-callout">
           <span style={{ fontWeight: "bold" }}>The real story:</span>{" "}
           <a href="https://yufengzhao.com" target="_blank">Yufeng</a> bought{" "}
           <b>yufeng.us</b> in 2024 for its surprisingly cheap $4.99/year
@@ -39,20 +31,20 @@ export function AboutPane() {
           documents that experience.
         </div>
 
-        <hr style={{ border: "none", borderTop: "1px solid #d0dce8", margin: "12px 0" }} />
+        <hr class="about-divider" />
 
-        <div style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
+        <div class="about-bio">
           <div style={{ flexShrink: 0 }}>
             <img
               src="/assets/webb-notneeded/DALL·E 2024-03-19 03.57.01 - Craft a hyperrealistic portrait of Mr. Webb Notneeded, now an experienced and wise entrepreneur in his late 50s. He sits with a refined grace at his c.webp"
               alt="Webb Notneeded"
               width="100"
               height="100"
-              style={{ objectFit: "cover", border: "1px solid #b8c8dc", borderRadius: "2px" }}
+              class="about-avatar"
             />
           </div>
-          <div style={{ fontSize: "12px", lineHeight: "1.7" }}>
-            <span style={{ fontSize: "14px", fontWeight: "bold", color: "#1e3a5f" }}>
+          <div class="about-bio-text">
+            <span class="about-bio-title">
               I don't need a website
             </span>
             <br /><br />
@@ -65,7 +57,7 @@ export function AboutPane() {
           </div>
         </div>
 
-        <p style={{ marginBottom: "8px" }}>
+        <p>
           To document this problem, a new domain was registered:{" "}
           <b>idontneedawebsite.us</b>, with a fresh ProtonMail email address
           and a Google Voice phone number. The WHOIS contact was left fully
@@ -85,7 +77,7 @@ export function AboutPane() {
           WHOIS Record for idontneedawebsite.us
         </p>
 
-        <div style={{ border: "1px solid #8db2e3", borderRadius: "2px", overflow: "hidden" }}>
+        <div class="whois-box">
           <div class="whois-prompt">$ whois idontneedawebsite.us</div>
           <div class="whois-terminal">
 {`Domain Name: IDONTNEEDAWEBSITE.US
@@ -115,7 +107,7 @@ DNSSEC: unsigned`}
           </div>
         </div>
 
-        <p style={{ textAlign: "center", color: "#888", marginTop: "12px", borderTop: "1px solid #d0dce8", paddingTop: "8px" }}>
+        <p class="about-footer">
           A{" "}
           <a href="https://swtch.tel" target="_blank">
             Switcheristic Telecommunications

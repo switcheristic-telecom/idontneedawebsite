@@ -20,36 +20,22 @@ export function App() {
   return (
     <>
       {/* Mobile warning */}
-      <div class="mobile-warning" style={{ background: "#0d2818", minHeight: "100vh", padding: "20px" }}>
-        <div style={{
-          maxWidth: "400px",
-          margin: "40px auto",
-          background: "#fff",
-          borderRadius: "4px",
-          border: "1px solid #8db2e3",
-          overflow: "hidden",
-        }}>
-          <div style={{
-            background: "linear-gradient(180deg, #6ba0cd, #2f6aab)",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: "6px 10px",
-            textAlign: "center",
-            fontSize: "12px",
-          }}>
+      <div class="mobile-warning">
+        <div class="mobile-warning-dialog">
+          <div class="mobile-warning-titlebar">
             &#9888; Resolution Warning
           </div>
-          <div style={{ padding: "16px", fontSize: "12px", lineHeight: "1.6" }}>
-            <p style={{ textAlign: "center", fontWeight: "bold", marginBottom: "8px" }}>
+          <div class="mobile-warning-body">
+            <p>
               This page is best viewed at 1024&times;768 resolution<br />
               with Internet Explorer 7.0 or higher
             </p>
-            <hr style={{ border: "none", borderTop: "1px solid #d0dce8", margin: "10px 0" }} />
-            <p style={{ marginBottom: "6px" }}>
+            <hr />
+            <p style={{ fontWeight: "normal", textAlign: "left" }}>
               <b>idontneedawebsite.us</b> is a case study documenting spam
               received after registering a .US domain.
             </p>
-            <p style={{ textAlign: "center", color: "#888", marginTop: "12px", fontSize: "10px" }}>
+            <p class="mobile-warning-footer">
               A Switcheristic Telecommunications project<br />
               &copy; 2024 Webb Notneeded
             </p>
@@ -94,22 +80,22 @@ export function App() {
 
         {/* Search bar */}
         <div class="search-bar">
-          <span style={{ marginRight: "auto", color: "#666" }}>
+          <span class="search-bar-hint">
             Type a question for help
           </span>
           <span>Search Inbox</span>
           <input type="text" placeholder="" readOnly />
-          <span style={{ cursor: "pointer" }}>&#128269;</span>
+          <span class="search-bar-icon">&#128269;</span>
         </div>
 
         {/* Content area with sidebar */}
-        <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
+        <div class="content-area">
           {/* Navigation pane */}
-          <div class="nav-pane" style={{ width: "190px", flexShrink: 0 }}>
+          <div class="nav-pane">
             {tab === "inbox" ? (
               <EmailClient mode="nav" />
             ) : (
-              <div style={{ padding: "8px", color: "#666", textAlign: "center" }}>
+              <div class="nav-placeholder">
                 Calendar View
               </div>
             )}
@@ -128,7 +114,7 @@ export function App() {
               >
                 <span class="nav-icon">&#128197;</span> Calendar
               </div>
-              <div style={{ display: "flex" }}>
+              <div class="nav-btn-mini-row">
                 <div class="nav-btn-mini" title="Contacts">&#128101;</div>
                 <div class="nav-btn-mini" title="Tasks">&#9745;</div>
               </div>
@@ -136,7 +122,7 @@ export function App() {
           </div>
 
           {/* Main content */}
-          <div style={{ flex: 1, overflow: "hidden" }}>
+          <div class="content-main">
             {tab === "inbox" && <EmailClient mode="content" />}
             {tab === "calendar" && <CalendarWindow />}
           </div>

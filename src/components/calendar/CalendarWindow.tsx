@@ -26,34 +26,34 @@ export function CalendarWindow() {
   );
 
   return (
-    <div style={{ padding: "12px", overflow: "auto", height: "100%" }}>
-      <div style={{ textAlign: "center", marginBottom: "12px" }}>
-        <span style={{ fontSize: "14px", fontWeight: "bold", color: "#1e3a5f" }}>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <span class="calendar-title">
           &#128197; Spam Activity Calendar
         </span>
         <br />
-        <span style={{ color: "#888", fontSize: "11px" }}>
+        <span class="calendar-subtitle">
           Domain registered: January 28, 2024
         </span>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
+      <div class="calendar-grid-row">
         <MonthGrid year={2024} month={0} activityByDate={activityByDate} maxActivity={maxActivity} />
         <MonthGrid year={2024} month={1} activityByDate={activityByDate} maxActivity={maxActivity} />
         <MonthGrid year={2024} month={2} activityByDate={activityByDate} maxActivity={maxActivity} />
       </div>
 
       <div style={{ textAlign: "center", fontSize: "10px", marginBottom: "8px" }}>
-        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
-          <span style={{ width: "12px", height: "12px", background: "#cce0ff", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+        <span class="legend-item">
+          <span class="legend-swatch" style={{ background: "#cce0ff" }} />
           Low
         </span>
-        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
-          <span style={{ width: "12px", height: "12px", background: "#6699ff", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+        <span class="legend-item">
+          <span class="legend-swatch" style={{ background: "#6699ff" }} />
           Medium
         </span>
-        <span style={{ display: "inline-flex", alignItems: "center", gap: "4px", marginRight: "12px" }}>
-          <span style={{ width: "12px", height: "12px", background: "#ff4444", border: "1px solid #8db2e3", display: "inline-block", borderRadius: "2px" }} />
+        <span class="legend-item">
+          <span class="legend-swatch" style={{ background: "#ff4444" }} />
           High
         </span>
         <span style={{ marginRight: "8px" }}>&#9993; = emails</span>
@@ -61,7 +61,7 @@ export function CalendarWindow() {
       </div>
 
       <div style={{ textAlign: "center" }}>
-        <div class="panel-inset" style={{ display: "inline-block", padding: "8px 16px", borderRadius: "2px" }}>
+        <div class="panel-inset calendar-totals">
           <b>Total:</b> {emailList.length} spam emails + {callList.length} calls received within weeks of registration
         </div>
       </div>
@@ -112,32 +112,13 @@ function MonthGrid({
       style={{ borderRadius: "2px" }}
     >
       <tr>
-        <td
-          colSpan={7}
-          align="center"
-          style={{
-            fontWeight: "bold",
-            padding: "4px",
-            background: "linear-gradient(180deg, #4a86b8, #2f6aab)",
-            color: "#fff",
-            fontSize: "11px",
-          }}
-        >
+        <td colSpan={7} align="center" class="month-header">
           {monthNames[month]} {year}
         </td>
       </tr>
       <tr>
         {dayNames.map((d) => (
-          <td
-            key={d}
-            align="center"
-            style={{
-              fontWeight: "bold",
-              color: "#666",
-              padding: "2px 4px",
-              fontSize: "10px",
-            }}
-          >
+          <td key={d} align="center" class="cal-day-name">
             {d}
           </td>
         ))}
@@ -166,7 +147,7 @@ function MonthGrid({
               <td
                 key={dateStr}
                 class="cal-day"
-                style={{ background: bg, color: fontColor, width: "48px", height: "36px" }}
+                style={{ background: bg, color: fontColor }}
                 title={
                   activity
                     ? `${dateStr}: ${activity.emails} email(s), ${activity.calls} call(s)`
