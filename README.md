@@ -64,6 +64,10 @@ This will:
 - **Emails**: Exported from ProtonMail using [proton-mail-export-cli](https://github.com/ProtonMail/proton-mail-export)
 - **Calls**: Exported from Google Voice using [Google Takeout](https://takeout.google.com/)
 
+## Third-Party Assets
+
+- **Segoe UI Font**: Microsoft's system font, used to match the Windows Vista UI. Sourced from [CDNFonts](https://www.cdnfonts.com/segoe-ui-4.font). Free for personal use.
+
 ## License
 
 A [Switcheristic Telecommunications](https://swtch.tel) project.

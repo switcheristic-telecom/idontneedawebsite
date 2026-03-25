@@ -1,12 +1,40 @@
 /* Outlook 2007 Blue Theme — Aero Glass */
 
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/assets/fonts/segoeui.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('/assets/fonts/segoeuib.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --border-panel: #9ab6d3;
   --border-panel-inner: #b0c4da;
   --border-btn-hover: #7d9fc0;
   --gradient-selected: linear-gradient(180deg, #3ea1f7, #1a78d6);
-  --gradient-light-bar: linear-gradient(180deg, #f8fafe 0%, #e8eff7 40%, #dfe8f2 41%, #eaf0f8 100%);
-  --gradient-light-bar-hover: linear-gradient(180deg, #fffefe 0%, #f0f5fb 40%, #e8eff7 41%, #f2f7fc 100%);
+  --gradient-light-bar: linear-gradient(
+    180deg,
+    #f8fafe 0%,
+    #e8eff7 40%,
+    #dfe8f2 41%,
+    #eaf0f8 100%
+  );
+  --gradient-light-bar-hover: linear-gradient(
+    180deg,
+    #fffefe 0%,
+    #f0f5fb 40%,
+    #e8eff7 41%,
+    #f2f7fc 100%
+  );
   --bg-pane: linear-gradient(180deg, #f4f7fb 0%, #e8edf4 100%);
   --color-heading: #1e3a5f;
 }
@@ -17,19 +45,28 @@
   padding: 0;
 }
 
-html, body, #app {
+html,
+body,
+#app {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   font-size: 11px;
   color: #000;
   background: #000;
 }
 
-a { color: #0066cc; }
-a:visited { color: #800080; }
-a:hover { color: #ff0000; text-decoration: underline; }
+a {
+  color: #0066cc;
+}
+a:visited {
+  color: #800080;
+}
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
 
 /* Vista desktop wallpaper */
 .vista-desktop {
@@ -48,112 +85,95 @@ a:hover { color: #ff0000; text-decoration: underline; }
   max-width: 1108px;
   height: 93%;
   padding: 4px;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px 8px 4px 4px;
-  background: rgba(100,150,210,0.35);
+  /* background: rgba(100, 150, 210, 0.35); */
+  background: rgba(125, 128, 132, 0.35);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.18),
-    0 0 1px 1px rgba(0,0,0,0.5),
-    0 4px 16px rgba(0,0,0,0.5),
-    0 8px 32px rgba(0,0,0,0.3);
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 1px 1px rgba(0, 0, 0, 0.5),
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    0 8px 32px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
 /* Outer highlight edge on the glass frame */
 .aero-frame::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 8px 8px 4px 4px;
-  border: 1px solid rgba(150,200,255,0.45);
+  border: 1px solid rgba(150, 200, 255, 0.45);
   pointer-events: none;
   z-index: 100;
 }
 
-/* Inner highlight edge on the glass frame */
+/* Inner highlight — only on left/right sides of the glass rim */
 .aero-frame::after {
-  content: "";
+  content: '';
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 3px;
   right: 3px;
-  bottom: 3px;
-  border-radius: 6px 6px 2px 2px;
-  border: 1px solid rgba(180,210,240,0.3);
+  bottom: 4px;
+  border-left: 1px solid rgba(180, 210, 240, 0.25);
+  border-right: 1px solid rgba(180, 210, 240, 0.25);
   pointer-events: none;
   z-index: 100;
 }
 
-/* Aero window content area */
+/* Aero window content area — opaque middle between titlebar and statusbar */
 .aero-window {
-  width: 100%;
-  height: 100%;
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  border-radius: 5px 5px 1px 1px;
   overflow: hidden;
   position: relative;
 }
 
-/* Title bar — true Aero glass with backdrop blur */
+/* Title bar — transparent, sits on the glass frame */
 .titlebar {
-  background:
-    linear-gradient(180deg,
-      rgba(160,200,240,0.65) 0%,
-      rgba(100,160,220,0.55) 15%,
-      rgba(60,120,190,0.50) 40%,
-      rgba(40,90,160,0.55) 60%,
-      rgba(50,110,180,0.50) 80%,
-      rgba(70,130,200,0.55) 100%
-    );
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  backdrop-filter: blur(20px) saturate(180%);
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 6px 10px;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.5);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  background: transparent;
+  color: #000;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 2px 10px;
+
   position: relative;
-  border-bottom: 1px solid rgba(60,110,170,0.5);
+  user-select: none;
+  margin-left: -6px;
+  margin-bottom: 4px;
 }
 
-/* Glass shine on title bar top half */
-.titlebar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 55%;
-  background: linear-gradient(180deg,
-    rgba(255,255,255,0.30) 0%,
-    rgba(255,255,255,0.12) 40%,
-    rgba(255,255,255,0.02) 80%,
-    transparent 100%
-  );
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  pointer-events: none;
+.titlebar .titlebar-text {
+  margin-left: 6px;
+  text-shadow:
+    0 0 16px rgba(255, 255, 255, 0.9),
+    0 0 16px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0px 2px rgba(255, 255, 255, 0.6);
 }
 
 /* Menu bar — Office 2007 multi-stop with highlight edge */
 .menubar {
-  background:
-    linear-gradient(180deg,
-      #e8eff8 0%,
-      #dfe8f3 1px,
-      #d4dfee 3px,
-      #c6d5e7 50%,
-      #bfd0e4 51%,
-      #c8d8ea 100%
-    );
-  border-top: 1px solid rgba(255,255,255,0.8);
+  background: linear-gradient(
+    180deg,
+    #e8eff8 0%,
+    #dfe8f3 1px,
+    #d4dfee 3px,
+    #c6d5e7 50%,
+    #bfd0e4 51%,
+    #c8d8ea 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid var(--border-panel);
   padding: 2px 0;
   font-size: 11px;
@@ -167,17 +187,17 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Toolbar — similar glass gradient, slightly different tone */
 .toolbar {
-  background:
-    linear-gradient(180deg,
-      #eaf1f9 0%,
-      #dfe9f4 1px,
-      #d6e2ef 4px,
-      #c2d4e8 45%,
-      #bad0e5 46%,
-      #c8daea 85%,
-      #d2e0ee 100%
-    );
-  border-top: 1px solid rgba(255,255,255,0.6);
+  background: linear-gradient(
+    180deg,
+    #eaf1f9 0%,
+    #dfe9f4 1px,
+    #d6e2ef 4px,
+    #c2d4e8 45%,
+    #bad0e5 46%,
+    #c8daea 85%,
+    #d2e0ee 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid var(--border-panel);
   padding: 3px 6px;
   font-size: 11px;
@@ -191,7 +211,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
   cursor: default;
   font-size: 11px;
   vertical-align: middle;
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   color: #8a9bb0;
 }
 
@@ -200,12 +220,12 @@ a:hover { color: #ff0000; text-decoration: underline; }
   width: 0;
   height: 22px;
   border-left: 1px solid var(--border-panel-inner);
-  border-right: 1px solid rgba(255,255,255,0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
   margin: 0 5px;
   vertical-align: middle;
 }
 
-/* Search bar — continuation of toolbar area */
+/* Search bar — continuation of toolbar area
 .search-bar {
   background:
     linear-gradient(180deg,
@@ -235,23 +255,32 @@ a:hover { color: #ff0000; text-decoration: underline; }
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
 }
 
-/* Status bar — glass rim at bottom */
+.search-bar-hint {
+  margin-right: auto;
+  color: #666;
+}
+
+.search-bar-icon {
+  cursor: pointer;
+}
+*/
+
+/* Status bar — sits on the glass frame, no own backdrop-filter */
 .statusbar {
-  background:
-    linear-gradient(180deg,
-      rgba(200,215,235,0.85) 0%,
-      rgba(180,200,225,0.80) 50%,
-      rgba(160,190,220,0.75) 51%,
-      rgba(180,200,225,0.80) 100%
-    );
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
-  backdrop-filter: blur(12px) saturate(150%);
-  border-top: 1px solid var(--border-panel);
-  border-bottom-left-radius: 1px;
-  border-bottom-right-radius: 1px;
-  padding: 3px 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 100%
+  );
+  border-top: 1px solid rgba(60, 110, 170, 0.3);
+  padding: 1px 8px;
   font-size: 11px;
-  color: #333;
+  color: #000;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 4px rgba(255, 255, 255, 0.8),
+    0 1px 1px rgba(255, 255, 255, 0.6);
+  user-select: none;
 }
 
 .statusbar-panel {
@@ -271,31 +300,31 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 .nav-section-header {
-  background:
-    linear-gradient(180deg,
-      #e6eef7 0%,
-      #d0dded 40%,
-      #c6d5e8 41%,
-      #d0dded 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #e6eef7 0%,
+    #d0dded 40%,
+    #c6d5e8 41%,
+    #d0dded 100%
+  );
   color: var(--color-heading);
   font-weight: bold;
   font-size: 11px;
   padding: 4px 8px;
-  border-top: 1px solid rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid var(--border-panel);
   cursor: pointer;
   user-select: none;
 }
 
 .nav-section-header:hover {
-  background:
-    linear-gradient(180deg,
-      #eef3fa 0%,
-      #dae6f2 40%,
-      #d0dded 41%,
-      #dae6f2 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #eef3fa 0%,
+    #dae6f2 40%,
+    #d0dded 41%,
+    #dae6f2 100%
+  );
 }
 
 .nav-section-header .chevron {
@@ -330,7 +359,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .folder-item.active {
   background: var(--gradient-selected);
   color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .folder-item.bold {
@@ -368,37 +397,37 @@ a:hover { color: #ff0000; text-decoration: underline; }
   font-weight: bold;
   border-bottom: 1px solid #c8d4e2;
   user-select: none;
-  background:
-    linear-gradient(180deg,
-      #f2f6fb 0%,
-      #e2e9f2 40%,
-      #dce4ee 41%,
-      #e6ecf4 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #f2f6fb 0%,
+    #e2e9f2 40%,
+    #dce4ee 41%,
+    #e6ecf4 100%
+  );
 }
 
 .nav-btn:hover {
-  background:
-    linear-gradient(180deg,
-      #fafcfe 0%,
-      #eaf0f8 40%,
-      #e4ecf6 41%,
-      #eef4fa 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #fafcfe 0%,
+    #eaf0f8 40%,
+    #e4ecf6 41%,
+    #eef4fa 100%
+  );
 }
 
 .nav-btn.active {
-  background:
-    linear-gradient(180deg,
-      #ffeab8 0%,
-      #ffd470 30%,
-      #f0b830 50%,
-      #f5c844 70%,
-      #ffd870 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #ffeab8 0%,
+    #ffd470 30%,
+    #f0b830 50%,
+    #f5c844 70%,
+    #ffd870 100%
+  );
   color: #3a2800;
   border-bottom-color: #c09020;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .nav-btn .nav-icon {
@@ -414,8 +443,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
   cursor: pointer;
   font-size: 14px;
   border-right: 1px solid #c8d4e2;
-  background:
-    linear-gradient(180deg, #f2f6fb, #e2e9f2);
+  background: linear-gradient(180deg, #f2f6fb, #e2e9f2);
 }
 
 .nav-btn-mini:hover {
@@ -450,13 +478,13 @@ a:hover { color: #ff0000; text-decoration: underline; }
 
 /* Date group header */
 .date-group-header td {
-  background:
-    linear-gradient(180deg,
-      #e8eff7 0%,
-      #d8e2ee 50%,
-      #d2dde9 51%,
-      #dce6f0 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #e8eff7 0%,
+    #d8e2ee 50%,
+    #d2dde9 51%,
+    #dce6f0 100%
+  );
   padding: 3px 8px;
   font-weight: bold;
   font-size: 11px;
@@ -477,7 +505,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .email-row.selected {
   background: var(--gradient-selected);
   color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .email-row td {
@@ -502,7 +530,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .about-row.selected {
   background: var(--gradient-selected);
   color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .about-row td {
@@ -556,7 +584,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .whois-terminal {
   background: #0c0c0c;
   color: #33ff33;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
   padding: 8px;
   overflow: auto;
@@ -567,7 +595,7 @@ a:hover { color: #ff0000; text-decoration: underline; }
 .whois-prompt {
   background: #1a1a1a;
   color: #33ff33;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
   padding: 2px 8px;
 }
@@ -588,50 +616,67 @@ a:hover { color: #ff0000; text-decoration: underline; }
 }
 
 /* Buttons */
-button, .btn {
+button,
+.btn {
   background: var(--gradient-light-bar);
   border: 1px solid var(--border-panel);
   border-radius: 2px;
   padding: 2px 10px;
   min-height: 22px;
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
   font-size: 11px;
   cursor: pointer;
   outline: none;
   color: #333;
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
   background: var(--gradient-light-bar-hover);
   border-color: var(--border-btn-hover);
 }
 
-button:active, .btn:active {
+button:active,
+.btn:active {
   background: linear-gradient(180deg, #c0d2e8, #a8bcd6);
 }
 
 /* Scrollbar styling - Office 2007 */
-::-webkit-scrollbar { width: 17px; height: 17px; }
+::-webkit-scrollbar {
+  width: 17px;
+  height: 17px;
+}
 ::-webkit-scrollbar-track {
-  background:
-    linear-gradient(90deg, #e8eef4 0%, #f0f4fa 30%, #f0f4fa 70%, #e8eef4 100%);
+  background: linear-gradient(
+    90deg,
+    #e8eef4 0%,
+    #f0f4fa 30%,
+    #f0f4fa 70%,
+    #e8eef4 100%
+  );
   border: 1px solid var(--border-panel-inner);
 }
 ::-webkit-scrollbar-thumb {
-  background:
-    linear-gradient(90deg,
-      #d0dcea 0%,
-      #c0d0e4 20%,
-      #b8c8de 50%,
-      #c0d0e4 80%,
-      #d0dcea 100%
-    );
+  background: linear-gradient(
+    90deg,
+    #d0dcea 0%,
+    #c0d0e4 20%,
+    #b8c8de 50%,
+    #c0d0e4 80%,
+    #d0dcea 100%
+  );
   border: 1px solid #8aa4be;
   border-radius: 1px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background:
-    linear-gradient(90deg, #dce8f4, #ccdaea, #c4d4e8, #ccdaea, #dce8f4);
+  background: linear-gradient(
+    90deg,
+    #dce8f4,
+    #ccdaea,
+    #c4d4e8,
+    #ccdaea,
+    #dce8f4
+  );
 }
 ::-webkit-scrollbar-button {
   display: none;
@@ -649,16 +694,6 @@ button:active, .btn:active {
   overflow: hidden;
 }
 
-/* Search bar helpers */
-.search-bar-hint {
-  margin-right: auto;
-  color: #666;
-}
-
-.search-bar-icon {
-  cursor: pointer;
-}
-
 /* Nav placeholder */
 .nav-placeholder {
   padding: 8px;
@@ -666,9 +701,9 @@ button:active, .btn:active {
   text-align: center;
 }
 
-.nav-btn-mini-row {
+/* .nav-btn-mini-row {
   display: flex;
-}
+} */
 
 /* Mobile warning */
 .mobile-warning {
@@ -777,15 +812,31 @@ button:active, .btn:active {
 }
 
 /* Table column widths */
-.col-icon { width: 4%; }
-.col-from { width: 24%; }
-.col-received { width: 20%; }
-.col-size { width: 8%; }
-.col-phone { width: 40%; }
-.col-type { width: 25%; }
+.col-icon {
+  width: 4%;
+}
+.col-from {
+  width: 24%;
+}
+.col-received {
+  width: 20%;
+}
+.col-size {
+  width: 8%;
+}
+.col-phone {
+  width: 40%;
+}
+.col-type {
+  width: 25%;
+}
 
-.cell-from { max-width: 200px; }
-.cell-subject { max-width: 300px; }
+.cell-from {
+  max-width: 200px;
+}
+.cell-subject {
+  max-width: 300px;
+}
 
 .email-table {
   border-collapse: collapse;
@@ -951,6 +1002,10 @@ button:active, .btn:active {
 }
 
 @media (max-width: 767px) {
-  .mobile-warning { display: block; }
-  .vista-desktop { display: none; }
+  .mobile-warning {
+    display: block;
+  }
+  .vista-desktop {
+    display: none;
+  }
 }
