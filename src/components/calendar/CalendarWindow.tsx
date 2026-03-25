@@ -1,5 +1,6 @@
 import { useMemo } from "preact/hooks";
 import { emails, calls } from "../../data/store";
+import { IconCalendar } from "../VistaIcons";
 
 export function CalendarWindow() {
   const emailList = emails.value;
@@ -29,7 +30,7 @@ export function CalendarWindow() {
     <div class="calendar-container">
       <div class="calendar-header">
         <span class="calendar-title">
-          &#128197; Spam Activity Calendar
+          <IconCalendar /> Spam Activity Calendar
         </span>
         <br />
         <span class="calendar-subtitle">
@@ -142,12 +143,13 @@ function MonthGrid({
             }
 
             const fontColor = intensity > 0.3 ? "#fff" : "#000";
+            const isRegistration = dateStr === "2024-01-28";
 
             return (
               <td
                 key={dateStr}
-                class="cal-day"
-                style={{ background: bg, color: fontColor }}
+                class={`cal-day${total > 0 ? ' has-activity' : ''}${isRegistration ? ' cal-day-today' : ''}`}
+                style={{ background: total > 0 ? bg : undefined, color: total > 0 ? fontColor : undefined }}
                 title={
                   activity
                     ? `${dateStr}: ${activity.emails} email(s), ${activity.calls} call(s)`

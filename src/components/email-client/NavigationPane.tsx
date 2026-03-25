@@ -1,4 +1,12 @@
 import { selectedFolder } from "../../data/store";
+import {
+  IconInbox,
+  IconFolder,
+  IconJunk,
+  IconSearch,
+  IconPhone,
+  IconVoicemail,
+} from "../VistaIcons";
 
 export function NavigationPane({
   folder,
@@ -22,7 +30,7 @@ export function NavigationPane({
           class={`folder-item bold ${folder === "inbox" ? "active" : ""}`}
           onClick={() => (selectedFolder.value = "inbox")}
         >
-          <span class="folder-icon">&#128229;</span>
+          <span class="folder-icon"><IconInbox /></span>
           <span>Inbox</span>
           <span class="folder-count">({emailCount})</span>
         </div>
@@ -34,42 +42,42 @@ export function NavigationPane({
       </div>
       <div class="nav-folder-tree">
         <div class="folder-root">
-          &#128193; Personal Folders
+          <IconFolder /> Personal Folders
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128193;</span> Deleted Items
+          <span class="folder-icon"><IconFolder color="#d0c070" /></span> Deleted Items
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128193;</span> Drafts
+          <span class="folder-icon"><IconFolder color="#d0c070" /></span> Drafts
         </div>
         <div
           class={`folder-item bold folder-item--nested ${folder === "inbox" ? "active" : ""}`}
           onClick={() => (selectedFolder.value = "inbox")}
         >
-          <span class="folder-icon">&#128229;</span>
+          <span class="folder-icon"><IconInbox /></span>
           <span>Inbox</span>
           <span class="folder-count">({emailCount})</span>
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128293;</span> Junk E-mail
+          <span class="folder-icon"><IconJunk /></span> Junk E-mail
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128193;</span> Outbox
+          <span class="folder-icon"><IconFolder color="#d0c070" /></span> Outbox
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128193;</span> RSS Feeds
+          <span class="folder-icon"><IconFolder color="#e8a030" /></span> RSS Feeds
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128193;</span> Sent Items
+          <span class="folder-icon"><IconFolder color="#d0c070" /></span> Sent Items
         </div>
         <div class="folder-item folder-item--disabled">
-          <span class="folder-icon">&#128270;</span> Search Folders
+          <span class="folder-icon"><IconSearch /></span> Search Folders
         </div>
         <div
           class={`folder-item folder-item--nested ${folder === "calls" ? "active" : ""}`}
           onClick={() => (selectedFolder.value = "calls")}
         >
-          <span class="folder-icon">&#128222;</span>
+          <span class="folder-icon"><IconPhone /></span>
           <span>Missed Calls</span>
           <span class="folder-count">({missedCount})</span>
         </div>
@@ -77,7 +85,7 @@ export function NavigationPane({
           class={`folder-item folder-item--nested ${folder === "voicemail" ? "active" : ""}`}
           onClick={() => (selectedFolder.value = "voicemail")}
         >
-          <span class="folder-icon">&#128241;</span>
+          <span class="folder-icon"><IconVoicemail /></span>
           <span>Voicemail</span>
           <span class="folder-count">({voicemailCount})</span>
         </div>

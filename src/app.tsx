@@ -4,6 +4,18 @@ import { loadEmails } from './data/emails';
 import { loadCalls } from './data/calls';
 import { EmailClient } from './components/email-client/EmailClient';
 import { CalendarWindow } from './components/calendar/CalendarWindow';
+import { ContextMenu } from './components/ContextMenu';
+import {
+  IconMail,
+  IconCalendar,
+  IconSendReceive,
+  IconNew,
+  IconReply,
+  IconReplyAll,
+  IconForward,
+  IconDelete,
+  IconAddressBook,
+} from './components/VistaIcons';
 
 export function App() {
   useEffect(() => {
@@ -19,6 +31,9 @@ export function App() {
 
   return (
     <>
+      {/* Custom Vista context menu */}
+      <ContextMenu />
+
       {/* Mobile warning */}
       <div class='mobile-warning'>
         <div class='mobile-warning-dialog'>
@@ -49,8 +64,28 @@ export function App() {
         <div class='aero-frame'>
           {/* Title bar — part of the glass frame */}
           <div class='titlebar'>
-            <span>&#128231;</span>
+            <span class='titlebar-icon'>
+              <IconMail />
+            </span>
             <span class='titlebar-text'>Inbox - idontneedawebsite Mail</span>
+            <div class='window-controls'>
+              <button class='wc-btn wc-minimize' title='Minimize' aria-label='Minimize'>
+                <svg width="10" height="10" viewBox="0 0 10 10">
+                  <rect x="1" y="7" width="8" height="1.5" fill="currentColor" />
+                </svg>
+              </button>
+              <button class='wc-btn wc-maximize' title='Maximize' aria-label='Maximize'>
+                <svg width="10" height="10" viewBox="0 0 10 10">
+                  <rect x="1" y="1" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5" />
+                  <rect x="1" y="1" width="8" height="2" fill="currentColor" />
+                </svg>
+              </button>
+              <button class='wc-btn wc-close' title='Close' aria-label='Close'>
+                <svg width="10" height="10" viewBox="0 0 10 10">
+                  <path d="M1.5 1.5L8.5 8.5M8.5 1.5L1.5 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Window content */}
@@ -82,28 +117,18 @@ export function App() {
 
             {/* Toolbar */}
             <div class='toolbar'>
-              <span class='toolbar-btn'>&#128232; Send/Receive</span>
+              <span class='toolbar-btn'><IconSendReceive /> Send/Receive</span>
               <span class='toolbar-sep' />
-              <span class='toolbar-btn'>&#128221; New</span>
+              <span class='toolbar-btn'><IconNew /> New</span>
               <span class='toolbar-sep' />
-              <span class='toolbar-btn'>&#8617;&#65039; Reply</span>
-              <span class='toolbar-btn'>&#8617;&#65039; Reply to All</span>
-              <span class='toolbar-btn'>&#10145;&#65039; Forward</span>
+              <span class='toolbar-btn'><IconReply /> Reply</span>
+              <span class='toolbar-btn'><IconReplyAll /> Reply to All</span>
+              <span class='toolbar-btn'><IconForward /> Forward</span>
               <span class='toolbar-sep' />
-              <span class='toolbar-btn'>&#128465;&#65039; Delete</span>
+              <span class='toolbar-btn'><IconDelete /> Delete</span>
               <span class='toolbar-sep' />
-              <span class='toolbar-btn'>&#128206; Address Book</span>
+              <span class='toolbar-btn'><IconAddressBook /> Address Book</span>
             </div>
-
-            {/* Search bar */}
-            {/* <div class="search-bar">
-              <span class="search-bar-hint">
-                Type a question for help
-              </span>
-              <span>Search Inbox</span>
-              <input type="text" placeholder="" readOnly />
-              <span class="search-bar-icon">&#128269;</span>
-            </div> */}
 
             {/* Content area with sidebar */}
             <div class='content-area'>
@@ -121,18 +146,14 @@ export function App() {
                     class={`nav-btn ${tab === 'inbox' ? 'active' : ''}`}
                     onClick={() => (activeTab.value = 'inbox')}
                   >
-                    <span class='nav-icon'>&#128231;</span> Mail
+                    <span class='nav-icon'><IconMail /></span> Mail
                   </div>
                   <div
                     class={`nav-btn ${tab === 'calendar' ? 'active' : ''}`}
                     onClick={() => (activeTab.value = 'calendar')}
                   >
-                    <span class='nav-icon'>&#128197;</span> Calendar
+                    <span class='nav-icon'><IconCalendar /></span> Calendar
                   </div>
-                  {/* <div class="nav-btn-mini-row">
-                    <div class="nav-btn-mini" title="Contacts">&#128101;</div>
-                    <div class="nav-btn-mini" title="Tasks">&#9745;</div>
-                  </div> */}
                 </div>
               </div>
 
