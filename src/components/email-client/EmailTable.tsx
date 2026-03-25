@@ -1,5 +1,6 @@
 import type { EmailMetadata } from "../../types";
 import { getDateGroup, formatEmailDate, formatEmailSize } from "./utils";
+import { IconPin, IconAttach } from "../VistaIcons";
 
 export const ABOUT_ID = "__about__";
 
@@ -53,7 +54,7 @@ export function EmailTable({
           class={`about-row ${selectedId === ABOUT_ID ? "selected" : ""}`}
           onClick={() => onSelect(ABOUT_ID)}
         >
-          <td>&#128204;</td>
+          <td><IconPin /></td>
           <td></td>
           <td class="cell-from">Webb Notneeded</td>
           <td class="cell-subject">
@@ -75,7 +76,7 @@ export function EmailTable({
                 class={`email-row ${selectedId === email.Payload.ID ? "selected" : ""}`}
                 onClick={() => onSelect(email.Payload.ID)}
               >
-                <td>{email.Payload.NumAttachments > 0 ? "📎" : ""}</td>
+                <td>{email.Payload.NumAttachments > 0 ? <IconAttach /> : ""}</td>
                 <td></td>
                 <td class="cell-from">
                   {email.Payload.Sender.Name || email.Payload.Sender.Address}
