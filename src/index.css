@@ -1273,8 +1273,15 @@ button:not(.wc-btn):active,
 
 .reading-pane-container {
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0 3px 3px;
+  min-height: 0;
+}
+
+.reading-pane-container > .email-client-content {
+  height: auto;
+  min-height: 100%;
 }
 
 .reading-pane-scroll {
@@ -1342,7 +1349,7 @@ button:not(.wc-btn):active,
 }
 
 .reading-body {
-  flex: 1;
+  flex: none;
 }
 
 .reading-iframe {
@@ -1585,6 +1592,8 @@ button:not(.wc-btn):active,
   .content-main > .email-client-content > .reading-pane-container {
     flex: 1;
     margin: 3px;
+    overflow-y: auto;
+    min-height: 0;
   }
 
   /* Transform email table into card-style list */

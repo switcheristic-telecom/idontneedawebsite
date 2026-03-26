@@ -7,6 +7,15 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const terms = searchQuery.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
 
+  const resizeIframe = (iframe: HTMLIFrameElement) => {
+    try {
+      const doc = iframe.contentDocument;
+      if (doc?.body) {
+        iframe.style.height = doc.body.scrollHeight + "px";
+      }
+    } catch (_) {}
+  };
+
   useEffect(() => {
     const iframe = iframeRef.current;
     if (!iframe) return;
@@ -16,13 +25,17 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
         const doc = iframe.contentDocument;
         if (doc) highlightIframe(doc, terms);
       } catch (_) { /* cross-origin safety */ }
+      resizeIframe(iframe);
     };
 
     iframe.addEventListener("load", onLoad);
     // If already loaded (cached), run immediately
     try {
       const doc = iframe.contentDocument;
-      if (doc?.body?.childNodes.length) highlightIframe(doc, terms);
+      if (doc?.body?.childNodes.length) {
+        highlightIframe(doc, terms);
+        resizeIframe(iframe);
+      }
     } catch (_) {}
 
     return () => iframe.removeEventListener("load", onLoad);
@@ -69,7 +82,6 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
           ref={iframeRef}
           src={`/emails/${email.Payload.ID}.html`}
           width="100%"
-          height="100%"
           class="reading-iframe"
           sandbox="allow-same-origin"
         />
