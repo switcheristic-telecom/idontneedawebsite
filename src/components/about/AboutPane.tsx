@@ -3,7 +3,7 @@ export function AboutPane() {
     <div>
       {/* Email-style header - Outlook 2007 */}
       <div class="reading-header">
-        <div class="subject-line">Welcome to idontneedawebsite.us &mdash; Read Me First</div>
+        <div class="subject-line">Welcome to idontneedawebsite.us &mdash; <span class="rainbow-text">Read Me First</span></div>
         <div class="header-field-row">
           <span class="field-label">From:</span>
           <span class="field-value">Webb Notneeded [idontneedawebsite@proton.me]</span>
@@ -34,28 +34,31 @@ export function AboutPane() {
         <hr class="about-divider" />
 
         <div class="about-bio">
-          <div style={{ flexShrink: 0 }}>
-            <img
-              src="/assets/webb-notneeded/DALL·E 2024-03-19 03.57.01 - Craft a hyperrealistic portrait of Mr. Webb Notneeded, now an experienced and wise entrepreneur in his late 50s. He sits with a refined grace at his c.webp"
-              alt="Webb Notneeded"
-              width="100"
-              height="100"
-              class="about-avatar"
-            />
-          </div>
           <div class="about-bio-text">
             <span class="about-bio-title">
               I don't need a website
             </span>
             <br /><br />
-            The .US domain's policy of not allowing privacy redaction is
-            rooted in a concept of transparency and accountability, a
-            legacy from when it was primarily used by government entities
-            and schools. This decision by NeuStar, the operator of .US
-            domains, is based on the idea that users should be able to see
-            who is responsible for a website.
+            The .US country-code domain is managed by GoDaddy under contract
+            with the National Telecommunications and Information Administration
+            (NTIA), an agency of the U.S. Department of Commerce.<sup><a href="#ref-1">1</a></sup> In 2005,
+            the U.S. government banned WHOIS privacy on all .US
+            domains &mdash; without public comment.<sup><a href="#ref-2">2</a></sup> Every registrant's name,
+            address, phone number, and email is exposed to anyone who runs
+            a WHOIS lookup. Almost every other domain extension allows privacy
+            redaction; .US is the notable exception.
           </div>
         </div>
+
+        <p>
+          The result is a worst-of-both-worlds situation: legitimate
+          registrants are fully exposed, while the policy does nothing to
+          stop abuse. An Interisle Consulting study found over 30,000
+          phishing domains on .US in a single year &mdash; at least 109
+          of which targeted the U.S. government itself.<sup><a href="#ref-1">1</a></sup> Nexus verification
+          (the requirement that registrants have a connection to the U.S.)
+          is effectively a pre-checked dropdown box.<sup><a href="#ref-1">1</a></sup>
+        </p>
 
         <p>
           To document this problem, a new domain was registered:{" "}
@@ -68,13 +71,14 @@ export function AboutPane() {
           Below you will see the journey of a fictional man, by the name of{" "}
           <b>Webb Notneeded</b>. He represents this experiment &mdash; every
           email and phone call in this inbox is real spam, received by his
-          publicly listed contact information. His story serves as a case
-          study into the challenges and implications of the .US domain's
-          policy on privacy redaction.
+          publicly listed contact information.
         </p>
 
         <p style={{ marginBottom: "6px", fontWeight: "bold" }}>
-          WHOIS Record for idontneedawebsite.us
+          WHOIS Record for idontneedawebsite.us{" "}
+          <a href="https://lookup.icann.org/en/lookup?name=idontneedawebsite.us" target="_blank" style={{ fontWeight: "normal", fontSize: "11px" }}>
+            (look it up yourself)
+          </a>
         </p>
 
         <div class="whois-box">
@@ -106,6 +110,27 @@ Name Server: lilyana.ns.cloudflare.com
 DNSSEC: unsigned`}
           </div>
         </div>
+
+        <p style={{ marginBottom: "6px", fontWeight: "bold" }}>
+          References
+        </p>
+        <ol class="about-references">
+          <li id="ref-1">
+            <a href="https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/" target="_blank">
+              Why is .US Being Used to Phish So Many of Us?
+            </a>{" "}&mdash; Krebs on Security, 2023
+          </li>
+          <li id="ref-2">
+            <a href="https://domainnamewire.com/2022/04/20/reminder-theres-no-whois-privacy-for-us-domain-names/" target="_blank">
+              Reminder: there's no Whois privacy for .us domain names
+            </a>{" "}&mdash; Domain Name Wire, 2022
+          </li>
+          <li id="ref-3">
+            <a href="https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/" target="_blank">
+              Who Is Afraid of More Spams and Scams?
+            </a>{" "}&mdash; Krebs on Security, 2018
+          </li>
+        </ol>
 
         <p class="about-footer">
           A{" "}

@@ -223,9 +223,23 @@ export function AddressBookWindow() {
                             : contact.address)}
                       </td>
                       <td class="ab-cell-address">
-                        {contact.type === "phone"
-                          ? formatPhoneNumber(contact.address)
-                          : contact.address}
+                        <span class="ab-address-text">
+                          {contact.type === "phone"
+                            ? formatPhoneNumber(contact.address)
+                            : contact.address}
+                        </span>
+                        <a
+                          href={contact.type === "email" ? `mailto:${contact.address}` : `tel:${contact.address}`}
+                          class="ab-external-link"
+                          title={contact.type === "email" ? `Send email to ${contact.address}` : `Call ${contact.address}`}
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <svg width="10" height="10" viewBox="0 0 12 12">
+                            <path d="M3.5 1.5H1.5V10.5H10.5V8.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
+                            <path d="M6.5 1.5H10.5V5.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="10.5" y1="1.5" x2="5.5" y2="6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                          </svg>
+                        </a>
                       </td>
                       <td class="ab-cell-count">{contact.count}</td>
                     </tr>
