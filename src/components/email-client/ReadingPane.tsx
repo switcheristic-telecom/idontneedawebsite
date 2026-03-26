@@ -49,7 +49,9 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
         <div class="header-field-row">
           <span class="field-label">From:</span>
           <span class="field-value">
-            {highlightText(`${email.Payload.Sender.Name} [${email.Payload.Sender.Address}]`, terms)}
+            <a href={`mailto:${email.Payload.Sender.Address}`} class="from-link">
+              {highlightText(`${email.Payload.Sender.Name} [${email.Payload.Sender.Address}]`, terms)}
+            </a>
           </span>
         </div>
         <div class="header-field-row">

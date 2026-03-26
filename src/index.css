@@ -1,5 +1,10 @@
 /* Outlook 2007 Blue Theme — Aero Glass */
 
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 @font-face {
   font-family: 'Segoe UI';
   src: url('/assets/fonts/segoeui.woff') format('woff');
@@ -711,6 +716,46 @@ a:hover {
   margin-bottom: 4px;
 }
 
+.rainbow-text {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background: linear-gradient(90deg, #ff0000, #ff8800, #ffff00, #00cc00, #0066ff, #8800ff, #ff0000);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rainbow-shift 3s linear infinite;
+}
+
+@keyframes rainbow-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.about-references {
+  margin: 0 0 12px 20px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.about-references li {
+  margin-bottom: 4px;
+}
+
+.about-body sup a {
+  color: var(--color-link, #0066cc);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.about-body sup a:hover {
+  text-decoration: underline;
+}
+
+.about-references a {
+  color: var(--color-link, #0066cc);
+}
+
 .reading-header .field-label {
   color: var(--color-text-muted);
   font-weight: normal;
@@ -720,6 +765,16 @@ a:hover {
 
 .reading-header .field-value {
   color: var(--color-text-body);
+}
+
+.reading-header .from-link {
+  color: var(--color-link, #0066cc);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reading-header .from-link:hover {
+  text-decoration: underline;
 }
 
 .cal-day.has-activity {
@@ -1285,6 +1340,7 @@ button:not(.wc-btn):active,
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: #d8dce0;
 }
 
 .message-list-pane {
@@ -1299,16 +1355,24 @@ button:not(.wc-btn):active,
   overflow-x: hidden;
   margin: 0 3px 3px;
   min-height: 0;
+  background: #fff;
 }
 
 .reading-pane-container > .email-client-content {
   height: auto;
   min-height: 100%;
+  background: #fff;
 }
 
 .reading-pane-scroll {
   overflow: auto;
   height: 100%;
+}
+
+.reading-pane-scroll,
+.reading-pane-scroll * {
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .empty-pane-message {
@@ -1616,6 +1680,7 @@ button:not(.wc-btn):active,
     margin: 3px;
     overflow-y: auto;
     min-height: 0;
+    background: #fff;
   }
 
   /* Transform email table into card-style list */
@@ -2088,6 +2153,33 @@ button:not(.wc-btn):active,
 
 .ab-cell-count {
   text-align: right;
+}
+
+.ab-cell-address {
+  position: relative;
+}
+
+.ab-address-text {
+  margin-right: 18px;
+}
+
+.ab-external-link {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.ab-external-link:hover {
+  color: #1a5a9e;
+  background: #d0e4f7;
 }
 
 /* Status bar — transparent, on the glass (matches .statusbar) */
