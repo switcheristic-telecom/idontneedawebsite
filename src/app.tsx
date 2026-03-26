@@ -72,7 +72,7 @@ export function App() {
             <span class='titlebar-icon'>
               <IconMail />
             </span>
-            <span class='titlebar-text'>Inbox - idontneedawebsite Mail</span>
+            <span class='titlebar-text'>Inbox - idontneedawebsite Mail (Jan 2024 – {__LATEST_EMAIL_DATE__})</span>
             <div class='window-controls'>
               <button class='wc-btn wc-minimize' title='Minimize' aria-label='Minimize'>
                 <svg width="10" height="10" viewBox="0 0 10 10">
