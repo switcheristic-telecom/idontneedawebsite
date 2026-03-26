@@ -56,3 +56,28 @@ export function formatEmailSize(size: number): string {
   if (size < 1024) return `${size} B`;
   return `${Math.round(size / 1024)} KB`;
 }
+
+export function getCallDateGroup(isoTime: string): string {
+  const ts = Math.floor(new Date(isoTime).getTime() / 1000);
+  return getDateGroup(ts);
+}
+
+export function formatCallTime(isoTime: string): string {
+  const ts = Math.floor(new Date(isoTime).getTime() / 1000);
+  return formatEmailDate(ts);
+}
+
+export function formatPhoneNumber(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length === 11 && digits[0] === "1") {
+    const area = digits.slice(1, 4);
+    const prefix = digits.slice(4, 7);
+    const line = digits.slice(7, 11);
+    return `(${area}) ${prefix}-${line}`;
+  }
+  return phone;
+}
+
+export function getCallId(call: { phone: string; time: string }): string {
+  return `${call.phone}_${call.time}`;
+}

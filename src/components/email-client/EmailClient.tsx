@@ -3,18 +3,22 @@ import {
   calls,
   selectedFolder,
   selectedEmailId,
+  selectedCallId,
   sortBy,
   sortAsc,
   searchQuery,
   searchIndex,
   loadSearchIndex,
+  filteredCount,
 } from "../../data/store";
 import { AboutPane } from "../about/AboutPane";
 import { NavigationPane } from "./NavigationPane";
 import { EmailTable, ABOUT_ID } from "./EmailTable";
 import { CallTable } from "./CallTable";
+import { CallDetailPane } from "./CallDetailPane";
 import { ReadingPane } from "./ReadingPane";
-import { IconInbox, IconSearch } from "../VistaIcons";
+import { getCallId } from "./utils";
+import { IconInbox, IconPhone, IconVoicemail, IconSearch } from "../VistaIcons";
 
 export function EmailClient({ mode }: { mode: "nav" | "content" }) {
   const folder = selectedFolder.value;
@@ -68,6 +72,8 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
       })
     : sorted;
 
+  filteredCount.value = terms.length ? filtered.length : null;
+
   const arrow = (col: string) =>
     sortBy.value === col ? (sortAsc.value ? " \u25B2" : " \u25BC") : "";
 
@@ -76,6 +82,11 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
   const selected = isAbout
     ? null
     : emailList.find((e) => e.Payload.ID === selId);
+
+  const activeCalls = folder === "voicemail" ? voicemails : missedCalls;
+  const selectedCall = selectedCallId.value
+    ? activeCalls.find((c) => getCallId(c) === selectedCallId.value) ?? null
+    : null;
 
   const sortLabel =
     sortBy.value === "date" ? "Date" : sortBy.value === "from" ? "From" : "Subject";
@@ -90,39 +101,54 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
         {/* Card-layout header — visible only in wide mode */}
         <div class="card-list-header">
           <div class="card-list-title">
-            <IconInbox /> Inbox
+            {folder === "inbox" ? (
+              <><IconInbox /> Inbox</>
+            ) : folder === "voicemail" ? (
+              <><IconVoicemail /> Voicemail</>
+            ) : (
+              <><IconPhone /> Missed Calls</>
+            )}
           </div>
-          <div class="card-list-search">
-            <IconSearch />
-            <input
-              type="text"
-              class="card-search-input"
-              placeholder="Search Inbox"
-              value={searchQuery.value}
-              onInput={(e) => {
-                searchQuery.value = (e.target as HTMLInputElement).value;
-                loadSearchIndex();
-              }}
-            />
-          </div>
-          <div class="card-list-sort">
-            <span
-              class="card-sort-btn"
-              onClick={() => {
-                const cols: Array<"date" | "from" | "subject"> = ["date", "from", "subject"];
-                const i = cols.indexOf(sortBy.value);
-                sortBy.value = cols[(i + 1) % cols.length];
-              }}
-            >
-              Arranged By: <b>{sortLabel}</b>
-            </span>
-            <span
-              class="card-sort-btn"
-              onClick={() => { sortAsc.value = !sortAsc.value; }}
-            >
-              {sortOrder}
-            </span>
-          </div>
+          {folder === "inbox" ? (
+            <>
+              <div class="card-list-search">
+                <IconSearch />
+                <input
+                  type="text"
+                  class="card-search-input"
+                  placeholder="Search Inbox"
+                  value={searchQuery.value}
+                  onInput={(e) => {
+                    searchQuery.value = (e.target as HTMLInputElement).value;
+                    loadSearchIndex();
+                  }}
+                />
+              </div>
+              <div class="card-list-sort">
+                <span
+                  class="card-sort-btn"
+                  onClick={() => {
+                    const cols: Array<"date" | "from" | "subject"> = ["date", "from", "subject"];
+                    const i = cols.indexOf(sortBy.value);
+                    sortBy.value = cols[(i + 1) % cols.length];
+                  }}
+                >
+                  Arranged By: <b>{sortLabel}</b>
+                </span>
+                <span
+                  class="card-sort-btn"
+                  onClick={() => { sortAsc.value = !sortAsc.value; }}
+                >
+                  {sortOrder}
+                </span>
+              </div>
+            </>
+          ) : (
+            <div class="card-list-sort">
+              <span>Arranged By: <b>Date</b></span>
+              <span>Oldest on top</span>
+            </div>
+          )}
         </div>
         {folder === "inbox" ? (
           <EmailTable
@@ -136,24 +162,28 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
         ) : (
           <CallTable
             calls={folder === "voicemail" ? voicemails : missedCalls}
+            selectedId={selectedCallId.value}
+            onSelect={(id) => (selectedCallId.value = id)}
           />
         )}
       </div>
 
       {/* Reading pane */}
       <div class="panel-inset reading-pane-container">
-        {isAbout ? (
-          <div class="reading-pane-scroll">
-            <AboutPane />
-          </div>
-        ) : folder === "inbox" && selected ? (
-          <ReadingPane email={selected} />
+        {folder === "inbox" ? (
+          isAbout ? (
+            <div class="reading-pane-scroll">
+              <AboutPane />
+            </div>
+          ) : selected ? (
+            <ReadingPane email={selected} />
+          ) : (
+            <div class="empty-pane-message">Click a message to read it</div>
+          )
+        ) : selectedCall ? (
+          <CallDetailPane call={selectedCall} />
         ) : (
-          <div class="empty-pane-message">
-            {folder === "inbox"
-              ? "Click a message to read it"
-              : "Select a folder on the left"}
-          </div>
+          <div class="empty-pane-message">Click a call to view details</div>
         )}
       </div>
     </div>
