@@ -1,9 +1,10 @@
 import { useEffect } from 'preact/hooks';
-import { emails, calls, activeTab, filteredCount } from './data/store';
+import { emails, calls, activeTab, filteredCount, showAddressBook } from './data/store';
 import { loadEmails } from './data/emails';
 import { loadCalls } from './data/calls';
 import { EmailClient } from './components/email-client/EmailClient';
 import { CalendarWindow } from './components/calendar/CalendarWindow';
+import { AddressBookWindow } from './components/address-book/AddressBookWindow';
 import { ContextMenu } from './components/ContextMenu';
 import {
   IconMail,
@@ -35,6 +36,8 @@ export function App() {
     <>
       {/* Custom Vista context menu */}
       <ContextMenu />
+      {/* Address Book dialog */}
+      <AddressBookWindow />
 
       {/* Mobile warning */}
       <div class='mobile-warning'>
@@ -131,7 +134,7 @@ export function App() {
               <span class='toolbar-sep' />
               <span class='toolbar-btn'><IconDelete /> Delete</span>
               <span class='toolbar-sep' />
-              <span class='toolbar-btn'><IconAddressBook /> Address Book</span>
+              <span class='toolbar-btn toolbar-btn--active' onClick={() => (showAddressBook.value = !showAddressBook.value)}><IconAddressBook /> Address Book</span>
             </div>
 
             {/* Content area with sidebar */}

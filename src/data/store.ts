@@ -13,6 +13,7 @@ export const sortAsc = signal(true);
 export const searchQuery = signal("");
 export const searchIndex = signal<Record<string, string> | null>(null);
 export const filteredCount = signal<number | null>(null);
+export const showAddressBook = signal(false);
 
 let indexLoading = false;
 export async function loadSearchIndex() {
