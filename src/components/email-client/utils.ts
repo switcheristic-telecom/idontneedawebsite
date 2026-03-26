@@ -9,7 +9,25 @@ export function getDateGroup(timestamp: number): string {
   if (diffDays === 1) return "Date: Yesterday";
   if (diffDays <= 7) return "Date: Last Week";
   if (diffDays <= 14) return "Date: Two Weeks Ago";
-  return "Date: Older";
+  if (diffDays <= 21) return "Date: Three Weeks Ago";
+
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+
+  // Current month — use "Earlier This Month" instead of month name
+  if (date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()) {
+    return "Date: Earlier This Month";
+  }
+
+  // Last month
+  const lastMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  if (date.getMonth() === lastMonth.getMonth() && date.getFullYear() === lastMonth.getFullYear()) {
+    return "Date: Last Month";
+  }
+
+  return `${months[date.getMonth()]} ${date.getFullYear()}`;
 }
 
 export function formatEmailDate(timestamp: number): string {

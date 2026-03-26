@@ -11,6 +11,7 @@ import { NavigationPane } from "./NavigationPane";
 import { EmailTable, ABOUT_ID } from "./EmailTable";
 import { CallTable } from "./CallTable";
 import { ReadingPane } from "./ReadingPane";
+import { IconInbox, IconSearch } from "../VistaIcons";
 
 export function EmailClient({ mode }: { mode: "nav" | "content" }) {
   const folder = selectedFolder.value;
@@ -58,10 +59,44 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
     ? null
     : emailList.find((e) => e.Payload.ID === selId);
 
+  const sortLabel =
+    sortBy.value === "date" ? "Date" : sortBy.value === "from" ? "From" : "Subject";
+  const sortOrder = sortBy.value === "date"
+    ? (sortAsc.value ? "Oldest on top" : "Newest on top")
+    : (sortAsc.value ? "A on top" : "Z on top");
+
   return (
     <div class="email-client-content">
       {/* Message list */}
       <div class="panel-inset message-list-pane">
+        {/* Card-layout header — visible only in wide mode */}
+        <div class="card-list-header">
+          <div class="card-list-title">
+            <IconInbox /> Inbox
+          </div>
+          <div class="card-list-search">
+            <IconSearch />
+            <span>Search Inbox</span>
+          </div>
+          <div class="card-list-sort">
+            <span
+              class="card-sort-btn"
+              onClick={() => {
+                const cols: Array<"date" | "from" | "subject"> = ["date", "from", "subject"];
+                const i = cols.indexOf(sortBy.value);
+                sortBy.value = cols[(i + 1) % cols.length];
+              }}
+            >
+              Arranged By: <b>{sortLabel}</b>
+            </span>
+            <span
+              class="card-sort-btn"
+              onClick={() => { sortAsc.value = !sortAsc.value; }}
+            >
+              {sortOrder}
+            </span>
+          </div>
+        </div>
         {folder === "inbox" ? (
           <EmailTable
             emails={sorted}
@@ -69,6 +104,7 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
             onSelect={(id) => (selectedEmailId.value = id)}
             onSort={handleSort}
             arrow={arrow}
+            groupBy={sortBy.value}
           />
         ) : (
           <CallTable
