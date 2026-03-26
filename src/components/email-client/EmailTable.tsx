@@ -1,8 +1,20 @@
+import { useSignal } from "@preact/signals";
 import type { EmailMetadata } from "../../types";
 import { getDateGroup, formatEmailDate, formatEmailSize } from "./utils";
-import { IconPin, IconAttach } from "../VistaIcons";
+import { IconPin, IconAttach, IconMail } from "../VistaIcons";
 
 export const ABOUT_ID = "__about__";
+
+function getGroupKey(email: EmailMetadata, groupBy: "date" | "from" | "subject"): string {
+  if (groupBy === "date") return getDateGroup(email.Payload.Time);
+  if (groupBy === "from") {
+    const name = email.Payload.Sender.Name || email.Payload.Sender.Address;
+    const letter = name.charAt(0).toUpperCase();
+    return /[A-Z]/.test(letter) ? letter : "#";
+  }
+  const letter = email.Payload.Subject.replace(/^(Re|Fwd|Fw):\s*/i, "").charAt(0).toUpperCase();
+  return /[A-Z]/.test(letter) ? letter : "#";
+}
 
 export function EmailTable({
   emails,
@@ -10,19 +22,27 @@ export function EmailTable({
   onSelect,
   onSort,
   arrow,
+  groupBy = "date",
 }: {
   emails: EmailMetadata[];
   selectedId: string | null;
   onSelect: (id: string) => void;
   onSort: (col: "date" | "from" | "subject") => void;
   arrow: (col: string) => string;
+  groupBy?: "date" | "from" | "subject";
 }) {
-  // Group emails by date
+  const collapsed = useSignal<Record<string, boolean>>({});
+
+  const toggleGroup = (label: string) => {
+    collapsed.value = { ...collapsed.value, [label]: !collapsed.value[label] };
+  };
+
+  // Group emails by current sort column
   const groups: { label: string; emails: EmailMetadata[] }[] = [];
   let currentGroup = "";
 
   for (const email of emails) {
-    const group = getDateGroup(email.Payload.Time);
+    const group = getGroupKey(email, groupBy);
     if (group !== currentGroup) {
       currentGroup = group;
       groups.push({ label: group, emails: [] });
@@ -58,6 +78,7 @@ export function EmailTable({
           <td></td>
           <td class="cell-from">Webb Notneeded</td>
           <td class="cell-subject">
+            <span class="card-icon"><IconMail /></span>
             Welcome to idontneedawebsite.us &mdash; Read Me First
           </td>
           <td>Sun 1/28/2024 3:29 PM</td>
@@ -65,29 +86,56 @@ export function EmailTable({
         </tr>
 
         {/* Grouped emails */}
-        {groups.map((group) => (
-          <>
-            <tr class="date-group-header" key={`group-${group.label}`}>
-              <td colSpan={6}>{group.label}</td>
-            </tr>
-            {group.emails.map((email) => (
+        {groups.map((group) => {
+          const isCollapsed = collapsed.value[group.label];
+          return (
+            <>
               <tr
-                key={email.Payload.ID}
-                class={`email-row ${selectedId === email.Payload.ID ? "selected" : ""}`}
-                onClick={() => onSelect(email.Payload.ID)}
+                class="date-group-header"
+                key={`group-${group.label}`}
+                onClick={() => toggleGroup(group.label)}
               >
-                <td>{email.Payload.NumAttachments > 0 ? <IconAttach /> : ""}</td>
-                <td></td>
-                <td class="cell-from">
-                  {email.Payload.Sender.Name || email.Payload.Sender.Address}
+                <td colSpan={6}>
+                  <svg class="group-toggle" width="11" height="11" viewBox="0 0 11 11">
+                    <defs>
+                      <linearGradient id="toggleBg" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#f8fbff" />
+                        <stop offset="100%" stop-color="#d4e4f4" />
+                      </linearGradient>
+                      <filter id="toggleShadow">
+                        <feDropShadow dx="0" dy="0.5" stdDeviation="0.4" flood-color="#000" flood-opacity="0.15" />
+                      </filter>
+                    </defs>
+                    <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" fill="url(#toggleBg)" stroke="#7a9ab5" stroke-width="0.8" filter="url(#toggleShadow)" />
+                    {isCollapsed && <rect x="4.5" y="2.5" width="1.5" height="6" rx="0.3" fill="#2b5278" />}
+                    <rect x="2.5" y="4.5" width="6" height="1.5" rx="0.3" fill="#2b5278" />
+                  </svg>
+                  {group.label}
                 </td>
-                <td class="cell-subject">{email.Payload.Subject}</td>
-                <td>{formatEmailDate(email.Payload.Time)}</td>
-                <td>{formatEmailSize(email.Payload.Size)}</td>
               </tr>
-            ))}
-          </>
-        ))}
+              {!isCollapsed &&
+                group.emails.map((email) => (
+                  <tr
+                    key={email.Payload.ID}
+                    class={`email-row ${selectedId === email.Payload.ID ? "selected" : ""}`}
+                    onClick={() => onSelect(email.Payload.ID)}
+                  >
+                    <td>{email.Payload.NumAttachments > 0 ? <IconAttach /> : ""}</td>
+                    <td></td>
+                    <td class="cell-from">
+                      {email.Payload.Sender.Name || email.Payload.Sender.Address}
+                    </td>
+                    <td class="cell-subject">
+                      <span class="card-icon"><IconMail /></span>
+                      {email.Payload.Subject}
+                    </td>
+                    <td>{formatEmailDate(email.Payload.Time)}</td>
+                    <td>{formatEmailSize(email.Payload.Size)}</td>
+                  </tr>
+                ))}
+            </>
+          );
+        })}
       </tbody>
     </table>
   );

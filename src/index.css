@@ -580,6 +580,10 @@ a:hover {
 }
 
 /* Date group header */
+.date-group-header {
+  cursor: pointer;
+}
+
 .date-group-header td {
   background: linear-gradient(
     180deg,
@@ -593,6 +597,11 @@ a:hover {
   color: var(--color-heading);
   border-bottom: 1px solid var(--border-panel-inner);
   border-top: 1px solid var(--border-panel-inner);
+}
+
+/* Toggle icon — hidden in table layout, shown in card layout */
+.group-toggle {
+  display: none;
 }
 
 /* Email row */
@@ -1098,6 +1107,15 @@ button:not(.wc-btn):active,
   color: var(--color-text-faint);
 }
 
+/* Card-view elements — hidden in table layout */
+.card-icon {
+  display: none;
+}
+
+.card-list-header {
+  display: none;
+}
+
 /* Table column widths */
 .col-icon {
   width: 4%;
@@ -1408,7 +1426,11 @@ button:not(.wc-btn):active,
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 4px 8px;
-    border-bottom: 1px solid var(--border-separator);
+  }
+
+  .message-list-pane .email-table tr.email-row td,
+  .message-list-pane .email-table tr.about-row td {
+    border-bottom: none;
   }
 
   /* Hide icon columns and size column */
@@ -1450,15 +1472,119 @@ button:not(.wc-btn):active,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 
-  /* Date group headers */
+  /* Show envelope icon in card layout */
+  .message-list-pane .card-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  /* Card list header */
+  .card-list-header {
+    display: block;
+    border-bottom: 1px solid var(--border-panel);
+  }
+
+  .card-list-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-heading);
+    background: var(--gradient-light-bar);
+    border-bottom: 1px solid var(--border-separator);
+  }
+
+  .card-list-search {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    color: var(--color-text-muted);
+    background: #fff;
+    border-bottom: 1px solid var(--border-separator);
+  }
+
+  .card-list-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 8px;
+    font-size: 10px;
+    color: var(--color-text-muted);
+    background: var(--gradient-light-bar);
+    border-bottom: 1px solid var(--border-panel);
+  }
+
+  .card-sort-btn {
+    cursor: pointer;
+  }
+
+  .card-sort-btn:hover {
+    color: var(--color-heading);
+  }
+
+  /* Date group headers — Outlook card style */
   .message-list-pane .email-table tr.date-group-header {
     display: block;
   }
 
   .message-list-pane .email-table tr.date-group-header td {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    padding: 6px 8px 2px;
+    font-weight: normal;
+    font-size: 11px;
+    color: #4a7ab5;
+  }
+
+  /* Horizontal rule after the label */
+  .message-list-pane .email-table tr.date-group-header td::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8c4e0;
+  }
+
+  .message-list-pane .group-toggle {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+
+  /* Flat, lighter selection for card layout */
+  .message-list-pane .email-table tr.email-row.selected,
+  .message-list-pane .email-table tr.about-row.selected {
+    background: #cde6f7;
+    color: #000;
+    text-shadow: none;
+  }
+
+  .message-list-pane .email-table tr.email-row.selected .cell-from,
+  .message-list-pane .email-table tr.about-row.selected .cell-from {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .message-list-pane .email-table tr.email-row.selected .cell-subject {
+    color: var(--color-text-body);
+  }
+
+  .message-list-pane .email-table tr.email-row:hover {
+    background: #e8f0f8;
+  }
+
+  .message-list-pane .email-table tr.email-row.selected:hover {
+    background: #cde6f7;
   }
 }
 
