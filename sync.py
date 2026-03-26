@@ -5,6 +5,7 @@ Usage: uv run python sync.py
 """
 
 import os
+import re as _re
 import sys
 import json
 import shutil
@@ -13,6 +14,7 @@ import subprocess
 import zipfile
 import tarfile
 from pathlib import Path
+from html.parser import HTMLParser
 
 import pexpect
 
@@ -24,6 +26,7 @@ BIN_DIR = ROOT / ".bin"
 HTML_OUTPUT_DIR = ROOT / "public" / "emails"
 METADATA_JSON_PATH = ROOT / "public" / "email-metadata.json"
 CALL_METADATA_PATH = ROOT / "public" / "call-metadata.json"
+SEARCH_INDEX_PATH = ROOT / "public" / "email-search-index.json"
 
 
 def load_env():
@@ -220,8 +223,40 @@ def sync_emails():
     return new_count
 
 
+class _HTMLTextExtractor(HTMLParser):
+    """Extract visible text from HTML, skipping style/script blocks."""
+
+    def __init__(self):
+        super().__init__()
+        self._parts: list[str] = []
+        self._skip = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("style", "script"):
+            self._skip = True
+
+    def handle_endtag(self, tag):
+        if tag in ("style", "script"):
+            self._skip = False
+
+    def handle_data(self, data):
+        if not self._skip:
+            self._parts.append(data)
+
+    def get_text(self) -> str:
+        text = " ".join(self._parts)
+        return _re.sub(r"\s+", " ", text).strip()
+
+
+def strip_html_to_text(html: str) -> str:
+    """Convert HTML to plain text for search indexing."""
+    parser = _HTMLTextExtractor()
+    parser.feed(html)
+    return parser.get_text()
+
+
 def build_html():
-    """Parse .eml files and generate public HTML + metadata JSON."""
+    """Parse .eml files and generate public HTML + metadata JSON + search index."""
     from lib import EmlParser
 
     print("==> Regenerating public email HTMLs...")
@@ -253,6 +288,7 @@ def build_html():
     HTML_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     metadata_list = []
+    search_index = {}
     for email_id, data in email_data.items():
         with open(HTML_OUTPUT_DIR / f"{email_id}.html", "w") as f:
             f.write(data["html"])
@@ -261,10 +297,18 @@ def build_html():
         metadata["id"] = email_id
         metadata_list.append(metadata)
 
+        # Build search index entry — lowercase, full body
+        text = strip_html_to_text(data["html"])
+        search_index[email_id] = text.lower()
+
     with open(METADATA_JSON_PATH, "w") as f:
         json.dump(metadata_list, f)
 
-    print(f"==> Built {len(metadata_list)} email(s).")
+    with open(SEARCH_INDEX_PATH, "w") as f:
+        json.dump(search_index, f)
+
+    idx_size = SEARCH_INDEX_PATH.stat().st_size / 1024
+    print(f"==> Built {len(metadata_list)} email(s), search index {idx_size:.1f} KB.")
 
 
 def build_call_metadata():
