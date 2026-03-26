@@ -350,6 +350,33 @@ a:hover {
   margin-right: 3px;
 }
 
+.toolbar-btn--active {
+  color: #1e3a5f;
+  cursor: pointer;
+}
+
+.toolbar-btn--active:hover {
+  background: linear-gradient(
+    180deg,
+    #fafcff 0%,
+    #e8f0fa 40%,
+    #d8e4f2 41%,
+    #e4eef8 100%
+  );
+  border-color: #7d9fc0;
+}
+
+.toolbar-btn--active:active {
+  background: linear-gradient(
+    180deg,
+    #d0dce8 0%,
+    #c4d4e4 40%,
+    #b8cade 41%,
+    #c8d8ea 100%
+  );
+  border-color: #6a8eae;
+}
+
 .toolbar-sep {
   display: inline-block;
   width: 0;
@@ -632,14 +659,9 @@ a:hover {
 }
 
 .email-row.selected {
-  background: var(--gradient-selected);
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-}
-
-.email-row.selected svg,
-.about-row.selected svg {
-  filter: brightness(0) invert(1) brightness(0.95);
+  background: #cde6f7;
+  color: #000;
+  text-shadow: none;
 }
 
 .email-row td {
@@ -662,9 +684,9 @@ a:hover {
 }
 
 .about-row.selected {
-  background: var(--gradient-selected);
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  background: #cde6f7;
+  color: #000;
+  text-shadow: none;
 }
 
 .about-row td {
@@ -1794,6 +1816,296 @@ button:not(.wc-btn):active,
   .message-list-pane .email-table tr.email-row.selected:hover {
     background: #cde6f7;
   }
+}
+
+/* ── Address Book Dialog ── */
+.ab-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass frame — matches .aero-frame */
+.ab-dialog {
+  width: 680px;
+  max-width: 90vw;
+  max-height: 80vh;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: rgba(125, 128, 132, 0.35);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 1px 1px rgba(0, 0, 0, 0.5),
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Outer highlight edge */
+.ab-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 8px 4px 4px;
+  border: 1px solid rgba(150, 200, 255, 0.45);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Inner side highlights */
+.ab-dialog::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  right: 3px;
+  bottom: 4px;
+  border-left: 1px solid rgba(180, 210, 240, 0.25);
+  border-right: 1px solid rgba(180, 210, 240, 0.25);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Title bar — transparent, on the glass (matches .titlebar) */
+.ab-titlebar {
+  background: transparent;
+  color: #000;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  user-select: none;
+  margin-left: -6px;
+  margin-bottom: 4px;
+}
+
+.ab-titlebar-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+}
+
+.ab-titlebar-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ab-titlebar-text {
+  margin-left: 4px;
+  text-shadow:
+    0 0 16px rgba(255, 255, 255, 0.9),
+    0 0 16px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+/* Opaque content area — matches .aero-window */
+.ab-window {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Toolbar — matches .toolbar gradient */
+.ab-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 6px;
+  background: linear-gradient(
+    180deg,
+    #eaf1f9 0%,
+    #dfe9f4 1px,
+    #d6e2ef 4px,
+    #c2d4e8 45%,
+    #bad0e5 46%,
+    #c8daea 85%,
+    #d2e0ee 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #9ab6d3;
+}
+
+.ab-search {
+  flex: 1;
+  padding: 3px 6px;
+  border: 1px solid #a0b4c8;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+}
+
+.ab-search:focus {
+  border-color: #5b9bd5;
+  box-shadow: 0 0 2px rgba(91, 155, 213, 0.4);
+}
+
+.ab-goto-btn {
+  padding: 3px 12px;
+  font-family: inherit;
+  font-size: 11px;
+  background: var(--gradient-light-bar);
+  border: 1px solid var(--border-panel);
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ab-goto-btn:hover:not(:disabled) {
+  background: var(--gradient-light-bar-hover);
+  border-color: var(--border-btn-hover);
+}
+
+.ab-goto-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Contact list — matches .panel-inset */
+.ab-list-container {
+  flex: 1;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #b0c4da;
+}
+
+.ab-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ab-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Column headers — matches .col-header */
+.ab-table th {
+  background: linear-gradient(
+    180deg,
+    #f8fafe 0%,
+    #e8eff7 40%,
+    #dfe8f2 41%,
+    #eaf0f8 100%
+  );
+  border: 1px solid #b0c4da;
+  border-left: none;
+  padding: 3px 8px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 11px;
+  color: #1e3a5f;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ab-table th:first-child {
+  border-left: 1px solid #b0c4da;
+}
+
+.ab-table th:hover {
+  background: linear-gradient(
+    180deg,
+    #fffefe 0%,
+    #f0f5fb 40%,
+    #e8eff7 41%,
+    #f2f7fc 100%
+  );
+}
+
+.ab-col-icon {
+  width: 24px;
+  cursor: default !important;
+}
+
+.ab-col-name {
+  width: 35%;
+}
+
+.ab-col-address {
+  width: auto;
+}
+
+.ab-col-count {
+  width: 70px;
+  text-align: right !important;
+}
+
+/* Row styling — matches .email-row */
+.ab-row {
+  cursor: pointer;
+}
+
+.ab-row:hover {
+  background: #d8e8f8;
+}
+
+.ab-row.selected {
+  background: #cde6f7;
+  color: #000;
+}
+
+.ab-row td {
+  padding: 2px 8px;
+  border-bottom: 1px solid #e8eef4;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ab-cell-icon {
+  text-align: center;
+  width: 24px;
+}
+
+.ab-cell-icon svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.ab-cell-count {
+  text-align: right;
+}
+
+/* Status bar — transparent, on the glass (matches .statusbar) */
+.ab-statusbar {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 100%
+  );
+  border-top: 1px solid rgba(60, 110, 170, 0.3);
+  padding: 1px 8px;
+  color: #000;
+  font-size: 11px;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 4px rgba(255, 255, 255, 0.8),
+    0 1px 1px rgba(255, 255, 255, 0.6);
+  user-select: none;
 }
 
 @media (max-width: 767px) {
