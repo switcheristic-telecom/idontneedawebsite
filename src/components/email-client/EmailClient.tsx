@@ -5,6 +5,9 @@ import {
   selectedEmailId,
   sortBy,
   sortAsc,
+  searchQuery,
+  searchIndex,
+  loadSearchIndex,
 } from "../../data/store";
 import { AboutPane } from "../about/AboutPane";
 import { NavigationPane } from "./NavigationPane";
@@ -50,6 +53,21 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
     return sortAsc.value ? cmp : -cmp;
   });
 
+  // Filter by search query — all terms must match (AND logic)
+  const rawQuery = searchQuery.value.toLowerCase().trim();
+  const terms = rawQuery ? rawQuery.split(/\s+/) : [];
+  const idx = searchIndex.value;
+  const filtered = terms.length
+    ? sorted.filter((e) => {
+        const meta =
+          (e.Payload.Subject + " " + e.Payload.Sender.Name + " " + e.Payload.Sender.Address)
+            .toLowerCase();
+        const body = idx ? (idx[e.Payload.ID] ?? "") : "";
+        const haystack = meta + " " + body;
+        return terms.every((t) => haystack.includes(t));
+      })
+    : sorted;
+
   const arrow = (col: string) =>
     sortBy.value === col ? (sortAsc.value ? " \u25B2" : " \u25BC") : "";
 
@@ -76,7 +94,16 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
           </div>
           <div class="card-list-search">
             <IconSearch />
-            <span>Search Inbox</span>
+            <input
+              type="text"
+              class="card-search-input"
+              placeholder="Search Inbox"
+              value={searchQuery.value}
+              onInput={(e) => {
+                searchQuery.value = (e.target as HTMLInputElement).value;
+                loadSearchIndex();
+              }}
+            />
           </div>
           <div class="card-list-sort">
             <span
@@ -99,7 +126,7 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
         </div>
         {folder === "inbox" ? (
           <EmailTable
-            emails={sorted}
+            emails={filtered}
             selectedId={selId}
             onSelect={(id) => (selectedEmailId.value = id)}
             onSort={handleSort}
