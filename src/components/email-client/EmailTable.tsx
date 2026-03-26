@@ -2,6 +2,8 @@ import { useSignal } from "@preact/signals";
 import type { EmailMetadata } from "../../types";
 import { getDateGroup, formatEmailDate, formatEmailSize } from "./utils";
 import { IconPin, IconAttach, IconMail } from "../VistaIcons";
+import { searchQuery } from "../../data/store";
+import { highlightText } from "../../utils/highlight";
 
 export const ABOUT_ID = "__about__";
 
@@ -31,6 +33,7 @@ export function EmailTable({
   arrow: (col: string) => string;
   groupBy?: "date" | "from" | "subject";
 }) {
+  const terms = searchQuery.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
   const collapsed = useSignal<Record<string, boolean>>({});
 
   const toggleGroup = (label: string) => {
@@ -123,11 +126,11 @@ export function EmailTable({
                     <td>{email.Payload.NumAttachments > 0 ? <IconAttach /> : ""}</td>
                     <td></td>
                     <td class="cell-from">
-                      {email.Payload.Sender.Name || email.Payload.Sender.Address}
+                      {highlightText(email.Payload.Sender.Name || email.Payload.Sender.Address, terms)}
                     </td>
                     <td class="cell-subject">
                       <span class="card-icon"><IconMail /></span>
-                      {email.Payload.Subject}
+                      {highlightText(email.Payload.Subject, terms)}
                     </td>
                     <td>{formatEmailDate(email.Payload.Time)}</td>
                     <td>{formatEmailSize(email.Payload.Size)}</td>

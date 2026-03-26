@@ -1541,6 +1541,12 @@ button:not(.wc-btn):active,
     color: var(--color-text-muted);
   }
 
+mark {
+  background: #fff176;
+  color: inherit;
+  padding: 0;
+}
+
   .card-list-sort {
     display: flex;
     justify-content: space-between;
