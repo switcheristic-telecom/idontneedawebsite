@@ -1,5 +1,5 @@
 import { useEffect } from 'preact/hooks';
-import { emails, calls, activeTab } from './data/store';
+import { emails, calls, activeTab, filteredCount } from './data/store';
 import { loadEmails } from './data/emails';
 import { loadCalls } from './data/calls';
 import { EmailClient } from './components/email-client/EmailClient';
@@ -22,7 +22,9 @@ export function App() {
     loadEmails().then((data) => {
       emails.value = data;
     });
-    loadCalls().catch(() => {
+    loadCalls().then((data) => {
+      calls.value = data;
+    }).catch(() => {
       calls.value = [];
     });
   }, []);
@@ -71,18 +73,19 @@ export function App() {
             <div class='window-controls'>
               <button class='wc-btn wc-minimize' title='Minimize' aria-label='Minimize'>
                 <svg width="10" height="10" viewBox="0 0 10 10">
-                  <rect x="1" y="6" width="8" height="2.5" rx="0.5" fill="#fff" stroke="#333" stroke-width="1" />
+                  <line x1="1" y1="7" x2="9" y2="7" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
+                  <line x1="1" y1="7" x2="9" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
               </button>
               <button class='wc-btn wc-maximize' title='Maximize' aria-label='Maximize'>
                 <svg width="10" height="10" viewBox="0 0 10 10">
-                  <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#333" stroke-width="2.5" />
+                  <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#333333" stroke-width="2.5" />
                   <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#fff" stroke-width="1.5" />
                 </svg>
               </button>
               <button class='wc-btn wc-close' title='Close' aria-label='Close'>
                 <svg width="10" height="10" viewBox="0 0 10 10">
-                  <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333" stroke-width="2.5" stroke-linecap="round" />
+                  <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
                   <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
               </button>
@@ -170,7 +173,7 @@ export function App() {
           <div class='statusbar'>
             <span class='statusbar-panel'>
               {tab === 'inbox'
-                ? `${emails.value.length} Items`
+                ? `${filteredCount.value != null ? filteredCount.value : emails.value.length} Items`
                 : 'Spam Calendar'}
             </span>
           </div>

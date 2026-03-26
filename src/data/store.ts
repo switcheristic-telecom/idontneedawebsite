@@ -7,10 +7,12 @@ export const calls = signal<CallMetadata[]>([]);
 export const activeTab = signal<"inbox" | "calendar">("inbox");
 export const selectedFolder = signal<"inbox" | "calls" | "voicemail">("inbox");
 export const selectedEmailId = signal<string | null>("__about__");
+export const selectedCallId = signal<string | null>(null);
 export const sortBy = signal<"date" | "from" | "subject">("date");
 export const sortAsc = signal(true);
 export const searchQuery = signal("");
 export const searchIndex = signal<Record<string, string> | null>(null);
+export const filteredCount = signal<number | null>(null);
 
 let indexLoading = false;
 export async function loadSearchIndex() {
