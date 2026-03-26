@@ -88,7 +88,6 @@ a:hover {
 /* Aero glass frame — the transparent blue rim */
 .aero-frame {
   width: 95%;
-  max-width: 1108px;
   height: 93%;
   padding: 4px;
   display: flex;
@@ -1372,6 +1371,95 @@ button:not(.wc-btn):active,
   padding: 0;
   margin: 3px 4px;
   border-top: 1px solid #d0d4dc;
+}
+
+/* Wide screen: horizontal split layout (Outlook-style) */
+@media (min-width: 1200px) {
+  /* Horizontal split: email list left, reading pane right */
+  .content-main > .email-client-content {
+    flex-direction: row;
+  }
+
+  .content-main > .email-client-content > .message-list-pane {
+    flex: 0 0 340px;
+    overflow-y: auto;
+  }
+
+  .content-main > .email-client-content > .reading-pane-container {
+    flex: 1;
+    margin: 3px;
+  }
+
+  /* Transform email table into card-style list */
+  .message-list-pane .email-table thead {
+    display: none;
+  }
+
+  .message-list-pane .email-table {
+    display: block;
+  }
+
+  .message-list-pane .email-table tbody {
+    display: block;
+  }
+
+  .message-list-pane .email-table tr.email-row,
+  .message-list-pane .email-table tr.about-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border-separator);
+  }
+
+  /* Hide icon columns and size column */
+  .message-list-pane .email-table tr.email-row td:nth-child(1),
+  .message-list-pane .email-table tr.email-row td:nth-child(2),
+  .message-list-pane .email-table tr.email-row td:nth-child(6),
+  .message-list-pane .email-table tr.about-row td:nth-child(1),
+  .message-list-pane .email-table tr.about-row td:nth-child(2),
+  .message-list-pane .email-table tr.about-row td:nth-child(6) {
+    display: none;
+  }
+
+  /* From — row 1, left */
+  .message-list-pane .email-table .cell-from {
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Received date — row 1, right */
+  .message-list-pane .email-table tr.email-row td:nth-child(5),
+  .message-list-pane .email-table tr.about-row td:nth-child(5) {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    padding-left: 8px;
+  }
+
+  /* Subject — row 2, full width */
+  .message-list-pane .email-table .cell-subject {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    color: var(--color-text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Date group headers */
+  .message-list-pane .email-table tr.date-group-header {
+    display: block;
+  }
+
+  .message-list-pane .email-table tr.date-group-header td {
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
