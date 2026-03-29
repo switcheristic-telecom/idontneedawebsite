@@ -14,6 +14,8 @@ export const searchQuery = signal("");
 export const searchIndex = signal<Record<string, string> | null>(null);
 export const filteredCount = signal<number | null>(null);
 export const showAddressBook = signal(false);
+export const showAboutWindow = signal(false);
+export const showWelcomePopup = signal(true);
 
 let indexLoading = false;
 export async function loadSearchIndex() {

@@ -5,6 +5,8 @@ import { loadCalls } from './data/calls';
 import { EmailClient } from './components/email-client/EmailClient';
 import { CalendarWindow } from './components/calendar/CalendarWindow';
 import { AddressBookWindow } from './components/address-book/AddressBookWindow';
+import { AboutWindow } from './components/about/AboutWindow';
+import { WelcomePopup } from './components/about/WelcomePopup';
 import { ContextMenu } from './components/ContextMenu';
 import {
   IconMail,
@@ -38,30 +40,11 @@ export function App() {
       <ContextMenu />
       {/* Address Book dialog */}
       <AddressBookWindow />
+      {/* About window */}
+      <AboutWindow />
+      {/* Welcome popup — shown on startup */}
+      <WelcomePopup />
 
-      {/* Mobile warning */}
-      <div class='mobile-warning'>
-        <div class='mobile-warning-dialog'>
-          <div class='mobile-warning-titlebar'>&#9888; Resolution Warning</div>
-          <div class='mobile-warning-body'>
-            <p>
-              This page is best viewed at 1024&times;768 resolution
-              <br />
-              with Internet Explorer 7.0 or higher
-            </p>
-            <hr />
-            <p style={{ fontWeight: 'normal', textAlign: 'left' }}>
-              <b>idontneedawebsite.us</b> is a case study documenting spam
-              received after registering a .US domain.
-            </p>
-            <p class='mobile-warning-footer'>
-              A Switcheristic Telecommunications project
-              <br />
-              &copy; 2024 Webb Notneeded
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* Desktop background */}
       <div class='vista-desktop'>

@@ -2,100 +2,163 @@ export function AboutPane() {
   return (
     <div>
       {/* Email-style header - Outlook 2007 */}
-      <div class="reading-header">
-        <div class="subject-line">Welcome to idontneedawebsite.us &mdash; <span class="rainbow-text">Read Me First</span></div>
-        <div class="header-field-row">
-          <span class="field-label">From:</span>
-          <span class="field-value">Webb Notneeded [idontneedawebsite@proton.me]</span>
+      <div class='reading-header'>
+        <div class='subject-line'>
+          Not for .us &mdash; <span class='rainbow-text'>Read Me First</span>
         </div>
-        <div class="header-field-row">
-          <span class="field-label">Sent:</span>
-          <span class="field-value">None</span>
+        <div class='header-field-row'>
+          <span class='field-label'>From:</span>
+          <span class='field-value'>
+            Webb Notneeded [idontneedawebsite@proton.me]
+          </span>
         </div>
-        <div class="header-field-row">
-          <span class="field-label">To:</span>
-          <span class="field-value">You [visitor@internet]</span>
+        <div class='header-field-row'>
+          <span class='field-label'>Sent:</span>
+          <span class='field-value'>None</span>
+        </div>
+        <div class='header-field-row'>
+          <span class='field-label'>To:</span>
+          <span class='field-value'>You [visitor@internet]</span>
         </div>
       </div>
 
       {/* Body */}
-      <div class="about-body">
+      <div class='about-body'>
         {/* The real story */}
-        <div class="about-callout">
-          <span style={{ fontWeight: "bold" }}>The real story:</span>{" "}
-          <a href="https://yufengzhao.com" target="_blank">Yufeng</a> bought{" "}
-          <b>yufeng.us</b> in 2024 for its surprisingly cheap $4.99/year
-          price on Cloudflare and started getting spammed every day for
-          nearly a year &mdash; even after he realized the contact info was
-          public on WHOIS and changed to a fake identity. This site
-          documents that experience.
+        <div class='about-callout'>
+          If you register a .US domain, your full name, home address, phone
+          number, and email are published in a public database. You cannot opt
+          out. <b>idontneedawebsite.us</b> is an archive of what happens next.
         </div>
 
-        <hr class="about-divider" />
+        <hr class='about-divider' />
 
-        <div class="about-bio">
-          <div class="about-bio-text">
-            <span class="about-bio-title">
-              I don't need a website
-            </span>
-            <br /><br />
-            The .US country-code domain is managed by GoDaddy under contract
-            with the National Telecommunications and Information Administration
-            (NTIA), an agency of the U.S. Department of Commerce.<sup><a href="#ref-1">1</a></sup> In 2005,
-            the U.S. government banned WHOIS privacy on all .US
-            domains &mdash; without public comment.<sup><a href="#ref-2">2</a></sup> Every registrant's name,
-            address, phone number, and email is exposed to anyone who runs
-            a WHOIS lookup. Almost every other domain extension allows privacy
-            redaction; .US is the notable exception.
+        <div class='about-bio'>
+          <div class='about-bio-text'>
+            <span class='about-bio-title'>I don't need a website</span>
+            <br />
+            <a href='https://yufengzhao.com' target='_blank'>
+              Yufeng
+            </a>{' '}
+            registered <b>yufeng.us</b> in 2024. Within days, spam emails and
+            robocalls started arriving at the contact information he had entered
+            during registration. He changed the WHOIS record to a fake
+            identity&mdash;but by then, data brokers and lead-generation
+            scrapers had already harvested the original details. The spam never
+            stopped.
+            <sup>
+              <a href='#ref-3'>3</a>
+            </sup>{' '}
+            So he registered <b>idontneedawebsite.us</b> under the fictional
+            name <b>Webb Notneeded</b> to document everything that followed. The
+            name is a reply to the spam itself: most of it is from companies
+            offering web design and site-building services.
           </div>
         </div>
 
         <p>
-          The result is a worst-of-both-worlds situation: legitimate
-          registrants are fully exposed, while the policy does nothing to
-          stop abuse. An Interisle Consulting study found over 30,000
-          phishing domains on .US in a single year &mdash; at least 109
-          of which targeted the U.S. government itself.<sup><a href="#ref-1">1</a></sup> Nexus verification
-          (the requirement that registrants have a connection to the U.S.)
-          is effectively a pre-checked dropdown box.<sup><a href="#ref-1">1</a></sup>
+          Everything in this inbox is real. The emails are real. The phone calls
+          are real. They were all sent to a fictional identity, at an address
+          listed in a public database by law.
         </p>
 
         <p>
-          To document this problem, a new domain was registered:{" "}
-          <b>idontneedawebsite.us</b>, with a fresh ProtonMail email address
-          and a Google Voice phone number. The WHOIS contact was left fully
-          exposed. The spam started within hours.
+          The .US domain is managed by GoDaddy Registry under contract with
+          NTIA, an agency of the U.S. Department of Commerce.
+          <sup>
+            <a href='#ref-1'>1</a>
+          </sup>
+          <sup>
+            <a href='#ref-5'>5</a>
+          </sup>{' '}
+          In 2005, the government banned WHOIS privacy on all .US domains,
+          arguing that public registration data promotes accountability and
+          deters abuse. No public comment period. No opt out.
+          <sup>
+            <a href='#ref-2'>2</a>
+          </sup>{' '}
+          Every registrant's name, address, phone number, and email is
+          published. Almost every other domain extension allows privacy
+          redaction. .US does not.
+          <sup>
+            <a href='#ref-4'>4</a>
+          </sup>
         </p>
 
-        <p style={{ marginBottom: "12px" }}>
-          Below you will see the journey of a fictional man, by the name of{" "}
-          <b>Webb Notneeded</b>. He represents this experiment &mdash; every
-          email and phone call in this inbox is real spam, received by his
-          publicly listed contact information.
+        <p>
+          The transparency has not deterred abuse. At $5.98 a year, .US is one
+          of the cheapest domain extensions available&mdash;a magnet for
+          throwaway phishing sites. An Interisle Consulting study found 30,000
+          phishing domains registered on .US in a single year, at least 109
+          targeting the U.S. Postal Service.
+          <sup>
+            <a href='#ref-1'>1</a>
+          </sup>{' '}
+          The nexus requirement, proof of a connection to the United States, is
+          a pre-checked dropdown.
+          <sup>
+            <a href='#ref-1'>1</a>
+          </sup>{' '}
+          The policy exposes legitimate registrants while doing nothing to stop
+          bad actors.
         </p>
 
-        <p style={{ marginBottom: "6px", fontWeight: "bold" }}>
-          WHOIS Record for idontneedawebsite.us{" "}
-          <a href="https://lookup.icann.org/en/lookup?name=idontneedawebsite.us" target="_blank" style={{ fontWeight: "normal", fontSize: "11px" }}>
-            (look it up yourself)
+        <p style={{ marginBottom: '12px' }}>
+          NTIA's contract with GoDaddy Registry is up for renewal. If you
+          believe .US registrants deserve the same privacy protections available
+          on virtually every other domain extension, contact{' '}
+          <a href='mailto:dotus@ntia.gov'>NTIA</a> or your{' '}
+          <a
+            href='https://www.house.gov/representatives/find-your-representative'
+            target='_blank'
+          >
+            representative in Congress
+          </a>
+          .
+        </p>
+
+        <p style={{ marginBottom: '6px', fontWeight: 'bold' }}>
+          WHOIS Record for idontneedawebsite.us{' '}
+          <a
+            href='https://lookup.icann.org/en/lookup?name=idontneedawebsite.us'
+            target='_blank'
+            style={{ fontWeight: 'normal', fontSize: '11px' }}
+          >
+            (verify)
           </a>
         </p>
 
-        <div class="whois-box">
-          <div class="whois-prompt">$ whois idontneedawebsite.us</div>
-          <div class="whois-terminal">
-{`Domain Name: IDONTNEEDAWEBSITE.US
+        <div class='whois-box'>
+          <div class='whois-prompt'>$ whois idontneedawebsite.us</div>
+          <div class='whois-terminal'>
+            {`Domain Name: IDONTNEEDAWEBSITE.US
 Registrar: Cloudflare, Inc.
 Creation Date: 2024-01-28T20:29:33Z
 
-Registrant Name: `}<span class="whois-highlight">Webb Notneeded</span>{`
-Registrant Street: `}<span class="whois-highlight">370 Jay Street</span>{`
-Registrant City: `}<span class="whois-highlight">Brooklyn</span>{`
-Registrant State/Province: `}<span class="whois-highlight">NY</span>{`
-Registrant Postal Code: `}<span class="whois-highlight">11201</span>{`
-Registrant Country: `}<span class="whois-highlight">US</span>{`
-Registrant Phone: `}<span class="whois-highlight">+1.9295152287</span>{`
-Registrant Email: `}<span class="whois-highlight">idontneedawebsite@proton.me</span>{`
+Registrant Name: `}
+            <span class='whois-highlight'>Webb Notneeded</span>
+            {`
+Registrant Street: `}
+            <span class='whois-highlight'>370 Jay Street</span>
+            {`
+Registrant City: `}
+            <span class='whois-highlight'>Brooklyn</span>
+            {`
+Registrant State/Province: `}
+            <span class='whois-highlight'>NY</span>
+            {`
+Registrant Postal Code: `}
+            <span class='whois-highlight'>11201</span>
+            {`
+Registrant Country: `}
+            <span class='whois-highlight'>US</span>
+            {`
+Registrant Phone: `}
+            <span class='whois-highlight'>+1.9295152287</span>
+            {`
+Registrant Email: `}
+            <span class='whois-highlight'>idontneedawebsite@proton.me</span>
+            {`
 
 Admin Name: Webb Notneeded
 Admin Phone: +1.9295152287
@@ -111,33 +174,62 @@ DNSSEC: unsigned`}
           </div>
         </div>
 
-        <p style={{ marginBottom: "6px", fontWeight: "bold" }}>
-          References
-        </p>
-        <ol class="about-references">
-          <li id="ref-1">
-            <a href="https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/" target="_blank">
+        <p style={{ marginBottom: '6px', fontWeight: 'bold' }}>References</p>
+        <ol class='about-references'>
+          <li id='ref-1'>
+            <a
+              href='https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/'
+              target='_blank'
+            >
               Why is .US Being Used to Phish So Many of Us?
-            </a>{" "}&mdash; Krebs on Security, 2023
+            </a>{' '}
+            &mdash; Krebs on Security, 2023
           </li>
-          <li id="ref-2">
-            <a href="https://domainnamewire.com/2022/04/20/reminder-theres-no-whois-privacy-for-us-domain-names/" target="_blank">
-              Reminder: there's no Whois privacy for .us domain names
-            </a>{" "}&mdash; Domain Name Wire, 2022
+          <li id='ref-2'>
+            <a
+              href='https://www.washingtonpost.com/wp-dyn/articles/A7251-2005Mar4.html'
+              target='_blank'
+            >
+              Ruling on '.us' Domain Raises Privacy Issues
+            </a>{' '}
+            &mdash; Washington Post, 2005
           </li>
-          <li id="ref-3">
-            <a href="https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/" target="_blank">
+          <li id='ref-3'>
+            <a
+              href='https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/'
+              target='_blank'
+            >
               Who Is Afraid of More Spams and Scams?
-            </a>{" "}&mdash; Krebs on Security, 2018
+            </a>{' '}
+            &mdash; Krebs on Security, 2018
+          </li>
+          <li id='ref-4'>
+            <a
+              href='https://hussachai.medium.com/read-this-before-registering-a-us-domain-ac614fb01087'
+              target='_blank'
+            >
+              Read This Before Registering a .us Domain
+            </a>{' '}
+            &mdash; Huss Puripunpinyo, 2024
+          </li>
+          <li id='ref-5'>
+            <a
+              href='https://www.ntia.gov/press-release/2019/neustar-continue-operate-us-country-code-top-level-domain'
+              target='_blank'
+            >
+              Neustar to Continue to Operate .us Country Code Top Level Domain
+            </a>{' '}
+            &mdash; NTIA, 2019
           </li>
         </ol>
 
-        <p class="about-footer">
-          A{" "}
-          <a href="https://swtch.tel" target="_blank">
+        <p class='about-footer'>
+          A{' '}
+          <a href='https://swtch.tel' target='_blank'>
             Switcheristic Telecommunications
-          </a>{" "}
-          project &middot; &copy; 2024 Webb Notneeded
+          </a>{' '}
+          project &middot; &copy; 2024&ndash;{__LATEST_EMAIL_YEAR__} Webb
+          Notneeded
         </p>
       </div>
     </div>

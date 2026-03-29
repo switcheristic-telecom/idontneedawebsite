@@ -63,6 +63,7 @@ This will:
 
 - **Emails**: Exported from ProtonMail using [proton-mail-export-cli](https://github.com/ProtonMail/proton-mail-export)
 - **Calls**: Exported from Google Voice using [Google Takeout](https://takeout.google.com/)
+  - Call records span January 29 to March 21, 2024 — the only period for which data was exported. A subsequent export was not possible because Google had deleted the associated account (see below). The frequency of calls during this two-month window alone is indicative of their spammy nature: multiple calls on most workdays, and occasionally on weekends.
   - **Note:** The Google Voice number was originally associated with `thanks.dont.need.a.website@gmail.com`. Google has since deleted this account (circa 2024). The call data was exported via Google Takeout before the account was removed.
 
 ## Third-Party Assets
