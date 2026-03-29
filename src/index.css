@@ -777,19 +777,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.cal-day.has-activity {
-  cursor: pointer;
-}
-
-.cal-day-num {
-  font-weight: bold;
-}
-
-.cal-activity {
-  font-size: 8px;
-  color: var(--color-text-muted);
-}
-
 /* WHOIS terminal */
 .whois-terminal {
   background: #0c0c0c;
@@ -1264,56 +1251,7 @@ button:not(.wc-btn):active,
   background: #d8e2ee;
 }
 
-/* Mobile warning */
-.mobile-warning {
-  display: none;
-  background: #0d2818;
-  min-height: 100vh;
-  padding: 20px;
-}
 
-.mobile-warning-dialog {
-  max-width: 400px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 4px;
-  border: 1px solid #8db2e3;
-  overflow: hidden;
-}
-
-.mobile-warning-titlebar {
-  background: linear-gradient(180deg, #6ba0cd, #2f6aab);
-  color: #fff;
-  font-weight: bold;
-  padding: 6px 10px;
-  text-align: center;
-  font-size: 12px;
-}
-
-.mobile-warning-body {
-  padding: 16px;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.mobile-warning-body p {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.mobile-warning-body hr {
-  border: none;
-  border-top: 1px solid var(--border-separator);
-  margin: 10px 0;
-}
-
-.mobile-warning-footer {
-  text-align: center;
-  color: var(--color-text-faint);
-  margin-top: 12px;
-  font-size: 10px;
-}
 
 /* Layout containers */
 .content-area {
@@ -1351,8 +1289,7 @@ button:not(.wc-btn):active,
 
 .reading-pane-container {
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   margin: 0 3px 3px;
   min-height: 0;
   background: #fff;
@@ -1361,6 +1298,7 @@ button:not(.wc-btn):active,
 .reading-pane-container > .email-client-content {
   height: auto;
   min-height: 100%;
+  overflow: visible;
   background: #fff;
 }
 
@@ -1436,14 +1374,17 @@ button:not(.wc-btn):active,
 
 .reading-body {
   flex: none;
+  overflow: visible;
 }
 
 .reading-iframe {
   display: block;
   border: none;
+  overflow: hidden;
+  min-width: 100%;
 }
 
-/* Calendar */
+/* Calendar — Outlook 2007 mini-calendar style */
 .calendar-container {
   padding: 12px;
   overflow: auto;
@@ -1452,7 +1393,7 @@ button:not(.wc-btn):active,
 
 .calendar-header {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .calendar-title {
@@ -1462,60 +1403,110 @@ button:not(.wc-btn):active,
 }
 
 .calendar-subtitle {
-  color: var(--color-text-faint);
+  color: var(--color-text);
   font-size: 11px;
 }
 
-.calendar-grid-row {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 12px;
+.calendar-legend-bar {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border-separator);
 }
 
 .legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  margin-right: 12px;
+  gap: 3px;
+  margin-right: 10px;
 }
 
 .legend-swatch {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: 1px solid #8db2e3;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 1px;
+}
+
+.calendar-months-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .calendar-totals {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 2px;
-}
-
-.month-header {
-  font-weight: bold;
-  padding: 4px;
-  background: linear-gradient(180deg, #4a86b8, #2f6aab);
-  color: #fff;
   font-size: 11px;
 }
 
-.cal-day-name {
-  font-weight: bold;
-  color: var(--color-text-muted);
-  padding: 2px 4px;
-  font-size: 10px;
+.mini-month {
+  border: 1px solid #b0c4da;
+  background: #fff;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
-.cal-day {
-  width: 48px;
-  height: 36px;
+.mini-month-header {
+  font-weight: bold;
+  padding: 3px 0;
+  background: linear-gradient(180deg, #4a86b8, #2f6aab);
+  color: #fff;
+  font-size: 9px;
+  letter-spacing: 0.3px;
+}
+
+.mini-cal-day-name {
+  font-weight: bold;
+  color: #666;
+  padding: 2px 0;
+  font-size: 8px;
+  border-bottom: 1px solid #d0dce8;
+  background: #f0f4f9;
+}
+
+.mini-cal-day {
   text-align: center;
-  padding: 2px;
-  font-size: 10px;
-  vertical-align: top;
+  padding: 2px 0;
+  font-size: 9px;
+  vertical-align: middle;
+  color: #333;
+  border: 1px solid transparent;
+}
+
+.mini-cal-day.has-activity {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mini-cal-day.has-activity:hover {
+  outline: 1px solid #3366aa;
+  z-index: 1;
+  position: relative;
+}
+
+.cal-day-registration {
+  position: relative;
+}
+
+.cal-day-registration {
+  border: 1px solid #5586a3 !important;
+  outline: 1px dotted #2d61cb;
+  background: linear-gradient(
+    180deg,
+    #ebf8ff 0%,
+    #e8f7ff 47%,
+    #d9f1ff 53%,
+    #caecff 100%
+  ) !important;
+  color: #367be3 !important;
+  font-weight: bold;
+  outline-offset: -1px;
 }
 
 /* About pane */
@@ -1580,28 +1571,6 @@ button:not(.wc-btn):active,
   margin-top: 12px;
   border-top: 1px solid var(--border-separator);
   padding-top: 8px;
-}
-
-/* Vista-style "today" calendar highlight (registration date) */
-.cal-day-today {
-  position: relative;
-}
-
-.cal-day-today .cal-day-num {
-  display: inline-block;
-  padding: 0 3px;
-  border: 1px solid #5586a3;
-  outline: 1px dotted #2d61cb;
-  background: linear-gradient(
-    180deg,
-    #ebf8ff 0%,
-    #e8f7ff 47%,
-    #d9f1ff 53%,
-    #caecff 100%
-  );
-  color: #367be3;
-  border-radius: 2px;
-  outline-offset: -2px;
 }
 
 /* Vista-style right-click context menu */
@@ -2200,11 +2169,170 @@ button:not(.wc-btn):active,
   user-select: none;
 }
 
-@media (max-width: 767px) {
-  .mobile-warning {
-    display: block;
-  }
-  .vista-desktop {
-    display: none;
-  }
+/* ── About Window (startup floating dialog) ── */
+
+.aw-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.aw-dialog {
+  width: 640px;
+  max-width: 90vw;
+  max-height: 85vh;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: rgba(125, 128, 132, 0.35);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 1px 1px rgba(0, 0, 0, 0.5),
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.aw-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 8px 4px 4px;
+  border: 1px solid rgba(150, 200, 255, 0.45);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.aw-dialog::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  right: 3px;
+  bottom: 4px;
+  border-left: 1px solid rgba(180, 210, 240, 0.25);
+  border-right: 1px solid rgba(180, 210, 240, 0.25);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.aw-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: #fff;
+  padding: 0;
+}
+
+/* ── Welcome popup ── */
+
+.wp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1002;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-dialog {
+  width: 380px;
+  max-width: 85vw;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background: rgba(125, 128, 132, 0.35);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 1px 1px rgba(0, 0, 0, 0.5),
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.wp-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 8px 4px 4px;
+  border: 1px solid rgba(150, 200, 255, 0.45);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.wp-dialog::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  right: 3px;
+  bottom: 4px;
+  border-left: 1px solid rgba(180, 210, 240, 0.25);
+  border-right: 1px solid rgba(180, 210, 240, 0.25);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.wp-body {
+  background: linear-gradient(to bottom, #e3f0ff, #cde2f7);
+  border-bottom: 1px solid #7ba2ce;
+  padding: 20px 24px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #1a3a5c;
+}
+
+.wp-body p {
+  margin: 0;
+}
+
+.wp-body .wp-attribution {
+  margin: 16px 0 0;
+  font-size: 11px;
+  color: #6a89a7;
+  text-align: left;
+}
+
+.wp-attribution a {
+  color: #4a7aaa;
+}
+
+.wp-ok {
+  display: block;
+  margin: 16px auto 4px;
+  min-width: 100px;
+  padding: 6px 24px;
+  border: 1px solid #8b8b8b;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #f9f9f9, #e2e2e2);
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.wp-ok:hover {
+  background: linear-gradient(to bottom, #e8f0fe, #d0d8e8);
+  border-color: #7097c2;
+}
+
+.wp-ok:active {
+  background: linear-gradient(to bottom, #d0d8e8, #c0c8d8);
+}
+

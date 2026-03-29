@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 import fs from "fs";
 
-function getLatestEmailDate(): string {
+function getLatestEmailDate(): { formatted: string; year: number } {
   const data = JSON.parse(
     fs.readFileSync("public/email-metadata.json", "utf-8")
   );
@@ -10,14 +10,18 @@ function getLatestEmailDate(): string {
     ...data.map((e: { Payload: { Time: number } }) => e.Payload.Time)
   );
   const date = new Date(maxTime * 1000);
-  return date.toLocaleString("en-US", { month: "short", year: "numeric" });
+  return {
+    formatted: date.toLocaleString("en-US", { month: "short", year: "numeric" }),
+    year: date.getFullYear(),
+  };
 }
 
 export default defineConfig({
   plugins: [preact()],
   publicDir: "public",
   define: {
-    __LATEST_EMAIL_DATE__: JSON.stringify(getLatestEmailDate()),
+    __LATEST_EMAIL_DATE__: JSON.stringify(getLatestEmailDate().formatted),
+    __LATEST_EMAIL_YEAR__: JSON.stringify(getLatestEmailDate().year),
   },
   resolve: {
     alias: {

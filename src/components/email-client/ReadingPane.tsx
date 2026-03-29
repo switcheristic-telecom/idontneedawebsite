@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "preact/hooks";
+import { useRef, useEffect, useCallback } from "preact/hooks";
 import type { EmailMetadata } from "../../types";
 import { searchQuery } from "../../data/store";
 import { highlightText, highlightIframe } from "../../utils/highlight";
@@ -7,39 +7,75 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const terms = searchQuery.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
 
-  const resizeIframe = (iframe: HTMLIFrameElement) => {
+  const syncIframeSize = useCallback(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
     try {
       const doc = iframe.contentDocument;
-      if (doc?.body) {
-        iframe.style.height = doc.body.scrollHeight + "px";
-      }
+      if (!doc?.body) return;
+      // Disable iframe scrolling — the parent container handles it
+      doc.documentElement.style.overflow = "hidden";
+      doc.body.style.overflow = "hidden";
+      iframe.style.height = doc.documentElement.scrollHeight + "px";
+      iframe.style.width = doc.documentElement.scrollWidth + "px";
     } catch (_) {}
-  };
+  }, []);
 
   useEffect(() => {
     const iframe = iframeRef.current;
     if (!iframe) return;
 
+    const container = iframe.closest(".reading-pane-container");
+
+    // Reset height so the old email's height doesn't persist
+    iframe.style.height = "0";
+
+    // Scroll the reading pane back to top
+    if (container) container.scrollTop = 0;
+
+    let resizeObs: ResizeObserver | null = null;
+    let mutObs: MutationObserver | null = null;
+
     const onLoad = () => {
       try {
         const doc = iframe.contentDocument;
-        if (doc) highlightIframe(doc, terms);
+        if (doc) {
+          highlightIframe(doc, terms);
+          // Watch for late-loading content (images, fonts, etc.)
+          mutObs = new MutationObserver(syncIframeSize);
+          mutObs.observe(doc.body, { childList: true, subtree: true, attributes: true });
+          // Catch image/resource loads that change layout
+          doc.querySelectorAll("img").forEach((img) => {
+            if (!img.complete) img.addEventListener("load", syncIframeSize);
+          });
+        }
       } catch (_) { /* cross-origin safety */ }
-      resizeIframe(iframe);
+      syncIframeSize();
     };
 
     iframe.addEventListener("load", onLoad);
+
     // If already loaded (cached), run immediately
     try {
       const doc = iframe.contentDocument;
       if (doc?.body?.childNodes.length) {
         highlightIframe(doc, terms);
-        resizeIframe(iframe);
+        syncIframeSize();
       }
     } catch (_) {}
 
-    return () => iframe.removeEventListener("load", onLoad);
-  }, [email.Payload.ID, searchQuery.value]);
+    // Re-measure when the reading pane container resizes
+    if (container) {
+      resizeObs = new ResizeObserver(syncIframeSize);
+      resizeObs.observe(container);
+    }
+
+    return () => {
+      iframe.removeEventListener("load", onLoad);
+      resizeObs?.disconnect();
+      mutObs?.disconnect();
+    };
+  }, [email.Payload.ID, searchQuery.value, syncIframeSize]);
 
   return (
     <div class="email-client-content">
@@ -83,9 +119,9 @@ export function ReadingPane({ email }: { email: EmailMetadata }) {
         <iframe
           ref={iframeRef}
           src={`/emails/${email.Payload.ID}.html`}
-          width="100%"
           class="reading-iframe"
           sandbox="allow-same-origin"
+          scrolling="no"
         />
       </div>
     </div>
