@@ -1,6 +1,6 @@
 import { showAboutWindow } from '../../data/store';
 import { AboutPane } from './AboutPane';
-import { IconMail } from '../VistaIcons';
+import { IconMail, IconMinimize, IconMaximize, IconClose } from '../VistaIcons';
 
 export function AboutWindow() {
   if (!showAboutWindow.value) return null;
@@ -14,16 +14,10 @@ export function AboutWindow() {
           <span class='ab-titlebar-text'>Read Me First - idontneedawebsite Mail</span>
           <div class='window-controls'>
             <button class='wc-btn wc-minimize' title='Minimize' aria-label='Minimize'>
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <line x1="1" y1="7" x2="9" y2="7" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
-                <line x1="1" y1="7" x2="9" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+              <IconMinimize />
             </button>
             <button class='wc-btn wc-maximize' title='Maximize' aria-label='Maximize'>
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#333333" stroke-width="2.5" />
-                <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#fff" stroke-width="1.5" />
-              </svg>
+              <IconMaximize />
             </button>
             <button
               class='wc-btn wc-close'
@@ -31,10 +25,7 @@ export function AboutWindow() {
               aria-label='Close'
               onClick={() => (showAboutWindow.value = false)}
             >
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+              <IconClose />
             </button>
           </div>
         </div>

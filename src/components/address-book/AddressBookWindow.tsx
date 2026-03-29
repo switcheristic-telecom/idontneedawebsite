@@ -10,7 +10,7 @@ import {
   activeTab,
 } from "../../data/store";
 import { formatPhoneNumber } from "../email-client/utils";
-import { IconAddressBook, IconMail, IconPhone } from "../VistaIcons";
+import { IconAddressBook, IconMail, IconPhone, IconMinimize, IconMaximize, IconClose, IconExternalLink } from "../VistaIcons";
 
 interface Contact {
   name: string;
@@ -141,16 +141,10 @@ export function AddressBookWindow() {
           <span class="ab-titlebar-text">Address Book - idontneedawebsite Contacts</span>
           <div class="window-controls">
             <button class="wc-btn wc-minimize" title="Minimize" aria-label="Minimize">
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <line x1="1" y1="7" x2="9" y2="7" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
-                <line x1="1" y1="7" x2="9" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+              <IconMinimize />
             </button>
             <button class="wc-btn wc-maximize" title="Maximize" aria-label="Maximize">
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#333333" stroke-width="2.5" />
-                <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#fff" stroke-width="1.5" />
-              </svg>
+              <IconMaximize />
             </button>
             <button
               class="wc-btn wc-close"
@@ -158,10 +152,7 @@ export function AddressBookWindow() {
               aria-label="Close"
               onClick={() => (showAddressBook.value = false)}
             >
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+              <IconClose />
             </button>
           </div>
         </div>
@@ -234,11 +225,7 @@ export function AddressBookWindow() {
                           title={contact.type === "email" ? `Send email to ${contact.address}` : `Call ${contact.address}`}
                           onClick={(e) => e.stopPropagation()}
                         >
-                          <svg width="10" height="10" viewBox="0 0 12 12">
-                            <path d="M3.5 1.5H1.5V10.5H10.5V8.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
-                            <path d="M6.5 1.5H10.5V5.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-                            <line x1="10.5" y1="1.5" x2="5.5" y2="6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
-                          </svg>
+                          <IconExternalLink />
                         </a>
                       </td>
                       <td class="ab-cell-count">{contact.count}</td>
