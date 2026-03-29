@@ -1,9 +1,10 @@
 import { useSignal } from '@preact/signals';
 import type { EmailMetadata } from '../../types';
-import { getDateGroup, formatEmailDate, formatEmailSize } from './utils';
+import { getDateGroup, formatEmailDate } from './utils';
 import { IconPin, IconMail } from '../VistaIcons';
 import { searchQuery } from '../../data/store';
 import { highlightText } from '../../utils/highlight';
+import { parseSearchQuery } from '../../utils/parseSearchQuery';
 
 export const ABOUT_ID = '__about__';
 
@@ -38,11 +39,7 @@ export function EmailTable({
   arrow: (col: string) => string;
   groupBy?: 'date' | 'from' | 'subject';
 }) {
-  const terms = searchQuery.value
-    .toLowerCase()
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean);
+  const terms = parseSearchQuery(searchQuery.value).terms;
   const collapsed = useSignal<Record<string, boolean>>({});
 
   const toggleGroup = (label: string) => {
@@ -76,7 +73,6 @@ export function EmailTable({
           <th class='col-header col-received' onClick={() => onSort('date')}>
             Received{arrow('date')}
           </th>
-          <th class='col-header col-size'>Size</th>
         </tr>
       </thead>
       <tbody>
@@ -94,7 +90,6 @@ export function EmailTable({
             Not for .us &mdash; Read Me First
           </td>
           <td>Sun 1/28/2024 3:29 PM</td>
-          <td>4 KB</td>
         </tr>
 
         {/* Grouped emails */}
@@ -107,7 +102,7 @@ export function EmailTable({
                 key={`group-${group.label}`}
                 onClick={() => toggleGroup(group.label)}
               >
-                <td colSpan={5}>
+                <td colSpan={4}>
                   <svg
                     class='group-toggle'
                     width='11'
@@ -184,7 +179,6 @@ export function EmailTable({
                       {highlightText(email.Payload.Subject, terms)}
                     </td>
                     <td>{formatEmailDate(email.Payload.Time)}</td>
-                    <td>{formatEmailSize(email.Payload.Size)}</td>
                   </tr>
                 ))}
             </>

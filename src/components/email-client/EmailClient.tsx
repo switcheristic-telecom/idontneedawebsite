@@ -10,7 +10,9 @@ import {
   searchIndex,
   loadSearchIndex,
   filteredCount,
+  callDateFilter,
 } from "../../data/store";
+import { parseSearchQuery } from "../../utils/parseSearchQuery";
 import { AboutPane } from "../about/AboutPane";
 import { NavigationPane } from "./NavigationPane";
 import { EmailTable, ABOUT_ID } from "./EmailTable";
@@ -57,22 +59,40 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
     return sortAsc.value ? cmp : -cmp;
   });
 
-  // Filter by search query — all terms must match (AND logic)
-  const rawQuery = searchQuery.value.toLowerCase().trim();
-  const terms = rawQuery ? rawQuery.split(/\s+/) : [];
+  // Filter by search query — supports from:, to:, date: operators + plain terms (AND)
+  const parsed = parseSearchQuery(searchQuery.value);
+  const hasQuery =
+    parsed.terms.length > 0 || parsed.from.length > 0 || parsed.to.length > 0 || parsed.date.length > 0;
   const idx = searchIndex.value;
-  const filtered = terms.length
+  const filtered = hasQuery
     ? sorted.filter((e) => {
-        const meta =
-          (e.Payload.Subject + " " + e.Payload.Sender.Name + " " + e.Payload.Sender.Address)
-            .toLowerCase();
-        const body = idx ? (idx[e.Payload.ID] ?? "") : "";
-        const haystack = meta + " " + body;
-        return terms.every((t) => haystack.includes(t));
+        const sender = e.Payload.Sender;
+        const senderStr = (sender.Name + " " + sender.Address).toLowerCase();
+        if (parsed.from.length && !parsed.from.every((f) => senderStr.includes(f))) return false;
+
+        if (parsed.to.length) {
+          const recipients = [...e.Payload.ToList, ...e.Payload.CCList];
+          const recipStr = recipients.map((r) => (r.Name + " " + r.Address).toLowerCase()).join(" ");
+          if (!parsed.to.every((t) => recipStr.includes(t))) return false;
+        }
+
+        if (parsed.date.length) {
+          const dateStr = new Date(e.Payload.Time * 1000).toISOString().split("T")[0];
+          if (!parsed.date.every((d) => dateStr.startsWith(d))) return false;
+        }
+
+        if (parsed.terms.length) {
+          const meta = (e.Payload.Subject + " " + senderStr).toLowerCase();
+          const body = idx ? (idx[e.Payload.ID] ?? "") : "";
+          const haystack = meta + " " + body;
+          if (!parsed.terms.every((t) => haystack.includes(t))) return false;
+        }
+
+        return true;
       })
     : sorted;
 
-  filteredCount.value = terms.length ? filtered.length : null;
+  filteredCount.value = hasQuery ? filtered.length : null;
 
   const arrow = (col: string) =>
     sortBy.value === col ? (sortAsc.value ? " \u25B2" : " \u25BC") : "";
@@ -83,7 +103,11 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
     ? null
     : emailList.find((e) => e.Payload.ID === selId);
 
-  const activeCalls = folder === "voicemail" ? voicemails : missedCalls;
+  const rawCalls = folder === "voicemail" ? voicemails : missedCalls;
+  const dateF = callDateFilter.value;
+  const activeCalls = dateF
+    ? rawCalls.filter((c) => new Date(c.time).toISOString().split("T")[0] === dateF)
+    : rawCalls;
   const selectedCall = selectedCallId.value
     ? activeCalls.find((c) => getCallId(c) === selectedCallId.value) ?? null
     : null;

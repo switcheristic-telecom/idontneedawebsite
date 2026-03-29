@@ -1490,6 +1490,59 @@ button:not(.wc-btn):active,
   position: relative;
 }
 
+.cal-popover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #7a9ab5;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 4px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 90px;
+}
+
+.cal-popover-date {
+  font-size: 9px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 1px 4px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1px;
+}
+
+.cal-popover-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 9px;
+  color: #1a3a5c;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: left;
+}
+
+.cal-popover-btn:hover {
+  background: #dce8f5;
+}
+
+.cal-popover-btn svg {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
 .cal-day-registration {
   position: relative;
 }
@@ -1677,13 +1730,9 @@ button:not(.wc-btn):active,
     border-bottom: none;
   }
 
-  /* Hide icon columns and size column */
+  /* Hide icon column */
   .message-list-pane .email-table tr.email-row td:nth-child(1),
-  .message-list-pane .email-table tr.email-row td:nth-child(2),
-  .message-list-pane .email-table tr.email-row td:nth-child(6),
-  .message-list-pane .email-table tr.about-row td:nth-child(1),
-  .message-list-pane .email-table tr.about-row td:nth-child(2),
-  .message-list-pane .email-table tr.about-row td:nth-child(6) {
+  .message-list-pane .email-table tr.about-row td:nth-child(1) {
     display: none;
   }
 
@@ -1698,8 +1747,8 @@ button:not(.wc-btn):active,
   }
 
   /* Received date — row 1, right */
-  .message-list-pane .email-table tr.email-row td:nth-child(5),
-  .message-list-pane .email-table tr.about-row td:nth-child(5) {
+  .message-list-pane .email-table tr.email-row td:nth-child(4),
+  .message-list-pane .email-table tr.about-row td:nth-child(4) {
     grid-row: 1;
     grid-column: 2;
     text-align: right;

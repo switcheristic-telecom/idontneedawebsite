@@ -122,7 +122,7 @@ export function AddressBookWindow() {
     if (contact.type === "email") {
       activeTab.value = "inbox";
       selectedFolder.value = "inbox";
-      searchQuery.value = contact.address;
+      searchQuery.value = "from:" + contact.address;
       selectedEmailId.value = null;
     } else {
       activeTab.value = "inbox";

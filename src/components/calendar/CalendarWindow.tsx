@@ -1,10 +1,12 @@
 import { useMemo } from "preact/hooks";
-import { emails, calls } from "../../data/store";
-import { IconCalendar } from "../VistaIcons";
+import { useSignal } from "@preact/signals";
+import { emails, calls, searchQuery, activeTab, selectedFolder, callDateFilter } from "../../data/store";
+import { IconCalendar, IconMail, IconPhone } from "../VistaIcons";
 
 export function CalendarWindow() {
   const emailList = emails.value;
   const callList = calls.value;
+  const openDate = useSignal<string | null>(null);
 
   const activityByDate = useMemo(() => {
     const map: Record<string, { emails: number; calls: number }> = {};
@@ -52,7 +54,7 @@ export function CalendarWindow() {
   }, [emailList, callList]);
 
   return (
-    <div class="calendar-container">
+    <div class="calendar-container" onClick={() => { openDate.value = null; }}>
       <div class="calendar-header">
         <span class="calendar-title">
           <IconCalendar /> Spam Activity Calendar
@@ -66,23 +68,23 @@ export function CalendarWindow() {
       <div class="calendar-legend-bar">
         <span class="legend-item">
           <span class="legend-swatch" style={{ background: "#dce8f5" }} />
-          Low
+          1–{Math.floor(maxActivity * 0.2)}
         </span>
         <span class="legend-item">
           <span class="legend-swatch" style={{ background: "#a8c8e8" }} />
-          Med
+          {Math.floor(maxActivity * 0.2) + 1}–{Math.floor(maxActivity * 0.4)}
         </span>
         <span class="legend-item">
           <span class="legend-swatch" style={{ background: "#6699cc" }} />
-          High
+          {Math.floor(maxActivity * 0.4) + 1}–{Math.floor(maxActivity * 0.6)}
         </span>
         <span class="legend-item">
           <span class="legend-swatch" style={{ background: "#3366aa" }} />
-          V.High
+          {Math.floor(maxActivity * 0.6) + 1}–{Math.floor(maxActivity * 0.8)}
         </span>
         <span class="legend-item">
           <span class="legend-swatch" style={{ background: "#cc3333" }} />
-          Peak
+          {Math.floor(maxActivity * 0.8) + 1}+
         </span>
         <span class="legend-item">
           <span
@@ -104,6 +106,8 @@ export function CalendarWindow() {
             month={month}
             activityByDate={activityByDate}
             maxActivity={maxActivity}
+            popoverDate={openDate.value}
+            onDayClick={(d) => { openDate.value = openDate.value === d ? null : d; }}
           />
         ))}
       </div>
@@ -123,11 +127,15 @@ function MiniMonthGrid({
   month,
   activityByDate,
   maxActivity,
+  popoverDate,
+  onDayClick,
 }: {
   year: number;
   month: number;
   activityByDate: Record<string, { emails: number; calls: number }>;
   maxActivity: number;
+  popoverDate: string | null;
+  onDayClick: (dateStr: string) => void;
 }) {
   const monthNames = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -194,7 +202,7 @@ function MiniMonthGrid({
               <td
                 key={dateStr}
                 class={`mini-cal-day${total > 0 ? " has-activity" : ""}${isRegistration ? " cal-day-registration" : ""}`}
-                style={{ background: bg, color: fontColor }}
+                style={{ background: bg, color: fontColor, cursor: total > 0 ? "pointer" : undefined, position: total > 0 ? "relative" : undefined }}
                 title={
                   activity
                     ? `${dateStr}${isRegistration ? " (Registration Day)" : ""}: ${activity.emails} email(s), ${activity.calls} call(s)`
@@ -202,8 +210,37 @@ function MiniMonthGrid({
                       ? `${dateStr} (Registration Day)`
                       : dateStr
                 }
+                onClick={total > 0 ? (e) => {
+                  e.stopPropagation();
+                  onDayClick(dateStr);
+                } : undefined}
               >
                 {day}
+                {popoverDate === dateStr && activity && (
+                  <div class="cal-popover" onClick={(e) => e.stopPropagation()}>
+                    <div class="cal-popover-date">{dateStr}</div>
+                    {activity.emails > 0 && (
+                      <button class="cal-popover-btn" onClick={() => {
+                        searchQuery.value = "date:" + dateStr;
+                        callDateFilter.value = null;
+                        activeTab.value = "inbox";
+                        selectedFolder.value = "inbox";
+                      }}>
+                        <IconMail /> {activity.emails} email{activity.emails !== 1 ? "s" : ""}
+                      </button>
+                    )}
+                    {activity.calls > 0 && (
+                      <button class="cal-popover-btn" onClick={() => {
+                        callDateFilter.value = dateStr;
+                        searchQuery.value = "";
+                        activeTab.value = "inbox";
+                        selectedFolder.value = "calls";
+                      }}>
+                        <IconPhone /> {activity.calls} call{activity.calls !== 1 ? "s" : ""}
+                      </button>
+                    )}
+                  </div>
+                )}
               </td>
             );
           })}
