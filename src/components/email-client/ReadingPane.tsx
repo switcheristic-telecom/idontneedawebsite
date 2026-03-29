@@ -2,10 +2,11 @@ import { useRef, useEffect, useCallback } from "preact/hooks";
 import type { EmailMetadata } from "../../types";
 import { searchQuery } from "../../data/store";
 import { highlightText, highlightIframe } from "../../utils/highlight";
+import { parseSearchQuery } from "../../utils/parseSearchQuery";
 
 export function ReadingPane({ email }: { email: EmailMetadata }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const terms = searchQuery.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const terms = parseSearchQuery(searchQuery.value).terms;
 
   const syncIframeSize = useCallback(() => {
     const iframe = iframeRef.current;

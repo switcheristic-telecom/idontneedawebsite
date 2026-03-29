@@ -1,7 +1,10 @@
 import { useEffect } from 'preact/hooks';
+import { Router } from 'wouter-preact';
+import { useHashLocation } from 'wouter-preact/use-hash-location';
 import { emails, calls, activeTab, filteredCount, showAddressBook } from './data/store';
 import { loadEmails } from './data/emails';
 import { loadCalls } from './data/calls';
+import { useRouteSync } from './hooks/useRouteSync';
 import { EmailClient } from './components/email-client/EmailClient';
 import { CalendarWindow } from './components/calendar/CalendarWindow';
 import { AddressBookWindow } from './components/address-book/AddressBookWindow';
@@ -21,6 +24,16 @@ import {
 } from './components/VistaIcons';
 
 export function App() {
+  return (
+    <Router hook={useHashLocation}>
+      <AppShell />
+    </Router>
+  );
+}
+
+function AppShell() {
+  useRouteSync();
+
   useEffect(() => {
     loadEmails().then((data) => {
       emails.value = data;
