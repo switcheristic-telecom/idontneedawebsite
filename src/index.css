@@ -2385,3 +2385,133 @@ button:not(.wc-btn):active,
   background: linear-gradient(to bottom, #d0d8e8, #c0c8d8);
 }
 
+/* Mobile: compact everything */
+@media (max-width: 768px) {
+  body, #app {
+    font-size: 9px;
+  }
+
+  /* Sidebar */
+  .nav-pane {
+    width: 110px;
+    font-size: 9px;
+  }
+
+  .nav-section-header {
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  .folder-item {
+    padding: 1px 3px 1px 10px;
+    font-size: 9px;
+    gap: 2px;
+  }
+
+  .folder-item .folder-icon {
+    font-size: 9px;
+  }
+
+  .folder-item .folder-count {
+    font-size: 8px;
+  }
+
+  .folder-root {
+    font-size: 9px;
+    padding: 1px 3px 1px 6px;
+  }
+
+  .nav-btn {
+    font-size: 9px;
+    padding: 3px 4px;
+    gap: 3px;
+  }
+
+  .nav-btn-mini {
+    font-size: 9px;
+    padding: 3px 4px;
+  }
+
+  /* Toolbar / ribbon */
+  .toolbar-btn {
+    font-size: 9px;
+  }
+
+  .toolbar-btn .tb-icon {
+    font-size: 11px;
+  }
+
+  /* Email table */
+  .email-table {
+    font-size: 9px;
+  }
+
+  .email-table th,
+  .email-table td {
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  /* Call table */
+  .call-table {
+    font-size: 9px;
+  }
+
+  .call-table th,
+  .call-table td {
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  /* Reading pane */
+  .reading-header {
+    font-size: 9px;
+  }
+
+  .subject-line {
+    font-size: 11px;
+  }
+
+  .header-field-row {
+    font-size: 9px;
+  }
+
+  /* Address book */
+  .ab-list-item {
+    font-size: 9px;
+  }
+
+  .ab-detail-field {
+    font-size: 9px;
+  }
+
+  /* About window */
+  .about-content {
+    font-size: 9px;
+  }
+
+  /* Title bar and menu bar */
+  .title-bar {
+    font-size: 9px;
+  }
+
+  .menu-bar {
+    font-size: 9px;
+  }
+
+  .menu-bar button {
+    font-size: 9px;
+  }
+
+  /* Status bar */
+  .status-bar {
+    font-size: 8px;
+  }
+
+  /* Tabs */
+  .tab-bar .tab {
+    font-size: 9px;
+  }
+
+}
+
