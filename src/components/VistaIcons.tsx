@@ -165,3 +165,65 @@ export function IconAddressBook() {
     </svg>
   );
 }
+
+/* Window chrome icons (minimize / maximize / close) */
+
+export function IconMinimize() {
+  return (
+    <svg width="10" height="10" viewBox="0 0 10 10">
+      <line x1="1" y1="7" x2="9" y2="7" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="1" y1="7" x2="9" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  );
+}
+
+export function IconMaximize() {
+  return (
+    <svg width="10" height="10" viewBox="0 0 10 10">
+      <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#333333" stroke-width="2.5" />
+      <rect x="1.5" y="2.5" width="7" height="5" fill="none" stroke="#fff" stroke-width="1.5" />
+    </svg>
+  );
+}
+
+export function IconClose() {
+  return (
+    <svg width="10" height="10" viewBox="0 0 10 10">
+      <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+  );
+}
+
+/* Collapsible group toggle (+/−) */
+
+export function IconGroupToggle({ collapsed }: { collapsed: boolean }) {
+  return (
+    <svg class="group-toggle" width="11" height="11" viewBox="0 0 11 11">
+      <defs>
+        <linearGradient id="toggleBg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f8fbff" />
+          <stop offset="100%" stop-color="#d4e4f4" />
+        </linearGradient>
+        <filter id="toggleShadow">
+          <feDropShadow dx="0" dy="0.5" stdDeviation="0.4" flood-color="#000" flood-opacity="0.15" />
+        </filter>
+      </defs>
+      <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" fill="url(#toggleBg)" stroke="#7a9ab5" stroke-width="0.8" filter="url(#toggleShadow)" />
+      {collapsed && <rect x="4.5" y="2.5" width="1.5" height="6" rx="0.3" fill="#2b5278" />}
+      <rect x="2.5" y="4.5" width="6" height="1.5" rx="0.3" fill="#2b5278" />
+    </svg>
+  );
+}
+
+/* External link icon */
+
+export function IconExternalLink() {
+  return (
+    <svg width="10" height="10" viewBox="0 0 12 12">
+      <path d="M3.5 1.5H1.5V10.5H10.5V8.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
+      <path d="M6.5 1.5H10.5V5.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="10.5" y1="1.5" x2="5.5" y2="6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </svg>
+  );
+}

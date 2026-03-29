@@ -1,5 +1,5 @@
 import { showWelcomePopup } from '../../data/store';
-import { IconMail } from '../VistaIcons';
+import { IconMail, IconClose } from '../VistaIcons';
 
 export function WelcomePopup() {
   if (!showWelcomePopup.value) return null;
@@ -21,10 +21,7 @@ export function WelcomePopup() {
               aria-label='Close'
               onClick={dismiss}
             >
-              <svg width="10" height="10" viewBox="0 0 10 10">
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#333333" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M2.5 2.5L7.5 7.5M7.5 2.5L2.5 7.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
+              <IconClose />
             </button>
           </div>
         </div>
