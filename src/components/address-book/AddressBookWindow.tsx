@@ -6,6 +6,7 @@ import {
   showAddressBook,
   selectedFolder,
   selectedEmailId,
+  selectedContactKey,
   searchQuery,
   activeTab,
 } from "../../data/store";
@@ -26,7 +27,7 @@ export function AddressBookWindow() {
   const sortCol = useSignal<"name" | "address" | "type" | "count">("count");
   const sortAsc = useSignal(false);
   const filter = useSignal("");
-  const selectedContact = useSignal<string | null>(null);
+  const selectedContact = selectedContactKey;
 
   const contacts = useMemo(() => {
     const map = new Map<string, Contact>();

@@ -1,7 +1,9 @@
 import { useSignal } from "@preact/signals";
 import type { CallMetadata } from "../../types";
 import { getCallDateGroup, formatCallTime, formatPhoneNumber, getCallId } from "./utils";
-import { IconPhone, IconVoicemail, IconGroupToggle } from "../VistaIcons";
+import { IconPhone, IconVoicemail, IconPin, IconGroupToggle } from "../VistaIcons";
+
+export const CALL_NOTE_ID = "__call_note__";
 
 export function CallTable({
   calls,
@@ -44,6 +46,24 @@ export function CallTable({
         </tr>
       </thead>
       <tbody>
+        {/* Pinned note row */}
+        <tr
+          class={`about-row ${selectedId === CALL_NOTE_ID ? "selected" : ""}`}
+          onClick={() => onSelect(CALL_NOTE_ID)}
+        >
+          <td><IconPin /></td>
+          <td></td>
+          <td class="cell-from">Google Voice</td>
+          <td class="cell-subject">
+            <span class="card-icon">
+              <IconPhone />
+            </span>
+            About this archive
+          </td>
+          <td>Sun 1/28/2024</td>
+          <td></td>
+        </tr>
+
         {groups.map((group) => {
           const isCollapsed = collapsed.value[group.label];
           return (

@@ -1,10 +1,11 @@
-import { useEffect } from 'preact/hooks';
+import { useEffect, useState, useRef, useCallback } from 'preact/hooks';
 import { Router } from 'wouter-preact';
 import { useHashLocation } from 'wouter-preact/use-hash-location';
 import { emails, calls, activeTab, filteredCount, showAddressBook } from './data/store';
 import { loadEmails } from './data/emails';
 import { loadCalls } from './data/calls';
 import { useRouteSync } from './hooks/useRouteSync';
+import { useShowcaseMode } from './hooks/useShowcaseMode';
 import { EmailClient } from './components/email-client/EmailClient';
 import { CalendarWindow } from './components/calendar/CalendarWindow';
 import { AddressBookWindow } from './components/address-book/AddressBookWindow';
@@ -34,8 +35,91 @@ export function App() {
   );
 }
 
+type MenuItem = { label: string; url: string } | '---';
+type MenuDef = { label: string; underline: string; items?: MenuItem[] };
+
+const CTA_ITEMS: MenuItem[] = [
+  { label: 'Email NTIA about .US Privacy', url: 'mailto:dotus@ntia.gov' },
+  { label: 'Contact Your Representative', url: 'https://www.house.gov/representatives/find-your-representative' },
+];
+
+const MENUS: MenuDef[] = [
+  { label: 'File', underline: 'F', items: CTA_ITEMS },
+  { label: 'Edit', underline: 'E', items: CTA_ITEMS },
+  { label: 'View', underline: 'V', items: CTA_ITEMS },
+  { label: 'Go', underline: 'G', items: CTA_ITEMS },
+  { label: 'Tools', underline: 'T', items: CTA_ITEMS },
+  { label: 'Actions', underline: 'A', items: CTA_ITEMS },
+  { label: 'Help', underline: 'H', items: CTA_ITEMS },
+];
+
+function MenuBar() {
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const barRef = useRef<HTMLDivElement>(null);
+
+  const close = useCallback(() => setOpenMenu(null), []);
+
+  useEffect(() => {
+    if (!openMenu) return;
+    const onDown = (e: MouseEvent) => {
+      if (barRef.current && !barRef.current.contains(e.target as Node)) {
+        close();
+      }
+    };
+    document.addEventListener('mousedown', onDown);
+    return () => document.removeEventListener('mousedown', onDown);
+  }, [openMenu, close]);
+
+  return (
+    <div class='menubar' ref={barRef}>
+      {MENUS.map((menu) => (
+        <span
+          key={menu.label}
+          class={`menubar-item${openMenu === menu.label ? ' menubar-item--open' : ''}`}
+          onMouseDown={() => {
+            if (openMenu === menu.label) {
+              close();
+            } else {
+              setOpenMenu(menu.label);
+            }
+          }}
+          onMouseEnter={() => {
+            if (openMenu) {
+              setOpenMenu(menu.label);
+            }
+          }}
+        >
+          <u>{menu.underline}</u>
+          {menu.label.replace(menu.underline, '')}
+          {openMenu === menu.label && menu.items && (
+            <div class='menubar-dropdown'>
+              {menu.items.map((item, i) =>
+                item === '---' ? (
+                  <div key={i} class='menubar-dropdown-sep' />
+                ) : (
+                  <a
+                    key={item.label}
+                    class='menubar-dropdown-item'
+                    href={item.url}
+                    target={item.url.startsWith('mailto:') ? undefined : '_blank'}
+                    onMouseDown={(e: MouseEvent) => e.stopPropagation()}
+                    onClick={close}
+                  >
+                    {item.label}
+                  </a>
+                )
+              )}
+            </div>
+          )}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function AppShell() {
   useRouteSync();
+  useShowcaseMode();
 
   useEffect(() => {
     loadEmails().then((data) => {
@@ -88,29 +172,7 @@ function AppShell() {
           {/* Window content */}
           <div class='aero-window main-app'>
             {/* Menu bar */}
-            <div class='menubar'>
-              <span>
-                <u>F</u>ile
-              </span>
-              <span>
-                <u>E</u>dit
-              </span>
-              <span>
-                <u>V</u>iew
-              </span>
-              <span>
-                <u>G</u>o
-              </span>
-              <span>
-                <u>T</u>ools
-              </span>
-              <span>
-                <u>A</u>ctions
-              </span>
-              <span>
-                <u>H</u>elp
-              </span>
-            </div>
+            <MenuBar />
 
             {/* Toolbar */}
             <div class='toolbar'>
