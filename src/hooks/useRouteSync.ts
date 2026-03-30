@@ -99,6 +99,14 @@ export function useRouteSync() {
       prevPath.current = path;
 
       navigate(full, { replace });
+
+      // Workaround: wouter's useHashLocation navigate sets url.search
+      // when present but never clears it. Manually strip stale search params.
+      if (!qs && window.location.search) {
+        const url = new URL(window.location.href);
+        url.search = "";
+        history.replaceState(history.state, "", url.href);
+      }
     });
   }, []);
 }

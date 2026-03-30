@@ -16,7 +16,7 @@ import { parseSearchQuery } from "../../utils/parseSearchQuery";
 import { AboutPane } from "../about/AboutPane";
 import { NavigationPane } from "./NavigationPane";
 import { EmailTable, ABOUT_ID } from "./EmailTable";
-import { CallTable } from "./CallTable";
+import { CallTable, CALL_NOTE_ID } from "./CallTable";
 import { CallDetailPane } from "./CallDetailPane";
 import { ReadingPane } from "./ReadingPane";
 import { getCallId } from "./utils";
@@ -204,6 +204,28 @@ export function EmailClient({ mode }: { mode: "nav" | "content" }) {
           ) : (
             <div class="empty-pane-message">Click a message to read it</div>
           )
+        ) : selectedCallId.value === CALL_NOTE_ID ? (
+          <div class="email-client-content">
+            <div class="reading-header">
+              <div class="subject-line">About this archive</div>
+              <div class="header-field-row">
+                <span class="field-label">Source:</span>
+                <span class="field-value">Google Voice</span>
+              </div>
+              <div class="header-field-row">
+                <span class="field-label">Account:</span>
+                <span class="field-value">thanks.dont.need.a.website@gmail.com</span>
+              </div>
+            </div>
+            <div class="reading-body" style={{ padding: "16px", fontSize: "12px" }}>
+              <div class="about-callout">
+                These calls were forwarded through a Google Voice number tied to{" "}
+                <b>thanks.dont.need.a.website@gmail.com</b>. Google deleted the
+                account for inactivity, so the archive ends at Mar 21, 2024.
+                Calls after that date are not recorded.
+              </div>
+            </div>
+          </div>
         ) : selectedCall ? (
           <CallDetailPane call={selectedCall} />
         ) : (

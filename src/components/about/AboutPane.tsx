@@ -1,9 +1,34 @@
 const REFERENCES = [
-  { key: "krebs-2018", title: "Who Is Afraid of More Spams and Scams?", source: "Krebs on Security, 2018", url: "https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/" },
-  { key: "krebs-2023", title: "Why is .US Being Used to Phish So Many of Us?", source: "Krebs on Security, 2023", url: "https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/" },
-  { key: "ntia-2019", title: "Neustar to Continue to Operate .us Country Code Top Level Domain", source: "NTIA, 2019", url: "https://www.ntia.gov/press-release/2019/neustar-continue-operate-us-country-code-top-level-domain" },
-  { key: "wapo-2005", title: "Ruling on '.us' Domain Raises Privacy Issues", source: "Washington Post, 2005", url: "https://www.washingtonpost.com/wp-dyn/articles/A7251-2005Mar4.html" },
-  { key: "hussachai-2024", title: "Read This Before Registering a .us Domain", source: "Huss Puripunpinyo, 2024", url: "https://hussachai.medium.com/read-this-before-registering-a-us-domain-ac614fb01087" },
+  {
+    key: 'krebs-2018',
+    title: 'Who Is Afraid of More Spams and Scams?',
+    source: 'Krebs on Security, 2018',
+    url: 'https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/',
+  },
+  {
+    key: 'krebs-2023',
+    title: 'Why is .US Being Used to Phish So Many of Us?',
+    source: 'Krebs on Security, 2023',
+    url: 'https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/',
+  },
+  {
+    key: 'ntia-2019',
+    title: 'Neustar to Continue to Operate .us Country Code Top Level Domain',
+    source: 'NTIA, 2019',
+    url: 'https://www.ntia.gov/press-release/2019/neustar-continue-operate-us-country-code-top-level-domain',
+  },
+  {
+    key: 'wapo-2005',
+    title: "Ruling on '.us' Domain Raises Privacy Issues",
+    source: 'Washington Post, 2005',
+    url: 'https://www.washingtonpost.com/wp-dyn/articles/A7251-2005Mar4.html',
+  },
+  {
+    key: 'hussachai-2024',
+    title: 'Read This Before Registering a .us Domain',
+    source: 'Huss Puripunpinyo, 2024',
+    url: 'https://hussachai.medium.com/read-this-before-registering-a-us-domain-ac614fb01087',
+  },
 ] as const;
 
 function Cite({ keys }: { keys: string | string[] }) {
@@ -11,11 +36,14 @@ function Cite({ keys }: { keys: string | string[] }) {
   return (
     <>
       {keyArr.map((k, i) => {
+        const ref = REFERENCES.find((r) => r.key === k);
         const idx = REFERENCES.findIndex((r) => r.key === k);
         return (
           <sup key={k}>
             {i > 0 && ' '}
-            <a href={`#ref-${k}`}>{idx + 1}</a>
+            <a href={ref?.url} target='_blank'>
+              {idx + 1}
+            </a>
           </sup>
         );
       })}
@@ -51,9 +79,10 @@ export function AboutPane() {
       <div class='about-body'>
         {/* The real story */}
         <div class='about-callout'>
-          If you register a .US domain, your full name, home address, phone
-          number, and email are published in a public database. You cannot opt
-          out. <b>idontneedawebsite.us</b> is an archive of what happens next. This inbox covers Jan 2024 – {__LATEST_EMAIL_DATE__}.
+          When you register a .US domain, your full name, home address, phone
+          number, and email get published in a public database. No opt out.{' '}
+          <b>idontneedawebsite.us</b> is just an archive of what happens next.
+          This inbox covers Jan 2024 – {__LATEST_EMAIL_DATE__}.
         </div>
 
         <hr class='about-divider' />
@@ -65,59 +94,56 @@ export function AboutPane() {
             <a href='https://yufengzhao.com' target='_blank'>
               Yufeng
             </a>{' '}
-            registered <b>yufeng.us</b> in 2024. Within days, spam emails and
-            robocalls started arriving at the contact information he had entered
-            during registration. He changed the WHOIS record to a fake
-            identity&mdash;but by then, data brokers and lead-generation
-            scrapers had already harvested the original details. The spam never
+            registered <b>yufeng.us</b> in 2024 because it was the cheapest
+            domain on the market. Within days, spam emails and robocalls started
+            rolling in&mdash;all sent to the contact info he'd typed during
+            registration. He swapped the WHOIS record to a fake contact, but
+            data brokers had already scraped the real one. The spam never
             stopped.
-            <Cite keys="krebs-2018" />{' '}
-            So he registered <b>idontneedawebsite.us</b> under the fictional
-            name <b>Webb Notneeded</b> to document everything that followed. The
-            name is a reply to the spam itself: most of it is from companies
-            offering web design and site-building services.
+            <Cite keys='krebs-2018' /> So he registered{' '}
+            <b>idontneedawebsite.us</b> under the name <b>Webb Notneeded</b> and
+            started collecting everything that came in. The name is a nod to the
+            spam itself&mdash;most of it is from companies trying to sell web
+            design services.
           </div>
         </div>
 
         <p>
-          Everything in this inbox is real. The emails are real. The phone calls
-          are real. They were all sent to a fictional identity, at an address
-          listed in a public database by law.
+          Everything in this inbox is real. The emails, the phone calls, all of
+          it&mdash;sent to a made-up person at an address the government
+          publishes by law.
         </p>
 
         <p>
-          The .US domain is managed by GoDaddy Registry under contract with
-          NTIA, an agency of the U.S. Department of Commerce.
-          <Cite keys={["krebs-2023", "ntia-2019"]} />{' '}
-          In 2005, the government banned WHOIS privacy on all .US domains,
-          arguing that public registration data promotes accountability and
-          deters abuse. No public comment period. No opt out.
-          <Cite keys="wapo-2005" />{' '}
-          Every registrant's name, address, phone number, and email is
-          published. Almost every other domain extension allows privacy
-          redaction. .US does not.
-          <Cite keys="hussachai-2024" />
+          The .US domain is run by GoDaddy Registry under contract with NTIA,
+          part of the U.S. Department of Commerce.
+          <Cite keys={['krebs-2023', 'ntia-2019']} /> Back in 2005, the
+          government banned WHOIS privacy on .US domains. The idea was that
+          public registration data would promote accountability. No public
+          comment period, no opt out.
+          <Cite keys='wapo-2005' /> Most domain extensions let you redact your
+          info. .US doesn't.
+          <Cite keys='hussachai-2024' />
         </p>
 
         <p>
-          The transparency has not deterred abuse. At $5.98 a year, .US is one
-          of the cheapest domain extensions available&mdash;a magnet for
-          throwaway phishing sites. An Interisle Consulting study found 30,000
-          phishing domains registered on .US in a single year, at least 109
-          targeting the U.S. Postal Service.
-          <Cite keys="krebs-2023" />{' '}
-          The nexus requirement, proof of a connection to the United States, is
-          a pre-checked dropdown.
-          <Cite keys="krebs-2023" />{' '}
-          The policy exposes legitimate registrants while doing nothing to stop
-          bad actors.
+          The kicker: it hasn't even stopped abuse. At $5.98 a year, .US is one
+          of the cheapest domains you can get&mdash;so it's a favorite for
+          throwaway phishing sites. One study found 30,000 phishing domains on
+          .US in a single year, including at least 109 impersonating the U.S.
+          Postal Service.
+          <Cite keys='krebs-2023' /> The "nexus requirement" (proof you're
+          connected to the U.S.) is literally a pre-checked dropdown.
+          <Cite keys='krebs-2023' /> So the policy exposes real people while
+          doing nothing about the bad actors. Cool.
         </p>
 
         <p style={{ marginBottom: '12px' }}>
-          NTIA's contract with GoDaddy Registry is up for renewal. If you
-          believe .US registrants deserve the same privacy protections available
-          on virtually every other domain extension, contact{' '}
-          <a href='mailto:dotus@ntia.gov'>NTIA</a> or your{' '}
+          NTIA has opened competitive bidding to select a new .US registry
+          operator, with a new contract award expected in 2026. If you think .US
+          registrants should get the same privacy protections most other domains
+          have, you can tell <a href='mailto:dotus@ntia.gov'>NTIA</a> or
+          your{' '}
           <a
             href='https://www.house.gov/representatives/find-your-representative'
             target='_blank'

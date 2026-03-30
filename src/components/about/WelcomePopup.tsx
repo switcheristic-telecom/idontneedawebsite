@@ -9,7 +9,7 @@ export function WelcomePopup() {
   };
 
   return (
-    <div class='wp-overlay' onClick={dismiss}>
+    <div class='wp-overlay'>
       <div class='wp-dialog' onClick={(e) => e.stopPropagation()}>
         <div class='ab-titlebar'>
           <span class='ab-titlebar-icon'><IconMail /></span>
@@ -30,6 +30,9 @@ export function WelcomePopup() {
             <b>idontneedawebsite.us</b> is an archive of spam received after
             registering a .US domain, which publicly exposes every registrant's
             contact information by law.
+          </p>
+          <p style={{ marginTop: '4px' }}>
+            This inbox covers Jan 2024 – {__LATEST_EMAIL_DATE__} (updating).
           </p>
           <p class='wp-attribution'>
             A{' '}

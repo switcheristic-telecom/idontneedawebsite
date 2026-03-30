@@ -150,7 +150,7 @@ a:hover {
   min-height: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -324,10 +324,81 @@ a:hover {
   padding: 2px 0;
 }
 
-.menubar span {
+.menubar {
+  position: relative;
+}
+
+.menubar-item {
+  position: relative;
+  display: inline-block;
   padding: 2px 8px;
   cursor: var(--cursor-default);
   color: var(--color-heading);
+  border: 1px solid transparent;
+  border-radius: 3px 3px 0 0;
+}
+
+.menubar-item:hover {
+  background: linear-gradient(
+    180deg,
+    #fafcff 0%,
+    #e8f0fa 40%,
+    #d8e4f2 41%,
+    #e4eef8 100%
+  );
+  border-color: #9db8d4;
+}
+
+.menubar-item--open {
+  background: #fff;
+  border-color: #9db8d4;
+  border-bottom-color: #fff;
+  z-index: 1001;
+}
+
+.menubar-item--open:hover {
+  background: #fff;
+  border-color: #9db8d4;
+  border-bottom-color: #fff;
+}
+
+.menubar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  min-width: 240px;
+  background: linear-gradient(180deg, #fff 0%, #f5f7fb 100%);
+  border: 1px solid #9db8d4;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.18);
+  padding: 3px 0;
+  z-index: 1000;
+}
+
+.menubar-dropdown-item {
+  display: block;
+  padding: 5px 24px;
+  color: var(--color-heading);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: var(--cursor-pointer);
+  font-size: 12px;
+}
+
+.menubar-dropdown-item:hover {
+  background: linear-gradient(
+    180deg,
+    #e8f0fa 0%,
+    #d0dfef 100%
+  );
+  color: var(--color-heading);
+}
+
+.menubar-dropdown-sep {
+  height: 0;
+  margin: 3px 4px;
+  border-top: 1px solid #d4dfee;
 }
 
 /* Toolbar — Office 2007 glass gradient */
@@ -1693,14 +1764,14 @@ button:not(.wc-btn):active,
 }
 
 /* Wide screen: horizontal split layout (Outlook-style) */
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   /* Horizontal split: email list left, reading pane right */
   .content-main > .email-client-content {
     flex-direction: row;
   }
 
   .content-main > .email-client-content > .message-list-pane {
-    flex: 0 0 340px;
+    flex: 0 0 280px;
     overflow-y: auto;
   }
 
@@ -1905,6 +1976,13 @@ button:not(.wc-btn):active,
 
   .message-list-pane .email-table tr.email-row.selected:hover {
     background: #cde6f7;
+  }
+}
+
+/* Wider screen: expand email list */
+@media (min-width: 1200px) {
+  .content-main > .email-client-content > .message-list-pane {
+    flex: 0 0 340px;
   }
 }
 
