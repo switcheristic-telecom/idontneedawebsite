@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Shadow layer (baked, no filter for Safari compat) -->
+  <path d="M6.5 3.5 L6.5 25.5 L12 20 L17 30 L20.5 28 L15.5 18 L23 18 Z"
+        fill="black" opacity="0.18"/>
+  <!-- Main arrow -->
+  <path d="M5 2 L5 24 L10.5 18.5 L15.5 28 L19 26.5 L14 16.5 L21.5 16.5 Z"
+        fill="white" stroke="black" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

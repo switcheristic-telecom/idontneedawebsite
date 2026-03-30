@@ -202,7 +202,7 @@ function MiniMonthGrid({
               <td
                 key={dateStr}
                 class={`mini-cal-day${total > 0 ? " has-activity" : ""}${isRegistration ? " cal-day-registration" : ""}`}
-                style={{ background: bg, color: fontColor, cursor: total > 0 ? "pointer" : undefined, position: total > 0 ? "relative" : undefined }}
+                style={{ background: bg, color: fontColor, position: total > 0 ? "relative" : undefined }}
                 title={
                   activity
                     ? `${dateStr}${isRegistration ? " (Registration Day)" : ""}: ${activity.emails} email(s), ${activity.calls} call(s)`
