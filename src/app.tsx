@@ -71,7 +71,7 @@ function AppShell() {
             <span class='titlebar-icon'>
               <IconMail />
             </span>
-            <span class='titlebar-text'>Inbox - idontneedawebsite Mail (Jan 2024 – {__LATEST_EMAIL_DATE__})</span>
+            <span class='titlebar-text'>idontneedawebsite Mail</span>
             <div class='window-controls'>
               <button class='wc-btn wc-minimize' title='Minimize' aria-label='Minimize'>
                 <IconMinimize />

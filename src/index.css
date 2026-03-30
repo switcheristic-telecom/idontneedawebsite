@@ -5,6 +5,10 @@
   -webkit-user-select: none;
 }
 
+html {
+  cursor: var(--cursor-default);
+}
+
 @font-face {
   font-family: 'Segoe UI';
   src: url('/assets/fonts/segoeui.woff') format('woff');
@@ -48,6 +52,8 @@
   --bg-hover: #d8e8f8;
   --border-separator: #d0dce8;
   --border-nav-sep: #c8d4e2;
+  --cursor-default: url('/assets/cursors/aero-default.png') 0 0, default;
+  --cursor-pointer: url('/assets/cursors/aero-pointer.png') 6 0, pointer;
 }
 
 * {
@@ -70,6 +76,7 @@ body,
 
 a {
   color: #0066cc;
+  cursor: var(--cursor-pointer);
 }
 a:visited {
   color: #800080;
@@ -198,7 +205,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: default;
+  cursor: var(--cursor-default);
   padding: 0;
   color: #1c3e6e;
   background: linear-gradient(
@@ -319,7 +326,7 @@ a:hover {
 
 .menubar span {
   padding: 2px 8px;
-  cursor: default;
+  cursor: var(--cursor-default);
   color: var(--color-heading);
 }
 
@@ -345,7 +352,7 @@ a:hover {
   border: 1px solid transparent;
   border-radius: 3px;
   padding: 3px 8px;
-  cursor: default;
+  cursor: var(--cursor-default);
   vertical-align: middle;
   color: #8a9bb0;
 }
@@ -357,7 +364,7 @@ a:hover {
 
 .toolbar-btn--active {
   color: #1e3a5f;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .toolbar-btn--active:hover {
@@ -438,7 +445,7 @@ a:hover {
   padding: 4px 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid var(--border-panel);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   user-select: none;
 }
 
@@ -470,7 +477,7 @@ a:hover {
 
 .folder-item {
   padding: 2px 6px 2px 20px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -517,7 +524,7 @@ a:hover {
 .folder-item--disabled {
   padding-left: 28px;
   color: var(--color-text-faint);
-  cursor: default;
+  cursor: var(--cursor-default);
 }
 
 .nav-tree-scroll {
@@ -544,7 +551,7 @@ a:hover {
   align-items: center;
   gap: 6px;
   padding: 6px 10px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   font-size: 11px;
   font-weight: bold;
   border-bottom: 1px solid var(--border-nav-sep);
@@ -594,7 +601,7 @@ a:hover {
   justify-content: center;
   width: 28px;
   height: 24px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   font-size: 14px;
   border-right: 1px solid var(--border-nav-sep);
   background: linear-gradient(180deg, #f2f6fb, #e2e9f2);
@@ -614,7 +621,7 @@ a:hover {
   border: 1px solid var(--border-panel-inner);
   border-left: none;
   padding: 3px 8px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   font-weight: normal;
   text-align: left;
   white-space: nowrap;
@@ -631,7 +638,7 @@ a:hover {
 
 /* Date group header */
 .date-group-header {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .date-group-header td {
@@ -656,7 +663,7 @@ a:hover {
 
 /* Email row */
 .email-row {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .email-row:hover {
@@ -679,7 +686,7 @@ a:hover {
 
 /* Pinned about row */
 .about-row {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   background: #fffff0;
   font-weight: bold;
 }
@@ -770,7 +777,7 @@ a:hover {
 .reading-header .from-link {
   color: var(--color-link, #0066cc);
   text-decoration: none;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .reading-header .from-link:hover {
@@ -821,7 +828,7 @@ button:not(.wc-btn),
   padding: 2px 10px;
   min-height: 22px;
   font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   outline: none;
   color: var(--color-text-body);
 }
@@ -1480,7 +1487,7 @@ button:not(.wc-btn):active,
 }
 
 .mini-cal-day.has-activity {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   font-weight: bold;
 }
 
@@ -1528,7 +1535,7 @@ button:not(.wc-btn):active,
   font-family: inherit;
   font-size: 9px;
   color: #1a3a5c;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   border-radius: 2px;
   text-align: left;
 }
@@ -1647,7 +1654,7 @@ button:not(.wc-btn):active,
 
 .vista-context-menu li {
   padding: 4px 28px 4px 28px;
-  cursor: default;
+  cursor: var(--cursor-default);
   position: relative;
   white-space: nowrap;
 }
@@ -1836,7 +1843,7 @@ button:not(.wc-btn):active,
   }
 
   .card-sort-btn {
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
   }
 
   .card-sort-btn:hover {
@@ -2049,7 +2056,7 @@ button:not(.wc-btn):active,
   background: var(--gradient-light-bar);
   border: 1px solid var(--border-panel);
   border-radius: 2px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   white-space: nowrap;
 }
 
@@ -2060,7 +2067,7 @@ button:not(.wc-btn):active,
 
 .ab-goto-btn:disabled {
   opacity: 0.5;
-  cursor: default;
+  cursor: var(--cursor-default);
 }
 
 /* Contact list — matches .panel-inset */
@@ -2098,7 +2105,7 @@ button:not(.wc-btn):active,
   font-weight: normal;
   font-size: 11px;
   color: #1e3a5f;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   user-select: none;
   white-space: nowrap;
 }
@@ -2137,7 +2144,7 @@ button:not(.wc-btn):active,
 
 /* Row styling — matches .email-row */
 .ab-row {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .ab-row:hover {
@@ -2187,7 +2194,7 @@ button:not(.wc-btn):active,
   top: 50%;
   transform: translateY(-50%);
   color: #888;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -2373,7 +2380,7 @@ button:not(.wc-btn):active,
   background: linear-gradient(to bottom, #f9f9f9, #e2e2e2);
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .wp-ok:hover {
@@ -2432,13 +2439,9 @@ button:not(.wc-btn):active,
     padding: 3px 4px;
   }
 
-  /* Toolbar / ribbon */
-  .toolbar-btn {
-    font-size: 9px;
-  }
-
-  .toolbar-btn .tb-icon {
-    font-size: 11px;
+  /* Hide toolbar */
+  .toolbar {
+    display: none;
   }
 
   /* Email table */

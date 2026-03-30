@@ -1,3 +1,28 @@
+const REFERENCES = [
+  { key: "krebs-2018", title: "Who Is Afraid of More Spams and Scams?", source: "Krebs on Security, 2018", url: "https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/" },
+  { key: "krebs-2023", title: "Why is .US Being Used to Phish So Many of Us?", source: "Krebs on Security, 2023", url: "https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/" },
+  { key: "ntia-2019", title: "Neustar to Continue to Operate .us Country Code Top Level Domain", source: "NTIA, 2019", url: "https://www.ntia.gov/press-release/2019/neustar-continue-operate-us-country-code-top-level-domain" },
+  { key: "wapo-2005", title: "Ruling on '.us' Domain Raises Privacy Issues", source: "Washington Post, 2005", url: "https://www.washingtonpost.com/wp-dyn/articles/A7251-2005Mar4.html" },
+  { key: "hussachai-2024", title: "Read This Before Registering a .us Domain", source: "Huss Puripunpinyo, 2024", url: "https://hussachai.medium.com/read-this-before-registering-a-us-domain-ac614fb01087" },
+] as const;
+
+function Cite({ keys }: { keys: string | string[] }) {
+  const keyArr = Array.isArray(keys) ? keys : [keys];
+  return (
+    <>
+      {keyArr.map((k, i) => {
+        const idx = REFERENCES.findIndex((r) => r.key === k);
+        return (
+          <sup key={k}>
+            {i > 0 && ' '}
+            <a href={`#ref-${k}`}>{idx + 1}</a>
+          </sup>
+        );
+      })}
+    </>
+  );
+}
+
 export function AboutPane() {
   return (
     <div>
@@ -28,7 +53,7 @@ export function AboutPane() {
         <div class='about-callout'>
           If you register a .US domain, your full name, home address, phone
           number, and email are published in a public database. You cannot opt
-          out. <b>idontneedawebsite.us</b> is an archive of what happens next.
+          out. <b>idontneedawebsite.us</b> is an archive of what happens next. This inbox covers Jan 2024 – {__LATEST_EMAIL_DATE__}.
         </div>
 
         <hr class='about-divider' />
@@ -46,9 +71,7 @@ export function AboutPane() {
             identity&mdash;but by then, data brokers and lead-generation
             scrapers had already harvested the original details. The spam never
             stopped.
-            <sup>
-              <a href='#ref-3'>3</a>
-            </sup>{' '}
+            <Cite keys="krebs-2018" />{' '}
             So he registered <b>idontneedawebsite.us</b> under the fictional
             name <b>Webb Notneeded</b> to document everything that followed. The
             name is a reply to the spam itself: most of it is from companies
@@ -65,24 +88,15 @@ export function AboutPane() {
         <p>
           The .US domain is managed by GoDaddy Registry under contract with
           NTIA, an agency of the U.S. Department of Commerce.
-          <sup>
-            <a href='#ref-1'>1</a>
-          </sup>
-          <sup>
-            <a href='#ref-5'>5</a>
-          </sup>{' '}
+          <Cite keys={["krebs-2023", "ntia-2019"]} />{' '}
           In 2005, the government banned WHOIS privacy on all .US domains,
           arguing that public registration data promotes accountability and
           deters abuse. No public comment period. No opt out.
-          <sup>
-            <a href='#ref-2'>2</a>
-          </sup>{' '}
+          <Cite keys="wapo-2005" />{' '}
           Every registrant's name, address, phone number, and email is
           published. Almost every other domain extension allows privacy
           redaction. .US does not.
-          <sup>
-            <a href='#ref-4'>4</a>
-          </sup>
+          <Cite keys="hussachai-2024" />
         </p>
 
         <p>
@@ -91,14 +105,10 @@ export function AboutPane() {
           throwaway phishing sites. An Interisle Consulting study found 30,000
           phishing domains registered on .US in a single year, at least 109
           targeting the U.S. Postal Service.
-          <sup>
-            <a href='#ref-1'>1</a>
-          </sup>{' '}
+          <Cite keys="krebs-2023" />{' '}
           The nexus requirement, proof of a connection to the United States, is
           a pre-checked dropdown.
-          <sup>
-            <a href='#ref-1'>1</a>
-          </sup>{' '}
+          <Cite keys="krebs-2023" />{' '}
           The policy exposes legitimate registrants while doing nothing to stop
           bad actors.
         </p>
@@ -176,51 +186,14 @@ DNSSEC: unsigned`}
 
         <p style={{ marginBottom: '6px', fontWeight: 'bold' }}>References</p>
         <ol class='about-references'>
-          <li id='ref-1'>
-            <a
-              href='https://krebsonsecurity.com/2023/09/why-is-us-being-used-to-phish-so-many-of-us/'
-              target='_blank'
-            >
-              Why is .US Being Used to Phish So Many of Us?
-            </a>{' '}
-            &mdash; Krebs on Security, 2023
-          </li>
-          <li id='ref-2'>
-            <a
-              href='https://www.washingtonpost.com/wp-dyn/articles/A7251-2005Mar4.html'
-              target='_blank'
-            >
-              Ruling on '.us' Domain Raises Privacy Issues
-            </a>{' '}
-            &mdash; Washington Post, 2005
-          </li>
-          <li id='ref-3'>
-            <a
-              href='https://krebsonsecurity.com/2018/03/who-is-afraid-of-more-spams-and-scams/'
-              target='_blank'
-            >
-              Who Is Afraid of More Spams and Scams?
-            </a>{' '}
-            &mdash; Krebs on Security, 2018
-          </li>
-          <li id='ref-4'>
-            <a
-              href='https://hussachai.medium.com/read-this-before-registering-a-us-domain-ac614fb01087'
-              target='_blank'
-            >
-              Read This Before Registering a .us Domain
-            </a>{' '}
-            &mdash; Huss Puripunpinyo, 2024
-          </li>
-          <li id='ref-5'>
-            <a
-              href='https://www.ntia.gov/press-release/2019/neustar-continue-operate-us-country-code-top-level-domain'
-              target='_blank'
-            >
-              Neustar to Continue to Operate .us Country Code Top Level Domain
-            </a>{' '}
-            &mdash; NTIA, 2019
-          </li>
+          {REFERENCES.map((ref) => (
+            <li id={`ref-${ref.key}`} key={ref.key}>
+              <a href={ref.url} target='_blank'>
+                {ref.title}
+              </a>{' '}
+              &mdash; {ref.source}
+            </li>
+          ))}
         </ol>
 
         <p class='about-footer'>
