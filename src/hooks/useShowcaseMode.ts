@@ -15,7 +15,9 @@ import {
 import { getCallId } from '../components/email-client/utils';
 import { CALL_NOTE_ID } from '../components/email-client/CallTable';
 
-const INTERVAL_MS = 2000;
+const INTERVAL_EMAIL_MS = 2000;
+const INTERVAL_CALL_MS = 500;
+const INTERVAL_CONTACT_MS = 500;
 const ABOUT_ID = '__about__';
 
 type Step =
@@ -80,58 +82,66 @@ export function useShowcaseMode() {
     : raw === 'contacts' ? 'contacts'
     : 'all';
 
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const indexRef = useRef(0);
   const stepsRef = useRef<Step[]>([]);
 
   useEffect(() => {
+    const tick = () => {
+      const steps = stepsRef.current;
+      if (indexRef.current >= steps.length) {
+        timerRef.current = null;
+        return;
+      }
+
+      const step = steps[indexRef.current];
+      if (step.type === 'email') {
+        showAddressBook.value = false;
+        selectedFolder.value = step.folder;
+        selectedEmailId.value = step.emailId;
+        selectedCallId.value = null;
+      } else if (step.type === 'call') {
+        showAddressBook.value = false;
+        selectedFolder.value = step.folder;
+        selectedCallId.value = step.callId;
+        selectedEmailId.value = null;
+      } else {
+        showAddressBook.value = true;
+        selectedContactKey.value = step.contactKey;
+      }
+      indexRef.current++;
+
+      requestAnimationFrame(() => {
+        const row = document.querySelector(
+          step.type === 'contact'
+            ? '.ab-table tr.selected'
+            : '.email-table tr.selected',
+        );
+        row?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      });
+
+      const delay = step.type === 'email' ? INTERVAL_EMAIL_MS
+        : step.type === 'call' ? INTERVAL_CALL_MS
+        : INTERVAL_CONTACT_MS;
+      timerRef.current = setTimeout(tick, delay);
+    };
+
     return effect(() => {
       if (showWelcomePopup.value) return;
-      if (intervalRef.current) return;
+      if (timerRef.current) return;
 
       stepsRef.current = buildSequence(mode);
       indexRef.current = 0;
-
-      intervalRef.current = setInterval(() => {
-        const steps = stepsRef.current;
-        if (indexRef.current >= steps.length) {
-          clearInterval(intervalRef.current!);
-          intervalRef.current = null;
-          return;
-        }
-
-        const step = steps[indexRef.current];
-        if (step.type === 'email') {
-          showAddressBook.value = false;
-          selectedFolder.value = step.folder;
-          selectedEmailId.value = step.emailId;
-          selectedCallId.value = null;
-        } else if (step.type === 'call') {
-          showAddressBook.value = false;
-          selectedFolder.value = step.folder;
-          selectedCallId.value = step.callId;
-          selectedEmailId.value = null;
-        } else {
-          showAddressBook.value = true;
-          selectedContactKey.value = step.contactKey;
-        }
-        indexRef.current++;
-
-        requestAnimationFrame(() => {
-          const row = document.querySelector(
-            step.type === 'contact'
-              ? '.ab-table tr.selected'
-              : '.email-table tr.selected',
-          );
-          row?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-        });
-      }, INTERVAL_MS);
+      const firstDelay = stepsRef.current[0]?.type === 'email' ? INTERVAL_EMAIL_MS
+        : stepsRef.current[0]?.type === 'call' ? INTERVAL_CALL_MS
+        : INTERVAL_CONTACT_MS;
+      timerRef.current = setTimeout(tick, firstDelay);
     });
   }, []);
 
   useEffect(() => {
     return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, []);
 }
