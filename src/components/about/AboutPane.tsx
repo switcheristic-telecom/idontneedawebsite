@@ -80,70 +80,67 @@ export function AboutPane() {
         {/* The real story */}
         <div class='about-callout'>
           When you register a .US domain, your full name, home address, phone
-          number, and email get published in a public database. No opt out.{' '}
-          <b>idontneedawebsite.us</b> is just an archive of what happens next.
-          This inbox covers Jan 2024 – {__LATEST_EMAIL_DATE__}.
+          number, and email are published in a public database. There's no way
+          to opt out. <b>idontneedawebsite.us</b> collects the spam emails,
+          robocalls, and scams that followed one registration. Everything here
+          is real, from Jan 2024 – {__LATEST_EMAIL_DATE__}.
         </div>
 
         <hr class='about-divider' />
 
         <div class='about-bio'>
           <div class='about-bio-text'>
-            <span class='about-bio-title'>I don't need a website</span>
-            <br />
-            <a href='https://yufengzhao.com' target='_blank'>
-              Yufeng
-            </a>{' '}
-            registered <b>yufeng.us</b> in 2024 because it was the cheapest
-            domain on the market. Within days, spam emails and robocalls started
-            rolling in&mdash;all sent to the contact info he'd typed during
-            registration. He swapped the WHOIS record to a fake contact, but
-            data brokers had already scraped the real one. The spam never
-            stopped.
-            <Cite keys='krebs-2018' /> So he registered{' '}
-            <b>idontneedawebsite.us</b> under the name <b>Webb Notneeded</b> and
-            started collecting everything that came in. The name is a nod to the
-            spam itself&mdash;most of it is from companies trying to sell web
-            design services.
+            <h2 class='about-bio-title'>I don't need a website</h2>
+            <p>
+              <a href='https://yufengzhao.com' target='_blank'>
+                Yufeng
+              </a>{' '}
+              registered <b>yufeng.us</b> in 2024 because it was the cheapest
+              domain available. Spam emails and robocalls followed within
+              days&mdash;all sent to the contact info from the registration
+              form.
+              <Cite keys='krebs-2018' />
+            </p>
+            <p>
+              A week later, he changed the WHOIS record to a fake contact, but
+              data brokers had already scraped the real one. The spam kept
+              coming. He registered <b>idontneedawebsite.us</b> under the name{' '}
+              <b>Webb Notneeded</b> and started saving everything that arrived.
+              Most of it is from companies trying to sell web design services.
+            </p>
           </div>
         </div>
 
-        <p>
-          Everything in this inbox is real. The emails, the phone calls, all of
-          it&mdash;sent to a made-up person at an address the government
-          publishes by law.
-        </p>
+        <h2 class='about-bio-title'>Not for .us</h2>
 
         <p>
           The .US domain is run by GoDaddy Registry under contract with NTIA,
           part of the U.S. Department of Commerce.
-          <Cite keys={['krebs-2023', 'ntia-2019']} /> Back in 2005, the
-          government banned WHOIS privacy on .US domains. The idea was that
-          public registration data would promote accountability. No public
-          comment period, no opt out.
+          <Cite keys={['krebs-2023', 'ntia-2019']} /> In 2005, the government
+          banned WHOIS privacy on .US domains. The idea was that public
+          registration data would promote accountability. No public comment
+          period, no opt out.
           <Cite keys='wapo-2005' /> Most domain extensions let you redact your
           info. .US doesn't.
           <Cite keys='hussachai-2024' />
         </p>
 
         <p>
-          The kicker: it hasn't even stopped abuse. At $5.98 a year, .US is one
-          of the cheapest domains you can get&mdash;so it's a favorite for
-          throwaway phishing sites. One study found 30,000 phishing domains on
-          .US in a single year, including at least 109 impersonating the U.S.
-          Postal Service.
-          <Cite keys='krebs-2023' /> The "nexus requirement" (proof you're
-          connected to the U.S.) is literally a pre-checked dropdown.
-          <Cite keys='krebs-2023' /> So the policy exposes real people while
-          doing nothing about the bad actors. Cool.
+          It hasn't even stopped abuse. At $5.98 a year, .US is one of the
+          cheapest domains available&mdash;and one of the most popular for
+          phishing. One study found 30,000 phishing domains on .US in a single
+          year, including at least 109 impersonating the U.S. Postal Service.
+          <Cite keys='krebs-2023' /> The "nexus requirement" (proof of a
+          connection to the U.S.) is a pre-checked dropdown.
+          <Cite keys='krebs-2023' /> The policy publishes real people's
+          information and deters none of the abuse it was meant to prevent.
         </p>
 
         <p style={{ marginBottom: '12px' }}>
-          NTIA has opened competitive bidding to select a new .US registry
-          operator, with a new contract award expected in 2026. If you think .US
-          registrants should get the same privacy protections most other domains
-          have, you can tell <a href='mailto:dotus@ntia.gov'>NTIA</a> or
-          your{' '}
+          NTIA is selecting a new .US registry operator, with a decision
+          expected in April 2026. If you think .US registrants should get the same
+          privacy protections most other domains have, you can tell{' '}
+          <a href='mailto:dotus@ntia.gov'>NTIA</a> or your{' '}
           <a
             href='https://www.house.gov/representatives/find-your-representative'
             target='_blank'
@@ -227,8 +224,14 @@ DNSSEC: unsigned`}
           <a href='https://swtch.tel' target='_blank'>
             Switcheristic Telecommunications
           </a>{' '}
-          project &middot; &copy; 2024&ndash;{__LATEST_EMAIL_YEAR__} Webb
-          Notneeded
+          project &middot;{' '}
+          <a
+            href='https://github.com/switcheristic-telecom/idontneedawebsite'
+            target='_blank'
+          >
+            source code
+          </a>{' '}
+          &middot; &copy; 2024&ndash;{__LATEST_EMAIL_YEAR__} Webb Notneeded
         </p>
       </div>
     </div>
