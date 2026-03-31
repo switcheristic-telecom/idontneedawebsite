@@ -1,10 +1,10 @@
 # I Don't Need a Website
 
-A case study documenting the spam that follows registering a .US domain — where WHOIS privacy redaction is not allowed.
+When you register a .US domain, your full name, home address, phone number, and email are published in a public WHOIS database. There is no way to opt out.
 
-After registering `idontneedawebsite.us` with a ProtonMail email and Google Voice number, the registrant's personal information (name, address, phone, email) was immediately exposed via WHOIS. Within days, a flood of spam emails and phone calls arrived — web developers, SEO firms, and marketing agencies all eager to build a website for someone who doesn't need one.
+In 2024, [Yufeng](https://yufengzhao.com) registered `yufeng.us` because it was the cheapest domain available. Spam emails and robocalls followed within days — all sent to the contact info from the registration form. He changed the WHOIS record to a fake contact, but data brokers had already scraped the real one. The spam kept coming.
 
-This project collects and displays that spam as a public record.
+He registered `idontneedawebsite.us` under the name **Webb Notneeded** and started saving everything that arrived. Most of it is from companies trying to sell web design services.
 
 ## Live Site
 
@@ -46,8 +46,14 @@ This will:
 ```text
 ├── sync.py                 # Email sync + build (pexpect + proton-mail-export-cli)
 ├── lib/eml_parser.py       # MIME email parser
-├── index.html              # Static site entry point
-├── scripts/main.js         # Frontend: renders email feed from metadata JSON
+├── index.html              # Vite entry point
+├── src/
+│   ├── app.tsx             # Root Preact component
+│   ├── main.tsx            # Preact entry point
+│   ├── components/         # UI components (email client, about, calendar, etc.)
+│   ├── data/               # Data loaders (emails, calls)
+│   ├── hooks/              # Custom hooks
+│   └── utils/              # Helpers (search, highlight)
 ├── data/
 │   ├── emails/             # Raw .eml + .metadata.json files
 │   └── calls/              # Google Voice call logs (via Google Takeout)
@@ -56,6 +62,7 @@ This will:
 │   ├── email-metadata.json # Aggregated metadata for frontend
 │   └── assets/             # DALL-E portraits, logos
 ├── pyproject.toml          # Python project config (uv)
+├── vite.config.ts          # Vite + Preact config
 └── .env                    # Credentials (gitignored)
 ```
 
