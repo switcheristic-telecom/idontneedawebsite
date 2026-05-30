@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "zTxkG4Vq6Y8RUSzLqEr8k4OYcKZJc-CBSXEKj_JqDvO_11hLDuI3F5xmzn1P57xVexztLMEDam0zasy3gJhbiQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "22"
+    ],
+    "ExternalID": "0d184765-1abc-4b07-8ff9-4fb7a1f6ce11.waylon@jingxinresearch.com",
+    "Subject": "Vehicle-To-Grid (V2G)",
+    "Sender": {
+      "Name": "Waylon",
+      "Address": "waylon@jingxinresearch.com"
+    },
+    "ToList": [],
+    "CCList": [
+      {
+        "Name": "vicxin132",
+        "Address": "vicxin132@163.com"
+      }
+    ],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Waylon",
+        "Address": "waylon@jingxinresearch.com"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1779433641,
+    "Size": 600,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cwaylon@jingxinresearch.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from out0-44.static.mail.aliyun.com (out0-44.static.mail.aliyun.com\r\n [59.82.0.44]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur103.protonmail.ch (Postfix) with ESMTPS id\r\n 4gMGYj4snQz3V for \u003cidontneedawebsite@proton.me\u003e; Fri, 22 May 2026 07:07:21 +0000 (UTC)\r\nReceived: from WS-web\r\n (waylon@jingxinresearch.com[W4_0.2.3_v5ForWebDing_0B530412_1779433610749_o7001c141r]\r\n cluster:ay29) at Fri, 22 May 2026 15:06:51 +0800\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=jingxinresearch.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=jingxinresearch.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=59.82.0.44\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nX-Alimail-Antispam: AC=CONTINUE;BC=0.532356|-1;BR=01201311R431S45rulernew9999_292140_250212;CH=yellow;DM=|CONTINUE|false|;DS=CONTINUE|ham_news_journal|0.268596-0.162245-0.569159;FP=11074631471224798869|1|1|135|0|-1|-1|-1;HT=maildocker-contentspam033037025160;MF=waylon@jingxinresearch.com;NM=1;PH=DW;RN=252;RT=1;SR=0;TI=W4_0.2.3_v5ForWebDing_0B530412_1779433610749_o7001c141r;\r\nDate: Fri, 22 May 2026 15:06:51 +0800\r\nFrom: \"Waylon\" \u003cwaylon@jingxinresearch.com\u003e\r\nCc: \"vicxin132\" \u003cvicxin132@163.com\u003e\r\nReply-To: \"Waylon\" \u003cwaylon@jingxinresearch.com\u003e\r\nMessage-Id: \u003c0d184765-1abc-4b07-8ff9-4fb7a1f6ce11.waylon@jingxinresearch.com\u003e\r\nSubject: Vehicle-To-Grid (V2G)\r\nX-Mailer: [Alimail-Mailagent revision 57][W4_0.2.3][v5ForWebDing][Chrome]\r\nMime-Version: 1.0\r\nX-Aliyun-Im-Through: {\"version\":\"v1.0\"}\r\nX-Aliyun-Mail-Creator: W4_0.2.3_v5ForWebDing_M3LTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE0OC4wLjAuMCBTYWZhcmkvNTM3LjM2vN\r\nX-Aliyun-Mailtrack: {\"foreign-track\":\"0\"}\r\nContent-Type: text/html\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnPFJURIC6sQjMlISBRfT\r\n 0FFJURlEDPlEViT6IwiMSilMUOEj45MjLCLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIlmtldWY2Xh5U\r\n ibWoiJOcR3hft2YmZul90ZVlW5dZ9Fwy8VdDM2IMwMDsyIMI1mhfxWa3MyB1vX2sGVZIojipFWbDbw\r\n N0tciyjAMNAjxuYDMHciQJtLCsWlYXNzww9lcmci9owIjwjALMMD45kTMTO5kM1ODyzQMMcTsh1mIW\r\n a0xh0ZXt2VXYVmkulGZ1Zt9Rlb26CIbIlmusZGd2b0F11L2pHRbblGuhV3ZCbl11zNSsWFbbICsfBn\r\n I3chBI6bS5C4MOgDzyIjNTN3IIyMT4DkNLJCwwN3XWYf1FzYm6SIZM4C5zgDOjNyII3NTyTIMNkD4w\r\n JCL3X3NRjaX0F9ab91wzlGaGaulI6ZywC4MOMT4yUTODMzQUyNj0TMNNwSiuVnc2Xh5UibW3iJOYRX\r\n jpxGa3ctQVuc2yGVZLBX13N3XXajRJ9aCsX0fINnyiQWaiO2IEwYTiDBMYMz1zMTMmZ4UVkZTj2RMM kjifX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

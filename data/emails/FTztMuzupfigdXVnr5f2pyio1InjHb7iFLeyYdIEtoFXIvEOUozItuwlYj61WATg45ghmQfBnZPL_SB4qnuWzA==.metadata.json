@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "FTztMuzupfigdXVnr5f2pyio1InjHb7iFLeyYdIEtoFXIvEOUozItuwlYj61WATg45ghmQfBnZPL_SB4qnuWzA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "003c01dcef9c$1ef0b3a0$5cd21ae0$@att.net",
+    "Subject": "Dosa - Your Application ",
+    "Sender": {
+      "Name": "",
+      "Address": "Doss87421@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "Doss87421@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "Doss87421@att.net"
+      }
+    ],
+    "Flags": 1082130433,
+    "Time": 1780080681,
+    "Size": 1809,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cDoss87421@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=quarantine dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.184.46\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"CkRF9Vs6\"\r\nReceived: from sonic317-35.consmr.mail.ne1.yahoo.com\r\n (sonic317-35.consmr.mail.ne1.yahoo.com [66.163.184.46]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur102.protonmail.ch (Postfix) with ESMTPS id\r\n 4gRsrn64yzz5N for \u003cidontneedawebsite@proton.me\u003e; Fri, 29 May 2026 18:51:21 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.ne1.yahoo.com with\r\n HTTP; Fri, 29 May 2026 18:51:20 +0000\r\nReceived: by hermes--production-sg3-659b68f58d-cclnr (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 384522a93714b5d42c1346e0df8f0f81;\r\n          Fri, 29 May 2026 18:51:13 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1780080680;\r\n bh=AwCYcEw1hiWPxXX04B0ShWlXSt+JmL0c7Z9LT5Aqh0k=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=CkRF9Vs6jjw67HYWFYxcyqCxAmwFuhe0yl93yTkv7k99TveemTUtp+pIMLwNkLLpDEyGE9nKDz5WezRJ6b5yvAD5NSVsOvAWBaBpyFgYxAARaRa3JXI55iZ/AAzvy8uOq0gpChbcmothSU+pNPqyIqNOBZrp7m5c404+xsSooiU=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1780080680; bh=CM1JZWb/dc2hYWDURsp2N8YGD7UuOj6afzxga625Fhv=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=N+Gb/ogaHtwtTDHkSG6zKjRVbWdd8F/fhX/Qp8kFSAZ5EIaKzjM7RZOEQxz6gSux23DnN5A5IslfRQ10nTP+ehURrThqho3HDH6H4iUppe6kZIf1HgUXNLBPYFs+mN3sDT1ljL8ck6K689z7sTFYTr+mbg0S2z6xk8SmNh+npfzrK/BrdVbstQnXBdGJapwbCP4lad83OjUagM2P4y5JEYnqUG8PzyzuHWbt/KMcZAf8p4+P8uVq8V2012tHWBICPIb1hWVfNzucGhbAQWVvB2x4KGtNWfxiRNwbJYz4nxxzyWJldL03DZEM97Zvt4doiINwE0FLJzhnOL1pC6GyPQ==\r\nX-Ymail-Osg: ICxmaVIVM1l4AiNyd8r7mV4ocbulKOdcsYn6ACaL1MLctXDtvAASHATcTc2cWBV\r\n ovwGvhYSmIe0fgVCsq65ipOD_sT4_Af4hrzNtwhFyIJexH4JOQhxYVaECmUST3pjnve44slfEAER\r\n 9rGSRRfCYnsx35w8dct6w7YYFzPOZti6NRNav59xXz3m6WM5YOBRePUsqsrtPRhBMSLoLeEgiavz\r\n IGQiNMgFunLOXEchgCT4AEC_UhPN0an5yYdGPnOexNQICpbj81oFdw2o98moe30lVzh2Wqfcn63H\r\n aEyP1ei3ZcqNGRgABjXRjvwXqmyivRBPMldBytiR6_CSofsT_WbAZ9WsIUt4lL8B2xutc6jxgvUL\r\n 5Kpr7olAmR6GL6q1FQHi8YGb1GqwuB106hFcScYx1Bl7v_lTuSZ7N2pQ3VXe2GFLjcyqI1v9cfWZ\r\n hq7ewpWZR1NXpiURKQwMRNLjr5_c0lJCbGIsZW60HOtLEDmNJoBmlgbvEgQ16fLudB2mI.JH7Dfj\r\n aKB4bdX_QxaemDvajUFZ3vM4EXD3a87e9sDS6SwIignMzapUm0ntz8m5XjIBroluqP6TsiR5X.bV\r\n jx9IEUNAuY58C7J11REF7EepuQpb1dFNacjKd.5j8JzYkne84wsBBPyYI91sr2LHBuuFiQGuNP5E\r\n vSn4H_OcscSjix6.ypOR0CnecGhtEpu7awUzFndSSshre82LkktJMgBret37YS7nqPqV_W8u5RPy\r\n XxwE6uXbQR9IxzeAe_g0u2eL.CgGLAmk_MwFbrmP6CL5phwZ7m5HefXB1bgrpmh9CzmauxLh6Vkt\r\n Ovi8Gbed82dmX62UI6GfsnSaMGlRDT8qBb6Q22rufL92SCHMrqrUWYh6nNfSOiHtkvWZEyTOpdqa\r\n aPUhDgQvACJ5GN10CHti_QYEKABfku279TzhqIUI51cK30IufCI4d7PyPoTTxu3W7vXko0nEVcDj\r\n amnHFC4.eLAhpuXlQ1ReBIRA23nrEjCg6RtueIRa9W2DOEPPZ34D4jcYd4AAU.YfYFkHVQRwhtj1\r\n KiPyOtmxSKActu2pE6.76OWc7DefRuQUJpkgugN8FtPMTfJrQEYmKI4fjHvlkNmIRgF3mkXqR83E\r\n NHPdul0SpikdJaAGobX7vZQ300S5PjftS7NL8_JcJ3.Uqi2g2ZI5OdI.zKEkOVRvWMZswneQTjhm\r\n lJ2UoS6lTBuu.FaDfpaJRUgQO7hMGU3yZywDzDIWYB_.1XiwYUtvyPNpivLbwXIU8jnSl_uTRYyo\r\n 1SsjwOTLOukZ_wzCVms3y1b0YkzhMCCVpoAsL2oO85HXr91KNlpNJE43IypWrCoVVkqLMhSvAEwL\r\n jOrB8kzIS6LFQsSqqS0FXjmgsqp5iiS6d6rci5zN6pRnnJ9pUYQAD.IDGA00ZUoNWEmUN6qXbBux\r\n 0sy1ZQPcMqJ5v.gi7Ho3UKAjai2cZ.fztjYDqjQUWNNF6l7TIxCzULcdaZAipHjKjb0.Jx2fMGDN\r\n oZ5CW7j1xcrYzVx1QZTFvwG9yUUXVE1dEnIQM1x9p1q.eZ_0DzK91vL2yqsuqtgREAExTupMYql7\r\n 8EBrUZCqkGUjeh3LZWqxL.vVUkr1e9p5nYfcqGPWZE2onJVjNkoYFb6ETvG9qAP4nsabciZKqM6D\r\n CfCyBK5gNtjBTSMuoTg4sjxMU4NcRqgwK7UaDRydCUtjzmG5a1bGY4Ig9LQ5UrUI_Quj0rpluoa3\r\n 6MptzQ.uZEfabZ5.TxG0qRxvk0rhUL5A6McppHDtqGjYZ9PAujY80DO5b.io00qfmiB6xxrCuic2\r\n owwxigKID6aUb47xBhUWy86FGI_LLr8TRXMJjh6XuVbWcBkay7H7zJu4yTfgaGO4o2CENDc2UwVb\r\n SqSBmQminVZXDbBpv4b7K8ti2P77J0LT8hvQGbKzZi5eV4hA2n.9xQIvL_12_8gwAnenQwfHRela\r\n 6oXBkWMiAS3sBpWzOKE9TOJRQE77CG4IYZZNOCafXowJay9Zp1eK3ay.N.Pk4TNnp3Sl4ARi05vB\r\n vWl.5njcVhR77s16HEKKWq_dhQ.WSJGtZIjV.3umj8Xp8M0oubyJiM41pa_95BT_kKJVod15p4rL\r\n 1y92Ex1BIn1OCmQNVApNphLPvShaXUX7HDGGQybiQqv8SnhadVaieLcPZBpejBrD6onO41FCI9f3\r\n DUJrQr42IRgS4ZR7wBTkZvv0tOrZAWw3zkv6un.V46900ZvCRoQi4urEpsGxBZg--\r\nX-Sonic-Mf: \u003cDoss87421@att.net\u003e\r\nX-Sonic-Id: f0d30132-fed8-4f89-a8c4-3551ffa34e39\r\nFrom: \u003cDoss87421@att.net\u003e\r\nTo: \u003cDoss87421@att.net\u003e\r\nReferences: \u003c003c01dcef9c$1ef0b3a0$5cd21ae0$.ref@att.net\u003e\r\nSubject: Dosa - Your Application\r\nDate: Fri, 29 May 2026 11:50:58 -0700\r\nMessage-Id: \u003c003c01dcef9c$1ef0b3a0$5cd21ae0$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: AdzvnAyJZdY04WufR7C9t8MxtHdiNQAAACZw\r\nContent-Language: en-in\r\nX-Antivirus: Avast (VPS 260529-6, 29-5-2026), Outbound message\r\nX-Antivirus-Status: Clean\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2OimGFONIDxxUGO2NiFA0O\r\n DwzcMYYj3iEGNCLzJlkcmijoINEmxwUWOmMwEljYTxjkZYgz5xgTNDZlN19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

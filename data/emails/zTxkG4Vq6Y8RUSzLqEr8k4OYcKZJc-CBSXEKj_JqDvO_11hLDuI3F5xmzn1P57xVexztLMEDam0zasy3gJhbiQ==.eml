@@ -1,0 +1,58 @@
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+References: <zTxkG4Vq6Y8RUSzLqEr8k4OYcKZJc-CBSXEKj_JqDvO_11hLDuI3F5xmzn1P57xVexztLMEDam0zasy3gJhbiQ==@protonmail.internalid>
+X-Pm-Date: Fri, 22 May 2026 07:07:21 +0000
+X-Pm-External-Id: <0d184765-1abc-4b07-8ff9-4fb7a1f6ce11.waylon@jingxinresearch.com>
+X-Pm-Internal-Id: zTxkG4Vq6Y8RUSzLqEr8k4OYcKZJc-CBSXEKj_JqDvO_11hLDuI3F5xmzn1P57xVexztLMEDam0zasy3gJhbiQ==
+Cc: "vicxin132" <vicxin132@163.com>
+Reply-To: "Waylon" <waylon@jingxinresearch.com>
+From: "Waylon" <waylon@jingxinresearch.com>
+Subject: Vehicle-To-Grid (V2G)
+X-Pm-Spam-Action: spam
+X-Pm-Spamscore: 0
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Origin: external
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnPFJURIC6sQjMlISBRfT 0FFJURlEDPlEViT6IwiMSilMUOEj45MjLCLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIlmtldWY2Xh5U ibWoiJOcR3hft2YmZul90ZVlW5dZ9Fwy8VdDM2IMwMDsyIMI1mhfxWa3MyB1vX2sGVZIojipFWbDbw N0tciyjAMNAjxuYDMHciQJtLCsWlYXNzww9lcmci9owIjwjALMMD45kTMTO5kM1ODyzQMMcTsh1mIW a0xh0ZXt2VXYVmkulGZ1Zt9Rlb26CIbIlmusZGd2b0F11L2pHRbblGuhV3ZCbl11zNSsWFbbICsfBn I3chBI6bS5C4MOgDzyIjNTN3IIyMT4DkNLJCwwN3XWYf1FzYm6SIZM4C5zgDOjNyII3NTyTIMNkD4w JCL3X3NRjaX0F9ab91wzlGaGaulI6ZywC4MOMT4yUTODMzQUyNj0TMNNwSiuVnc2Xh5UibW3iJOYRX jpxGa3ctQVuc2yGVZLBX13N3XXajRJ9aCsX0fINnyiQWaiO2IEwYTiDBMYMz1zMTMmZ4UVkZTj2RMM kjifX0=
+X-Spam: Yes
+X-Aliyun-Mailtrack: {"foreign-track":"0"}
+X-Aliyun-Mail-Creator: W4_0.2.3_v5ForWebDing_M3LTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE0OC4wLjAuMCBTYWZhcmkvNTM3LjM2vN
+X-Aliyun-Im-Through: {"version":"v1.0"}
+Mime-Version: 1.0
+X-Mailer: [Alimail-Mailagent revision 57][W4_0.2.3][v5ForWebDing][Chrome]
+Message-Id: <0d184765-1abc-4b07-8ff9-4fb7a1f6ce11.waylon@jingxinresearch.com>
+Date: Fri, 22 May 2026 15:06:51 +0800
+X-Alimail-Antispam: AC=CONTINUE;BC=0.532356|-1;BR=01201311R431S45rulernew9999_292140_250212;CH=yellow;DM=|CONTINUE|false|;DS=CONTINUE|ham_news_journal|0.268596-0.162245-0.569159;FP=11074631471224798869|1|1|135|0|-1|-1|-1;HT=maildocker-contentspam033037025160;MF=waylon@jingxinresearch.com;NM=1;PH=DW;RN=252;RT=1;SR=0;TI=W4_0.2.3_v5ForWebDing_0B530412_1779433610749_o7001c141r;
+Authentication-Results: mail.protonmail.ch; dkim=none
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=59.82.0.44
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=jingxinresearch.com
+Authentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none) header.from=jingxinresearch.com
+Received: from WS-web (waylon@jingxinresearch.com[W4_0.2.3_v5ForWebDing_0B530412_1779433610749_o7001c141r] cluster:ay29) at Fri, 22 May 2026 15:06:51 +0800
+Received: from out0-44.static.mail.aliyun.com (out0-44.static.mail.aliyun.com [59.82.0.44]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No client certificate requested) by mailinzur103.protonmail.ch (Postfix) with ESMTPS id 4gMGYj4snQz3V for <idontneedawebsite@proton.me>; Fri, 22 May 2026 07:07:21 +0000 (UTC)
+Delivered-To: idontneedawebsite@proton.me
+X-Original-To: idontneedawebsite@proton.me
+Return-Path: <waylon@jingxinresearch.com>
+
+<div class=3D"__aliyun_email_body_block"><div  style=3D"font-family: Tahoma=
+, Arial, STHeitiSC-Light, SimSun"><div  style=3D"clear: both; font-family: =
+Tahoma, Arial, STHeitiSC-Light, SimSun;"><span  style=3D"font-family: Tahom=
+a, Arial, STHeitiSC-Light, SimSun;"><span >Hi,</span></span><div  style=3D"=
+clear: both;">We published A Report on Vehicle-To-Grid (V2G).</div><div  st=
+yle=3D"clear: both;">The following manufacturers are covered:</div><div  st=
+yle=3D"clear: both;">NUVVE</div><div  style=3D"clear: both;">Enel Energia</=
+div><div  style=3D"clear: both;">The Mobility House</div><div  style=3D"cle=
+ar: both;">China State Grid</div><div  style=3D"clear: both;">Fermata Energ=
+y</div><div  style=3D"clear: both;">E.ON</div><div  style=3D"clear: both;">=
+ActewAGL</div><div  style=3D"clear: both;">KEPCO</div><div  style=3D"clear:=
+ both;">EDF Energy</div><div  style=3D"clear: both;">ABB</div><div  style=
+=3D"clear: both;">Tokyo Electric Power</div><div  style=3D"clear: both;">=
+=E2=80=A6=E2=80=A6</div><div  style=3D"clear: both;">If you have future int=
+erest in this report or related reports, please contact: xin@vicmarketresea=
+rch.com, we would be happy to share the sample report for your reference.</=
+div><div  style=3D"clear: both;">Best regards / Mit freundlichen Gr=C3=BC=
+=C3=9Fen / =E6=AD=A4=E8=87=B4=E6=95=AC=E6=84=8F,</div><div ><span >Xin</spa=
+n></div><span  style=3D"font-family: Tahoma, Arial, STHeitiSC-Light, SimSun=
+;"><br ></span></div><div  style=3D"clear: both; font-family: Tahoma, Arial=
+, STHeitiSC-Light, SimSun;"><span  style=3D"font-family: Tahoma, Arial, STH=
+eitiSC-Light, SimSun;"><br ></span></div><div  class=3D"alimail-signature">=
+</div></div></div>
