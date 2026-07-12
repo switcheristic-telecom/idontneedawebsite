@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "ERVSLcyWZpFZ1hkssi3oD0L9NVPB9bquF3kZa52gcGhOAthCWsJmnmRiyXn-cu5Jwsm4dEsXzRYAbkLhUnY7Tg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "00b901dcfca3$e9012f30$bb038d90$@net",
+    "Subject": "mobile apps",
+    "Sender": {
+      "Name": "",
+      "Address": "VirginiaRobion4554@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "VirginiaRobion4554@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "VirginiaRobion4554@att.net"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1781513506,
+    "Size": 1212,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cVirginiaRobion4554@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=quarantine dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.186.176\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"SpBa41TL\"\r\nReceived: from sonic302-50.consmr.mail.ne1.yahoo.com\r\n (sonic302-50.consmr.mail.ne1.yahoo.com [66.163.186.176]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinzur105.protonmail.ch (Postfix) with ESMTPS id\r\n 4gf3l642lZz3k for \u003cidontneedawebsite@proton.me\u003e; Mon, 15 Jun 2026 08:51:46 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic302.consmr.mail.ne1.yahoo.com with\r\n HTTP; Mon, 15 Jun 2026 08:51:45 +0000\r\nReceived: by hermes--production-gq1-7bb7df5c46-rzgvh (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 0285f9d9e1ac8bb849f71525c7ebab39;\r\n          Mon, 15 Jun 2026 08:49:43 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1781513505;\r\n bh=toEZ19vL8QB5Lw+wtNOsp6P7L16yokZfxWKKPTFYGjg=;\r\n h=From:To:Subject:Date:References:From:Subject:Reply-To;\r\n b=SpBa41TLujwU5TwTbxiVFmyuwo6EPaX0uzjWNT43mf9HG0/IulvwIm2T/YN2JxVmgNvojAzXUEXAYDPkVH8CduOwKOHcViMCbi6llMEsb6hSwaQ0elP5ZfCAGmOa+8c5+2KVmzIwbXkL5etc4JBlhaeTKr2UoY9Jt9nPgT+562w=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1781513505; bh=2/0p7vEVSCWvPFWHdeM8bzok+fB+b2qA4lcb6OjxrSE=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=f0xz+UJx6+sI1cTz1XBziKd9xHfN5wCt4i9B0cHrALBfY1V/EFDwsmHDwOfMaAxPQQK7Ikql7Lu0FcsbUGqC8ftUVq9cbueO1/i6Ymv8rYp3k4yqXVbLK5323VrWhmPkhnWDdAF+Jk9b5ciiVXTsyMRGZN7e/Yr8ewMSnLUpferR78RlCvQ00YkgxJ6hS5V2fsywgaEfjdYomjuNft/uOuPA1SNmm3lkqT9GFPvnx2E4hgift+SjCzBqAQLpuRmlVy/Xp983Vc3sdy1bYkkIGlrdflEotlBN1GahDt1MR5PeKNYdcl4caV+LKBx08OQlLZlHoPyFBvWI8NDmQq2Ogw==\r\nX-Ymail-Osg: 8_ECg94VM1kRhzXjgNEpiN8JF5ShEjdG.GI33QvtcQNO5BBNO9ihvJYlATe8kJX\r\n AXHx_kC3hRNzAPBJR22RC7WICtSnMER2Xb6qDTGwJmVb7tuAElu37.dnoIAki_OOCw9Qe5F7ERCs\r\n Bv3T9i4yHAKEwYeKGb5VApXEhJtbPajtIKhovCMOgdkVkiHRFYH9xkm4HfH7lUuz7Msk1AgZGt4R\r\n CRSokqp_QyYCpvKmxNtTpMTCHAQP4XZNC_wkRhlhlxCbP64ug8A.AkAwDTxROMnmF8ZVrD_5y2D4\r\n 9aSbSbPvUBXZKdjtW4on2irngotpFi8dxs_F1o2S_J0wsox3ydDczm3XnBBXqJitEOYoSuqk96Dn\r\n zqn3DYL6_jOx_KHSP2kAPqgJdOgC649oeClvIIv.a5w1Rzcg42MGsi4ZlmivTDmd.D8zs.qyPcO2\r\n GbaiGwCpfrSE1Ks3W9VkmWdJk2DdSGvpjrugO6yTmCsfawX8sqQ5yRPAOHQTN_nQIQzK0OFLclQM\r\n gwNstwGFqIXhvIElQ9Q8dEwhfHyJ8QROL4iKt7VUpPHLotJ.yIiaOGc5pnqUEXrTY5PkdDPJ.69k\r\n 5AaSVS2DvsRlqbgXeNNajySMDTWiG5elv1xHxr9Q1S2BySSqbLvAx4eSbmflsmF7Z3feAw6LBqku\r\n p5xzC472Yyqmtrx82EVCr4To0DHaTDAxnw9kXhNt8C22zs_1NYYMbJ6u_ZGmS.salf_oOiFEu54s\r\n RiuXaGrN0mSQvxLpEcQ3hRkBZxIvwpkyNN26oDYeqyJSv_2bGOydCbopgd9e2wiJrngl3SheYGFs\r\n 8AnQ0UnXQrV5.Tv46l5e8bSk2XPS09Fwo2hHtAKeCcRtghiaKmYWz3ZWaadMDXDvYrjRmH7ikUbC\r\n IMmCavpUep2SWIe7vcbHn8R.AKXu_wsk4XgeTStHVFuE.1wReRymBEmlvt8aZJ8a7yX7I1FNZRm3\r\n ER2EkDEVH_EmSqMEpr4GHfigm2UWiZ8EeIjtglX7EtxkJdtZNbYTm9u8qX3q2AvU5RVr9jsNgQEp\r\n Y11txz5.IlSBd6cq2d9gSu06xjUwjlu1SJdK3HjDGK3QOqJBuWxEr5eMLN.Dy2rVRugTbLjtCH2O\r\n uPi_cY2o6UssB3l3uJVTxxqTlHfh9sas16UbUE2CkPI9xaCCbGOFNL2fAqC.5K95Ov0rhiBApZvR\r\n 0kzciS0DXNYj4ARcMP9tqNCpHBJgO2jealTX7lFGCoRvpadtMNvjv65r_uHqoogKfwkwGqoDlVrv\r\n DABsp4MJYBRYXSN3S7ys_SVkQmHB0pUflsXU_dVce9wt8JQkRoOh_mzw0VrMJK50UNBgQaVrugSh\r\n csuazyP.Ybl6Zjn3qu0LYX9TvpZ9gC2GoX3yMSbS_r7is8umfnxkJbPx_JbbMSkAeQrT0McZgEVa\r\n tCFyufAL4MR_PsmMFyunDNDvjj8RfxWoKgANdMtqE21BudtgnoWqElW31VnNkMqn8WnQiIKi1va3\r\n 1QDQtt3kAsBRmsX4iqqLQqDdti9H8HTKm.2n5rh5xdJyBvDNvI2revJvThxLO4mucU5CrnoHtvWM\r\n VtIhAQp4gWKQp1y9CyNPPLCbCLi2N1R_EeJDweS3EArcvmVWvUU2o4Ne8JlRvvS_Sp486rSeX.P.\r\n 1_hv3irfSNU_8rR9.sPYlfoucmrDKonkGQbQ4YpLTF2um9qd.DPUnHXyXpppntJj8JHhLrYOmz8R\r\n GItf9kwTfM2EwLemcWUB5d8BMR0ITr.of4lkxbgf5SW2DHEv3K2Ny3xFY1ZPEShw767qyawKV1RD\r\n .lzh4YL7htGtTPQIbcu4i8ialTvepiv.QzRb6j7eV_Nvfv6VvsWrGdEf0YG7d3l4G4.d3D5BBpug\r\n 2T9bbRVFgzuF1Qx5HdepWuiR1QWzDBHzg7r8RJES56xgaF09Hmc4LPFeQW8Aqr59.rTVYKsLyX_e\r\n We2P1.7tpcdj5ZTZdlUMDC1hqflNGMfj_PXc0O9h1auFQPSbcE7gqHCaP1KEMu3I0LEx2sjPsLzN\r\n mTekdnTdz7ztOdZjej4hpBaHlr2yAMWotfCst47BH2Dcr3B7WyKX7i0iKHQhwyvPrmwSx.4iAX2i\r\n x5Xk9ELnWgOdpNmwiEqwTLgI8kHNEYFOJXpTeU2ADlRganNraphlxSMsgmftXpQ1mne0jSavX_oE\r\n bGwlt_ofHLkX9yB2.9KgsgYUj8dSvMhthA4Qi3I8RjN1UjlvZUCMooyM8WESv.qXXIGIpvklhmw0\r\n DrtTRD4JfWiCWB5w8ounZt5JGslLgx3QmHozHZSOuU79IVwrpfN7.lZXhxOTb.2Lx3MtYqHdcjqu\r\n QwIOTeYD22MP1i2YRrHlpJc0-\r\nX-Sonic-Mf: \u003cVirginiaRobion4554@att.net\u003e\r\nX-Sonic-Id: 24252944-a317-41c1-ae69-589d4530eaed\r\nFrom: \u003cVirginiaRobion4554@att.net\u003e\r\nTo: \u003cVirginiaRobion4554@att.net\u003e\r\nSubject: mobile apps\r\nDate: Mon, 15 Jun 2026 14:19:11 +0530\r\nMessage-Id: \u003c00b901dcfca3$e9012f30$bb038d90$@net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Office Outlook 12.0\r\nThread-Index: Adz8o8DoOFK0q/WERJqOwRHTaFlqQQ==\r\nContent-Language: en-in\r\nReferences: \u003c00b901dcfca3$e9012f30$bb038d90$.ref@net\u003e\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnPFJURIC6sQjMlISBRfT\r\n 0FFJURlEDPlEViT6IwiMSilMUO0izzMjLCLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIlmtldWY2Xh5U\r\n ibWoiJOcR3hft2YmZul90ZVlW5dZ9Fwy8VdDM2IMwMDsyIMI1mhfxWa3MyB1vX2sGVZIojipFWbDbw\r\n N0tciyjAMNAjxuYDMHciQJtLCsWlYXNzww9lcmci9owIjwjALMMDy5kDMTO5kUzOTxDYMMQzsh1mIW\r\n a0xh0ZXt2VXYVmkulGZ1Zt9Rlb26CIbIlmusZGd2b0F11L2pHRbblGuhV3ZCbl11zNSsWFbbICsfBn\r\n I3chBI6bS5C4MOYT0zczMTMxEI0Nz0DUOLJCwwN3XWYf1FzYm6SIZM4C50YTOzMzcExMT0zINOUD0w\r\n JCL3X3NRjaX0F9ab91wzlGaGaulI6ZywC4MMYj2wETNDMzQkzMj3jMMNwyiuVnc2Xh5UibW3iJOYRX\r\n jpxGa3ctQVuc2yGVZLBX13N3XXajRJ9aCsX0fINnyiQWaiO2IJmYTymQYMJzhxgTOjZllMwNGm2RYY czifX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "A_4NsZI6fgP_5pm7qKBwL4O1ZaXF1RgrEghAHZGmwcK81kRFsXRgZKUtxuAbU92Ua50jB7f23C8n7PikI3ALsA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "autogen-java-3dbdcbca-9d55-47fe-9513-7e3285a5e819@google.com",
+    "Subject": "SEO Proposal \u0026 Pricing ",
+    "Sender": {
+      "Name": "",
+      "Address": "sandrawill167a@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "sandrawill167a@gmail.com"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1782834629,
+    "Size": 272,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003csandrawill167a@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail-yw1-f200.google.com (mail-yw1-f200.google.com [209.85.128.200])\r\n (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No\r\n client certificate requested) by mailin051.protonmail.ch (Postfix) with ESMTPS id\r\n 4gqSKK5wmyz49 for \u003cidontneedawebsite@proton.me\u003e; Tue, 30 Jun 2026 15:50:29 +0000 (UTC)\r\nReceived: by mail-yw1-f200.google.com with SMTP id 00721157ae682-8099ed7adc6so81490627b3.3\r\n        for \u003cidontneedawebsite@proton.me\u003e; Tue, 30 Jun 2026 08:50:29 -0700 (PDT)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.128.200\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"S6a4rVRB\"\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20251104; t=1782834628; x=1783439428; darn=proton.me;\r\n        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=sswLSMlweNrq/5GS78efcP6ns80wkc19zwUZUKFL8Eg=;\r\n        b=S6a4rVRB23HqNt2nupGmVJJMgYuoMxZZbhazipIrOPhO6uHBR07WWFQG6ak/gBk1bS\r\n         98bQrf2CCA60EmBqgh/6cteNCqljrhWh4kDNh8mwyoHogEac/yGBlt7iZN0bk3KZh0Jn\r\n         NNjn38TNGovcqSDbrOFyY18e47w4QznrNfgH47P/cwyk80b45GoKE0yaKYUNOCA5MQfG\r\n         ENhprPoR2csoSJcf+eALlUgNmDTy+mPZfVn1d/o8vl+cdqq/VLGJyr9bnC2L7ZTTDDCY\r\n         SVurzCrLj+ixlW9qndvPe6gBx148HIlZzQofV85nHQt/WuvDVNWsUB1ar8A4kE8N8Fkq\r\n         ffTA==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20251104; t=1782834628; x=1783439428;\r\n        h=to:from:subject:date:message-id:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=sswLSMlweNrq/5GS78efcP6ns80wkc19zwUZUKFL8Eg=;\r\n        b=IurRTe7RPG8czxvCke9fPhCE4Rhgw/eqj/d9UBUJjwEbz31VjkjMLHlv60zG6AFG+j\r\n         //RblxsG9iRHw5GvlDexmEfjWMta+eU9UWBYcJH11GNNXpkj315wggRhMWcUYAQX+A2j\r\n         15o+ZRuHzvSB/SD3+uz/QduWi5WYfQIbejS+WPs3Hor0F6AwNdevv0TMwROlwavetBBx\r\n         F7qS+jNpjepC4NIWceQeBWK1oZA2hmuzp6ntKlzDgFOtnHxaF2mNcTlQvJhN/ZNYZifa\r\n         CL4KXbxk3FbZ98ExSw/IxVWCaSKt6TobO796Q+C31xTSu47xfedKboAFFrYyekx2BJs0\r\n         hdIg==\r\nX-Gm-Message-State: AOJu0YyaW+goxems1ov4zqRSZdnMgjTY7CKa3gkWUMz4NSfJeveerOaa\r\n Dqob4SGSg40AJHhLJ7KT3ncl45IVndQcXtil6PC7d0pyfNW4kzPo7bI5RhgJfQnbWphifg5Xm1W 0Qdi4Lw==\r\nMime-Version: 1.0\r\nX-Received: by 2002:a05:690c:4a0d:b0:80c:85c6:8996 with SMTP id\r\n 00721157ae682-8120433a6a8mr9849647b3.69.1782834628761; Tue, 30 Jun 2026 08:50:28 -0700\r\n (PDT)\r\nMessage-Id: \u003cautogen-java-3dbdcbca-9d55-47fe-9513-7e3285a5e819@google.com\u003e\r\nDate: Tue, 30 Jun 2026 15:50:28 +0000\r\nSubject: SEO Proposal \u0026 Pricing\r\nFrom: sandrawill167a@gmail.com\r\nTo: idontneedawebsite@proton.me\r\nContent-Type: text/html\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIcVns6ISZjI3YQ2YjiDNZMAjxjBDZmNkVRmM\r\n m2WQZNIisyNnIWaiQI2OizTQYZVTjwEjNjZ4cYzOWhTFNYkjxiQjZfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}

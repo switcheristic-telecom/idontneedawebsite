@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "OOr_tfG7HbpiNVVR7CvOT3lrnbcdy1V-wNmbXD6EtV_c_lsb7yqkS24sEmxDX9WKvzRQnvsioOgW-3iBgvuCGw==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "013101dcfdca$f84980a0$e8dc81e0$@att.net",
+    "Subject": "Ruth Reid- New Application",
+    "Sender": {
+      "Name": "Ruth Reid",
+      "Address": "RuthReid46546@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "Ruth Reid",
+        "Address": "RuthReid46546@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Ruth Reid",
+        "Address": "RuthReid46546@att.net"
+      }
+    ],
+    "Flags": 1082130433,
+    "Time": 1781640115,
+    "Size": 1458,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cRuthReid46546@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (Good 1024 bit\r\n    rsa-sha256 signature) header.d=att.net header.a=rsa-sha256\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=quarantine dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.189.150\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"WPEzvFIg\"\r\nReceived: from sonic314-24.consmr.mail.ne1.yahoo.com\r\n (sonic314-24.consmr.mail.ne1.yahoo.com [66.163.189.150]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA256) (No\r\n client certificate requested) by mailinosl104.protonmail.ch (Postfix) with ESMTPS id\r\n 4gfyYv4q46z8T for \u003cidontneedawebsite@proton.me\u003e; Tue, 16 Jun 2026 20:01:55 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic314.consmr.mail.ne1.yahoo.com with\r\n HTTP; Tue, 16 Jun 2026 20:01:54 +0000\r\nReceived: by hermes--production-sg3-659b68f58d-lsg5p (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 7ac7fb44b76a52bda51c80f3df6d9faf;\r\n          Tue, 16 Jun 2026 20:01:50 +0000 (UTC)\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1781640114;\r\n bh=aBrr+cKzKdkGiztqCe8opRUkprEXRkuOelzRw+7DEKI=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=WPEzvFIgsxmAAbh8hKaZewD411EKJbSL3hpPP9maC28S8XBYMck2t00J8RW7xCY8QtoCm1mVOs4byIR+TNIBEvHoJwx5rKfXO2LucnAYOHZMO0kzSM/xKkGVdHNNFw2gxOozDVJ/oYr0Ll8uiLijevpjQNEQLwY5E7CZce+uGcY=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1781640114; bh=6pV7Oq94NzaE052D9XTEgUm+UYOtljjtebO+YMu9fYZ=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=gHE2uIOKhkTXV16MG0vo3E72v+QGbFI4RrmF+uBVV8UnXlKGmX5Ulk0W+YnAoztxSa0DpdVXyKQBJUCf1RzHrhg8p6cKPInQTNrMG1a0pdlVNfTZKm4bVjzATUxYJj8x8yk/xVyMLDokrZOckylsfvMFpKLlTq3WGLri0uK/cUBtLafv85PYNh2Ro9VT3nsECvGAxrAeGZ7KVS30QfPWAYGLTVJEEc2J7P/dWy4CgnjkEUzG3qgaNZk74k0JuGb6DohjfheDR+Hb+8OPEx8gP8ehwGUJNXa7HQa+Wzw5+Uaj03IiClpGX8buoKdopj+O7+NeVG6F32gz/0IMKCJEHQ==\r\nX-Ymail-Osg: ioIVju0VM1lplkrdhuaTq91vtv.TQOUozcbmaVZkMr34GB2XB4HQyOu66AOU5pg\r\n dTzDnLPMSbNvrLnVyAcGCytWZu_.PYmaCKkr7tFch.z7crqP63iMWfgRJ_rccpHY67Qygh80E0d_\r\n AVDgfdE5tUAvr4YSARsb1frzPpYazczDIqRftx_F3RQ5ckOaFzsQvxhU53OhQz_2TSuQjcwThRys\r\n 3GYJ5KtajchRsko3mYayZZZxMssvweC.pj1.MocQKTHrOK0XApTENFN5RYDmx3V1RTpJp9U17Egf\r\n gEMzdEO6.sHoisxGtgJGS142MApoTNKSRpJGW8mIaKU9siTQ.9AYuBzceDIK9xa289AJ7Tc62Toc\r\n 5RBslN6o_VRcd7uzIjdNrMPcLFU8CldjGc7jwWv0_wVywjXlWzuJeM_9d9FRK6B1CswXT_fScS2S\r\n hIb4JnWTtJJS_i6mZYgh6AUmcl6zHJ6fn1sq26cV4AJ4tn_x7lBgTra1VHEtOSC.zPb7MIE6D40x\r\n YUlhABwrLlJSKmTEgkdAMFWyWKmZihVN7XrOVZcAYVgNbAUfyBbiiXxDnu8eqKzSeKRBBt5PA_gE\r\n Mcvo2RUocTPKSeusPE8rJ1SG8OBum9aUEQS_yoSc0d1cFb7.T0sriu56hk11KpQQMWI_9zFFkb2L\r\n iWgpFynceqIN9EWIAa4Gix_LTvW9dwr4W5nmptf3O89USA_HpHiJ9AyXpAtW2dz17_J7VSE1orfh\r\n R9ZUn7bHxwfoEDMMl9YH2ekoilG3otCMBF5AaGTqffPTMpFWZ9gjMGMbRLDcmcJannlKdGEEhLaJ\r\n TPnPeP5VKKN5UP4Hn6PMWwW.YZiNTSDSicPW3hCBEc8o2HZtnhEZlwSEpWm9neSCiuJWoT_CrZdp\r\n zrcCgm5vDr7oPSpWR1.2eK3_4e8Qte9FIN39.qhepogCr2isd3dUsxAgWkYT5rmB0LSMjY6duv_l\r\n T.JceWutoY.AdoxqjGuZIMBUF5l9G2YZIHyVYGbTCmGm2_BH_hpSQm34KhHTGqS_UCh4iJf46_8k\r\n rIewumLLI5iHfMLtQQ0z6wpHUco4winwY2K4p_aaMaBW7v.C2ljTWQjwb01XNd7R8flaJDTbUObS\r\n K4Xv.WIAmED.kNzwaOWmHOQy2AAH1kblbcbJQ8lr.u8vs7VlMwj5XjOS653pMKlhIWrNZ.JMDGXe\r\n U6x5hAnWeMlh_8gdNYwWbhCUkQH3e0x7IRPDfKHQy7Rs_PmRGHU1cxu94ASiVMKew6U_l8yHIgIS\r\n 8BIlFBqVM4FDB2VrLTjClAWz_e1f3v_v9MHv9YMHb3MctTQXf8HJdEaiSFl7dtKTF6I6GUsRM17W\r\n txB57QAn01S8z7Ak_RsBQKePdb1nR7FgPtTg5DXhv0g69modWsMOcgPwk6B2w6vYizf721u.luPc\r\n cU3aFC1_rhJxiVWMo3lQz97zQwKQFF0iOMEbnGbbT6kpaPRv0bou_ghj10T6lbmcWLRxdkj_bNEM\r\n gjBr5fRItogWqpwp3PCs2ZdwAsZyTtd0BDUkD1EhdNZDkIaTo4P6rehZQfifUiY2IpJMW7No.q22\r\n 3ex4EknBVcc9nAUhXcpmKUCYEALaMTPP_vDmc9c_2SsdXnP3cpn2VMIG9.x7GXCwZaL82SG93iUk\r\n MgtJ8bE5OhBG.S8pPLSqJAni.lIO7zvcVjbheSGtMi2c4YlfNDaEj4vPM0Jm7ZZgS4nQ.UoDDRgd\r\n NZEM7EVGNthmekx5Ob9INL4._6n9zRNfyKn0.ZTDeW516ctm6kBp1QGwdmOtBEZ_v0d5QmC65HqL\r\n cbbwaiKfk5mGiznJD8zunhXIqp_SiFB_U0Bqyus1Q8vkQ4nI4t4CLv7OMvqWYckWT7qT46iP5eSp\r\n g6oSGXDU0hd7T9nQ628dtfNpRwKcD2f23P_zN4yxpeTzCoBOnau3SKat7qYjT1V1v4j4Jkc8P09I\r\n F1ZqM15LFBtZoVYIwnhB4_bowS7YrhG1sNFEK.jktCsx1yLF6OEZi1MtGiMUDr1iX1SruXeDJ_U6\r\n X6uyE1SykbTMKlCfwp5dXgdbgedNFyS4MLNbY4zdkgShn3zena9uBADbiEq_pfJ0jx4FDEBTwxk3\r\n F5wb5HH0HNRoMhCvONOw1rBWkR7HC3Ekdnd8XhCyylu5TDLB0kRIazYnROXyAc_PSpLppylpDD7f\r\n ut6CforDHoc7TdWm7o2nztRIrGxCQ.rSOkBwbocLMVo87ogbHRjWF_XKQQBlD0ls-\r\nX-Sonic-Mf: \u003cRuthReid46546@att.net\u003e\r\nX-Sonic-Id: 335d3b01-ec47-4b2a-9f41-368ad72b1d49\r\nFrom: \"Ruth Reid\" \u003cRuthReid46546@att.net\u003e\r\nTo: \"Ruth Reid\" \u003cRuthReid46546@att.net\u003e\r\nReferences: \u003c013101dcfdca$f84980a0$e8dc81e0$.ref@att.net\u003e\r\nSubject: Ruth Reid- New Application\r\nDate: Wed, 17 Jun 2026 01:31:38 +0530\r\nMessage-Id: \u003c013101dcfdca$f84980a0$e8dc81e0$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: Adz9yuuKFe+V2GPXSm27VwVtrYe4UQAAAABgAAAADGA=\r\nContent-Language: en-us\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2OimGFONIDxxUGO2NiFA0O\r\n DwzcMYYj3iEGNCLzJlkcmijoINEmziFWMjYyQVmOTjTRZNUG1jFjMDO2Q19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

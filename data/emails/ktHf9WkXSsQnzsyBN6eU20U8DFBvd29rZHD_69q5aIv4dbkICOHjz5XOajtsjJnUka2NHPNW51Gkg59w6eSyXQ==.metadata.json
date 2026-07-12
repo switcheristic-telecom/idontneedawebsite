@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "ktHf9WkXSsQnzsyBN6eU20U8DFBvd29rZHD_69q5aIv4dbkICOHjz5XOajtsjJnUka2NHPNW51Gkg59w6eSyXQ==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "25"
+    ],
+    "ExternalID": "63cdcb50cf66ba6c6ec430bfe016b7b4@cola.tainducts.de",
+    "Subject": "Grow Your Business",
+    "Sender": {
+      "Name": "GOIGI",
+      "Address": "promotion@goigi.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "promotion@goigi.net"
+      }
+    ],
+    "Flags": 268435457,
+    "Time": 1782893019,
+    "Size": 2243,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cbounce2@misistock.space\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail.persorough.online (mail.persorough.online [85.121.170.10]) by\r\n mailinzur101.protonmail.ch (Postfix) with ESMTP id 4gqswC3VzHz7W for\r\n \u003cidontneedawebsite@proton.me\u003e; Wed, 01 Jul 2026 08:03:39 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=none (p=none dis=none)\r\n header.from=goigi.net\r\nAuthentication-Results: mail.protonmail.ch; spf=none smtp.mailfrom=misistock.space\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=85.121.170.10\r\nAuthentication-Results: mail.protonmail.ch; dkim=none\r\nTo: idontneedawebsite@proton.me\r\nSubject: Grow Your Business\r\nMessage-Id: \u003c63cdcb50cf66ba6c6ec430bfe016b7b4@cola.tainducts.de\u003e\r\nDate: Wed, 01 Jul 2026 07:40:07 +0000\r\nFrom: \"GOIGI\" \u003cpromotion@goigi.net\u003e\r\nReply-To: promotion@goigi.net\r\nMime-Version: 1.0\r\nX-Mailer-Lid: 2877\r\nList-Unsubscribe: \u003chttps://cola.tainducts.de/unsubscribe.php?M=23785045\u0026C=80e4c81e2555d9d469c78eb4e3149e87\u0026L=2877\u0026N=4347\u003e\r\nX-Mailer-Recptid: 23785045\r\nX-Mailer-Sid: 4347\r\nX-Mailer-Sent-By: 129\r\nX-Mailer-User: globalimpact.bpo--gmail\r\nX-Mailer-App: cola\r\nContent-Type: text/html\r\nContent-Transfer-Encoding: 8bit\r\nX-Spam: Yes\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnPFJURIC6sUTMlISBRfT\r\n 0FFJURlEDPlEViT6IwiMSilMUOIjw2IjLCLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIlmtldWY2Xh5U\r\n ibWoiJOcR3hft2YmZul90ZVlW5dZ9Fwy8VdDM2IUxMDsCIOI1mhfxWa3MyB1vX2sGVZIojipFWbDbw\r\n N0tciyjAMNAj1uETMHciQJtLCsWlYXNzww9lcmci9owIjtCJLYlWs4VGdFdl9JlbWpGRZbdmfk9WbW\r\n ZiwJpOimnRbb9Ght9CdWd0xxpaW1mdbYwWttUTZ2ch1wibGwCJLXN3wi0WYjOuAgwOTyTMMNITw4kT\r\n MDOyIJwLCw3NXY1WfzFmYSZ6I45MCxDAOMIz1xAjMTO4gIsMjfnBIcd3poNGd3XvRBoX3oXNaa5Wnw\r\n ojIjLzAc3ODwTQONczzzYTOTO4IJyLCfW5dbFmt6ISZmIsF1mbC0WFZdJXlw1ycVdz9l0d2i2gYf1X\r\n 9zJCLmckloiIj0mENNMG5xMGZDNmFY5MDhzNMOgT11ITYnI91\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: none\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\nX-Pm-List-Identifier: @promotion@goigi.net\r\n",
+    "WriterType": 0
+  }
+}
