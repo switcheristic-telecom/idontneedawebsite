@@ -1,0 +1,38 @@
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+References: <A_4NsZI6fgP_5pm7qKBwL4O1ZaXF1RgrEghAHZGmwcK81kRFsXRgZKUtxuAbU92Ua50jB7f23C8n7PikI3ALsA==@protonmail.internalid>
+X-Pm-Date: Tue, 30 Jun 2026 15:50:29 +0000
+X-Pm-External-Id: <autogen-java-3dbdcbca-9d55-47fe-9513-7e3285a5e819@google.com>
+X-Pm-Internal-Id: A_4NsZI6fgP_5pm7qKBwL4O1ZaXF1RgrEghAHZGmwcK81kRFsXRgZKUtxuAbU92Ua50jB7f23C8n7PikI3ALsA==
+To: <idontneedawebsite@proton.me>
+Reply-To: <sandrawill167a@gmail.com>
+From: <sandrawill167a@gmail.com>
+Subject: SEO Proposal & Pricing 
+X-Pm-Spam-Action: spam
+X-Pm-Spamscore: 0
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+X-Pm-Origin: external
+X-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIcVns6ISZjI3YQ2YjiDNZMAjxjBDZmNkVRmM m2WQZNIisyNnIWaiQI2OizTQYZVTjwEjNjZ4cYzOWhTFNYkjxiQjZfX0=
+Date: Tue, 30 Jun 2026 15:50:28 +0000
+Message-Id: <autogen-java-3dbdcbca-9d55-47fe-9513-7e3285a5e819@google.com>
+X-Received: by 2002:a05:690c:4a0d:b0:80c:85c6:8996 with SMTP id 00721157ae682-8120433a6a8mr9849647b3.69.1782834628761; Tue, 30 Jun 2026 08:50:28 -0700 (PDT)
+Mime-Version: 1.0
+X-Gm-Message-State: AOJu0YyaW+goxems1ov4zqRSZdnMgjTY7CKa3gkWUMz4NSfJeveerOaa Dqob4SGSg40AJHhLJ7KT3ncl45IVndQcXtil6PC7d0pyfNW4kzPo7bI5RhgJfQnbWphifg5Xm1W 0Qdi4Lw==
+X-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20251104; t=1782834628; x=1783439428;        h=to:from:subject:date:message-id:mime-version:x-gm-message-state         :from:to:cc:subject:date:message-id:reply-to;        bh=sswLSMlweNrq/5GS78efcP6ns80wkc19zwUZUKFL8Eg=;        b=IurRTe7RPG8czxvCke9fPhCE4Rhgw/eqj/d9UBUJjwEbz31VjkjMLHlv60zG6AFG+j         //RblxsG9iRHw5GvlDexmEfjWMta+eU9UWBYcJH11GNNXpkj315wggRhMWcUYAQX+A2j         15o+ZRuHzvSB/SD3+uz/QduWi5WYfQIbejS+WPs3Hor0F6AwNdevv0TMwROlwavetBBx         F7qS+jNpjepC4NIWceQeBWK1oZA2hmuzp6ntKlzDgFOtnHxaF2mNcTlQvJhN/ZNYZifa         CL4KXbxk3FbZ98ExSw/IxVWCaSKt6TobO796Q+C31xTSu47xfedKboAFFrYyekx2BJs0         hdIg==
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20251104; t=1782834628; x=1783439428; darn=proton.me;        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject         :date:message-id:reply-to;        bh=sswLSMlweNrq/5GS78efcP6ns80wkc19zwUZUKFL8Eg=;        b=S6a4rVRB23HqNt2nupGmVJJMgYuoMxZZbhazipIrOPhO6uHBR07WWFQG6ak/gBk1bS         98bQrf2CCA60EmBqgh/6cteNCqljrhWh4kDNh8mwyoHogEac/yGBlt7iZN0bk3KZh0Jn         NNjn38TNGovcqSDbrOFyY18e47w4QznrNfgH47P/cwyk80b45GoKE0yaKYUNOCA5MQfG         ENhprPoR2csoSJcf+eALlUgNmDTy+mPZfVn1d/o8vl+cdqq/VLGJyr9bnC2L7ZTTDDCY         SVurzCrLj+ixlW9qndvPe6gBx148HIlZzQofV85nHQt/WuvDVNWsUB1ar8A4kE8N8Fkq         ffTA==
+Authentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com header.i=@gmail.com header.b="S6a4rVRB"
+Authentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=209.85.128.200
+Authentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com
+Authentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none) header.from=gmail.com
+Received: by mail-yw1-f200.google.com with SMTP id 00721157ae682-8099ed7adc6so81490627b3.3        for <idontneedawebsite@proton.me>; Tue, 30 Jun 2026 08:50:29 -0700 (PDT)
+Received: from mail-yw1-f200.google.com (mail-yw1-f200.google.com [209.85.128.200]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No client certificate requested) by mailin051.protonmail.ch (Postfix) with ESMTPS id 4gqSKK5wmyz49 for <idontneedawebsite@proton.me>; Tue, 30 Jun 2026 15:50:29 +0000 (UTC)
+Delivered-To: idontneedawebsite@proton.me
+X-Original-To: idontneedawebsite@proton.me
+Return-Path: <sandrawill167a@gmail.com>
+
+Hello idontneedawebsite@proton.me,<br><br>Hope you=E2=80=99re doing well.<b=
+r><br>I=E2=80=99d like to share a quick SEO proposal with recommendations a=
+nd pricing to help improve your website "https://proton.me" rankings and on=
+line visibility.<br><br>May I send you the details?<br><br>Best regards,<br=
+><br>Sandra
