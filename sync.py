@@ -27,10 +27,10 @@ HTML_OUTPUT_DIR = ROOT / "public" / "emails"
 METADATA_JSON_PATH = ROOT / "public" / "email-metadata.json"
 CALL_METADATA_PATH = ROOT / "public" / "call-metadata.json"
 SEARCH_INDEX_PATH = ROOT / "public" / "email-search-index.json"
+REDACTED_ADDRESS = "redacted@example.invalid"
 
 
-def load_env():
-    """Load credentials from .env file and environment."""
+def read_env_file():
     env_file = ROOT / ".env"
     env = {}
     if env_file.exists():
@@ -41,6 +41,53 @@ def load_env():
             if "=" in line:
                 key, _, value = line.partition("=")
                 env[key.strip()] = value.strip()
+    return env
+
+
+def load_redact_patterns():
+    """Build regexes for private addresses that must never be published.
+
+    The addresses live in REDACT_ADDRESSES (.env or environment, comma-separated)
+    so they are never committed themselves. Refuses to continue without them.
+    """
+    raw = os.environ.get("REDACT_ADDRESSES", read_env_file().get("REDACT_ADDRESSES", ""))
+    addresses = [a.strip() for a in raw.split(",") if a.strip()]
+    if not addresses:
+        print("ERROR: REDACT_ADDRESSES not set. Add it to .env (see .env.example)")
+        print("       so private addresses are scrubbed before anything is published.")
+        sys.exit(1)
+    return [_re.compile(_re.escape(a), _re.IGNORECASE) for a in addresses]
+
+
+def redact(text, patterns):
+    """Replace every private address in text (str or bytes) with a placeholder."""
+    is_bytes = isinstance(text, bytes)
+    if is_bytes:
+        text = text.decode("latin-1")  # byte-preserving round trip
+    for p in patterns:
+        text = p.sub(REDACTED_ADDRESS, text)
+    return text.encode("latin-1") if is_bytes else text
+
+
+def assert_no_leaks(patterns):
+    """Abort if any private address survived into data/ or public/."""
+    leaks = []
+    for directory in (DATA_EMAILS_DIR, ROOT / "public"):
+        for path in directory.rglob("*"):
+            if path.is_file() and path.suffix in (".eml", ".json", ".html"):
+                text = path.read_bytes().decode("latin-1")
+                if any(p.search(text) for p in patterns):
+                    leaks.append(path.relative_to(ROOT))
+    if leaks:
+        print("ERROR: private address still present in:")
+        for path in leaks:
+            print(f"       {path}")
+        sys.exit(1)
+
+
+def load_env():
+    """Load credentials from .env file and environment."""
+    env = read_env_file()
 
     def get(key, required=False):
         val = os.environ.get(key, env.get(key, ""))
@@ -195,8 +242,8 @@ def run_export(cli_path, creds):
     child.close()
 
 
-def sync_emails():
-    """Copy new .eml and .metadata.json files from export to data/emails/."""
+def sync_emails(patterns):
+    """Copy new .eml and .metadata.json files from export to data/emails/, redacted."""
     print(f"==> Syncing new emails to {DATA_EMAILS_DIR}...")
 
     # Find where the .eml files landed (may be in a subdirectory)
@@ -211,13 +258,13 @@ def sync_emails():
     for eml_file in export_src.glob("*.eml"):
         dest = DATA_EMAILS_DIR / eml_file.name
         if not dest.exists():
-            shutil.copy2(eml_file, dest)
+            dest.write_bytes(redact(eml_file.read_bytes(), patterns))
             new_count += 1
 
     for json_file in export_src.glob("*.metadata.json"):
         dest = DATA_EMAILS_DIR / json_file.name
         if not dest.exists():
-            shutil.copy2(json_file, dest)
+            dest.write_bytes(redact(json_file.read_bytes(), patterns))
 
     print(f"==> Synced {new_count} new email(s).")
     return new_count
@@ -255,7 +302,7 @@ def strip_html_to_text(html: str) -> str:
     return parser.get_text()
 
 
-def build_html():
+def build_html(patterns):
     """Parse .eml files and generate public HTML + metadata JSON + search index."""
     from lib import EmlParser
 
@@ -272,12 +319,14 @@ def build_html():
 
         if filename.endswith(".eml"):
             with open(DATA_EMAILS_DIR / filename, "rb") as f:
-                html = EmlParser(f.read()).html
+                html = EmlParser(redact(f.read(), patterns)).html
+            if html:
+                html = redact(html, patterns)
             email_data.setdefault(email_id, {})["html"] = html
 
         elif filename.endswith(".json"):
             with open(DATA_EMAILS_DIR / filename) as f:
-                metadata = f.read()
+                metadata = redact(f.read(), patterns)
             email_data.setdefault(email_id, {})["metadata"] = metadata
 
     # Filter: need both html (non-None) and metadata
@@ -393,22 +442,27 @@ def main():
     action = prompt_action()
 
     if action in (1, 2):
+        patterns = load_redact_patterns()
         creds = load_env()
         cli_path = find_cli()
         run_export(cli_path, creds)
-        new_count = sync_emails()
+        new_count = sync_emails(patterns)
 
         if action == 1:
-            build_html()
+            build_html(patterns)
             build_call_metadata()
             cleanup()
+            assert_no_leaks(patterns)
             print(f"==> Done! {new_count} new email(s) synced, site rebuilt, temp cleaned.")
         else:
+            assert_no_leaks(patterns)
             print(f"==> Done! {new_count} new email(s) synced. Temp data kept in {EXPORT_DIR}")
 
     elif action == 3:
-        build_html()
+        patterns = load_redact_patterns()
+        build_html(patterns)
         build_call_metadata()
+        assert_no_leaks(patterns)
         print("==> Done! Site rebuilt from data/emails.")
 
     elif action == 4:

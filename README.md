@@ -26,6 +26,8 @@ Copy `.env.example` and fill in your password:
 cp .env.example .env
 ```
 
+Also set `REDACT_ADDRESSES` to any private addresses that might appear in emails (comma-separated). Every copy is replaced with `redacted@example.invalid` before it's saved to `data/` or `public/`, and the sync stops with an error if one remains. It's kept in `.env` so the addresses themselves are never committed. The sync won't run without it.
+
 ## Usage
 
 ### Sync new emails from ProtonMail
