@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "e1bJecWzbqaZnl4pohxU509METdXA50PXKZiSH-YzyZ1_qj3t8jwS0DsSQ9qj0a-r3kInh8lb9HlEWErPwjYyg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "004601dd69e6$580ec360$082c4a20$@att.net",
+    "Subject": "New Application",
+    "Sender": {
+      "Name": "",
+      "Address": "KylaRose9888@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "KylaRose9888@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "KylaRose9888@att.net"
+      }
+    ],
+    "Flags": 1082130433,
+    "Time": 1793526306,
+    "Size": 1031,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cKylaRose9888@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from sonic314-20.consmr.mail.bf2.yahoo.com\r\n (sonic314-20.consmr.mail.bf2.yahoo.com [74.6.132.194]) (using TLSv1.3 with cipher\r\n TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange x25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No\r\n client certificate requested) by mailin044.protonmail.ch (Postfix) with ESMTPS id\r\n 4jHVLV4K9Tz3Y for \u003cidontneedawebsite@proton.me\u003e; Sun, 01 Nov 2026 09:45:06 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic314.consmr.mail.bf2.yahoo.com with\r\n HTTP; Sun, 1 Nov 2026 09:45:05 +0000\r\nReceived: by hermes--production-sg3-cd7bfcc7f-snczv (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID 23d3cefc547f2acf300c31510876e2fc;\r\n          Sun, 01 Nov 2026 09:45:03 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=quarantine dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=74.6.132.194\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"xioYVxor\"\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1793526305;\r\n bh=R5669nyWhFZWhfJzby5fxHIkzCZc7WIxfALQrI6tpic=;\r\n h=From:To:References:In-Reply-To:Subject:Date:From:Subject:Reply-To;\r\n b=xioYVxorw27nrOOqLG66qjDYmROv3eVkXl64f00H1qCJE71JREZbZsL8QBDtRLQKG91Jf6IbVWVcrl6PJdmJGmsKdgcRKyLRQiXTd4RSYr0vYmAChyOESANk6tDZKXn7b0h/uxcikyWKl1VgQDaJe5ojTAjT9RMDkBOXrHBlOUY=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1793526305; bh=elsw0JrDt/oCZU/hjP6YThT1DwZnML2r+mZ5lfL9zYo=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=eS4vPJNBSs9UgI56QS0VrDNDgZ31bolZlOfliR4E8Oyv6zjZK4MhqnhxZ7vMQT3yGnV72mwAbCnBEHgBT1lReaO1meY3XpetIaNJlqHiUgBP6S+Ewiam+yI4H2+tiFFQNanqoPstuuYIvQKAiOON2rRJvhAoh26Svzmvj6uD+wWpD/HloeC3cRgYcilqL0TduIMa9ayqTSi7xV6shVDJtCB77/x38xPoNomz2L2T+q3+JakOu5Ex3uRWx9w42TX8sa9dsI1YV0zRLOrBdPHQMVj6I2JUjMYA+TRm7jQ0JGlaUO+OjpCnlLaRdGaZFq+f9rLwJUgM03Q9gxqUCC2nDw==\r\nX-Ymail-Osg: 1SeTbQgVM1mh2KpD6f2cv55TPej7KEkm9xGlJqnUdmcCgoq03v58xB2qma_fRBd\r\n Gydt3psoEg8S7eHMJZ41RKwKAczzjTZ2U6zAUmnlWGObyd01FI5JKz2xCGff6Mza1vS9om4JQwLk\r\n 5LUrGzldL9zCEfxFOfdreKE0c5ulD7s9lUhnobOXhDMyiFit1J.o7bgEoDTWFB0dbVVYpVAz..HN\r\n wVPjyeG6Tc7LGjpiLViuelNSXtyEHaTgC6YlNcrZ3W.sqsLYibTc0hpAu0TQ2E.d9TBPF9xkv036\r\n 3i7E7ztbN1.GFuar9f1wDqBpkv1A_rI9wdBbLC5hwDArltC6314VZ.Ybpw0mxPWLF7Hk.wNedE4p\r\n Xy.Jmy5olUaahLtIOVc5gRmjMyJ1CaAqtnegEsp9LAlKfTOq1d2SATKlXaWV1QT.r.LE0OGz9spO\r\n vXIo69JnuGQD7dX0UBlnksrEU3V1TwSBSoGBYKHvY639Md4d7Y4kry3WGD9FWUcDQKVi7eiiot6_\r\n ZpKgGFv.yzhUlQ02E.YQgbXcum5AgcSHgDx5HC.M1.bkS10ID4EM.ClcSk_.oIgMbUsw6zDUn7XE\r\n c6CoLtUbaXJXxypewyh_hBihMtpsPNngjZR.mXjf1qArL6Qj1.gWm5ac_wwqYXpbQT2P2J3fSUhf\r\n Z0e.0QbwJUdgo6_T.u6fSc5tgxaDkTGzuYW0cpNoOHkXeTps5mOR1JhbYDaHG9faKeEeGxvBgPfn\r\n gqKNjzRi9bcXMnoSMaJbZDHZce.6F5piQcz2HMheih6nR2OTgpqR3k22B9TfD54a.ThmACa0ZHh.\r\n m6aQGtk7cVH.Dwc1t2X93YbsT3d4Uo5zGik0Ry_0CziNvW.qxXIlnB5ANfa7IDm8VTCcP7FTMRjF\r\n exPcVyoU0Kun85HOQUU1lbA60qWi8Tll4tZVsJH6pPhrZYm7pbpNG1PHyamWzRkQxEBOp4fyGfdX\r\n 15QZfNV67i0HDlDut1P_hwi2JmR3_a43fM8GhKyhnavwB8rHkWsETgBhMo4erGdGBc3ZFWfb7Nxq\r\n Z7ONWGQyyKCdIdWfMa_eweqgt2t2jeuXvdrbfO4ZQU9_jUBBfZilg4JWhSnsvEmL6M1InebzHTYi\r\n h505nO5facPcCQi.dQOBSPEI5eBA8aZddZK.egofmtv1gwoU7JDvlDlskPnKuxTzy8HBNNc_slj0\r\n MokSQHOt3d1LAHAHa2aiEpyWn6Ra80FRESK78P4QwJoHGS4q.OVZJLVP1dRsuLd9vMk2b_zAt4mC\r\n nNJ6h948ahpkw4Ra60S5uvZhZ.DLlhW5jmFlfN2aHUX3f1GjSpY.18s.l_S.Xkb6pO4F9CJ0z6o.\r\n dYKeM8WwkUXxRxkvAtkO87JA8szBp2DIi.3jPUR.TpxpT9XoMkbirOvCQtAB263eqIUWQ4ikRra.\r\n jEkGLkAWEfHZbAVeG8cSagoERwjS9Heqy43GL1SCm9756AyBzPdmOEdLkgX1vX8mFLrKxxwVcQcf\r\n n50_2eKqkMdvjotKB.jMJlwV1pGqzMI39anAQmlkuExpUyow8_0gZPbfq9oP5hZv6d1e.CNzILKX\r\n M8KeuGji_1B1R39Ph80DpJk2Y9oa9VlPcTrfxAT9G40Aax3Mz6G7306xoMXEgVHciBl17zEKDnwu\r\n P_o8RIZ6GyRR7brYZGFgr49MgHcTP4rRS4B1kzNVyhSDVbM.VQfk1M7OdWadfC0MxDnyWUkVTJ5u\r\n ddmnPee6XD.KJ1cT8QoN2_6zfZPyd9v8TL_PyU3reRPzX5lUb9uDNcZFNHW2E0TIdb2erDEcsoI6\r\n De4XxbzPyOpxlV10grSfXb3pTV0C2lfPlvvig0e1hKqw6936jS.8w9jYSwKTUeesmhBnl8z4cL2o\r\n SMLqCc6mIV9B0e0jP0wf9Xt3JDzjEzWqLQGizoETfpc4CFE0atBYcRRPFwMyI2_eyGNFAlMYPpyl\r\n CNZs3yCzeWhHk7wkfX.jHS1Njw88HmDI4879Xfxmz7ZUZtwBOfoqsv.j11NEJ3fW2a4KIqxnKa4J\r\n cJiQG5h_uVvfrN9FjQVM.NxShlkKNEsMV3NGlzZaaDnklakA8bximFmH.ND.rjjpsGFGgXoSwDJt\r\n Tq.LxzQ6geiOJX77bY3HWEhb6XSqzCxHB8tXs9cFEAs2Zxb0iYW293lfLJTDI7BfY1GP.dDUj68X\r\n pEfPxZDDC8WzVBotIBU1T0ujFSGXN99D8zd..sVdFoq9KPTccTX07B1sc3g--\r\nX-Sonic-Mf: \u003cKylaRose9888@att.net\u003e\r\nX-Sonic-Id: 884be3ff-10d4-461b-8238-523a9c4db09b\r\nFrom: \u003cKylaRose9888@att.net\u003e\r\nTo: \u003cKylaRose9888@att.net\u003e\r\nReferences: \u003c004601dd69e6$580ec360$082c4a20$.ref@att.net\u003e\r\nSubject: New Application\r\nDate: Sun, 01 Nov 2026 15:19:39 +0530\r\nMessage-Id: \u003c004601dd69e6$580ec360$082c4a20$@att.net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Outlook 16.0\r\nThread-Index: Ad1p5e+J5Iln9mMhQC2fL5t4XUwyhQAAFd6QAAAAC+A=\r\nContent-Language: en-gb\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2OimGFONIDxxUGO2NiFA0O\r\n DwzcMYYj3iEGNCLzJlkcmijoINFmlhBzNjMwMZkN22GMMNUz3wkTNzNjF19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "yqlD98lO-pEB1VjJJ9QYvwhF5QxjuKdWhijBuz7QXOfxTeJscE1Y1iltH5mgqdWU_yQlfZ5dxEN7tK2ziT_rwA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "008c01dd5406$40d01aa0$c2704fe0$@net",
+    "Subject": "Mira - Zoom Meeting",
+    "Sender": {
+      "Name": "",
+      "Address": "MiraLane6678@att.net"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "MiraLane6678@att.net"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "",
+        "Address": "MiraLane6678@att.net"
+      }
+    ],
+    "Flags": 1082130433,
+    "Time": 1791121496,
+    "Size": 909,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cMiraLane6678@att.net\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from sonic317-4.consmr.mail.ne1.yahoo.com (sonic317-4.consmr.mail.ne1.yahoo.com\r\n [66.163.184.231]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No\r\n client certificate requested) by mailinosl106.protonmail.ch (Postfix) with ESMTPS id\r\n 4hyP086N9Jz6S for \u003cidontneedawebsite@proton.me\u003e; Sun, 04 Oct 2026 13:44:56 +0000 (UTC)\r\nReceived: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.ne1.yahoo.com with\r\n HTTP; Sun, 4 Oct 2026 13:44:55 +0000\r\nReceived: by hermes--production-gq1-fd7994565-xrm5j (Yahoo Inc. Hermes SMTP Server) with\r\n ESMTPA ID f9e52fb34a924d54e9913f65ee5ff5b7;\r\n          Sun, 04 Oct 2026 13:42:53 +0000 (UTC)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=quarantine dis=none)\r\n header.from=att.net\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=att.net\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=66.163.184.231\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (1024-bit key) header.d=att.net\r\n header.i=@att.net header.b=\"6s1KFzjK\"\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=att.net; s=s1024; t=1791121495;\r\n bh=uB6J7XpmXT06FWGYdeCsrAcAOIg/ccrZ4bxUa/ZPip4=;\r\n h=From:To:Subject:Date:References:From:Subject:Reply-To;\r\n b=6s1KFzjKCIx1Fux+Z3x97kksVraSY/YhQQpBQXY07flFSa5tQ1C6U8YNiBu/cbony861I0GAS20mk33HPMZMbwkgeNiN1hGd/nrJtvC+dDyoTmudzMjOGFuZkM4NEDh0WmzFVMio4ulHhhov5coZKNlarX4SwznFf8UIlx1EGEw=\r\nX-Sonic-Dkim-Sign: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048;\r\n t=1791121495; bh=UzC45aifQ8WyIvW3dJkmVMghSIftfya6Wkb19cGIUWs=;\r\n h=X-Sonic-MF:From:To:Subject:Date:From:Subject;\r\n b=ivmQRULV9T2yiCSSSLcFXTsKTaJ61AG4+xBVJBekJ4lhv45y9RzGOaZUJro0tqO6nLtYf6LqFLyshaQPR2dnMlwwJYHMIPbLBjv0gjlXXS6bMiAzl/saH85WczXP/vKYf1dvW67UXMWg5K33qdbDxTPnY1Spuyo5oKG4ys6g/Pn4jPzOuG+hxos4VztrIXPLRggIF3cWD5wAwgLLL1GKXW7Bdjjn6nqSNa2GqYSSWSMnwJxd2HlIRQnOdol8xM/grqf3pXx/oD9RPoLmt9uROFKJXa0RbJsdlZYbSPLYbeHysxsNjP9Y5oZ4OqqwpW1Le4/S1X3+pbafypzOTo3jug==\r\nX-Ymail-Osg: uhx2TOoVM1mwZjLC37yHc0nye.MznsRot.S436esoyn2UwiEZBo56RF_9gUDl0U\r\n fiGpnXv7arTnGL7NVD2yRPID_Lg52q4VZ9zsk2NsXwMYBaprWKO6ZtF1CD62fHWlnAn5jvhHEBl7\r\n vNxDnrtXYatjlDlP1IVC_FoXXk6Hk7NGOOhS3dGRUd4TX4P0GFQc7RLGfcjWPXudv_kkb5kHxtDi\r\n ybUSAnOnab2mRaJdmD.BoMWVBTXFLNq52bwBc2z1UGsv6y1ieH8fhBM7qeq5IOd4Azx_e_ass2zj\r\n BpakNPmWcokafLrJbrRxF8kzVebjenxFCMeV9LyluD1aMB0xXQK5CPAzRAJF9pVz.h8BWfUfE0Gx\r\n uXOUaP3OJv9GL6Tqj40AYLmRxBZDoCJlUel0KzVLnnXuqot5Mh5I7qIo5IBZGm90Py99EuSoY79s\r\n _jKifP6DojQJ23D3ZG2bwRnj7_apXs12N2z4S2VDJQrkIjpjQrJjgcdTf8slCxhcI0g3w8eWblb2\r\n PsqTpKzsaEZV6BudR0XhGn8ORo4Ns7HwYNyT3oTugFyA6.3ten.eFVrSR.nZR5GZz9_rdB52s0r5\r\n z_FVZw6nyPPPGh2DLhU9siBqsrhZORgiYrk79bYGPGzYH1ZcWKLD5ES5Dhy.lI0oaEghtMTGAuiW\r\n VyNBlph0LimI1VObEhCQ9p2Qct9W1gfxv5J0BordrrBr6un0oO4DP4Ttvdl5r6Yu2Murutx2nxnE\r\n lvPMfXSEB0E4Q.XJmLuxvXa4qS6lqnjVHhXJBfZsIm8yMcAABCgBula4kYiNTZIDV8dHbNlK4VXN\r\n wM2Mncj6B_TU8T9SzgL5ntgLmO8ugWMFyrz62tGw8o.NfNEjcYgt_CbGFT8TJXulPuF5qSnTupDk\r\n sQNKDr0FiPTt8k2IzwbsLQGTUBgVShGZ3tahldEVsrTkgFNaVtWAg_MJn.BtQxvKHUvuEGaM2QcI\r\n .SbH8AI9d1wychlFnXJ2jtq1LJ7IGzLFdRDJAZC9I5coTJTNa7AJdjEZH0LhA4Vk.wuadeemmGHv\r\n 9lj_GfB9E03JlYHmZkn7OdJhaMXhggCRj8y.iUltpfdh9pN0nXhbYPsR5HK0RUWffbLLLXOhvnhH\r\n oKwxUzw.lv5KrZFLtc5JhLpB6r5hOb08hb24gP10v.TqeMscXnMGtsTKRUDlGbYGxqQPvXL0y3Zp\r\n pRPRMYdCZ4ecXWDzX1DEg0Itunj67thnMV1Y8LXtrGbp.px9nuiqIVRI8x2yAJA0Ou4DOD6F5t.P\r\n boxzgqRZfKg.XH3zn4LcNyi3Qshd.tEtpWqPhJD4BviXgHKcN1l2QN5fA2AuO_32yAhbTvPsj.FF\r\n u8CB8ADm_NhTka8JLYck5P6uxbMI76zL6KCO4S78lm3rJVApPHe1IGqWpbpnNGKucY41olxOksaw\r\n RayoaUiztTo4NnB46IPISUCcFZTSR2I1Hj.wGIQ5FL4vcGz35m8UwdtTBlG4RVoIXkQ3V4.k36UY\r\n eon71TW8X7MHDt9mP0Boo8M_LbEtsBssS..ion62hH.BAa4WKQJvIWqLjjohjCoU0Ons0Br4PQ.e\r\n DjFLGhuApwuIkG9Yia7oKahuqklq3ZRT9VIcrSSz3fsz2bsaejmsKMD4KnBeVl8MUQ_ZWbyEtGup\r\n nZpInVfuk4IxuYmXDYn98hS1B.nB7xQuN5_cGqMXtTVs0JzpbYOphbFfq7O6iyDa_Gdxswuvf1zv\r\n JOP58EoJ_IG_Y3D3tup3uErlgxi_c1pXKrbTJBs6q8wSz4GAFIC7G7qNogUJIFsWSgT4g4Qv_oCz\r\n ykua3GWHEjB_QGK3F2e3jUeVallexC5SfFmOEmmL623IzEveRcjjnB0qAsG3gYHFHvc3AuR_jGzY\r\n hw7tczVGaPq7TFvsOyKmFkQIbb2czJxnNgxnSCq964X5X7bK5twJXgMfMYDny6SvTo5KYM5yFwJU\r\n QTU_h0Blk2YM82tp9oVOz7UUIvVsozgCfysM3QBCDywHVeSxFT0GSeEHdx4fKSCIxHGjq.DjQ85R\r\n 0jDE35Duci8pBSdxXulnAEcFO.xAPL9ZdKLcvFj67qjKh41BlrCSD4N.jMUYgMX8xUvRY.hYBvFL\r\n ATVvrhd2uibZCTzkdJv.0J6m5gc7jbJOyaNkybrBd8jqK3C.Ckq.kbMq6nRBEu371MLYusLPLU3K\r\n NjdoDhyBS5U9QHwBudXvjjaivdsj0F.PxdUEtBrfzvQxH_VQkjTswVRVbQrJnyy2bVCHe6nMK9L_\r\n LnZwtqug07gbYOxg4QWaiWMILm5fSFBG3XKB8MAHo6oSiDMaPxsqpR6q5KV8_lYpEoGlmkm8jmTi 9clU9IKco\r\nX-Sonic-Mf: \u003cMiraLane6678@att.net\u003e\r\nX-Sonic-Id: 534b8a00-0b69-4b7b-a23b-a08495ab434a\r\nFrom: \u003cMiraLane6678@att.net\u003e\r\nTo: \u003cMiraLane6678@att.net\u003e\r\nSubject: Mira - Zoom Meeting\r\nDate: Sun, 04 Oct 2026 19:12:19 +0530\r\nMessage-Id: \u003c008c01dd5406$40d01aa0$c2704fe0$@net\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Office Outlook 12.0\r\nThread-Index: Ad1UBhbMo2apXlVoSiCskFn533ueag==\r\nContent-Language: en-us\r\nReferences: \u003c008c01dd5406$40d01aa0$c2704fe0$.ref@net\u003e\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOwJlzaGuGlaZIys1JnIGbiUI2Oi0WIYOJWiyITOTNzAMyO\r\n GlTlOZkDxiEGMCLzJlkcmijoINFmj4UjMTN1kg5Mz2TAZZAjymBDMDZiB19In\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: phishing\r\n",
+    "WriterType": 0
+  }
+}

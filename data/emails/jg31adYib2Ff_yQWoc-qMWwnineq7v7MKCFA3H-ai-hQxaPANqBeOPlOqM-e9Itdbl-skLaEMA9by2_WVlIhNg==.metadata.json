@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "jg31adYib2Ff_yQWoc-qMWwnineq7v7MKCFA3H-ai-hQxaPANqBeOPlOqM-e9Itdbl-skLaEMA9by2_WVlIhNg==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "0",
+      "5",
+      "15",
+      "24"
+    ],
+    "ExternalID": "CAD8_kYL99M_PC1ETBOSjL75SyYzyoPqt2oJkaaDRMOtKujcjuQ@mail.gmail.com",
+    "Subject": "B2B contacts for your outreach",
+    "Sender": {
+      "Name": "Henry Joseph",
+      "Address": "info.emailsera@gmail.com"
+    },
+    "ToList": [],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Henry Joseph",
+        "Address": "info.emailsera@gmail.com"
+      }
+    ],
+    "Flags": 8388609,
+    "Time": 1784243342,
+    "Size": 756,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003cinfo.emailsera@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail-ed1-f47.google.com (mail-ed1-f47.google.com [209.85.208.47]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No\r\n client certificate requested) by mailin054.protonmail.ch (Postfix) with ESMTPS id\r\n 4h1THy5QxBz3C for \u003cidontneedawebsite@proton.me\u003e; Thu, 16 Jul 2026 23:09:02 +0000 (UTC)\r\nReceived: by mail-ed1-f47.google.com with SMTP id 4fb4d7f45d1cf-698562f10e7so10185242a12.0\r\n        for \u003cidontneedawebsite@proton.me\u003e; Thu, 16 Jul 2026 16:09:02 -0700 (PDT)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=pass smtp.remote-ip=209.85.208.47\r\n arc.chain=:google.com\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"Zm9jI/Zf\"\r\nArc-Seal: i=1; a=rsa-sha256; t=1784243342; cv=none;\r\n        d=google.com; s=arc-20260327;\r\n        b=YxvQJOin5scO6VxzF7GmsGTyN3RpZR2DylvX9KcuJ9qVkjYMk98EzEWuc1MFJXDi/c\r\n         lFLfMYTeTvblKi0JsyWxSSz7jSS838yn/tNqFd/fwUMypmSSwomzct1TXB6Ho52nT9Wz\r\n         N3eYYmBInINpQ0JL7zdt08qzxPlHeAcgtU6lt+oqCSGzxl0/GiqYAOGwMOpu1sRc+Zuy\r\n         jgAqY5FUyLAwqbV6/xXf2Y8Qv7viVJphy+q5tkcxWgKDPq7D9RnByDX3oM/KzcOmv7nx\r\n         jpyarC2JhzXbjlli0FoPsQX30jYX2zjrj0R9XkSMe1ETc2KxSdCKXNrkICPpDmUWIrnT\r\n         mC2g==\r\nArc-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=nvdqSZiEKX8hgBMt6Ag/M7agi/i9UBeZYRZghoz1MC0=;\r\n        fh=WNXBUd3O4hl3fOGGfYP5/v2vlHgr+lnouoKTifpZQSs=;\r\n        b=cbbCu+XVVvgfmR4PY1OBza3i1Ri45Ok0ZA9RPA9CBaQ1KaSU6nbhtPT1wl5miO4g78\r\n         Fmig11h8vFIQKwYGGYEaqm2IMAaCXnXropvLmMkAV1oNtNBT6XbiesCCp13sec8qPov+\r\n         akMM6sxp/B3zIYlfBVA4q0d39Pv/LyzwBW1C+PH8BUT95hU825TkVbKm8Mj9iNIwrfO7\r\n         P2RoYZ3jsghYUixVY58MRJfRl7GLMPWBKByDtNzZ/c9FGpNQSrfljQpChjB3Ko2NuUKt\r\n         U/EZ//0qN0BUcz9DoloGP3zLnpctClPA0nLR0DzVJyrQ3yt0CYYafMMZu1it8R77bo80\r\n         7KAQ==;\r\n        darn=proton.me\r\nArc-Authentication-Results: i=1; mx.google.com; arc=none\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20251104; t=1784243342; x=1784848142; darn=proton.me;\r\n        h=content-type:to:subject:message-id:date:from:mime-version:from:to\r\n         :cc:subject:date:message-id:reply-to:content-type;\r\n        bh=nvdqSZiEKX8hgBMt6Ag/M7agi/i9UBeZYRZghoz1MC0=;\r\n        b=Zm9jI/Zf6dBVLtT6mWvt1tOZ3t+3aomAY6qh7ozTXuzqWHUr9STxDkcSfC8olAFuJx\r\n         y+AZtcx2t2wu8rPFghVZKwHcivUvr8DtZP50M1STnFPPws/ldiFKz5YGtPywFfHwAx/1\r\n         DvU+wlYXmGrbDgf7gXkPJz9oNpuC/pFl0vMuxa2hzWpzvir0OcM+DqsRJepr6n8jDZpy\r\n         px0z+39hw19dXXg/LoEEp3NuNKgNr/sI8s962JMi5ceVroDKEgS8mrKnO4N8Bbl2XBD0\r\n         RreUsMc6mrbHLgIsjIwobxTtE/DufrGZYiWjzKA+1xzwKMuKdXGfdMAlxdIrpwYUBuG7\r\n         SIPg==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20251104; t=1784243342; x=1784848142;\r\n        h=content-type:to:subject:message-id:date:from:mime-version:x-gm-gg\r\n         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to\r\n         :content-type;\r\n        bh=nvdqSZiEKX8hgBMt6Ag/M7agi/i9UBeZYRZghoz1MC0=;\r\n        b=Q8CG7sO9lfaiCR8mQ8QwNl0IOqlj+gtX8MAYxwuVLUdqoNtegUwnEPaeWqpuC/uU2s\r\n         vInNLN4GIqmwomLVspSJdP+91uhG/1VWnIjhCyqJWHz5iZtq3oYXWrr3PXJGOkdNdy18\r\n         GyEqGx2WsJm0+twOExxlnlWwUoXprVuJy0A0gxIz9kYhVV1jt7TupcwdT+1wHHn18Hq/\r\n         mvmoPcjSkKN1+aEpTpmtErE+AT5uKQtgIsOff6xjhbZI0/Ek9i3DeiEY/wNx1b1PuSU0\r\n         M2vJk0L4q4AVGYfytzOYXbx+UrK1rCFq8aRNyLaPDCFCFKCCod3LvVmTWsWTpSmmwTFS\r\n         FOww==\r\nX-Forwarded-Encrypted: i=1;\r\n AHgh+RqQD6ATXSvvURheqiG3o9B6EVGwTQXc9TGTbQNsnlm2/e5d2J5J3VqORT6AA0RtKedigP3m5sEthaT9ZFWQSF767w==@proton.me\r\nX-Gm-Message-State: AOJu0YxH2rsKCLhbf/IbKyEVTus06HNeKX03jw0fGwqxBUMXsgIfQD0h\r\n ACIht9OwtCXTnaGlEHqQaBgO72lHm9MwiTZim+G31HSkOBI/2niSHZnuH2k97xjgGk2PzSKyK1/\r\n 5KjIwz8uQk4YBxQAE5qO2PwT4g0nKNQU=\r\nX-Gm-Gg: AfdE7cnUbrmkxOdVl9nbp1yzlJNU74u0RaZ48sPIyZZXHxjAqJ+TaUdH7+3fvyqVUxz\r\n SB3ShAheZ+EhoXg210EV8O6EaZBnKYVWUedeT9YmDeDVgxQDm/HiXLuUukqLvWdKdE449+UgDmZ\r\n uYu81wT9zki1YtLuqgRXW+E2M1kS5Yn2sEboyKktqiEj+nJNyaVhSsbeCz21tMz3awAQ6duiAcD\r\n 35+beAM+0tSHTM0jwetBlrbNEJBgZ1bgNnIROFgGoazvpM8QOg6KB+YZl4JL90x3oxSWrXEcbwa\r\n 7YPUvHnra1BM1x4xm3KQX5E8TYOCCIxUji4ZaNtgmLgjT1JyeCZ5r9Z5jZs/mqjVxa95c26BIO+ dfDFORBt8UibS\r\nX-Received: by 2002:a05:6402:551b:b0:69c:2ffe:114a with SMTP id\r\n 4fb4d7f45d1cf-69cd6f15bfamr6748285a12.39.1784243341321; Thu, 16 Jul 2026 16:09:01 -0700\r\n (PDT)\r\nMime-Version: 1.0\r\nFrom: Henry Joseph \u003cinfo.emailsera@gmail.com\u003e\r\nDate: Fri, 17 Jul 2026 04:38:49 +0530\r\nX-Gm-Features: AUfX_mzoo56h5ne1VQjB3bU6wZ_sA2DYDpYTHvZlDbYRrBE7vY0xyp6UD-xEltA\r\nMessage-Id: \u003cCAD8_kYL99M_PC1ETBOSjL75SyYzyoPqt2oJkaaDRMOtKujcjuQ@mail.gmail.com\u003e\r\nSubject: B2B contacts for your outreach\r\nTo: undisclosed-recipients:;\r\nContent-Type: text/html\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOpJJvbmsCIeI1msjN3X3blJp7IjSlBITQ0ix0iOSMiwJPU\r\n FQF9RUVkEUNUSUSO9owIjSCJLUIy6iwyM2XlRVnYnu2lXZ8miisnOFUPJI6RCpyJebFWnu9VZWYl1o\r\n iIj0HNaYNWrpZ2XmbfVVudHfWRZcVHfyAjMjN1AgiMTtCJLYlWswNzXlct9Rlb26CIbI1mhzwWaHct\r\n IIwLTwjYMNETx0BnLiIiwFpbWzF8bcJHfvJHciY6IwiMCpWFbbRHlfRHeWZi1RkZWnW5aX12vsVGZj\r\n Iio50aWvmxZYQXvsVXbGdsl5naWsWFdLUW1tNXLWYsxwiIizF9ccFGtwojIjL3II5OTwzUMNMzz3Uz\r\n NDMsIBfInh3Bcb9VilNXYjIwoI3Lj5TIOMUzwzMzNzN3UIsMDfnBIcd3poNGd3XvRBoX3oXNaa5Wnw\r\n ojIjLxAQzOD5TgOOID24MzNDO0MwiNCunVcX52hiUWbiO3JRjYXpGxacQ3tuV2cGZyVB1LX33NXaRX\r\n j9JCaXfs0NyIniWQaOIi25UTYjN4QQzZm2WYONUG2hBTOGOiJIiMjfX0=\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: inbox\r\n",
+    "WriterType": 0
+  }
+}

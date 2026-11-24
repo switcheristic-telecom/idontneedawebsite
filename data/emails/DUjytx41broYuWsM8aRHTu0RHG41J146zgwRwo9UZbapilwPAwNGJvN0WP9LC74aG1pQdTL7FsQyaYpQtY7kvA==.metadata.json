@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "Payload": {
+    "ID": "DUjytx41broYuWsM8aRHTu0RHG41J146zgwRwo9UZbapilwPAwNGJvN0WP9LC74aG1pQdTL7FsQyaYpQtY7kvA==",
+    "AddressID": "mfAN2Oi4zwlcLzv1THrlhcn8Pt3nSNxKnuRwP3ZIPH_s13iXUdLn8nP4IOo-F20FNIhDpigi57uVrAuc5X4W5Q==",
+    "LabelIDs": [
+      "4",
+      "5",
+      "24"
+    ],
+    "ExternalID": "040101dd4844$0f8b5b30$2ea21190$@com",
+    "Subject": "App Sample/Portfolio",
+    "Sender": {
+      "Name": "Tailor Smith",
+      "Address": "txshdhs@gmail.com"
+    },
+    "ToList": [
+      {
+        "Name": "",
+        "Address": "idontneedawebsite@proton.me"
+      }
+    ],
+    "CCList": [],
+    "BCCList": [],
+    "ReplyTos": [
+      {
+        "Name": "Tailor Smith",
+        "Address": "txshdhs@gmail.com"
+      }
+    ],
+    "Flags": 276824065,
+    "Time": 1789828507,
+    "Size": 956,
+    "Unread": 1,
+    "IsReplied": 0,
+    "IsRepliedAll": 0,
+    "IsForwarded": 0,
+    "NumAttachments": 0,
+    "Attachments": [],
+    "MIMEType": "text/html",
+    "Headers": "Return-Path: \u003ctxshdhs@gmail.com\u003e\r\nX-Original-To: idontneedawebsite@proton.me\r\nDelivered-To: idontneedawebsite@proton.me\r\nReceived: from mail-pz2-f43.google.com (mail-pz2-f43.google.com [74.125.228.43]) (using\r\n TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\n  key-exchange X25519 server-signature RSA-PSS (4096 bits) server-digest SHA512) (No\r\n client certificate requested) by mailin029.protonmail.ch (Postfix) with ESMTPS id\r\n 4hnBpz2c07z9vNPf for \u003cidontneedawebsite@proton.me\u003e; Sat, 19 Sep 2026 14:35:07 +0000 (UTC)\r\nReceived: by mail-pz2-f43.google.com with SMTP id d2e1a72fcca58-85469d249c6so1496745b3a.1\r\n        for \u003cidontneedawebsite@proton.me\u003e; Sat, 19 Sep 2026 07:35:07 -0700 (PDT)\r\nReceived: from DESKTOPLRHJIS5 ([152.59.86.190])\r\n        by smtp.gmail.com with ESMTPSA id\r\n d2e1a72fcca58-877aa70f702sm1108394b3a.60.2026.09.19.07.35.04\r\n        for \u003cidontneedawebsite@proton.me\u003e\r\n        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);\r\n        Sat, 19 Sep 2026 07:35:05 -0700 (PDT)\r\nAuthentication-Results: mail.protonmail.ch; dmarc=pass (p=none dis=none)\r\n header.from=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; spf=pass smtp.mailfrom=gmail.com\r\nAuthentication-Results: mail.protonmail.ch; arc=none smtp.remote-ip=74.125.228.43\r\nAuthentication-Results: mail.protonmail.ch; dkim=pass (2048-bit key) header.d=gmail.com\r\n header.i=@gmail.com header.b=\"rxgHr2V3\"\r\nDkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20251104; t=1789828506; x=1790433306; darn=proton.me;\r\n        h=content-language:thread-index:content-type:mime-version:message-id\r\n         :date:subject:to:from:from:to:cc:subject:date:message-id:reply-to\r\n         :content-type;\r\n        bh=NyBqff0+LefCjmFRS1JT4iwQiWih9glImpDFQ8YZG48=;\r\n        b=rxgHr2V3mCN2yPGCUT1Vcuj0WNkgE7oriQGKRAWkKYtvlMzFctAD4A4sBRII0ixcd0\r\n         QPuuDYSsubvGe1JYZupOOeAfYaG55OX3nr+f9wnTVyRPa41ARKP6Vq5oafkkvVDLDDPk\r\n         fPyMf/58W7A6hAmn4P+Bd68jSWi1swf3mpYQAv3yKcLxI2hak1KkHx18RayI10Fqt9Go\r\n         6O/xqAN5FGfS/EuuKnMRKHhOulqp3cJ6V9nX1Vc2/YbH36AQvQ2jedijyj+GsMblX6D2\r\n         ZNXKr5Gqd7es25V1LUUGc5tx+dLKMNugACq33s6doD0yDY8yxK+Pb/mbcHXsbgIcMN/x\r\n         xJdg==\r\nX-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20260707; t=1789828506; x=1790433306;\r\n        h=content-language:thread-index:content-type:mime-version:message-id\r\n         :date:subject:to:from:x-gm-gg:x-gm-message-state:from:to:cc:subject\r\n         :date:message-id:reply-to:content-type;\r\n        bh=NyBqff0+LefCjmFRS1JT4iwQiWih9glImpDFQ8YZG48=;\r\n        b=NXLxZRUz2qh6eQFjM3TqlgyiDiHVtrUYX58n/PRdnVWrTjGSXlhpbyS4keQ+HejrVc\r\n         vq9oH/03YCXUmEYd8DCFj8jVYQye2J2DrswuW+w6pxaCTjjtGvYqixImpiUC7cp9T+Hh\r\n         WL+rHkgM7Rz0SETaMRUvwznEHW8Chn+q9IQ28b/y3/qJqymwiflumr0lZCWpaQ+ggNBt\r\n         I6s1oWQs7VqEddlAJ0koEJ3yKx4PDyc6+rr4fa3axrvFiGNEmOfEXMcCkEpO/06IURlt\r\n         apvfb0TqdNQEnysS4fZOOZYcBbIN+9Bv/T2hmTaNk0cq+BiYvA5YA/shrcLeEGCTcUy7\r\n         zuSQ==\r\nX-Gm-Message-State: AFuF++lYag62cDR3a4AEFujoJM3FQL20HYT/MjvhRBXb8lbkthumXMEU\r\n TC8P3BqZrjIUVtJ4UUzX56Yq5BCuKcfBBhGWgcZBvlPRR/fqYlwF9m4s1EURmA==\r\nX-Gm-Gg: AYBFou0wY4zMdbWAyR0MbnVNU3E52ThtOV8EBdCrqjYACbi74TgT5FTRM040Tch6h+V\r\n FAGnidBqjUkwP+LJX/sK+t/vA0jwBGTJ5fsDVXqHSfsRWlW5DXwYulpiGe1FoIsRpzL1qyk4P28\r\n 0vYY6Ezy1ooFqKUnORStAMnzYKLn2/hydBhnMEqZSuGZElJU3Rc52SIdxBUHDXpHn3OX1W3BhU9\r\n oMFyDzRU3BlQgvcNftbvElDY8UPBGFvNyGeJ/BnNijcABsxuk1tmHWQ67RttSQfqYqPTGS42aKz\r\n gbDi3K2c0mAaBPP4it8S77oXqV9Ga3tk5bNGeNe1i1dgHXSfftQAVxkzQ2wbZjFIJzq/rHumwjf\r\n Gn56KB19egmOO/QDbirED6BFAfr/7GhEP7AeRV48rAjXUNiNFOtI+7GURBJ39kjr+UpQXLyT7QS\r\n iYVhe9cMtLk4gD+5XUYhQ0fDeIYL/XrFAGk8+wAbVyNWjO6+znt8dGgXfYTYLF8bjFH3X0kefIP fW9n+fc7jT+\r\nX-Received: by 2002:a05:6a00:2393:b0:878:34d7:6a2b with SMTP id\r\n d2e1a72fcca58-87834d76e67mr1827114b3a.45.1789828505787;\r\n        Sat, 19 Sep 2026 07:35:05 -0700 (PDT)\r\nFrom: \"Tailor Smith\" \u003ctxshdhs@gmail.com\u003e\r\nTo: \u003cidontneedawebsite@proton.me\u003e\r\nSubject: App Sample/Portfolio\r\nDate: Sat, 19 Sep 2026 20:04:15 +0530\r\nMessage-Id: \u003c040101dd4844$0f8b5b30$2ea21190$@com\u003e\r\nMime-Version: 1.0\r\nContent-Type: text/html\r\nX-Mailer: Microsoft Office Outlook 12.0\r\nThread-Index: Ad1IQ9N3AlhdDQu9TX2euCH3P8pE6A==\r\nContent-Language: en-in\r\nX-Pm-Spam: 0yezJI6cihyJeYR3pi42biOzJFtcGiiwIbxWfvN2cmciUsiOnPFJURIC6sQjMlISBRfT\r\n 0FFJURlEDPlEViT6IwiMSilMUO0ix2kjLCLfJViZGfWdda5Wm6IybyeQJ9EUk7jpIIlmtldWY2Xh5U\r\n ibWoiJOcR3hft2YmZul90ZVlW5dZ9Fwy8VdDM2IUxMDsCIOI1mhfxWa3MyB1vX2sGVZIojipFWbDbw\r\n N0tciyjAMNAj1uETMHciQJtLCsWlYXNzww9lcmci9owIjtCJLYlWs4VGdFdl9JlbWpGRZbdmfk9WbW\r\n ZiwJpOimnRbb9Ght9CdWd0xxpaW1mdbYwWttUTZ2ch1wibGwCJLXN3wi0WYjOuAg4OTzTcMOQDywMD\r\n NTM0EwiNyzF9ccFGthJ2X2ciUAuOj4TgOMcTzyQDODNwME0MTiywNc9Fz0l2d2Yfh9fdGpGhcch2pi\r\n cmbjOuAQ3MDwDYMNEzzxcTMTO4UIsOT1nJIb9lul1WYjIioF0d2s2hYaNX0lNXLmblR1wcizV9ddl2\r\n 0ig2YXf91JzLCkmlcIojihFmNTZklMyOW2jENMEj23UTYTOmdk1ND9n1I\r\nX-Pm-Origin: external\r\nX-Pm-Transfer-Encryption: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)\r\nX-Pm-Content-Encryption: on-delivery\r\nX-Pm-Spamscore: 0\r\nX-Pm-Spam-Action: spam\r\n",
+    "WriterType": 0
+  }
+}
